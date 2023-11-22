@@ -1,8 +1,9 @@
 'use client'
-import React,{useState} from 'react'
+import React,{useState , useEffect} from 'react'
 import { links,LINK } from '../ref/links'
 import LogoImg from '../assets/1693610050074.png'
 import { TiThMenu } from "react-icons/ti";
+import { IoMdClose } from "react-icons/io";
 import { East_Sea_Dokdo} from 'next/font/google'
 
 import { NavbarContainer,
@@ -12,7 +13,8 @@ import { NavbarContainer,
           NavbarInnerContainer,
           NavbarLinkContainer,
           NavbarLink, Logo,
-          HamburgerMenu,NavTitle,CloseMenu } from "../styles/Navbar.style"
+          LinkButton,NavTitle,
+          NavbarLinkExtended,NavLogoExtend } from "../styles/Navbar.style"
 
           const EastSea = East_Sea_Dokdo({
             subsets: ['latin'],
@@ -20,19 +22,27 @@ import { NavbarContainer,
           })
 
 function Nav() {
-  const [isClose ,setIsClose] = useState(true)
+  const [isClose ,setIsClose] = useState(false)
+    useEffect(()=>{
+        function handeSize () {
+          if(window.innerWidth > 700){
+            setIsClose(false)
+          }
+        }
+        window.addEventListener('resize',()=>handeSize())
+
+    },[])
   return (
-   <NavbarContainer>
-    <NavbarInnerContainer>
+   <NavbarContainer  extendnavbar={isClose.toString()} >
+    <NavbarInnerContainer >
       <NavbarLeft>
         <Logo alt='blue wave holiday house logo' src={LogoImg}></Logo>
         <NavTitle className={EastSea.className}>
            <p>Blue.Wave</p>
-           <p>Holiday House</p>
+           <p>HolidayHouse</p>
         </NavTitle>
-       
       </NavbarLeft>
-      <NavbarRight>
+      <NavbarRight >
         <NavbarLinkContainer>
           {links.map((link:LINK)=>{
             return(
@@ -41,14 +51,29 @@ function Nav() {
               </NavbarLink>
             )
           })}
-          {isClose === true? <HamburgerMenu size={30}  onClick={()=> setIsClose(!isClose)}/> : <CloseMenu size={30} onClick={()=> setIsClose(!isClose)}  />}
-          
+          <LinkButton onClick={()=> setIsClose(!isClose)}>
+          {isClose ?  <IoMdClose size={30}  /> : <TiThMenu size={30} />}
+          </LinkButton> 
         </NavbarLinkContainer> 
       </NavbarRight>
     </NavbarInnerContainer>
-     <NavbarExtend>
-
-     </NavbarExtend>
+     
+      {isClose &&  
+        <NavbarExtend onClick={()=>setIsClose(false)} >
+         { links.map((link:LINK)=>{
+            return(
+              <NavbarLinkExtended key={link.id} href={link.url}>
+                {link.name}
+              </NavbarLinkExtended>
+            )
+          })}
+          <NavLogoExtend>
+            <Logo alt='blue wave holiday house logo' src={LogoImg}></Logo>
+          </NavLogoExtend>
+          
+       </NavbarExtend> 
+      }
+      
    </NavbarContainer>
   )
 }
