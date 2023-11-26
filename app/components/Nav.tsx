@@ -28,7 +28,7 @@ function Nav() {
         <Logo alt='blue wave holiday house logo' src={LogoImg}></Logo>
         <NavTitle className={EastSea.className}>
            <p>Blue.Wave</p>
-           <p>Holiday House</p>
+           <p>HolidayHouse.</p>
         </NavTitle>
        
       </NavbarLeft>
