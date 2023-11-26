@@ -4,14 +4,27 @@ import Image from "next/image";
 import { TiThMenu } from "react-icons/ti";
 import { IoMdClose } from "react-icons/io";
 
+interface Props {
+    $extendnavbar?:string
+    $isclose?:string
 
-export const NavbarContainer = styled.nav`
-   /* background-color:#1e40af; */
-    /* border-bottom: 1px #0284c7 solid; */
+}
+
+
+export const NavbarContainer = styled.nav<Props>`
+    /* border-bottom: 1px #0284c7 solid;  */
     width: 100%;
-    height:70px;
+    height:${(props)=>(props.$extendnavbar === 'true'? "100vh " :"70px")};
+    background-color:${(props)=>(props.$extendnavbar === 'true'? "#0093E9":"none")};
     display: flex;
     flex-direction: column;
+    transition: all 0.3s ease-in-out;
+
+    @media (max-width: 700px) {
+      position: absolute;
+       z-index:10;  
+    }
+    
 `;
 export const NavbarLeft = styled.nav`
     display: flex;
@@ -57,7 +70,15 @@ export const NavbarRight = styled.nav`
     
 `;
 export const NavbarExtend = styled.div`
-   display: flex ;
+display: flex;
+flex-direction: column;
+align-items: start;
+gap:1.5rem;
+
+
+@media (min-width: 700px) {
+  display: none;
+}
 `;
 export const NavbarLinkContainer = styled.div`
     display: flex;
@@ -77,6 +98,14 @@ export const NavbarLink = styled(Link)`
         background-color:#0284c7;
          transition: all 0.7s ease;
          color: white;
+         transform: scale(1.2);
+         &:nth-child(odd){
+            transform: rotate(15deg);
+         }
+         &:nth-child(even){
+            transform: rotate(-15deg);
+         }
+         
     }
     @media (max-width: 700px ){
         display: none;
@@ -87,51 +116,44 @@ export const NavbarInnerContainer = styled.div`
     width: 100%;
     height: 70px;
     display: flex;
+   background-color: white;
 `;
 
+export const LinkButton = styled.button<Props>`
+    height:${(props)=>(props.$extendnavbar === 'true'? "100vh " :"70px")};
 
-export const HamburgerMenu = styled(TiThMenu)`
+    transition: all 0.5s ease;
+    transform:${(props)=>(props.$isclose === 'true' ? "rotate(-90deg)": "rotate(0deg)")} ;
+    color:${(props)=>(props.$isclose === 'true' ? "#0284c7": "black")} ;
     &:hover{
-         color:#0284c7;
-         transition: all 0.5s ease;
-    }
-    &:active{
-        transform: rotate(-90deg);
-    }
-    @media (min-width: 700px) {
-        display:none;
-    };
-
+            color:#0284c7;
+         }
+         /* &:focus{
+             transform: rotate(-90deg);
+             color:#0284c7;
+          } */
+         @media (min-width: 700px) {
+           display:none;
+        };
 `
-export const CloseMenu = styled(IoMdClose)`
-    &:hover{
-         color:#0284c7;
-         transition: all 0.5s ease;
-    }
-    &:active{
-        transform: rotate(90deg);
-    }
-    @media (min-width: 700px) {
-        display:none;
-    }
-`
-// export const HumburgerMenuContainer = styled.div`
-//    width: 30px;
-//    height: 30px;
-//    display: flex;
-//    flex-direction: column;
-//    align-items: center;
-//    justify-content: center;
-//    gap: 5px;
+export const NavbarLinkExtended = styled(Link)`
+  color:#262626;
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  padding: 0.5rem 0.5rem;
+  padding-left: 1.5rem;
+  transition: all 0.3s ease-in;
+  width: 100%;
+  &:hover{
+    /* background-color: #ffd11a ; */
+    color: #ffd11a;
+  }
+`;
 
-// `
-// export const HumburgerMenuRow = styled.div`
-//     background-color: black;
-//     width: 80%;
-//     height: 5px;
-//     border-radius: 10px;
-//     &:hover:{
-//         background-color: blanchedalmond;
-//     }
-// `
-
+export const NavLogoExtend = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+`;
