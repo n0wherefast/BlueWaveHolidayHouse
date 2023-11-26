@@ -17,6 +17,12 @@ export const NavbarContainer = styled.nav<Props>`
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease-in-out;
+
+    @media (max-width: 700px) {
+      position: absolute;
+       z-index:10;  
+    }
+    
 `;
 export const NavbarLeft = styled.nav`
     display: flex;
@@ -112,12 +118,14 @@ export const NavbarInnerContainer = styled.div`
 `;
 
 export const LinkButton = styled.button`
+    transition: all 0.5s ease;
+    
     &:hover{
             color:#0284c7;
-            transition: all 0.5s ease;
          }
-         &:active{
+         &:focus{
              transform: rotate(-90deg);
+             color:#0284c7;
         }
          @media (min-width: 700px) {
            display:none;

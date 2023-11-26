@@ -5,8 +5,8 @@ import LogoImg from '../assets/1693610050074.png'
 import { TiThMenu } from "react-icons/ti";
 import { IoMdClose } from "react-icons/io";
 import { East_Sea_Dokdo} from 'next/font/google'
-
-import { NavbarContainer,
+import { 
+          NavbarContainer,
           NavbarLeft,
           NavbarRight,
           NavbarExtend,
@@ -14,12 +14,15 @@ import { NavbarContainer,
           NavbarLinkContainer,
           NavbarLink, Logo,
           LinkButton,NavTitle,
-          NavbarLinkExtended,NavLogoExtend } from "../styles/Navbar.style"
+          NavbarLinkExtended,NavLogoExtend
+        } 
 
-          const EastSea = East_Sea_Dokdo({
-            subsets: ['latin'],
-            weight: '400'
-          })
+        from "../styles/Navbar.style"
+
+const EastSea = East_Sea_Dokdo({
+  subsets: ['latin'],
+  weight: '400'
+})
 
 function Nav() {
   const [isClose ,setIsClose] = useState(false)
