@@ -1,95 +1,93 @@
 'use client'
 import React,{useState} from 'react'
 import {IoPeopleCircleOutline,IoBedOutline,IoClose,IoAdd} from 'react-icons/io5'
-import {FaShower,FaCar,FaWifi,FaDog,FaRegSnowflake, FaArrowCircleUp} from 'react-icons/fa'
+import {FaShower,FaCar,FaWifi,FaDog,FaRegSnowflake, FaArrowCircleDown} from 'react-icons/fa'
 import {MdMeetingRoom} from 'react-icons/md'
-import {GiWashingMachine,GiFlowerPot,GiRiceCooker} from 'react-icons/gi'
+import {GiWashingMachine,GiSeaCliff,GiRiceCooker} from 'react-icons/gi'
 import {CgScreen} from 'react-icons/cg'
 import {BsPersonWorkspace} from 'react-icons/bs'
 import { motion } from 'framer-motion'
 import { AboutContainer , CardContainer,
-          CardCollapse,CardAbout,ButtonCollapse} from '@/app/styles/About.style'
+          CardCollapse,CardAbout,
+          ButtonCollapse,CollapseContainer,ContainerImage} from '@/app/styles/About.style'
 // import { useDispatch } from 'react-redux'
 // import { scrollTo } from '@/app/redux/slices/scroll/scrollSlice'
+import bg from "../../assets/blue_wave__abstract_picture_walpaper_amazing.jpg"
 
 function About() {
-  const iconSize = 40
+  const iconSize = 35
   const [show ,setShow] = useState(false)
-  console.log(show)
+  const [disShow ,setDisShow] = useState(false)
+  
   return (
     <>
     < AboutContainer >
-      {/* <div >
-          <motion.button animate={{ y: -20 ,  scale: [1,1.5,1], borderRadius:[0,2,2,0]}} 
+   {/* <ContainerImage alt={''} src={bg}></ContainerImage> */}
+   <div className=' flex justify-center items-center w-full h-screen bg-sky-700'>
+      <strong className=' italic  font-black text-[5.5rem] p-2 md:p-0 md:text-[10rem] lg:text-[13rem] text-slate-50'>Catch Your Dream Holiday.</strong>
+   </div>
+      <div >
+          <motion.button animate={{ y: -60 ,  scale: [1,1.5,1], borderRadius:[0,2,2,0]}} 
                          transition={{ ease: "easeOut", duration: 1 }}
                          
                          className=''> 
-                            <h2 className= ' transition-all ease-in bg-slate-100 w-48 h-20 lg:w-72 lg:h-32  flex justify-center items-center  text-4xl lg:text-6xl rounded-2xl  border-2 p-2 hover:bg-pink-500 hover:text-slate-100 hover:border-slate-100 font-extrabold text-pink-500'>
-                                 <p className=' animate-pulse'>Show More</p>
+                            <h2 className= ' transition-all ease-in flex justify-center items-center  text-4xl lg:text-6xl rounded-2xl hover:text-slate-100 font-extrabold  text-amber-400'>
+                                 <p className=' animate-pulse'><FaArrowCircleDown/></p>
                             </h2>
           </motion.button>
-      </div> */}
+      </div>
     
                <br id='sec' />
 <CardContainer> 
+      <CollapseContainer>
         <CardCollapse onClick={()=>setShow(!show)}>
-          DETTAGLI 
-         <ButtonCollapse $extend={show.toString()}>
-          { show === true? <IoClose size={30}/> : <IoAdd size={30}/>}
-         </ButtonCollapse>
+        <p className='uppercase'><strong>dettagli</strong></p> 
+            <ButtonCollapse $extend={show.toString()}>
+              { show === true? <IoClose size={30}/> : <IoAdd size={30}/>}
+            </ButtonCollapse>
           
         </CardCollapse>
         <CardAbout  $extend={show.toString()} >
             <div className='flex flex-col gap-4'>
-              <div className=" flex items-center">
-                <div className=''><GiRiceCooker size={iconSize}/></div>
-                  <p className='p-1'>Cucina</p>
-                </div>
+                <div className=" flex items-center"><GiRiceCooker size={iconSize}/><p className='p-1'>Cucina Completa</p></div>
+                <div className=" flex items-center"> <BsPersonWorkspace size={iconSize}/><p className='p-2'>Spazio di lavoro dedicato</p></div>
+                <div className=" flex items-center  "><IoPeopleCircleOutline size={iconSize}/><p className='p-1'>4 Ospiti</p></div>
+                <div className=" flex items-center"><MdMeetingRoom size={iconSize}/><p className='p-1'>1 Camere da letto</p></div>
+                <div className=" flex items-center"><IoBedOutline size={iconSize}/><p className='p-1'>3 Letti</p></div>
+                <div className=" flex items-center"><FaShower size={iconSize}/><p className='p-1'>Bagno</p></div>
+                <div className=" flex items-center"><FaRegSnowflake size={iconSize}/><p className='p-1'>Ambiente Climatizzato</p></div>
 
-                <div className=" flex items-center">
-                <div className=''><GiFlowerPot size={iconSize}/></div>
-                  <p className='p-1'>Vista sul cortile</p>
-                </div>
-
-                <div className=" flex items-center">
-                <div className=''><BsPersonWorkspace size={iconSize}/></div>
-                  <p className='p-2'>Spazio di lavoro dedicato</p>
-                </div>
-
-                <div className=" flex items-center">
-                <div className=''><FaRegSnowflake size={iconSize}/></div>
-                  <p className='p-2'>Ambiente Climatizzato</p>
-                </div>
-            {/* </div>
-        </CardAbout>
-        <CardAbout>
-              <div className='flex flex-col gap-2'> */}
-                <div className=" flex items-center  ">
-                  <div className=''><IoPeopleCircleOutline size={iconSize}/></div>
-                  <p className='p-1'>4 Ospiti</p>
-                </div>
-
-                <div className=" flex items-center">
-                <div className=''><MdMeetingRoom size={iconSize}/></div>
-                  <p className='p-1'>1 Camere da letto</p>
-                </div>
-
-                <div className=" flex items-center">
-                <div className=''><IoBedOutline size={iconSize}/></div>
-                  <p className='p-1'>2 Letti</p>
-                </div>
-
-                <div className=" flex items-center">
-                <div className=''><FaShower size={iconSize}/></div>
-                  <p className='p-1'>2 Bagni</p>
-                </div>
             </div>
         </CardAbout>
+      </CollapseContainer>
+
+      <CollapseContainer>
+          <CardCollapse onClick={()=>setDisShow(!disShow)}>
+              <p className='uppercase'><strong>DISPONIBILE</strong></p> 
+              <ButtonCollapse $extend={disShow.toString()}>
+                { disShow === true? <IoClose size={30}/> : <IoAdd size={30}/>}
+              </ButtonCollapse>
+          </CardCollapse>
+            <CardAbout  $extend={disShow.toString()}>
+              <div className="flex flex-col gap-4  ">
+                  <div className="flex items-center"><GiSeaCliff size={iconSize}/><p className='p-1'>Vista Mare</p></div>
+                  <div className='flex  items-center '><FaCar size={iconSize}/> <p className='p-1'>Parcheggio Privato</p></div>
+                  <div className='flex  items-center '><FaWifi size={iconSize}/><p className='p-1'>Wi-Fi Internet</p> </div>
+                  <div className='flex  items-center '><CgScreen size={iconSize}/><p className='p-1'>HDTV</p></div>
+                  <div className='flex  items-center '><GiWashingMachine size={iconSize}/><p className='p-1'>Lavatrice</p></div>
+                  <div className='flex  items-center '><FaDog size={iconSize}/><p className='p-1'>Animali domestici ammessi</p></div>
+              </div>
+            </CardAbout>
+        </CollapseContainer>
 </CardContainer>
-      <div className="w-72  mt-2 border border-gray-300"></div>
+
+      
+
+
+      {/* <div className="w-72  mt-2 border border-gray-300"></div> */}
 
      <section className='p-4 flex flex-col items-center w-full lg:w-[45rem] '>
-          <div className=" p-1 md:w-auto w-72">
+          {/* <div className=" p-1 md:w-auto w-72">
           <p className='text-xl '> <strong className=' font-homeFont text-5xl'><span className='text-pink-600'>L</span>ocalità:</strong>
           <br /> <br /> 
           <strong>Catania</strong>, situata sulla splendida costa orientale della Sicilia, è una città ricca di storia, cultura 
@@ -108,9 +106,9 @@ function About() {
              catanesi, come la pasta alla Norma e i cannoli siciliani, deliziano i palati di residenti e visitatori.
             </p> 
             <br />
-        </div>
+        </div> */}
         <br />
-        <div className=" p-1 md:w-auto w-72">
+        {/* <div className=" p-1 md:w-auto w-72">
         <p className='text-xl'> <strong className=' font-homeFont text-5xl'><span className='text-pink-600'>S</span>toria:</strong>
           <br /> <br />
           <strong>Catania</strong>,situata sulla costa orientale della Sicilia, vanta una storia e una cultura ricche di fascino e di influssi multietnici.
@@ -137,12 +135,12 @@ function About() {
                alla spettacolare processione e ai tradizionali &quot;candelieri&quot; portati a spalla dai fedeli.
             </p> 
             <br />
-        </div>
+        </div> */}
         <br />
         <div className=" p-1 md:w-auto w-72">
-        <p className='text-xl'>  <strong className=' font-homeFont text-5xl'><span className='text-pink-600'>C</span>asa:</strong>
+        <p className='text-xl'>  <strong className=' font-homeFont text-5xl'><span className='text-sky-600'>A</span>ppartamento</strong>
           <br /> <br />
-               <strong>La casa</strong> ,vacanze nel cuore della città di Catania, a pochi passi dal centro storico vicino ai 
+                ,vacanze nel cuore della città di Catania, a pochi passi dal centro storico vicino ai 
               principali mezzi di trasporto.
               Dotato di ogni comfort per un soggiorno in pieno relax.
             </p>
@@ -164,22 +162,11 @@ function About() {
         
       </section>
       <section className="flex flex-col md:flex-row w-full h-[20rem] items-center  justify-center  "> 
-        <div className="flex flex-col items-center gap-4 w-72 p-4 m-4 shadow-2xl shadow-slate-800 bg-slate-200 rounded-xl border border-slate-400   ">
-          <p className=' uppercase'><strong>DISPONIBILE:</strong></p>
-
-          <div className="flex flex-wrap justify-center gap-4  ">
-            <div className='flex flex-col items-center gap-1'><FaCar/><p>Parcheggio in strada</p></div>
-            <div className='flex flex-col items-center gap-1'><FaWifi/><p>Wi-Fi Internet</p></div>
-            <div className='flex flex-col items-center gap-1'><CgScreen/><p>HDTV</p></div>
-            <div className='flex flex-col items-center gap-1'><GiWashingMachine/><p>Lavatrice</p></div>
-            <div className='flex flex-col items-center gap-1'><FaDog/><p>Animali domestici ammessi</p></div>
-          </div>
-
-        </div>
+        
         </section>
       <div className="w-72  mt-2 border border-gray-300"></div>
 
-      <div className='flex md:flex-row flex-col gap-10 backdrop-blur-sm w-full items-center justify-center'><section>
+      <div className='flex-row flex-col 0 backdrop-blur-sm w-full items-center justify-center'><section>
         <h2 className=' text-4xl p-2 font-homeFont'><strong><span className=' text-pink-600 text-5xl font-homeFont'>S</span>ervizi</strong></h2>
         <div className="  md:w-auto w-72 m-1">
           <p> <strong className='p-1'>- Politiche:</strong></p>

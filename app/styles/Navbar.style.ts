@@ -23,6 +23,7 @@ export const NavbarContainer = styled.nav<Props>`
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease-in-out;
+    position: fixed;
 
     @media (max-width: 700px) {
       position: absolute;
@@ -46,6 +47,7 @@ height: auto;
 `
 export const NavTitle = styled.h1`
     font-size: 1.5rem;
+    font-style: italic;
     line-height: 1;
     display:  flex;
     flex-direction: column;

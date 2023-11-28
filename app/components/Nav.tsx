@@ -22,7 +22,7 @@ import {
 
 const OpenSans = Open_Sans({
   subsets:['latin'],
-  weight:'600',
+  weight:'700',
 })
 
 function Nav() {
@@ -42,8 +42,8 @@ function Nav() {
       <NavbarLeft>
         <Logo priority alt='blue wave holiday house logo' src={LogoImg}></Logo>
         <NavTitle className={OpenSans.className}>
-          <p>BlueWave</p>
-           <p>HolidayHouse</p> 
+          <strong>BlueWave</strong>
+           <strong>HolidayHouse</strong> 
         </NavTitle>
       </NavbarLeft>
       <NavbarRight >

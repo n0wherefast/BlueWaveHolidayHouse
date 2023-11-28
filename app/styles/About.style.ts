@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { Props } from "./Navbar.style";
+import Image from "next/image";
 
 
 export const AboutContainer = styled.div`
-    padding-top:5rem ;
+    padding-top:1rem ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,11 +14,12 @@ export const AboutContainer = styled.div`
 
 export const CardContainer = styled.div`
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
     justify-content: center;
     align-items: center;
+    gap:2rem;
     width: 100%;
-    height: 34rem;
+    height:auto;
 
     @media (max-width:700px) {
         flex-direction: column;
@@ -30,12 +32,17 @@ align-items: center;
 padding: 1rem;
 width:20rem;
 height: 3rem;
-border-bottom:2px yellow solid ;
+border-bottom:2px black solid ;
 &:hover{
     border-bottom: 2px #0284c7 solid;
 }
 
 `
+export const CollapseContainer = styled.div`
+display: flex;
+flex-direction: column;
+`
+
 export const ButtonCollapse =styled.div<Props>`
     transition: all 1s ease;
   transform:${(props)=>(props.$extend ==='true'? "rotate(-90deg)": "rotate(0deg)")} ;
@@ -49,7 +56,7 @@ export const CardAbout = styled.div<Props>`
     padding:${(props)=>(props.$extend === 'true' ? '1rem': '')};
     /* margin: 1rem; */
     width:20rem;
-    height:${(props)=>(props.$extend ==='true'? '30rem': '0px')};
+    height:${(props)=>(props.$extend ==='true'? '28rem': '0px')};
     background-color:#0284c7;
     /* border-radius: 10px; */
     /* border: 1px solid darkgray; */
@@ -58,6 +65,10 @@ export const CardAbout = styled.div<Props>`
     font-size: larger;
     font-weight: 700;
     font-family: sans-serif;
+`
+export const ContainerImage = styled(Image)`
+ width: 50vw;
+ height:auto;
 `
 
 
