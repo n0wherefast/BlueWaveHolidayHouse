@@ -23,8 +23,8 @@ function About() {
     <>
     < AboutContainer >
    {/* <ContainerImage alt={''} src={bg}></ContainerImage> */}
-   <div className=' flex justify-center items-center w-full h-screen bg-sky-700'>
-      <strong className=' italic  font-black text-[5.5rem] p-2 md:p-0 md:text-[10rem] lg:text-[13rem] text-slate-50'>Catch Your Dream Holiday.</strong>
+   <div className=' flex justify-center items-start w-full h-screen bg-sky-700'>
+      <strong className=' italic  font-black text-[5.5rem] pl-2 md:p-0 md:text-[10rem] lg:text-[13rem] text-slate-50'>Catch Your Dream Holiday.</strong>
    </div>
       <div >
           <motion.button animate={{ y: -60 ,  scale: [1,1.5,1], borderRadius:[0,2,2,0]}} 
