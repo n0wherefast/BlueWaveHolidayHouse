@@ -4,10 +4,7 @@ import './globals.css'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 const inter = Inter({ subsets: ['latin'] })
-const EastSea = East_Sea_Dokdo({
-  subsets: ['latin'],
-  weight: '400'
-})
+
 
 export const metadata: Metadata = {
   title: 'Create Next App',

@@ -4,11 +4,15 @@ import Image from "next/image";
 import { TiThMenu } from "react-icons/ti";
 import { IoMdClose } from "react-icons/io";
 
-interface Props {
+
+export interface Props {
     $extendnavbar?:string
     $isclose?:string
+    $extend?:string
 
 }
+
+
 
 
 export const NavbarContainer = styled.nav<Props>`
@@ -36,15 +40,16 @@ export const NavbarLeft = styled.nav`
     /* padding-left:5rem; */
 `;
 export const Logo = styled(Image)`
-margin: 10px;
+margin:10px;
 max-width: 70px;
 height: auto;
 `
 export const NavTitle = styled.h1`
-    font-size: 2.2rem;
-    line-height: 0.8;
+    font-size: 1.5rem;
+    line-height: 1;
     display:  flex;
     flex-direction: column;
+
     width:10rem;
     /* & p:nth-child(odd){
         color: blue;
@@ -121,7 +126,6 @@ export const NavbarInnerContainer = styled.div`
 
 export const LinkButton = styled.button<Props>`
     height:${(props)=>(props.$extendnavbar === 'true'? "100vh " :"70px")};
-
     transition: all 0.5s ease;
     transform:${(props)=>(props.$isclose === 'true' ? "rotate(-90deg)": "rotate(0deg)")} ;
     color:${(props)=>(props.$isclose === 'true' ? "#0284c7": "black")} ;

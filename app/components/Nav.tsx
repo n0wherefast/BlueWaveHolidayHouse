@@ -4,7 +4,7 @@ import { links,LINK } from '../ref/links'
 import LogoImg from '../assets/1693610050074.png'
 import { TiThMenu } from "react-icons/ti";
 import { IoMdClose } from "react-icons/io";
-import { East_Sea_Dokdo} from 'next/font/google'
+import { East_Sea_Dokdo,Open_Sans} from 'next/font/google'
 import { 
           NavbarContainer,
           NavbarLeft,
@@ -19,9 +19,10 @@ import {
 
         from "../styles/Navbar.style"
 
-const EastSea = East_Sea_Dokdo({
-  subsets: ['latin'],
-  weight: '400'
+
+const OpenSans = Open_Sans({
+  subsets:['latin'],
+  weight:'600',
 })
 
 function Nav() {
@@ -40,9 +41,9 @@ function Nav() {
     <NavbarInnerContainer >
       <NavbarLeft>
         <Logo priority alt='blue wave holiday house logo' src={LogoImg}></Logo>
-        <NavTitle className={EastSea.className}>
-           <p>Blue.Wave</p>
-           <p>HolidayHouse</p>
+        <NavTitle className={OpenSans.className}>
+          <p>BlueWave</p>
+           <p>HolidayHouse</p> 
         </NavTitle>
       </NavbarLeft>
       <NavbarRight >
