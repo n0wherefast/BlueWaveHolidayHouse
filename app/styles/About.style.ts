@@ -4,7 +4,7 @@ import Image from "next/image";
 
 
 export const AboutContainer = styled.div`
-    padding-top:3rem ;
+    padding-top:5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

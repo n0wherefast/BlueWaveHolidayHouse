@@ -26,7 +26,7 @@ export const NavbarContainer = styled.nav<Props>`
     position: fixed;
 
     @media (max-width: 700px) {
-      position: absolute;
+      /* position: absolute; */
        z-index:10;  
     }
     
