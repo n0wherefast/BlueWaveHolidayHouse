@@ -27,7 +27,7 @@ function About() {
       <strong className='italic font-black text-[5.5rem] p-1  md:p-0 md:text-[10rem] lg:text-[13rem] text-slate-50'>Catch Your Dream Holiday.</strong>
    </div>
       <div >
-          <motion.button animate={{ y: -80 ,  scale: [1,1.5,1], borderRadius:[0,2,2,0]}} 
+          <motion.button animate={{ y: -80,  scale: [1,1.5,1], borderRadius:[0,2,2,0]}} 
                          transition={{ ease: "easeOut", duration: 1 }}
                          
                          className=''> 
