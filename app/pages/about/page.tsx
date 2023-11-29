@@ -21,13 +21,13 @@ function About() {
   
   return (
     <>
-    < AboutContainer >
+    <AboutContainer >
    {/* <ContainerImage alt={''} src={bg}></ContainerImage> */}
-   <div className=' flex justify-center items-start w-full h-[90vh] bg-sky-700'>
-      <strong className='italic font-black text-[5.5rem] p-1  md:p-0 md:text-[10rem] lg:text-[13rem] text-slate-50'>Catch Your Dream Holiday.</strong>
+   <div className=' flex w-full h-[90vh] bg-sky-700'>
+      <strong className=' flex items-center justify-center italic font-black text-[5.5rem] p-1  md:p-0 md:text-[10rem] lg:text-[13rem] text-slate-50'>Catch Your Dream Holiday.</strong>
    </div>
       <div >
-          <motion.button animate={{ y: -80,  scale: [1,1.5,1], borderRadius:[0,2,2,0]}} 
+          <motion.button animate={{ y: -50,  scale: [1,1.5,1], borderRadius:[0,2,2,0]}} 
                          transition={{ ease: "easeOut", duration: 1 }}
                          
                          className=''> 
@@ -138,7 +138,8 @@ function About() {
         </div> */}
         <br />
         <div className=" p-1 md:w-auto w-72">
-        <p className='text-xl'>  <strong className=' font-homeFont text-5xl'><span className='text-sky-600'>A</span>ppartamento</strong>
+        <p className='text-xl'>  <strong className=' text-4xl'>
+          <span className='text-sky-600'>A</span>ppartamento</strong>
           <br /> <br />
                 ,vacanze nel cuore della città di Catania, a pochi passi dal centro storico vicino ai 
               principali mezzi di trasporto.

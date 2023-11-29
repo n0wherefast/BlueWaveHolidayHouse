@@ -10,7 +10,7 @@ export const AboutContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: red;
+    
 `
 
 export const CardContainer = styled.div`
