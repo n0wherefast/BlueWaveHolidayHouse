@@ -4,7 +4,7 @@ import Image from "next/image";
 
 
 export const AboutContainer = styled.div`
-    padding-top:4rem;
+    padding-top:4.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,17 +26,18 @@ export const CardContainer = styled.div`
         flex-direction: column;
     }
 `
-export const CardCollapse =styled.button`
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 1rem;
-width:20rem;
-height: 3rem;
-border-bottom:2px black solid ;
-&:hover{
-    border-bottom: 2px #0284c7 solid;
-}
+export const CardCollapse =styled.button<Props>`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width:20rem;
+    height: 3rem;
+    border-bottom:${(props)=>(props.$extend === 'true'? '': '2px solid black' )} ;
+    &:hover{
+        border-bottom:${(props)=>(props.$extend === 'true'? '': ' 2px #0284c7 solid' )} ;
+        /* border-bottom: 2px #0284c7 solid; */
+    }
 
 `
 export const CollapseContainer = styled.div`
@@ -58,11 +59,12 @@ export const CardAbout = styled.div<Props>`
     /* margin: 1rem; */
     width:20rem;
     height:${(props)=>(props.$extend ==='true'? '28rem': '0px')};
-    background-color:#0284c7;
+    background-color:white;
+    /* background-color:#0284c7; */
     /* border-radius: 10px; */
     /* border: 1px solid darkgray; */
     border-bottom:${(props)=>(props.$extend === 'true'? '2px solid black' :'')} ;
-    color: white;
+    color:black;
     font-size: larger;
     font-weight: 700;
     font-family: sans-serif;
@@ -70,6 +72,18 @@ export const CardAbout = styled.div<Props>`
 export const ContainerImage = styled(Image)`
  width: 50vw;
  height:auto;
+`
+
+export const TextAboutContainer = styled.div`
+    /* background-color: lightgrey; */
+    padding: 1rem;
+    border-radius:1.5rem;
+    width:90vw;
+    font-weight: 700;
+    border: 2px solid black;
+    @media (min-width:700px) {
+        
+    }
 `
 
 

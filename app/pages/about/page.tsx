@@ -9,7 +9,8 @@ import {BsPersonWorkspace} from 'react-icons/bs'
 import { motion } from 'framer-motion'
 import { AboutContainer , CardContainer,
           CardCollapse,CardAbout,
-          ButtonCollapse,CollapseContainer,ContainerImage} from '@/app/styles/About.style'
+          ButtonCollapse,CollapseContainer,
+          ContainerImage,TextAboutContainer} from '@/app/styles/About.style'
 // import { useDispatch } from 'react-redux'
 // import { scrollTo } from '@/app/redux/slices/scroll/scrollSlice'
 import bg from "../../assets/blue_wave__abstract_picture_walpaper_amazing.jpg"
@@ -23,15 +24,17 @@ function About() {
     <>
     <AboutContainer >
    {/* <ContainerImage alt={''} src={bg}></ContainerImage> */}
-   <div className=' flex w-full h-[90vh] bg-sky-700'>
-      <strong className=' flex items-center justify-center italic font-black text-[5.5rem] p-1  md:p-0 md:text-[10rem] lg:text-[13rem] text-slate-50'>Catch Your Dream Holiday.</strong>
+   <div className=' flex w-full h-[93vh] bg-sky-700'>
+      <div className='  flex flex-col items-start justify-center italic font-black text-[5.5rem] p-1  md:p-0 md:text-[10rem] lg:text-[13rem] text-slate-50'>
+         <p className=' text-amber-400'>Catch</p> <p>Your Dream</p> <p className=' text-amber-400'>Holiday.</p>
+      </div>
    </div>
-      <div >
-          <motion.button animate={{ y: -50,  scale: [1,1.5,1], borderRadius:[0,2,2,0]}} 
+      <div>
+          <motion.button animate={{ y: -65,  scale: [1,1.5,1], borderRadius:[0,2,2,0]}} 
                          transition={{ ease: "easeOut", duration: 1 }}
                          
                          className=''> 
-                            <h2 className= ' transition-all ease-in flex justify-center items-center  text-4xl lg:text-6xl rounded-2xl hover:text-slate-100 font-extrabold  text-amber-400'>
+                            <h2 className= ' transition-all ease-in flex justify-center items-center  text-4xl lg:text-6xl rounded-2xl hover:text-slate-100 font-extrabold  text-[coral]'>
                                  <p className=' animate-pulse'><FaArrowCircleDown/></p>
                             </h2>
           </motion.button>
@@ -40,8 +43,8 @@ function About() {
                <br id='sec' />
 <CardContainer> 
       <CollapseContainer>
-        <CardCollapse onClick={()=>setShow(!show)}>
-        <p className='uppercase'><strong>dettagli</strong></p> 
+        <CardCollapse onClick={()=>setShow(!show)} $extend={show.toString()}>
+        <p className='uppercase'><div>dettagli</div></p> 
             <ButtonCollapse $extend={show.toString()}>
               { show === true? <IoClose size={30}/> : <IoAdd size={30}/>}
             </ButtonCollapse>
@@ -62,8 +65,8 @@ function About() {
       </CollapseContainer>
 
       <CollapseContainer>
-          <CardCollapse onClick={()=>setDisShow(!disShow)}>
-              <p className='uppercase'><strong>DISPONIBILE</strong></p> 
+          <CardCollapse onClick={()=>setDisShow(!disShow)} $extend={disShow.toString()}>
+              <p className='uppercase'><div>DISPONIBILE</div></p> 
               <ButtonCollapse $extend={disShow.toString()}>
                 { disShow === true? <IoClose size={30}/> : <IoAdd size={30}/>}
               </ButtonCollapse>
@@ -88,20 +91,20 @@ function About() {
 
      <section className='p-4 flex flex-col items-center w-full lg:w-[45rem] '>
           {/* <div className=" p-1 md:w-auto w-72">
-          <p className='text-xl '> <strong className=' font-homeFont text-5xl'><span className='text-pink-600'>L</span>ocalità:</strong>
+          <p className='text-xl '> <div className=' font-homeFont text-5xl'><span className='text-pink-600'>L</span>ocalità:</div>
           <br /> <br /> 
-          <strong>Catania</strong>, situata sulla splendida costa orientale della Sicilia, è una città ricca di storia, cultura 
+          <div>Catania</div>, situata sulla splendida costa orientale della Sicilia, è una città ricca di storia, cultura 
           e bellezze naturali. Con la sua posizione privilegiata, ai piedi del maestoso vulcano Etna, Catania 
           affascina i visitatori con il suo mix unico di elementi antichi e moderni. </p>
           <br />
           <p className='text-xl'> 
-            <strong>La città</strong> vanta un patrimonio storico di grande importanza, testimoniato dai suoi numerosi siti archeologici e monumenti.
+            <div>La città</div> vanta un patrimonio storico di grande importanza, testimoniato dai suoi numerosi siti archeologici e monumenti.
            Il Duomo di Catania, un capolavoro di architettura barocca, si erge maestoso nella piazza principale, mentre il Teatro Romano,
             risalente al I secolo a.C., offre uno sguardo affascinante nella vita dell&apos;antica Catania.
             </p>
             <br />
             <p className='text-xl'> 
-              <strong>La vivace</strong>  vita di strada e la ricca tradizione culinaria rendono Catania un vero paradiso per gli amanti del cibo. I mercati all&apos;aperto, 
+              <div>La vivace</div>  vita di strada e la ricca tradizione culinaria rendono Catania un vero paradiso per gli amanti del cibo. I mercati all&apos;aperto, 
             come il famoso Mercato del Pesce e il Mercato della Piazza Carlo Alberto, offrono un&apos;ampia selezione di prodotti freschi e prelibatezze locali. I piatti tradizionali
              catanesi, come la pasta alla Norma e i cannoli siciliani, deliziano i palati di residenti e visitatori.
             </p> 
@@ -109,27 +112,27 @@ function About() {
         </div> */}
         <br />
         {/* <div className=" p-1 md:w-auto w-72">
-        <p className='text-xl'> <strong className=' font-homeFont text-5xl'><span className='text-pink-600'>S</span>toria:</strong>
+        <p className='text-xl'> <div className=' font-homeFont text-5xl'><span className='text-pink-600'>S</span>toria:</div>
           <br /> <br />
-          <strong>Catania</strong>,situata sulla costa orientale della Sicilia, vanta una storia e una cultura ricche di fascino e di influssi multietnici.
+          <div>Catania</div>,situata sulla costa orientale della Sicilia, vanta una storia e una cultura ricche di fascino e di influssi multietnici.
                      Fondata nell&apos;VIII secolo a.C. dagli antichi greci, Catania è una delle città più antiche dell&apos;isola
                        e ha subito numerosi eventi che hanno plasmato la sua identità unica nel corso dei secoli.</p>
           <br />
           <p className='text-xl'> 
-            <strong>La storia</strong> di Catania è stata segnata da diverse dominazioni, tra cui quella greca,
+            <div>La storia</div> di Catania è stata segnata da diverse dominazioni, tra cui quella greca,
              romana, bizantina, araba, normanna e spagnola. Ogni cultura ha lasciato un&apos;impronta indelebile sulla città,
              contribuendo alla ricchezza del suo patrimonio artistico e architettonico.
             </p>
             <br />
             <p className='text-xl'> 
-              <strong>Il centro storico</strong> di Catania è un labirinto di strade strette e antiche, arricchito
+              <div>Il centro storico</div> di Catania è un labirinto di strade strette e antiche, arricchito
                da importanti monumenti barocchi che testimoniano il periodo di splendore della città nel XVIII secolo.
                 La Cattedrale di Sant&apos;Agata, con la sua imponente facciata, è uno dei principali luoghi di culto e un simbolo di Catania.
                Il Teatro Romano, risalente al I secolo a.C., è un&apos;importante testimonianza dell&apos;epoca romana.
             </p> 
             <br />
             <p className='text-xl'> 
-              <strong>Famosa </strong> anche per i suoi festeggiamenti religiosi, tra cui la Festa di Sant&apos;Agata,
+              <div>Famosa </div> anche per i suoi festeggiamenti religiosi, tra cui la Festa di Sant&apos;Agata,
                la patrona della città, che si svolge ogni anno a febbraio.
                Questa festa, una delle più importanti dell&apos;isola, attira visitatori da tutto il mondo per assistere 
                alla spettacolare processione e ai tradizionali &quot;candelieri&quot; portati a spalla dai fedeli.
@@ -137,23 +140,28 @@ function About() {
             <br />
         </div> */}
         <br />
-        <div className=" p-1 md:w-auto w-72">
-        <p className='text-xl'>  <strong className=' text-4xl'>
-          <span className='text-sky-600'>A</span>ppartamento</strong>
-          <br /> <br />
+        <div className=" p-1 md:w-auto w-72 font-bold">
+
+        <div className=' text-4xl font-black '>
+          <span className='text-sky-600 text-5xl'>A</span>ppartamento
+        </div>
+
+        <p className='text-xl '>  
+    
+             <br />
                 ,vacanze nel cuore della città di Catania, a pochi passi dal centro storico vicino ai 
               principali mezzi di trasporto.
               Dotato di ogni comfort per un soggiorno in pieno relax.
             </p>
           <br />
           <p className='text-xl'> 
-            <strong>Lo spazio</strong> L&apos;appartamento dispone di un open space con divano letto e tavolo,
+            <div>Lo spazio</div> L&apos;appartamento dispone di un open space con divano letto e tavolo,
              seguito da un angolo cottura dedicato ed un piccolo balconcino. Inoltre dispone di un&apos;ampia camera da letto e doppi servizi: bagno con doccia e di una lavanderia con servizi dedicati.
              L&apos;appartamento è dotato di ogni comfort: Tv satellitari, condizionatori, frigo, cucina e forno.
             </p>
             <br />
             <p className='text-xl'> 
-              <strong>Da tenere a mente</strong> Vicino a bar, supermercati, metro, farmacie.
+              <div>Da tenere a mente</div> Vicino a bar, supermercati, metro, farmacie.
                Consente di spostarsi anche a piedi e visitare la via più importante della città: Via Etnea.
             </p> 
             <br />
@@ -162,123 +170,144 @@ function About() {
         
         
       </section>
-      <section className="flex flex-col md:flex-row w-full h-[20rem] items-center  justify-center  "> 
-        
-        </section>
-      <div className="w-72  mt-2 border border-gray-300"></div>
-
-      <div className='flex-row flex-col 0 backdrop-blur-sm w-full items-center justify-center'><section>
-        <h2 className=' text-4xl p-2 font-homeFont'><strong><span className=' text-pink-600 text-5xl font-homeFont'>S</span>ervizi</strong></h2>
-        <div className="  md:w-auto w-72 m-1">
-          <p> <strong className='p-1'>- Politiche:</strong></p>
-          <p className='pl-4'>
-              -L&apos;host ti accoglie di persona <br />
-          -Sono permessi soggiorni a lungo termine
-          Consente i soggiorni oltre i 28 giorni <br />
-          -Animali domestici ammessi
-           Gli animali di servizio sono sempre ammessi
-              <br />
-          </p>
-         </div>
-         <div className=" p-1 md:w-auto  w-72">
-          <p className='p-1'> <strong className='p-1'>Pulizia:</strong>
-          Servizio di pulizia disponibile durante il soggiorno.</p>
-         </div>
-         <div className="  md:w-auto w-72 m-1">
-          <p> <strong className='p-1'>- Posizione:</strong></p>
-          <p className='pl-4'>
-              - Parcheggio in strada. <br />
-              - A pochi passi c&apos;è un parcheggio privato a pagamento.<br />
-              - A piedi:
-              - 3min fermata metropolitana Piazza Borgo<br />
-              - 3min fermata autobus piazza Borgo<br />
-              - 1 Min orto botanico<br />
-              - 5min villa Bellini<br />
-              - 15 minuti teatro Massimo<br />
-              - 20 Min Duomo<br />
-              - 5min supermercato molto fornito decò piazza borgo<br />
-              - 2min panifici, bar e ristorante<br />
-              <br />
-          </p>
-         </div>
-    
-         <div className="  md:w-auto w-72 m-1">
-          <p> <strong className='p-1'>- Cucina e zona pranzo:</strong></p>
-          <p className='pl-4'>
-                - Cucina : uno spazio in cui gli ospiti possono cucinare <br />
-                - Frigorifero <br />
-                - Forno a microonde <br />
-                - Servizi di base per cucinare
-                   Pentole, padelle, olio, sale e pepe <br />
-                - Piatti e posate
-                   Scodelle, bacchette, piatti, tazze, ecc. <br />
-                - Freezer <br />
-                - Lavastoviglie <br />
-                - Piano cottura a induzione <br />
-                - Forno Normale<br />
-                - Bollitore <br />
-                - Macchina del caffè: macchina per caffè espresso<br />
-                - Tavolo da pranzo <br />
-              <br />
-          </p>
-         </div>
-
-         <div className="  md:w-auto w-72 m-1">
-          <p> <strong className='p-1'>- Bagno:</strong></p>
-          <p className='pl-4'>
-                - Asciugacapelli <br />
-                - Prodotti per la pulizia <br />
-                - Shampoo <br />
-                - Sapone per il corpo <br />
-                - Bidet <br />
-                - Acqua calda <br />
-                - Gel doccia <br />
-              <br />
-          </p>
-         </div>
-         
-      </section>
       
-      <section className='pl-2 pt-2 pr-2'>
-      <h2 className='p-2 text-4xl font-homeFont '><strong><span className=' text-pink-600'>R</span>egole</strong></h2>
-         <div className=" p-1 md:w-auto w-72">
-          <p> <strong className='p-1'>- Check-in:</strong>
-          Check-in: 15:00-20:00</p>
+    
+
+      <div className=' flex-col  w-full items-center justify-center'>
+
+        <h2 className=' w-full  flex  justify-between text-6xl font-bold italic p-2'>
+          <div  className=' -[25%] flex  items-center justify-center ml-16'>
+            <span className=' text-sky-600 text-7xl'>S</span>ervizi
+          </div>
+        </h2>
+
+
+          <section className="flex flex-col  md:flex-row gap-2  p-4  w-full justify-between"> 
+        
+    
+          <TextAboutContainer>
+                <p> <div className='p-1 text-2xl'>- Politiche:</div></p>
+                <p className='pl-4 prose-lg'>
+                    -L&apos;host ti accoglie di persona <br />
+                -Sono permessi soggiorni a lungo termine
+                 Consente i soggiorni oltre i 28 giorni <br />
+                -Animali domestici ammessi
+                 Gli animali di servizio sono sempre ammessi
+                    <br />
+                </p>
+          </TextAboutContainer> 
+            
+          <TextAboutContainer>
+              <p> <div className='p-1'>- Posizione:</div></p>
+              <p className='pl-4'>
+                  - Parcheggio in strada. <br />
+                  - A pochi passi c&apos;è un parcheggio privato a pagamento.<br />
+                  - A piedi:
+                  - 3min fermata metropolitana Piazza Borgo<br />
+                  - 3min fermata autobus piazza Borgo<br />
+                  - 1 Min orto botanico<br />
+                  - 5min villa Bellini<br />
+                  - 15 minuti teatro Massimo<br />
+                  - 20 Min Duomo<br />
+                  - 5min supermercato molto fornito decò piazza borgo<br />
+                  - 2min panifici, bar e ristorante<br />
+                  <br />
+              </p>
+            </TextAboutContainer>
+            <TextAboutContainer>
+              <p> <div className='p-1'>- Cucina e zona pranzo:</div></p>
+              <p className='pl-4'>
+                    - Cucina : uno spazio in cui gli ospiti possono cucinare <br />
+                    - Frigorifero <br />
+                    - Forno a microonde <br />
+                    - Servizi di base per cucinare
+                      Pentole, padelle, olio, sale e pepe <br />
+                    - Piatti e posate
+                      Scodelle, bacchette, piatti, tazze, ecc. <br />
+                    - Freezer <br />
+                    - Lavastoviglie <br />
+                    - Piano cottura a induzione <br />
+                    - Forno Normale<br />
+                    - Bollitore <br />
+                    - Macchina del caffè: macchina per caffè espresso<br />
+                    - Tavolo da pranzo <br />
+                  <br />
+              </p>
+          </TextAboutContainer>
+          <TextAboutContainer>
+              <p> <div className='p-1'>- Bagno:</div></p>
+              <p className='pl-4'>
+                    - Asciugacapelli <br />
+                    - Prodotti per la pulizia <br />
+                    - Shampoo <br />
+                    - Sapone per il corpo <br />
+                    - Bidet <br />
+                    - Acqua calda <br />
+                    - Gel doccia <br />
+                  <br />
+              </p>
+         </TextAboutContainer>
+         </section>
+      
+      
+      {/* <section className='pl-2 pt-2 pr-2'>
+        <h2 className='p-2 text-4xl font-homeFont '>
+         <div>
+            <span className=' text-pink-600'>R</span>egole
+          </div>
+        </h2>
+          <div className=" p-1 md:w-auto w-72">
+            <p> 
+              <div className='p-1'>- Check-in:</div>
+                 Check-in: 15:00-20:00
+            </p>
          </div>
          <div className=" p-1 md:w-auto w-72">
-          <p> <strong className='p-1'>- Check-out:</strong>
-          Check-out entro le ore 11:00</p>
+                <p> 
+                  <div className='p-1'>- Check-out:</div>
+                    Check-out entro le ore 11:00
+                </p>
          </div>
          <div className=" p-1 md:w-auto w-72">
-          <p> <strong className='p-1'>- Orari di silenzio</strong>
-          23:00 - 07:00</p>
+              <p>
+                  <div className='p-1'>- Orari di silenzio</div>
+                      23:00 - 07:00
+              </p>
          </div>
          <div className=" p-1 md:w-auto w-72">
-          <p> <strong className='p-1'>- Vietato organizzare feste/eventi</strong> </p>
+            <p>  
+              <div className='p-1'>- Vietato organizzare feste/eventi</div>
+            </p>
          </div>
          <div className=" p-1 md:w-auto w-72">
-          <p> <strong className='p-1'>- Fotografia pubblicitaria consentita</strong> </p>
+              <p> 
+                <div className='p-1'>- Fotografia pubblicitaria consentita</div>
+              </p>
          </div>
          <div className=" p-1 md:w-auto w-72">
-          <p> <strong className='p-1'>- Non è consentito fumare</strong> </p>
+            <p> 
+                <div className='p-1'>- Non è consentito fumare</div>
+            </p>
          </div>
 
          <div className=" w-72 m-1 ">
-          <p> <strong className='p-1'>- Note Aggiuntive:</strong></p>
-          <p className='pl-4'>
-                        Ogni viaggio lascia un ricordo, noi cerchiamo di fare il nostro meglio, per tanto ti chiediamo di rispettare piccole semplici regole della casa: <br />
-                      - Non lasciare porte, infissi e finestre aperte quando non c&apos;è nessuno in casa. <br />
-                      - Rispettare le regole della raccolta differenziata. <br />
-                      - Spegnere i condizionatori se non utilizzati. <br />
-                      - Rispettare gli orari di silenzio per non disturbare i condomini.
-                 <br />
-          </p>
+            <p> <div className='p-1'>- Note Aggiuntive:</div></p>
+              <p className='pl-4'>
+                            Ogni viaggio lascia un ricordo, noi cerchiamo di fare il nostro meglio, per tanto ti chiediamo di rispettare piccole semplici regole della casa: <br />
+                          - Non lasciare porte, infissi e finestre aperte quando non c&apos;è nessuno in casa. <br />
+                          - Rispettare le regole della raccolta differenziata. <br />
+                          - Spegnere i condizionatori se non utilizzati. <br />
+                          - Rispettare gli orari di silenzio per non disturbare i condomini.
+                    <br />
+              </p>
          </div>
          <div className=" p-1 md:w-auto w-72">
-          <p> <strong className='p-1'>- Spegnere tutto</strong> </p>
+             <p> 
+                <div className='p-1'>- Spegnere tutto</div>
+             </p>
          </div>
          
-      </section>
+      </section> */}
 </div>
      
     
