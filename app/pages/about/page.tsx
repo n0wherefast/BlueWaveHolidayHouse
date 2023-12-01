@@ -25,8 +25,8 @@ function About() {
     <AboutContainer >
    {/* <ContainerImage alt={''} src={bg}></ContainerImage> */}
    <div className=' flex w-full h-[93vh] bg-sky-700'>
-      <div className='  flex flex-col items-start justify-center italic font-black text-[5.5rem] p-1  md:p-0 md:text-[10rem] lg:text-[13rem] text-slate-50'>
-         <p className=' text-amber-400'>Catch</p> <p>Your Dream</p> <p className=' text-amber-400'>Holiday.</p>
+      <div className='h-full w-full flex flex-col items-start justify-center italic font-black text-[13vh] p-1  md:p-0 md:text-[8rem] lg:text-[9.5rem] text-slate-50'>
+         <h2 className='text-amber-400'>Catch</h2> <h2>Your Dream</h2> <h2 className=' text-amber-400'>Holiday.</h2> 
       </div>
    </div>
       <div>
@@ -90,7 +90,7 @@ function About() {
       {/* <div className="w-72  mt-2 border border-gray-300"></div> */}
 
      <section className='p-4 flex flex-col items-center w-full lg:w-[45rem] '>
-          {/* <div className=" p-1 md:w-auto w-72">
+          {/* <TextAboutContainer>
           <p className='text-xl '> <div className=' font-homeFont text-5xl'><span className='text-pink-600'>L</span>ocalità:</div>
           <br /> <br /> 
           <div>Catania</div>, situata sulla splendida costa orientale della Sicilia, è una città ricca di storia, cultura 
@@ -111,7 +111,7 @@ function About() {
             <br />
         </div> */}
         <br />
-        {/* <div className=" p-1 md:w-auto w-72">
+        {/* <TextAboutContainer>
         <p className='text-xl'> <div className=' font-homeFont text-5xl'><span className='text-pink-600'>S</span>toria:</div>
           <br /> <br />
           <div>Catania</div>,situata sulla costa orientale della Sicilia, vanta una storia e una cultura ricche di fascino e di influssi multietnici.
@@ -249,48 +249,43 @@ function About() {
          </TextAboutContainer>
          </section>
       
-      
-      {/* <section className='pl-2 pt-2 pr-2'>
-        <h2 className='p-2 text-4xl font-homeFont '>
-         <div>
-            <span className=' text-pink-600'>R</span>egole
+      <h2 className=' w-full  flex  justify-between text-6xl font-bold italic p-2'>
+          <div  className=' -[25%] flex  items-center justify-center ml-16'>
+            <span className=' text-sky-600 text-7xl'>R</span>egole
           </div>
-        </h2>
-          <div className=" p-1 md:w-auto w-72">
-            <p> 
-              <div className='p-1'>- Check-in:</div>
-                 Check-in: 15:00-20:00
+      </h2>
+
+         <section className="flex flex-col  md:flex-row gap-2  p-4  w-full justify-around"> 
+
+         <TextAboutContainer>
+            <p className='p-2'> - Check-in:
+              <div className='pl-4'>Check-in dalle 15:00-20:00</div>
             </p>
-         </div>
-         <div className=" p-1 md:w-auto w-72">
-                <p> 
-                  <div className='p-1'>- Check-out:</div>
-                    Check-out entro le ore 11:00
-                </p>
-         </div>
-         <div className=" p-1 md:w-auto w-72">
-              <p>
-                  <div className='p-1'>- Orari di silenzio</div>
-                      23:00 - 07:00
-              </p>
-         </div>
-         <div className=" p-1 md:w-auto w-72">
-            <p>  
+            <p className='p-2'> - Check-out:
+              <div className='pl-4'>Check-out entro le 11:00</div>
+            </p>
+            <p className='p-2'> - Orari di silenzio
+              <div className='pl-4'>23:00 - 07:00</div>  
+            </p>
+         
+            <p className='p-2'>  
               <div className='p-1'>- Vietato organizzare feste/eventi</div>
             </p>
-         </div>
-         <div className=" p-1 md:w-auto w-72">
-              <p> 
-                <div className='p-1'>- Fotografia pubblicitaria consentita</div>
-              </p>
-         </div>
-         <div className=" p-1 md:w-auto w-72">
-            <p> 
+         
+            <p className='p-2'> 
+              <div className='p-1'>- Fotografia pubblicitaria consentita</div>
+            </p>
+         
+            <p className='p-2'> 
                 <div className='p-1'>- Non è consentito fumare</div>
             </p>
-         </div>
+         
+            <p className='p-2'> 
+              <div className='p-1'>- Spegnere tutto</div>
+            </p>
+         </TextAboutContainer>
 
-         <div className=" w-72 m-1 ">
+         <TextAboutContainer>
             <p> <div className='p-1'>- Note Aggiuntive:</div></p>
               <p className='pl-4'>
                             Ogni viaggio lascia un ricordo, noi cerchiamo di fare il nostro meglio, per tanto ti chiediamo di rispettare piccole semplici regole della casa: <br />
@@ -300,14 +295,10 @@ function About() {
                           - Rispettare gli orari di silenzio per non disturbare i condomini.
                     <br />
               </p>
-         </div>
-         <div className=" p-1 md:w-auto w-72">
-             <p> 
-                <div className='p-1'>- Spegnere tutto</div>
-             </p>
-         </div>
+         </TextAboutContainer>
+        
          
-      </section> */}
+      </section>
 </div>
      
     

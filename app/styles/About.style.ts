@@ -78,11 +78,11 @@ export const TextAboutContainer = styled.div`
     /* background-color: lightgrey; */
     padding: 1rem;
     border-radius:1.5rem;
-    width:90vw;
+    width:30vw;
     font-weight: 700;
     border: 2px solid black;
-    @media (min-width:700px) {
-        
+    @media (max-width:700px) {
+        width:90vw;
     }
 `
 
