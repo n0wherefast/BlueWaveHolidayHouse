@@ -3,18 +3,23 @@ import React from 'react'
 import { HomeContainer } from '@/app/styles/HomePage.style'
 import ParApp from '@/app/components/Parallax'
 import Slide from '@/app/components/Slide'
-// import videoBG from "../../assets/video/P1133065.mp4"
+import Image from 'next/image'
+import img from '../../assets/29-09-11.jpg'
+import styled from 'styled-components'
+import { StaticImageData } from 'next/image'
 
 
+export const ImageContainer = styled.div` 
+width:100vw;
+height: 90vh;
+background-image: url(${img}); 
+`   
 
 
 export default function HomePage() {
   return (
     <HomeContainer className=' overflow-hidden'>
-        <video src={require('../../assets/video/P1133065.mp4')}  className=' w-full ' width="320" height="240" autoPlay
-          muted
-          loop >
-        </video>
+        <ImageContainer> </ImageContainer>
       <Slide move={{xIni:0, xAni:"-220%"}}/>
         
       <br />
