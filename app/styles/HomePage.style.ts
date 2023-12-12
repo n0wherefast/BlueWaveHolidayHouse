@@ -14,7 +14,6 @@ export const HomeContainer = styled.div`
 `   
 
 export const ImageContainer = styled.div` 
- background-color: red;
 transition: all ease-in 1s;
   width:90vw;
   height: 88vh;
@@ -25,18 +24,25 @@ transition: all ease-in 1s;
   margin-top:1rem;
   border-radius:  24% 76% 66% 34% / 37% 59% 41% 63%  ;
 
+    @media (min-width:1000px) {
+                &:hover{
+                border-radius: 70% 30% 43% 57% / 69% 16% 84% 31% ;
+                padding-left: 10rem;        
+            }
+        }
+        
     @media (max-width:700px) {
         border: 2px solid rgb(251 191 36);
         justify-content: center;
         height: 85vh;
         border-radius:77% 23% 69% 31% / 36% 14% 86% 64%   ;
-    }
-    &:hover{
-        border-radius: 70% 30% 43% 57% / 69% 16% 84% 31% ;
-        padding-left: 10rem;
-
-        
-    }
+        &:hover{
+        border-radius: 41% 59% 80% 20% / 68% 65% 35% 32%  ;
+        padding-bottom: 10rem;        
+        }
+    } 
+    
+    
 `   
 export const DiscoverContainer = styled.button`
   display: flex;
@@ -66,12 +72,11 @@ export const DiscoverContainer = styled.button`
   margin-left:0px;
   font-size:4.1rem;
   font-weight:900;
-  }
 
-  
+  }
   &:hover{
     color:darkorange;
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
   }
 `
 export const DescripitonHome = styled.section`
