@@ -56,22 +56,23 @@ body {
 .parallax span {
   background-color:green;
   display: flex;
- 
   margin-right: 30px;
 }
-.image{
+.image {
   background-image:url('../app/assets/mobile.jpg');
   background-size:cover;
-  background-position: 0px -8rem;
+  background-position: 0px -10rem;
+  background-repeat: no-repeat;
+  
   @media (max-width:1000px) {
     background-image:url('../app/assets/mobile.jpg');
     background-size:cover;
     background-position:0px -5rem;
-  }
+  };
   @media (max-width:700px) {
     background-image:url('../app/assets/mobile.jpg');
-    background-size:cover;
-    background-position:center -1.5rem;
+    background-size: cover ;
+    background-position: center 0rem;
     background-repeat: no-repeat
   }
 }

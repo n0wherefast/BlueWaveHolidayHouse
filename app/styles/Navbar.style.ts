@@ -9,7 +9,6 @@ export interface Props {
     $extendnavbar?:string
     $isclose?:string
     $extend?:string
-
 }
 
 
@@ -24,6 +23,7 @@ export const NavbarContainer = styled.nav<Props>`
     flex-direction: column;
     transition: all 0.3s ease-in-out;
     position: fixed;
+    z-index: 100;
 
     @media (max-width: 700px) {
       /* position: absolute; */
