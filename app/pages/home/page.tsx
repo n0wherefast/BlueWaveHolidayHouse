@@ -47,7 +47,8 @@ export default function HomePage() {
           </ParagraphContainer>
 
         <div className=' h-1 w-44 m-3 border-2 border-slate-600 rounded-3xl' />
-         
+        <strong className="text-black font-bold ">La tua casa vacanza</strong>
+
         <ParagraphContainer>            
           <ImageParagraphContainer src={img} alt=''/>
           <motion.p className=" w-full lg:w-[40vw] ">
@@ -61,6 +62,7 @@ export default function HomePage() {
         </ParagraphContainer>
         
         <div className=' h-1 w-44 m-3 border-2 border-slate-600 rounded-3xl' />
+        <strong className="text-black font-bold">La tua casa vacanza</strong>
         <ParagraphContainer>
           <motion.p className='w-full lg:w-[40vw]'>
           Tutto ciò sarà ancora più piacevole grazie alla comodità offerta dalla nostra posizione privilegiata:
@@ -69,7 +71,7 @@ export default function HomePage() {
          <ImageParagraphContainer src={img} alt=''/>
         </ParagraphContainer>
         <div className=' h-1 w-44 m-3 border-2 border-slate-600 rounded-3xl' />
-        
+        <strong className="text-black font-bold">La tua casa vacanza</strong>
         <ParagraphContainer>
         <ImageParagraphContainer src={img} alt=''/>
           <motion.p className='w-full lg:w-[40vw]]'>
@@ -79,7 +81,7 @@ export default function HomePage() {
         </motion.p>
         </ParagraphContainer>
         <div className=' h-1 w-44 m-3 border-2 border-slate-600 rounded-3xl' />
-        
+        <strong className="text-black font-bold ">La tua casa vacanza</strong>
         <ParagraphContainer>
           <motion.p className='w-full lg:w-[40vw]'>
           Potrai goderti il tuo weekend a Catania sapendo di avere un comodo ritiro a pochi passi dalle principali attrazioni.
@@ -87,7 +89,7 @@ export default function HomePage() {
         <ImageParagraphContainer src={img} alt=''/>
         </ParagraphContainer>
         <div className=' h-1 w-44 m-3 border-2 border-slate-600 rounded-3xl' />
-        
+        <strong className="text-black font-bold">La tua casa vacanza</strong>
         <ParagraphContainer>
         <ImageParagraphContainer src={img} alt=''/>
           <motion.p className='w-full lg:w-[40vw]'>

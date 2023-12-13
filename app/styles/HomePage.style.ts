@@ -34,12 +34,12 @@ export const ImageContainer = styled.div`
     @media (max-width:700px) {
         border: 2px solid rgb(251 191 36);
         justify-content: center;
-        height: 65vh;
-        margin-bottom: 10rem;
-        margin-top: 2rem;
-        border-radius:77% 23% 69% 31% / 36% 14% 86% 64%   ;
+        height: 68vh;
+        margin-bottom: 20vh;
+        margin-top: 5vh;
+        border-radius:33% 67% 42% 58% / 24% 42% 58% 76%    ;
         &:hover{
-        border-radius: 41% 59% 80% 20% / 68% 65% 35% 32%  ;
+        border-radius: 41% 59% 80% 25% / 68% 65% 35% 32%  ;
         /* padding-bottom: 10rem;         */
         }
     } 
@@ -96,10 +96,9 @@ export const GalleryContainer = styled.div`
 export const ParagraphContainer = styled.div`
   display:flex;
   align-items: center;
-  padding: 10px;
   justify-content: space-around;
   width: 100vw;
-  padding: 2rem;
+  padding:1rem;
   @media (max-width:700px) {
     flex-direction: column;
     font-size: large;
