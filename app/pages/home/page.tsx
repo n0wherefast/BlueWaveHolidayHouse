@@ -19,7 +19,7 @@ export default function HomePage() {
     <HomeContainer className='overflow-hidden'>
         <ImageContainer className='image'>
           <DiscoverContainer>
-            discover
+            discover!
           </DiscoverContainer>
         </ImageContainer> 
         <br />
@@ -30,8 +30,8 @@ export default function HomePage() {
         </GalleryContainer>
       
       <DescripitonHome id='home'>
-        <h1 className=" h-56 m-5 flex items-center justify-center text-7xl text-slate-950 font-black italic mb-4 ">
-        BLUE WAVE HOLIDAY HOUSE
+        <h1 className=" m-5 flex items-center justify-center text-5xl text-slate-950 font-black italic">
+        BlueWave HolidayHouse
         </h1>
         <br />
      
@@ -45,8 +45,9 @@ export default function HomePage() {
               </motion.p> 
               <ImageParagraphContainer src={img} alt=''/>
           </ParagraphContainer>
+
+        <div className=' h-1 w-44 m-3 border-2 border-slate-600 rounded-3xl' />
          
-        <br />
         <ParagraphContainer>            
           <ImageParagraphContainer src={img} alt=''/>
           <motion.p className=" w-full lg:w-[40vw] ">
@@ -56,9 +57,10 @@ export default function HomePage() {
            potrai ammirare le affascinanti architetture e goderti lo spirito vivace della
             <strong className="text-sky-700 font-bold">movida catanese</strong>, sorseggiando un delizioso cocktail.
           </motion.p>
+          
         </ParagraphContainer>
         
-        <br />
+        <div className=' h-1 w-44 m-3 border-2 border-slate-600 rounded-3xl' />
         <ParagraphContainer>
           <motion.p className='w-full lg:w-[40vw]'>
           Tutto ciò sarà ancora più piacevole grazie alla comodità offerta dalla nostra posizione privilegiata:
@@ -66,6 +68,7 @@ export default function HomePage() {
         </motion.p>
          <ImageParagraphContainer src={img} alt=''/>
         </ParagraphContainer>
+        <div className=' h-1 w-44 m-3 border-2 border-slate-600 rounded-3xl' />
         
         <ParagraphContainer>
         <ImageParagraphContainer src={img} alt=''/>
@@ -75,6 +78,7 @@ export default function HomePage() {
            gusto e dispone di spazi luminosi e accoglienti per garantirti un soggiorno piacevole e rigenerante.
         </motion.p>
         </ParagraphContainer>
+        <div className=' h-1 w-44 m-3 border-2 border-slate-600 rounded-3xl' />
         
         <ParagraphContainer>
           <motion.p className='w-full lg:w-[40vw]'>
@@ -82,6 +86,7 @@ export default function HomePage() {
         </motion.p>
         <ImageParagraphContainer src={img} alt=''/>
         </ParagraphContainer>
+        <div className=' h-1 w-44 m-3 border-2 border-slate-600 rounded-3xl' />
         
         <ParagraphContainer>
         <ImageParagraphContainer src={img} alt=''/>

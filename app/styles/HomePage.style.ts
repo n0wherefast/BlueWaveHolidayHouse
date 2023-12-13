@@ -14,7 +14,7 @@ export const HomeContainer = styled.div`
 `   
 
 export const ImageContainer = styled.div` 
-transition: all ease-in 1s;
+  transition: all ease-in 1s;
   width:90vw;
   height: 88vh;
   display: flex;
@@ -34,11 +34,13 @@ transition: all ease-in 1s;
     @media (max-width:700px) {
         border: 2px solid rgb(251 191 36);
         justify-content: center;
-        height: 85vh;
+        height: 65vh;
+        margin-bottom: 10rem;
+        margin-top: 2rem;
         border-radius:77% 23% 69% 31% / 36% 14% 86% 64%   ;
         &:hover{
         border-radius: 41% 59% 80% 20% / 68% 65% 35% 32%  ;
-        padding-bottom: 10rem;        
+        /* padding-bottom: 10rem;         */
         }
     } 
     
@@ -65,12 +67,12 @@ export const DiscoverContainer = styled.button`
   @media (max-width:700px) {
   /* border: 2px solid; */
   border-radius: 10px;
-  margin-bottom: -20rem;
+  margin-bottom: -35rem;
   padding: 10px;
   height: 6rem;
   /* backdrop-filter: blur(20px); */
   margin-left:0px;
-  font-size:4.1rem;
+  font-size:3.8rem;
   font-weight:900;
 
   }
