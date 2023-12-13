@@ -11,44 +11,11 @@ import styled from 'styled-components'
 import { AboutContainer , CardContainer,
           CardCollapse,CardAbout,
           ButtonCollapse,CollapseContainer,
-          ContainerImage,TextAboutContainer} from '@/app/styles/About.style'
+          ContainerImage,TextAboutContainer,MainContainer,MainTextContainer} from '@/app/styles/About.style'
 // import { useDispatch } from 'react-redux'
 // import { scrollTo } from '@/app/redux/slices/scroll/scrollSlice'
 import bg from "../../assets/blue_wave__abstract_picture_walpaper_amazing.jpg"
 
-export const MainTextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  align-items: start;
-  justify-content: center;
-  font-style: italic;
-  font-weight: 900;
-  font-size: 9.5rem;
-  padding: 0.25rem;
-  color: rgb(248 250 252);
-
-  @media (max-width:1000px) {
-        padding: 0;
-        font-size: 8rem;
-  }
-  @media (max-width:700px) {
-        font-size: 12vh;
-  }
-
-`
-export const MainContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 93.5vh;
-  background-color:rgb(3 105 161);
-  @media (min-width: 700px) {
-    height: 94vh;
-  }
-`
 
 
 
