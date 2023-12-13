@@ -30,7 +30,7 @@ function About() {
       </div>
    </div>
       <div>
-          <motion.button animate={{ y: -65,  scale: [1,1.5,1], borderRadius:[0,2,2,0]}} 
+          <motion.button animate={{ y: -55,  scale: [1,1.5,1], borderRadius:[0,2,2,0]}} 
                          transition={{ ease: "easeOut", duration: 1 }}
                          
                          className=''> 
