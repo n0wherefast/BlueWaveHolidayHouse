@@ -67,7 +67,7 @@ export const DiscoverContainer = styled.button`
   @media (max-width:700px) {
   /* border: 2px solid; */
   border-radius: 10px;
-  margin-bottom: -35rem;
+  margin-bottom: -80vh;
   padding: 10px;
   height: 6rem;
   /* backdrop-filter: blur(20px); */
