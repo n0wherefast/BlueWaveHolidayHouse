@@ -24,13 +24,13 @@ function About() {
     <>
     <AboutContainer >
    {/* <ContainerImage alt={''} src={bg}></ContainerImage> */}
-   <div className=' flex w-full h-[93vh] bg-sky-700'>
+   <div className='flex flex-col w-full h-[93.5vh] bg-sky-700'>
       <div className='h-full w-full flex flex-col items-start justify-center italic font-black text-[12vh] p-1  md:p-0 md:text-[8rem] lg:text-[9.5rem] text-slate-50'>
          <h2 className='text-amber-400'>Catch</h2> <h2>Your Dream</h2> <h2 className=' text-amber-400'>Holiday.</h2> 
       </div>
-   </div>
-      <div>
-          <motion.button animate={{ y: -55,  scale: [1,1.5,1], borderRadius:[0,2,2,0]}} 
+   
+      
+          <motion.button animate={{ y: -45,  scale: [1,1.5,1], borderRadius:[0,2,2,0]}} 
                          transition={{ ease: "easeOut", duration: 1 }}
                          
                          className=''> 
@@ -38,8 +38,8 @@ function About() {
                                  <p className=' animate-pulse'><FaArrowCircleDown/></p>
                             </h2>
           </motion.button>
-      </div>
-    
+      
+    </div>
                <br id='sec' />
 <CardContainer> 
       <CollapseContainer>
