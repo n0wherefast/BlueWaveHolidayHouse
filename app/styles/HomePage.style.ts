@@ -2,8 +2,10 @@ import styled from "styled-components";
 import Link from "next/link";
 import Image from "next/image";
 
+
+
 export const HomeContainer = styled.div`
-    padding-top: 3.5rem;
+    padding-top: 4rem; //last change
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,8 +16,9 @@ export const HomeContainer = styled.div`
 `   
 
 export const ImageContainer = styled.div` 
+  border: solid 2px white  ;
   transition: all ease-in 1s;
-  width:90vw;
+  width:80vw;
   height: 88vh;
   display: flex;
   justify-content: start;

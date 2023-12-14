@@ -11,19 +11,29 @@ import {motion} from 'framer-motion'
 import Slide from '@/app/components/Slide'
 import '../../globals.css'
 
+export const BgContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(2 132 199) ;
+  width: 100vw;
+  height: 93.5vh;
+`
 
 export default function HomePage() {
  
 
   return (
     <HomeContainer className='overflow-hidden'>
+      <BgContainer>
         <ImageContainer className='image'>
           <DiscoverContainer>
             discover!
           </DiscoverContainer>
         </ImageContainer> 
+      </BgContainer>
         <br />
-       
+        <br />   {/* last change */}
 
         <GalleryContainer>
           <Gallery /> 
