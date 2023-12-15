@@ -57,7 +57,7 @@ export default function HomePage() {
               <ImageParagraphContainer src={img} alt=''/>
           </ParagraphContainer>
 
-        <div className=' h-1 w-44 m-3 border-2 border-slate-600 rounded-3xl ' />
+        <WaveLine/>
         <strong className="text-black font-bold ">La tua casa vacanza</strong>
 
         <ParagraphContainer>            
@@ -81,7 +81,7 @@ export default function HomePage() {
         </motion.p>
          <ImageParagraphContainer src={img} alt=''/>
         </ParagraphContainer>
-        <div className=' h-1 w-44 m-3 border-2 border-slate-600 rounded-3xl' />
+        <WaveLine />
         <strong className="text-black font-bold">La tua casa vacanza</strong>
         <ParagraphContainer>
         <ImageParagraphContainer src={img} alt=''/>
@@ -91,7 +91,7 @@ export default function HomePage() {
            gusto e dispone di spazi luminosi e accoglienti per garantirti un soggiorno piacevole e rigenerante.
         </motion.p>
         </ParagraphContainer>
-        <div className=' h-1 w-44 m-3 border-2 border-slate-600 rounded-3xl' />
+      <WaveLine/>
         <strong className="text-black font-bold ">La tua casa vacanza</strong>
         <ParagraphContainer>
           <motion.p className='w-full lg:w-[40vw]'>
@@ -99,7 +99,7 @@ export default function HomePage() {
         </motion.p>
         <ImageParagraphContainer src={img} alt=''/>
         </ParagraphContainer>
-        <div className=' h-1 w-44 m-3 border-2 border-slate-600 rounded-3xl' />
+      <WaveLine/>
         <strong className="text-black font-bold">La tua casa vacanza</strong>
         <ParagraphContainer>
         <ImageParagraphContainer src={img} alt=''/>
