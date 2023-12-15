@@ -2,7 +2,7 @@
 import React,{useState , useEffect} from 'react'
 import { links,LINK } from '../ref/links'
 import LogoImg from '../assets/1693610050074.png'
-import { TiThMenu } from "react-icons/ti";
+import { TiThMenu,TiWavesOutline  } from "react-icons/ti";
 import { IoMdClose } from "react-icons/io";
 import { East_Sea_Dokdo,Open_Sans} from 'next/font/google'
 import { 
@@ -56,7 +56,7 @@ function Nav() {
             )
           })}
           <LinkButton $isclose={isClose.toString()} onClick={(e)=>( setIsClose(!isClose))}>
-          {isClose ?  <IoMdClose size={30}  /> : <TiThMenu size={30} />}
+          {isClose ?  <IoMdClose size={30}  /> : <TiWavesOutline size={35} />}
           </LinkButton> 
         </NavbarLinkContainer> 
       </NavbarRight>

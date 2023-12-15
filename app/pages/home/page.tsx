@@ -10,6 +10,7 @@ import styled from 'styled-components'
 import {motion} from 'framer-motion'
 import Slide from '@/app/components/Slide'
 import '../../globals.css'
+import WaveLine from '@/app/components/WaveLine'
 
 export const BgContainer = styled.div`
   display: flex;
@@ -56,7 +57,7 @@ export default function HomePage() {
               <ImageParagraphContainer src={img} alt=''/>
           </ParagraphContainer>
 
-        <div className=' h-1 w-44 m-3 border-2 border-slate-600 rounded-3xl' />
+        <div className=' h-1 w-44 m-3 border-2 border-slate-600 rounded-3xl ' />
         <strong className="text-black font-bold ">La tua casa vacanza</strong>
 
         <ParagraphContainer>            
@@ -71,7 +72,7 @@ export default function HomePage() {
           
         </ParagraphContainer>
         
-        <div className=' h-1 w-44 m-3 border-2 border-slate-600 rounded-3xl' />
+        <WaveLine />
         <strong className="text-black font-bold">La tua casa vacanza</strong>
         <ParagraphContainer>
           <motion.p className='w-full lg:w-[40vw]'>
