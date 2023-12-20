@@ -5,7 +5,7 @@ import Image from "next/image";
 
 
 export const HomeContainer = styled.div`
-    padding-top: 4rem; //last change
+    padding-top: 3.5rem; //last change 4.5 to  act value 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,34 +16,32 @@ export const HomeContainer = styled.div`
 `   
 
 export const ImageContainer = styled.div` 
-  border: solid 2px white  ;
   transition: all ease-in 1s;
-  width:80vw;
-  height: 88vh;
-  display: flex;
-  justify-content: start;
-  align-items: center;
+
+  width:100vw;
+  height: 90vh;
   padding-left: 0rem;
   margin-top:1rem;
-  border-radius:  24% 76% 66% 34% / 37% 59% 41% 63%  ;
+  /* border-radius:  24% 76% 66% 34% / 37% 59% 41% 63%  ; */
 
     @media (min-width:1000px) {
-                &:hover{
+                /* &:hover{
                 border-radius: 70% 30% 43% 57% / 69% 16% 84% 31% ;
                 padding-left: 10rem;        
-            }
+            } */
         }
         
     @media (max-width:700px) {
-        border: 2px solid rgb(251 191 36);
+        /* border: 2px solid rgb(251 191 36); */
         justify-content: center;
-        height: 68vh;
+        height: 70vh;
+        width: 90%;
         margin-bottom: 20vh;
         margin-top: 5vh;
-        border-radius:33% 67% 42% 58% / 24% 42% 58% 76%    ;
+        /* border-radius:33% 67% 42% 58% / 24% 42% 58% 76%    ; */
         &:hover{
         border-radius: 41% 59% 80% 25% / 68% 65% 35% 32%  ;
-        /* padding-bottom: 10rem;         */
+        padding-bottom: 10rem;        
         }
     } 
     
@@ -53,7 +51,7 @@ export const DiscoverContainer = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 13rem;
+  margin-bottom: 7rem;
   margin-left: 3rem;
   font-size:10rem;
   font-weight:900;
