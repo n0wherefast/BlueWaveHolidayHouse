@@ -16,10 +16,10 @@ export const HomeContainer = styled.div`
 `   
 
 export const ImageContainer = styled.div` 
+position: fixed;
   transition: all ease-in 1s;
-
   width:100vw;
-  height: 90vh;
+  height: 93vh;
   padding-left: 0rem;
   margin-top:1rem;
   /* border-radius:  24% 76% 66% 34% / 37% 59% 41% 63%  ; */
@@ -34,10 +34,10 @@ export const ImageContainer = styled.div`
     @media (max-width:700px) {
         /* border: 2px solid rgb(251 191 36); */
         justify-content: center;
-        height: 70vh;
-        width: 90%;
+        height: 100vh;
+        width: 100%;
         margin-bottom: 20vh;
-        margin-top: 5vh;
+        margin-top: 10vh;
         /* border-radius:33% 67% 42% 58% / 24% 42% 58% 76%    ; */
         &:hover{
         border-radius: 41% 59% 80% 25% / 68% 65% 35% 32%  ;
@@ -48,35 +48,37 @@ export const ImageContainer = styled.div`
     
 `   
 export const DiscoverContainer = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 7rem;
-  margin-left: 3rem;
-  font-size:10rem;
-  font-weight:900;
-  font-style: italic;
-  text-transform: uppercase;
-  /* backdrop-filter: blur(10px); */
-  height:10rem;
-  color:rgb(251 191 36);
-  transition: all ease-in 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 7rem;
+    margin-left: 10rem;
+    font-size:10rem;
+    font-weight:900;
+    font-style: italic;
+    text-transform: uppercase;
+    /* backdrop-filter: blur(10px); */
+    height:10rem;
+    color:rgb(251 191 36);
+    transition: all ease-in 0.5s;
+    /* background-color: red; */
 
-  @media (max-width:1000px) {
-    
-  }
-  @media (max-width:700px) {
-  /* border: 2px solid; */
-  border-radius: 10px;
-  margin-bottom: -80vh;
-  padding: 10px;
-  height: 6rem;
-  /* backdrop-filter: blur(20px); */
-  margin-left:0px;
-  font-size:3.8rem;
-  font-weight:900;
-
-  }
+    @media (max-width:1000px) {
+      
+    }
+    @media (max-width:700px) {
+        /* border: 2px solid; */
+        border-radius: 10px;
+        margin-top: 30rem;
+        /* margin-bottom: -80vh; */
+        padding: 10px;
+        height: 6rem;
+        /* backdrop-filter: blur(20px); */
+        margin-left:0px;
+        font-size:3.8rem;
+        font-weight:900;
+    }
   &:hover{
     color:darkorange;
     /* margin-left: 5rem; */
@@ -89,9 +91,12 @@ export const DescripitonHome = styled.section`
   font-size: x-large;
   width:100vw;
   padding: 5px;
+  z-index: 0;
+  background-color: white;
 `
 export const GalleryContainer = styled.div`
  z-index: 0;
+ backdrop-filter: blur(20px);
 `
 
 export const ParagraphContainer = styled.div`

@@ -59,18 +59,18 @@ body {
   margin-right: 30px;
 }
 .image {
-  /* background-image:url('../app/assets/mobile.jpg'); */
+  background-image:url('../app/assets/pexels-max-ravier-3331094.jpg');
   background-size:cover;
   background-position: 0px -10rem;
   background-repeat: no-repeat;
   
   @media (max-width:1000px) {
-    /* background-image:url('../app/assets/mobile.jpg'); */
+    background-image:url('../app/assets/pexels-max-ravier-3331094.jpg');
     background-size:cover;
     background-position:0px -5rem;
   };
   @media (max-width:700px) {
-    /* background-image:url('../app/assets/mobile.jpg'); */
+    background-image:url('../app/assets/pexels-max-ravier-3331094.jpg');
     background-size: cover ;
     background-position: center 0rem;
     background-repeat: no-repeat
@@ -80,4 +80,10 @@ body {
   position: absolute;
   top: 55vh;
   left: -5%;
+}
+.imgDesc {
+   background-image:url('../app/assets/pexels-max-ravier-3331094.jpg');
+  background-size:cover;
+  background-position: 0px -55rem;
+  background-repeat: no-repeat;
 }
