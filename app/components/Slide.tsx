@@ -23,9 +23,9 @@ function Slide({move}:any ) {
     }
 
   return (
-    <motion.div className='w-[50%] flex gap-2 h-80' variants={variant} initial="initial" animate="animate" >
+    <motion.div className='w-[50%] flex gap-2 h-[25rem]' variants={variant} initial="initial" animate="animate" >
          {divsProva.map((itm ,indx)=>(
-        <Image className='z-0 ' key={indx} src={img} alt='Gallery' ></Image> 
+        <Image className='z-0' key={indx} src={img} alt='Gallery' ></Image> 
         ))} 
     </motion.div>
   )

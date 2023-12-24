@@ -79,7 +79,7 @@ export const TextAboutContainer = styled.div`
     padding: 1rem;
     border-radius:1.5rem;
     width:30vw;
-    font-weight: 700;
+    /* font-weight: 700; */
     border: 2px solid black;
     @media (max-width:700px) {
         width:90vw;

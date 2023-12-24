@@ -6,6 +6,7 @@ import styled from 'styled-components'
 function Gallery() {
   return (
     <>
+    <br />
      <Slide  move={{xIni:0, xAni:"-220%"}}/>
       <br />
      <Slide move={{xIni:"-220%", xAni:0}}/>
