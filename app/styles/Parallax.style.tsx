@@ -30,18 +30,17 @@ export const DiscoverContainer = styled.button`
     color:rgb(251 191 36);
     transition: all ease-in 0.5s;
     z-index: 10;
-    /* background-color: red; */
 
     @media (max-width:1000px) {
       position: absolute;
-      top:30rem;
+      top:35rem;
       font-size: 8rem;
       /* padding-top: 40rem; */
-      margin-left: 8rem;
+      margin-left: 1rem;
     }
     @media (max-width:700px) {
-      position: absolute;
-      top: -13.5rem;
+        position: absolute;
+        top: -12rem;
         border: 2px solid;
         /* border-radius: 10px; */
         margin-top: 45rem;

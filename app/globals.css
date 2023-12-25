@@ -95,6 +95,12 @@ body {
   background-position: 0px -65rem;
   background-repeat: no-repeat;
 }
+.Gallery {
+   background-image:url('../app/assets/pexels-max-ravier-3331094.jpg');
+  background-size:cover;
+  background-position: 0px -70rem;
+  background-repeat: no-repeat;
+}
 
 .foam{
   background-image:url('../app/assets/waveFoam1.png');

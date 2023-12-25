@@ -41,15 +41,12 @@ const yBg = useTransform( scrollYProgress , [0,1] ,["0%" , "100%"]);
           <motion.div style={{y: yBg}}>
             <Link href={'#home'}> <WavyText text={"discover! "} /></Link> 
           </motion.div>
-      </DiscoverContainer> 
-      
+       </DiscoverContainer> 
       
       <ImageContainer className='image'>
-      {/* <motion.div style={{backgroundColor:'green' , y:yBg}} className=" absolute top-36 text-4xl">ciao</motion.div> */}
-
-          {/* <motion.div  className="  foam  h-screen w-s" >   </motion.div>         */}
-            {/* <Image className='svg'  src={wavefoam2} alt='waveBg'/>           */}
-            {/* <Image className='svg' src={wavefoam3} alt='waveBg'/>   */}
+            {/* <motion.div  className="  foam  h-screen w-s" >   </motion.div>  */}
+            {/* <Image className='svg'  src={wavefoam2} alt='waveBg'/> */}
+            {/* <Image className='svg' src={wavefoam3} alt='waveBg'/> */}
       </ImageContainer> 
   </BgContainer>
   );
