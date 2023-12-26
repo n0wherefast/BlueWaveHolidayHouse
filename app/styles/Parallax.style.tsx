@@ -41,7 +41,6 @@ export const DiscoverContainer = styled.button`
     @media (max-width:700px) {
         position: absolute;
         top: -12rem;
-        border: 2px solid;
         /* border-radius: 10px; */
         margin-top: 45rem;
         /* margin-bottom: -80vh; */

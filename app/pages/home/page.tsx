@@ -5,6 +5,7 @@ ImageParagraphContainer,GalleryContainer,} from '@/app/styles/HomePage.style'
 import Gallery from '@/app/components/Gallery'
 import Image from 'next/image'
 import img from '../../assets/mobile.jpg'
+import {dataHomeDescription,DataHome} from '../../ref/data'
 
 import styled from 'styled-components'
 import {animate, motion,Variants} from 'framer-motion'
@@ -14,34 +15,16 @@ import WaveLine from '@/app/components/WaveLine'
 import Link from 'next/link'
 import { Parallax } from '@/app/components/Parallax'
 
-// export const BgContainer = styled.div`
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   /* background-color:#f7eda7; */
-//   width: 100vw;
-//   height: 93.5vh;
-// `
-
-// export const ImgContainer = styled.div`
-//  width: 100vw;
-//  height: 90vh;
-// `
 
 export default function HomePage() {
- const handleScroll = () => {
-    console.log('ok')
- }
 
- const ScrollTo = () => {
-  window.scrollTo(5,1000)
- }
- const variant:Variants ={
-  start:{opacity:0 ,x:-20},
-  end:{opacity:1, x:8},
-   }
+      const variant:Variants = {
+        start:{opacity:0 ,x:-20},
+        end:{opacity:1, x:8},
+        }
+
   return (
-    <HomeContainer className='overflow-hidden ' onScroll={()=>handleScroll()}>
+    <HomeContainer className='overflow-hidden'>
       
        <Parallax/>
        
@@ -54,84 +37,25 @@ export default function HomePage() {
         BlueWave HolidayHouse
         </h1>
         <br />
-     
-        <strong className="text-black font-bold mb-6">La tua casa vacanza ideale nel cuore di Catania!</strong>
-        <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}>
-          <ParagraphContainer>
-              <motion.p className=' w-full lg:w-[40vw]'>
-                  Scegliere di soggiornare da noi significa avere tutto a portata di mano per una visita indimenticabile alla città.
-                  Situata a soli 15 minuti in auto dall&apos;aeroporto di Catania Fontana Rossa, la nostra casa vacanza è la base perfetta
-                    per un weekend nella meravigliosa Catania.
-              </motion.p> 
-              <ImageParagraphContainer src={img} alt=''/>
-          </ParagraphContainer>
-          </motion.div>
-
-        <WaveLine/>
-        <strong className="text-black font-bold ">La tua casa vacanza</strong>
-
-        <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.2}}>
-        <ParagraphContainer>            
-          <ImageParagraphContainer src={img} alt=''/>
-              <motion.p  className=" w-full lg:w-[40vw] ">
-              Con la sua posizione strategica, potrai visitare facilmente il centro storico e immergerti nella ricca storia e cultura
-              della città. Passeggiando lungo
-              <strong className="text-sky-700 font-bold">Via Etna</strong>, la via più importante di Catania,
-              potrai ammirare le affascinanti architetture e goderti lo spirito vivace della
-                <strong className="text-sky-700 font-bold">movida catanese</strong>, sorseggiando un delizioso cocktail.
-              </motion.p>
-        </ParagraphContainer>
-      </motion.div> 
-
-        <WaveLine />
-        <strong className="text-black font-bold">La tua casa vacanza</strong>
-
-        <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.2}}>
-          <ParagraphContainer>
-              <motion.p className='w-full lg:w-[40vw]'>
-              Tutto ciò sarà ancora più piacevole grazie alla comodità offerta dalla nostra posizione privilegiata:
-              Cortese Home si trova a soli 10 minuti a piedi dalle principali attrazioni turistiche della città.
-             </motion.p>
-            <ImageParagraphContainer src={img} alt=''/>
-          </ParagraphContainer>
-        </motion.div>
-        <WaveLine />
-        <strong className="text-black font-bold">La tua casa vacanza</strong>
-
-        <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.2}}>
-          <ParagraphContainer>
-          <ImageParagraphContainer src={img} alt=''/>
-              <motion.p className='w-full lg:w-[40vw]]'>
-              Confortevole, accogliente e dotata di tutti i comfort di cui hai bisogno, Cortese Home ti offre un rifugio
-              tranquillo e rilassante dopo una giornata intensa di visite turistiche. La nostra casa vacanza è arredata con 
-              gusto e dispone di spazi luminosi e accoglienti per garantirti un soggiorno piacevole e rigenerante.
-            </motion.p>
-          </ParagraphContainer>
-        </motion.div>
-      <WaveLine/>
-        <strong className="text-black font-bold ">La tua casa vacanza</strong>
-
-        <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.2}}>
-          <ParagraphContainer>
-              <motion.p className='w-full lg:w-[40vw]'>
-                Potrai goderti il tuo weekend a Catania sapendo di avere un comodo ritiro a pochi passi dalle principali attrazioni.
-              </motion.p>
-          <ImageParagraphContainer src={img} alt=''/>
-          </ParagraphContainer>
-        </motion.div>
-      <WaveLine/>
-        <strong className="text-black font-bold">La tua casa vacanza</strong>
-
-        <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.2}}>
-          <ParagraphContainer>
-             <ImageParagraphContainer src={img} alt=''/>
-              <motion.p className='w-full lg:w-[40vw]'>
-              Non perdere l&apos;opportunità di visitare Catania e scegliere Cortese Home come la tua casa vacanza ideale nel centro della città.
-              Prenota ora e scopri tutto ciò che questa affascinante destinazione ha da offrire.
-            </motion.p> 
-          </ParagraphContainer>
-         </motion.div>
-
+        {
+          dataHomeDescription.map((itm:DataHome) => {
+            const {id,title,desc} = itm
+            return(
+              <motion.div key={id} variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}>
+                <strong className="text-black font-bold mb-6 w-full flex justify-center">{title}</strong>
+                <ParagraphContainer>
+                    {id % 2 == 0? null : <ImageParagraphContainer src={img} alt=''/> }
+                    <motion.p className=' w-full lg:w-[40vw]'>
+                     {desc}
+                    </motion.p> 
+                    {id % 2 == 0? <ImageParagraphContainer src={img} alt=''/> : null}
+                </ParagraphContainer>
+                <div className='w-full flex justify-center'><WaveLine/></div>
+              </motion.div>
+            );
+          })
+          
+        }
       </DescripitonHome> 
     </HomeContainer> 
   )

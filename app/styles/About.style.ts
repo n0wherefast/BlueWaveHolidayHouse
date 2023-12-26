@@ -20,7 +20,7 @@ export const CardContainer = styled.div`
     align-items: center;
     gap:2rem;
     width: 100%;
-    height:auto;
+    height:auto; 
 
     @media (max-width:700px) {
         flex-direction: column;
