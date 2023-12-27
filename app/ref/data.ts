@@ -77,8 +77,8 @@ export const dataPlace = [
     },
     {
         id:1,
-        moveY:250,    
-        moveX:0, 
+        moveY:220,    
+        moveX:-150, 
         DelayValue:0.4,
         img:'',
         place:'Catania',
@@ -90,8 +90,8 @@ export const dataPlace = [
     },
     {
         id:2,
-        moveX:-540,
-        moveY:0,
+        moveX:-590,
+        moveY:-120,
         DelayValue:0.3,
         img:'',
         place:'Capo Mulini',
@@ -103,8 +103,8 @@ export const dataPlace = [
     },
     {
         id:3,
-        moveX:540,
-        moveY:0,
+        moveX:550,
+        moveY:-100,
         DelayValue:0.2,
         img:'',
         place:'Acireale',
