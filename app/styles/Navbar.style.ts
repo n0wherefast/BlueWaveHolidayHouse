@@ -11,14 +11,14 @@ export interface Props {
     $extend?:string
 }
 
-
+// #0093E9
 
 
 export const NavbarContainer = styled.nav<Props>`
     /* border-bottom: 1px #0284c7 solid;  */
     width: 100%;
     height:${(props)=>(props.$extendnavbar === 'true'? "100vh " :"70px")};
-    background-color:${(props)=>(props.$extendnavbar === 'true'? "#0093E9":"none")};
+    background-color:${(props)=>(props.$extendnavbar === 'true'? "rgb(3 105 161);":"none")};
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease-in-out;

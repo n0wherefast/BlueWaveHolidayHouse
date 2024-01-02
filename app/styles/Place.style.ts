@@ -10,6 +10,7 @@ interface Props {
 }
 
 export const MainContainer = styled.div`
+  background-color: rgb(3 105 161);
   padding-top:5rem;
   /* background-color:darkcyan; */
   display: flex;
@@ -42,13 +43,14 @@ export const PlaceContainer = styled.button`
   }
 `
 export const ImageParagraphContainerPlace = styled(Image)<Props>`
+  border: 2px  solid sandybrown;
   display:flex;
   width: 25vw;
   height: 30vh;
   justify-content: space-around;
   border-radius: ${props =>(props.$borderRadius)} ;
   margin: 1rem;
-
+  box-shadow: 2rem  10px 1rem #001c29;
   @media (max-width:1000px) {
     width: 35vw;
     height: 25vh;

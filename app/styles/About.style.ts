@@ -21,7 +21,6 @@ export const CardContainer = styled.div`
     gap:2rem;
     width: 100%;
     height:auto; 
-
     @media (max-width:700px) {
         flex-direction: column;
     }
@@ -47,7 +46,7 @@ flex-direction: column;
 
 export const ButtonCollapse =styled.div<Props>`
     transition: all 1s ease;
-  transform:${(props)=>(props.$extend ==='true'? "rotate(-90deg)": "rotate(0deg)")} ;
+    transform:${(props)=>(props.$extend ==='true'? "rotate(-90deg)": "rotate(0deg)")} ;
 `
 export const CardAbout = styled.div<Props>`
     transition: all 1s ease;
@@ -113,7 +112,7 @@ export const MainContainer = styled.div`
   align-items: center;
   width: 100%;
   height: 93.5vh;
-  background-color:rgb(3 105 161);
+  background-color: rgb(3 105 161);
   @media (min-width: 700px) {
     height: 94vh;
   }

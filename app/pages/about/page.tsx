@@ -53,13 +53,12 @@ function About() {
 <CardContainer> 
       <CollapseContainer>
         <CardCollapse onClick={()=>setShow(!show)} $extend={show.toString()}>
-        <p className='uppercase'><div>dettagli</div></p> 
+             <p className='uppercase'><div>dettagli</div></p> 
             <ButtonCollapse $extend={show.toString()}>
               { show === true? <IoClose size={30}/> : <IoAdd size={30}/>}
             </ButtonCollapse>
-          
         </CardCollapse>
-        <CardAbout  $extend={show.toString()} >
+        <CardAbout  $extend={show.toString()}>
             <div className='flex flex-col gap-4'>
                 <div className=" flex items-center"><GiRiceCooker size={iconSize}/><p className='p-1'>Cucina Completa</p></div>
                 <div className=" flex items-center"> <BsPersonWorkspace size={iconSize}/><p className='p-2'>Spazio di lavoro dedicato</p></div>
@@ -68,7 +67,6 @@ function About() {
                 <div className=" flex items-center"><IoBedOutline size={iconSize}/><p className='p-1'>3 Letti</p></div>
                 <div className=" flex items-center"><FaShower size={iconSize}/><p className='p-1'>Bagno</p></div>
                 <div className=" flex items-center"><FaRegSnowflake size={iconSize}/><p className='p-1'>Ambiente Climatizzato</p></div>
-
             </div>
         </CardAbout>
       </CollapseContainer>

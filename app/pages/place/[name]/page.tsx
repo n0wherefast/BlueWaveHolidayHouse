@@ -1,7 +1,37 @@
 'use client'
 import React from 'react'
 import { useSearchParams } from 'next/navigation'
-import { ImageParagraphContainerPlace } from '@/app/styles/Place.style'
+import styled from 'styled-components'
+import Image, { StaticImageData } from 'next/image'
+import WaveLine from '@/app/components/WaveLine'
+
+type src = { src:string} 
+
+interface Props {
+  $borderRadius:string
+  src?:  StaticImageData | src ,
+  alt: string
+}
+
+export const ImageContainerPlace = styled(Image)<Props>`
+  width: 100vw;
+  height: 100vh;
+
+  @media (max-width:1000px) {
+    width: 35vw;
+    height: 25vh;
+    }
+  @media (max-width:700px) {
+    width: 100vw;
+    height: 100vh;
+    }
+
+  &:hover{
+    /* width: 35rem;
+    height: 25rem; */
+    /* filter: blur(20px); */
+  }
+  `
 
 
 
@@ -12,12 +42,18 @@ import { ImageParagraphContainerPlace } from '@/app/styles/Place.style'
    const place = serchParams.get('name')
    const img = serchParams.get('img')
    
+   
     console.log(img)
   return (
-    <div className='pt-[10rem]'>
-        <h1> {place}</h1>
-        <ImageParagraphContainerPlace width={500} height={500} src={img} alt='' />
-        <h2>{desc}</h2>
+    <div className='pt-[1rem] flex  flex-col items-center '>
+        
+        <ImageContainerPlace width={500} height={500} src={img} alt='' />
+        <h1 className=' absolute top-[35rem] left-[4rem] lg:top-[40rem] lg:left-[45rem] text-[3rem] lg:text-[10rem] text-amber-400 font-[900] italic'> {place}</h1>
+        <br />
+        <WaveLine/>
+        <h2 className=' text-2xl text-center  font-semibold'>{desc}</h2>
+        <br />
+        <WaveLine/>
     </div>
   )
 }
