@@ -5,8 +5,9 @@ type src = { src:string}
 
 export interface DataHome {
     id:number,
-    img?:string,
+    img?:string | StaticImageData,
     desc:string,
+    title:string,
 }
 export interface DataPlace {
     id:number,
