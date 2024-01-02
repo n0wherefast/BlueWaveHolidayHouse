@@ -16,7 +16,8 @@ function Map() {
         //    height="450"
         //    style="border:0;"  
             loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
+            // referrerpolicy="no-referrer-when-downgrade"
+            >
         </iframe>
       
     </div>
