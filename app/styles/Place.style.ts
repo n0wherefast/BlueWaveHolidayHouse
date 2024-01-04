@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import Image from "next/image"
 import { StaticImageData } from 'next/image'
+
 type src = { src:string} 
 
 interface Props {

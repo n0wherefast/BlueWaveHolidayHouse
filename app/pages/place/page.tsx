@@ -56,8 +56,8 @@ function Place() {
               transition={{delay:DelayValue}} 
               initial={{x:0 ,y:0}} whileInView={{x:x,y:y}} whileHover={{scale:1.2}}
               key={id} 
-              className=' absolute top-[35vh] left-[35vw]'  >
-                <Link href={{ pathname:`/pages/place/${place}`, query:{name:place, desc:desc ,img:src?.src} }} >
+              className=' absolute top-[35vh] left-[35vw]'>
+                <Link href={{ pathname:`/pages/place/${place}`, query:{name:place, desc:desc ,img:src?.src} }}>
                   <PlaceContainer className=''>
                     <strong className=' absolute top-[30%] left-[25%] '>{place}</strong>
                     <ImageParagraphContainerPlace width={500} height={500} src={src} alt={place}  $borderRadius={Bradius}/> 
