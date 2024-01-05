@@ -6,7 +6,7 @@ import {MdMeetingRoom} from 'react-icons/md'
 import {GiWashingMachine,GiSeaCliff,GiRiceCooker} from 'react-icons/gi'
 import {CgScreen} from 'react-icons/cg'
 import {BsPersonWorkspace} from 'react-icons/bs'
-import { motion } from 'framer-motion'
+import { Variants, motion } from 'framer-motion'
 import styled from 'styled-components'
 import { AboutContainer , CardContainer,
           CardCollapse,CardAbout,
@@ -23,6 +23,11 @@ function About() {
   const iconSize = 35
   const [show ,setShow] = useState(false)
   const [disShow ,setDisShow] = useState(false)
+
+  const variant:Variants = {
+    start:{opacity:0 ,y:-20},
+    end:{opacity:1, y:8},
+    }
   
   return (
     <>
@@ -39,7 +44,7 @@ function About() {
       </MainTextContainer>
    
   
-          <motion.button  animate={{ y: -65,  scale: [1,1.5,1], borderRadius:[0,2,2,0]}} 
+          <motion.button  animate={{ y: -65,  scale: [1,1.5,1], borderRadius:[0,2,2,0]} } 
                          transition={{ ease: "easeOut", duration: 1 }}
                          
                          className=' w-[50%] m-1'> 
@@ -56,7 +61,7 @@ function About() {
              <p className='uppercase'><div>dettagli</div></p> 
             <ButtonCollapse $extend={show.toString()}>
               { show === true? <IoClose size={30}/> : <IoAdd size={30}/>}
-            </ButtonCollapse>
+            </ButtonCollapse> 
         </CardCollapse>
         <CardAbout  $extend={show.toString()}>
             <div className='flex flex-col gap-4'>
@@ -189,10 +194,12 @@ function About() {
         </h2>
 
 
-          <section className="flex flex-col  md:flex-row gap-2  p-4  w-full justify-between"> 
+          <section className="flex flex-col  md:flex-row gap-2  p-4  w-full justify-between bg-sky-600 "> 
         
-    
+      {/* <motion.div variants={variant}  initial='start' whileInView='end' transition={{delay:0.25}} > */}
           <TextAboutContainer>
+             <motion.div variants={variant}  initial='start' whileInView='end' transition={{delay:0.25}} >
+
                 <p> <div className='p-1 text-2xl'>- Politiche:</div></p>
                 <p className='pl-4 prose-lg'>
                     -L&apos;host ti accoglie di persona <br />
@@ -202,9 +209,12 @@ function About() {
                  Gli animali di servizio sono sempre ammessi
                     <br />
                 </p>
+              </motion.div>
           </TextAboutContainer> 
+      {/* </motion.div> */}
             
           <TextAboutContainer>
+          <motion.div variants={variant}  initial='start' whileInView='end' transition={{delay:0.30}} >
               <p> <div className='p-1'>- Posizione:</div></p>
               <p className='pl-4'>
                   - Parcheggio in strada. <br />
@@ -220,8 +230,11 @@ function About() {
                   - 2min panifici, bar e ristorante<br />
                   <br />
               </p>
+              </motion.div>
             </TextAboutContainer>
+
             <TextAboutContainer>
+            <motion.div variants={variant}  initial='start' whileInView='end' transition={{delay:0.35}} >
               <p> <div className='p-1'>- Cucina e zona pranzo:</div></p>
               <p className='pl-4'>
                     - Cucina : uno spazio in cui gli ospiti possono cucinare <br />
@@ -240,8 +253,11 @@ function About() {
                     - Tavolo da pranzo <br />
                   <br />
               </p>
+              </motion.div>
           </TextAboutContainer>
           <TextAboutContainer>
+          <motion.div variants={variant}  initial='start' whileInView='end' transition={{delay:0.40}} >
+
               <p> <div className='p-1'>- Bagno:</div></p>
               <p className='pl-4'>
                     - Asciugacapelli <br />
@@ -253,6 +269,7 @@ function About() {
                     - Gel doccia <br />
                   <br />
               </p>
+              </motion.div>
          </TextAboutContainer>
          </section>
       
@@ -262,9 +279,11 @@ function About() {
           </div>
       </h2>
 
-         <section className="flex flex-col  md:flex-row gap-2  p-4  w-full justify-around"> 
+         <section className="flex flex-col  md:flex-row gap-2  p-4  w-full justify-around bg-sky-600 "> 
 
          <TextAboutContainer>
+         <motion.div variants={variant}  initial='start' whileInView='end' transition={{delay:0.60}} >
+
             <p className='p-2'> - Check-in:
               <div className='pl-4'>Check-in dalle 15:00-20:00</div>
             </p>
@@ -290,9 +309,12 @@ function About() {
             <p className='p-2'> 
               <div className='p-1'>- Spegnere tutto</div>
             </p>
+            </motion.div>
          </TextAboutContainer>
 
          <TextAboutContainer>
+         <motion.div variants={variant}  initial='start' whileInView='end' transition={{delay:0.65}} >
+
             <p> <div className='p-1'>- Note Aggiuntive:</div></p>
               <p className='pl-4'>
                             Ogni viaggio lascia un ricordo, noi cerchiamo di fare il nostro meglio, per tanto ti chiediamo di rispettare piccole semplici regole della casa: <br />
@@ -302,6 +324,7 @@ function About() {
                           - Rispettare gli orari di silenzio per non disturbare i condomini.
                     <br />
               </p>
+              </motion.div>
          </TextAboutContainer>
         
          

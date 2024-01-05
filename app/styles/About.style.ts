@@ -80,6 +80,7 @@ export const TextAboutContainer = styled.div`
     width:30vw;
     /* font-weight: 700; */
     border: 2px solid black;
+    background-color: white;
     @media (max-width:700px) {
         width:90vw;
     }
