@@ -1,13 +1,25 @@
 
 import styled from "styled-components";
 
-export const BoxInfo = styled.div`
-    width: 30vw;
-    height: 25vh;
-    background-color: lightgrey;
+interface Props{
+    top:string,
+    left:string,
+}
+
+export const BoxInfo = styled.div<Props>`
+    /* width: 30vw; */
+    /* height: 25vh; */
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: rgb(3, 139, 166);
     z-index: 10;
     position: absolute;
-    top: 40rem;
-    left: 75rem;
+    top: ${props=> (props.top)};
+    left: ${props=> (props.left)};
     border-radius: 20px ;
+
+    @media (max-width:700px) {
+    left: 1rem;
+    }
+
 `

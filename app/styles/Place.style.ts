@@ -11,7 +11,8 @@ interface Props {
 }
 
 export const MainContainer = styled.div`
-  background-color: rgb(3 105 161);
+  /* background-color: rgb(3 105 161);  sky-600*/
+  background-color: rgb(240, 250, 252); // ice//
   padding-top:5rem;
   /* background-color:darkcyan; */
   display: flex;

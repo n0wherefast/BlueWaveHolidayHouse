@@ -1,5 +1,9 @@
 import { StaticImageData } from 'next/image'
+import catania from '../assets/pexels-oscar-m-17650773.jpg'
+import etna from '../assets/etna2018-3.jpg'
+import acitrezza from '../assets/acitrezza.jpg'
 import img from '../assets/blue_wave__abstract_picture_walpaper_amazing.jpg'
+import { store } from '../redux/store'
 
 type src = { src:string} 
 
@@ -18,6 +22,8 @@ export interface DataPlace {
     desc?:string,
     DelayValue:number,
     Bradius:string
+    moveYsm:number,
+    moveXsm:number,
 }
 
 export const  dataHomeDescription = [
@@ -67,15 +73,35 @@ export const  dataHomeDescription = [
     
 ]
 
+
 export const dataPlace = [
-    {
+    {   
+        // store:store.getState().size.value,
         id:0,
         moveY:-250,
         moveX:0, 
+        moveYsm:-150,
+        moveXsm:0, 
         DelayValue:0.3,
         Bradius:'68% 32% 67% 33% / 34% 25% 75% 66%',
-        src:img,
+        src:acitrezza,
         place:'Aci Castello',
+        desc:`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,
+         asperiores sint porro nesciunt ipsam minus at? Dignissimos,
+          atque perspiciatis dolor ab sint, necessitatibus velit quaerat obcaecati
+           unde tenetur debitis quisquam rerum quia praesentium? Quod, eos itaque eum impedit
+            quaerat laudantium molestias ad odit nam praesentium vero!`
+    },
+    {
+        id:4,
+        moveY:250,
+        moveX:450, 
+        moveYsm:50,
+        moveXsm:0,
+        DelayValue:0.3,
+        Bradius:'68% 32% 67% 33% / 34% 25% 75% 66%',
+        src:acitrezza,
+        place:'Aci Trezza',
         desc:`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,
          asperiores sint porro nesciunt ipsam minus at? Dignissimos,
           atque perspiciatis dolor ab sint, necessitatibus velit quaerat obcaecati
@@ -85,10 +111,12 @@ export const dataPlace = [
     {
         id:1,
         moveY:220,    
-        moveX:-150, 
+        moveX:-150,
+        moveYsm:250,
+        moveXsm:0, 
         DelayValue:0.7,
         Bradius:'40% 60% 89% 11% / 87% 37% 63% 13% ',
-        src:img,
+        src:catania,
         place:'Catania',
         desc:`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,
          asperiores sint porro nesciunt ipsam minus at? Dignissimos,
@@ -99,11 +127,13 @@ export const dataPlace = [
     {
         id:2,
         moveX:-590,
-        moveY:-120,
+        moveY:20,
+        moveYsm:450,
+        moveXsm:0,
         DelayValue:0.1,
         Bradius:'27% 93% 28% 92% / 33% 48% 72% 87% ',
-        src:img,
-        place:'Capo Mulini',
+        src:etna,
+        place:'Etna',
         desc:`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,
          asperiores sint porro nesciunt ipsam minus at? Dignissimos,
           atque perspiciatis dolor ab sint, necessitatibus velit quaerat obcaecati
@@ -114,6 +144,8 @@ export const dataPlace = [
         id:3,
         moveX:550,
         moveY:-100,
+        moveYsm:650,
+        moveXsm:0,
         DelayValue:0.5,
         Bradius:'68% 32% 27% 73% / 38% 80% 20% 62% ',
         src:img,
