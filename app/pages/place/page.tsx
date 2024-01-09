@@ -1,6 +1,5 @@
 'use client'
 import React , {useEffect, useState}from 'react'
-import image from '../../assets/mobile.jpg'
 import { dataPlace ,DataPlace} from '@/app/ref/data'
 import { motion } from 'framer-motion'
 import { PlaceContainer,MainContainer,ImageParagraphContainerPlace } from '@/app/styles/Place.style'
@@ -21,37 +20,31 @@ function Place() {
    const size = useSelector((state:RootState) => state.size.value)
    const checkSize = useSelector((state:RootState) => state.size.checkSize)
    const dispatch = useDispatch()
-   // const [checkSize ,setCheckSize] = useState(false)
-   const [width, setWidth] = useState(800)
-
-
   
- 
 
 
   useEffect(() => {
+    if(size<1000){
+      dispatch(setCheckSize(true))
+    }else{dispatch(setCheckSize(false))}
 
+dispatch(updateValue(window.innerWidth))
     function handleResize() {
-      // setWidth(innerWidth)
-      if(window.innerWidth  < 1000){
-        dispatch(setCheckSize(true))
-      }else{dispatch(setCheckSize(false))}
-
-      setWidth(window.innerWidth)
-      dispatch(updateValue(width))
+      
+      dispatch(updateValue(window.innerWidth))
     }
-
+     
       window.addEventListener('resize', handleResize);
-
     return () => {
       window.removeEventListener('resize', handleResize);
-      
     };
 
-  }, []);
+   });
 
-       
-       console.log(checkSize)
+   
+    
+    
+      console.log(size)
       
   return (
   <MainContainer>
@@ -59,8 +52,8 @@ function Place() {
     {
       places.map((itm:DataPlace)=>{
         const {moveX,moveY,desc,id,place,DelayValue,Bradius,src,moveXsm,moveYsm} = itm 
-        let x = checkSize === true ? moveXsm : moveX
-        let y = checkSize === true ? moveYsm : moveY
+        let x =  checkSize === true ? moveXsm : moveX
+        let y =  checkSize === true ? moveYsm : moveY
         
         return(
           <motion.div

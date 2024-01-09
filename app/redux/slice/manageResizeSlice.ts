@@ -8,7 +8,7 @@ interface ManagerRisize {
 
 const  initialState:ManagerRisize = {
     value:0,
-    checkSize:false
+    checkSize:false,
 }
 
 export const manageResize = createSlice({
@@ -16,8 +16,7 @@ export const manageResize = createSlice({
     initialState,
     reducers:{
         updateValue: (state,action) =>{state.value = action.payload},
-        setCheckSize : (state, action) =>{state.checkSize = action.payload}
-       
+        setCheckSize : (state, action) =>{state.checkSize = action.payload},       
     }
 })
 
