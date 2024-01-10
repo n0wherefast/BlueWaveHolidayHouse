@@ -41,7 +41,7 @@ export const WaveStyle = styled.div`
 
 function WaveLine() {
   return (
-    <div className=' overflow-hidden m-0 p-0 '> 
+    <div className=' overflow-hidden m-0 p-0 flex justify-center items-center'> 
     <WaveStyle/>
     </div>
   )

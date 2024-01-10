@@ -21,6 +21,7 @@ export const BoxInfo = styled.div<Props>`
     border-radius: 20px ;
 
     @media (max-width:700px) {
+        width: 90vw;
     /* left: 1rem;
     top:83rem; */
     }
