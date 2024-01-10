@@ -1,18 +1,22 @@
 import React from 'react'
 import Link from 'next/link'
 import WaveLine from './WaveLine'
+import { RootState } from '../redux/store'
+import { useSelector } from 'react-redux'
 
 function InterestPlaces({children}:any) {
+   const size = useSelector((state:RootState)=>state.size.value)
+
   return (
     <section className='w-[600vtext-zinc-50 w]  flex lg:flex-row flex-col items-center justify-around' >
         {children}
-        <br />
-      <WaveLine/>
-      <br />
-            <div className='flex flex-col  ' >
+        {/* <br /> */}
+        {size < 700 ? <WaveLine/> : null}
+      {/* <br /> */}
+            <div className='flex lg:flex-row md:flex-wrap flex-col  ' >
               <div className='flex flex-col md:flex-row  gap-2 m-1'>
                       <div className="text-md md:w-auto w-full p-2 shadow-sky-400 bg-sky-600 text-zinc-50 border border-sky-400">
-                      <p> <strong className='p-1'>Trasporti:</strong></p>
+                      <p> <strong className='p-1 text-2xl font-black italic'><span className=' text-amber-400' >T</span>rasporti:</strong></p>
                       <p className='pl-4'>
                           - 300 m fermata metropolitana Piazza Borgo<br />
                           - 300 m fermata autobus piazza Borgo<br />
@@ -21,7 +25,7 @@ function InterestPlaces({children}:any) {
                       </p>
                     </div> 
                       <div className="text-sm  md:w-auto lg:w-72   p-2 shadow-sky-400 bg-sky-600 text-zinc-50 w-full border border-sky-400">
-                      <p> <strong className='p-1'>Attrazioni:</strong></p>
+                      <p> <strong className='p-1 text-2xl font-black italic'> <span className=' text-amber-400' >A</span>ttrazioni:</strong></p>
                       <p className='pl-4'>
                           - 250 m Orto Botanico<br />
                           - 850 m villa Bellini<br />
@@ -37,7 +41,7 @@ function InterestPlaces({children}:any) {
                 </div>
                 <div className='flex flex-col md:flex-row p-1 gap-2'>
                         <div className="text-sm  md:w-auto lg:w-72 w-full shadow-sky-400 bg-sky-600 text-zinc-50  border border-sky-400 p-2">
-                        <p> <strong className='p-1'>Mare:</strong></p>
+                        <p> <strong className='p-1 text-2xl font-black italic'><span className=' text-amber-400' >M</span>are:</strong></p>
                         <p className='pl-4'>
                             - 4,1 Km Playa di Catania <br />
                             - 3,5 Km San Giovanni Li Cuti <br />
@@ -46,7 +50,7 @@ function InterestPlaces({children}:any) {
                         </p>
                       </div>
                       <div className="text-sm  md:w-auto lg:w-72 w-full  shadow-sky-400 bg-sky-600 text-zinc-50 border border-sky-400 p-2">
-                        <p> <strong className='p-1'>Shopping:</strong></p>
+                        <p> <strong className='p-1 text-2xl font-black italic'><span className=' text-amber-400' >S</span>hopping:</strong></p>
                         <p className='pl-4'>
                             - 5min supermercato molto fornito decò piazza borgo<br />
                             - 2min panifici, bar e ristorante<br />

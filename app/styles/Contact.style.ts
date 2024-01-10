@@ -2,13 +2,13 @@
 import styled from "styled-components";
 
 interface Props{
-    top:string,
-    left:string,
+    top?:string,
+    left?:string,
 }
 
 export const BoxInfo = styled.div<Props>`
     width: 30vw;
-    /* height: 25vh; */
+    height: 23vh;
     padding: 0.5rem;
     margin: 0.5rem;
     background-color: rgb(2 132 199);
@@ -21,8 +21,16 @@ export const BoxInfo = styled.div<Props>`
     left: ${props=> (props.left)}; */
     /* border-radius: 20px ; */
 
+    @media (max-width:1024px){
+        width: 38vw;
+        height: 18vh;
+    }
+
     @media (max-width:700px) {
         width: 100vw;
+        height: auto;
+        margin:0px;
+    
     /* left: 1rem;
     top:83rem; */
     }

@@ -10,6 +10,7 @@ import type { RootState } from '@/app/redux/store'
 import { useSelector,useDispatch } from 'react-redux'
 import { updateValue,setCheckSize } from '@/app/redux/slice/manageResizeSlice'
 import { store } from '@/app/redux/store'
+import Waves from '@/app/components/Waves'
 
 
 // import '../../../globals.css'
@@ -44,7 +45,7 @@ function Place() {
    
     
     
-      console.log(size)
+
       
   return (
   <MainContainer className=''>
@@ -62,7 +63,7 @@ function Place() {
               initial={{x:0 ,y:0}}  animate={{x:x,y:y}} 
               whileHover={{scale:1.2}}
               key={id} 
-              className=' absolute top-[35vh] lg:left-[35vw] left-[15vw] '>
+              className=' absolute top-[35vh] lg:left-[35vw] left-[15vw] z-50 '>
                 <Link href={{ pathname:`/pages/place/${place}`, query:{name:place, desc:desc ,img:src?.src} }}>
                   <PlaceContainer className=''>
                     <strong className=' absolute top-[30%] left-[15%] '>{place}</strong>
@@ -73,6 +74,7 @@ function Place() {
         )
       })
     }
+    {size<1400? null:<Waves/>}
   </MainContainer>
   )
 }

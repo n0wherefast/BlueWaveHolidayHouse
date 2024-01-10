@@ -99,7 +99,7 @@ export const dataPlace = [
     {
         id:4,
         moveY:250,
-        moveX:450, 
+        moveX:400, 
         moveYsm:50,
         moveXsm:0,
         moveYmd:100,
@@ -117,7 +117,7 @@ export const dataPlace = [
     {
         id:1,
         moveY:220,    
-        moveX:-150,
+        moveX:-100,
         moveYsm:250,
         moveXsm:0,
         moveYmd:480,
@@ -134,7 +134,7 @@ export const dataPlace = [
     },
     {
         id:2,
-        moveX:-590,
+        moveX:-480,
         moveY:20,
         moveYsm:450,
         moveXsm:0,
@@ -152,7 +152,7 @@ export const dataPlace = [
     },
     {
         id:3,
-        moveX:550,
+        moveX:500,
         moveY:-100,
         moveYsm:650,
         moveXsm:0,
