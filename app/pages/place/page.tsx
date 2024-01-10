@@ -19,27 +19,27 @@ function Place() {
    const [places,setPlaces] = useState(dataPlace)
    const size = useSelector((state:RootState) => state.size.value)
    const checkSize = useSelector((state:RootState) => state.size.checkSize)
-   const dispatch = useDispatch()
+  //  const dispatch = useDispatch()
   
 
 
-  useEffect(() => {
-    if(size<1000){
-      dispatch(setCheckSize(true))
-    }else{dispatch(setCheckSize(false))}
+  // useEffect(() => {
+  //   if(size<1000){
+  //     dispatch(setCheckSize(true))
+  //   }else{dispatch(setCheckSize(false))}
 
-dispatch(updateValue(window.innerWidth))
-    function handleResize() {
+  //   dispatch(updateValue(window.innerWidth))
+  //   function handleResize() {
       
-      dispatch(updateValue(window.innerWidth))
-    }
+  //     dispatch(updateValue(window.innerWidth))
+  //   }
      
-      window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+  //     window.addEventListener('resize', handleResize);
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
 
-   });
+  //  });
 
    
     

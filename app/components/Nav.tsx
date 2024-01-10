@@ -5,6 +5,9 @@ import LogoImg from '../assets/1693610050074.png'
 import { TiThMenu,TiWavesOutline  } from "react-icons/ti";
 import { IoMdClose } from "react-icons/io";
 import { East_Sea_Dokdo,Open_Sans} from 'next/font/google'
+import { RootState } from '../redux/store'
+import { useSelector,useDispatch } from 'react-redux'
+import { updateValue,setCheckSize } from '../redux/slice/manageResizeSlice'
 import { 
           NavbarContainer,
           NavbarLeft,
@@ -26,16 +29,44 @@ const OpenSans = Open_Sans({
 })
 
 function Nav() {
-  const [isClose ,setIsClose] = useState(false)
-    useEffect(()=>{
-        function handeSize () {
-          if(window.innerWidth > 700){
-            setIsClose(false)
-          }
-        }
-        window.addEventListener('resize',()=>handeSize())
+   const [isClose ,setIsClose] = useState(false)
+   const size = useSelector((state:RootState) => state.size.value)
+   const checkSize = useSelector((state:RootState) => state.size.checkSize)
+   const dispatch = useDispatch()
+  
 
-    },[])
+
+  useEffect(() => {
+    if(size<700){
+      dispatch(setCheckSize(true))
+      setIsClose(false)
+    }else{dispatch(setCheckSize(false))}
+
+    dispatch(updateValue(window.innerWidth))
+    function handleResize() {
+      
+      dispatch(updateValue(window.innerWidth))
+    }
+     
+      window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+
+   });
+
+
+
+
+    // useEffect(()=>{
+    //     function handeSize () {
+    //       if(window.innerWidth > 700){
+    //         setIsClose(false)
+    //       }
+    //     }
+    //     window.addEventListener('resize',()=>handeSize())
+
+    // },[])
   return (
    <NavbarContainer  $extendnavbar={isClose.toString()} >
     <NavbarInnerContainer >

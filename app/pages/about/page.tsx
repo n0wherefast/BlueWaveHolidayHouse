@@ -8,6 +8,7 @@ import {CgScreen} from 'react-icons/cg'
 import {BsPersonWorkspace} from 'react-icons/bs'
 import { Variants, motion } from 'framer-motion'
 import styled from 'styled-components'
+import Button from '@/app/components/Button'
 import { AboutContainer , CardContainer,
           CardCollapse,CardAbout,
           ButtonCollapse,CollapseContainer,
@@ -42,16 +43,16 @@ function About() {
           <h2>Your Dream</h2>
           <h2 className=' text-amber-400'>Holiday.</h2> 
       </MainTextContainer>
-   
+      <Button y={-65} color={'text-[coral]'}/>
   
-          <motion.button  animate={{ y: -65,  scale: [1,1.5,1], borderRadius:[0,2,2,0]} } 
+          {/* <motion.button  animate={{ y: -65,  scale: [1,1.5,1], borderRadius:[0,2,2,0]} } 
                          transition={{ ease: "easeOut", duration: 1 }}
                          
                          className=' w-[50%] m-1'> 
                             <h2 className= ' transition-all ease-in flex justify-center items-center text-4xl lg:text-6xl rounded-2xl hover:text-slate-100 font-extrabold  text-[coral]'>
                                  <p className=' animate-pulse'><FaArrowCircleDown/></p>
                             </h2>
-          </motion.button>
+          </motion.button> */}
     </MainContainer>
      
                <br id='sec' />
