@@ -4,7 +4,7 @@ import Image from "next/image";
 
 
 export const AboutContainer = styled.div`
-    padding-top:3rem;
+    padding-top:4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +12,17 @@ export const AboutContainer = styled.div`
     width: 100%;
     
 `
-
+export const MainContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height:100vh;
+  background-color: rgb(3 105 161);
+  @media (min-width: 700px) {
+    height: 94vh;
+  }
+`
 export const CardContainer = styled.div`
     display: flex;
     flex-direction:row;
@@ -107,17 +117,7 @@ export const MainTextContainer = styled.div`
   }
 
 `
-export const MainContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 93.5vh;
-  background-color: rgb(3 105 161);
-  @media (min-width: 700px) {
-    height: 94vh;
-  }
-`
+
 
 // flex justify-center items-center p-4 m-3 w-2/2 h-auto shadow-xl
 //  shadow-slate-400 bg-slate-100 rounded-xl border border-slate-400

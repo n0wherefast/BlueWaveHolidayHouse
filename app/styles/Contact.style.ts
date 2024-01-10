@@ -7,19 +7,27 @@ interface Props{
 }
 
 export const BoxInfo = styled.div<Props>`
-    /* width: 30vw; */
+    width: 30vw;
     /* height: 25vh; */
     padding: 0.5rem;
     margin: 0.5rem;
-    background-color: rgb(3, 139, 166);
+    background-color: rgb(241 245 249);
+    border: 2px solid #94a3b8;
+    /* background-color: rgb(3, 139, 166); */
     z-index: 10;
-    position: absolute;
+    /* position: absolute;
     top: ${props=> (props.top)};
-    left: ${props=> (props.left)};
+    left: ${props=> (props.left)}; */
     border-radius: 20px ;
 
     @media (max-width:700px) {
-    left: 1rem;
+    /* left: 1rem;
+    top:83rem; */
     }
 
+`
+export const LinkInfo = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: space-around;
 `

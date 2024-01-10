@@ -7,7 +7,7 @@ import WaveLine from '@/app/components/WaveLine'
 import { ImageContainerPlace } from '@/app/styles/PlaceDinam.style'
 
 
- function PagePlace()  {
+ function PagePlace( {})  {
   
    const serchParams = useSearchParams()
    const desc = serchParams.get('desc')

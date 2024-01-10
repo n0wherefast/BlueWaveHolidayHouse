@@ -52,7 +52,7 @@ function About() {
                                  <p className=' animate-pulse'><FaArrowCircleDown/></p>
                             </h2>
           </motion.button>
-          </MainContainer>
+    </MainContainer>
      
                <br id='sec' />
 <CardContainer> 

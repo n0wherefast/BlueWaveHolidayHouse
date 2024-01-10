@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 
-function InterestPlaces() {
+function InterestPlaces({children}:any) {
   return (
-    <section className='flex flex-col items-center'>
-            <div className='flex flex-col gap-5 items-center justify-center backdrop-blur-sm w-full ' >
-              <div className='flex flex-col md:flex-row p-2 gap-5 m-2'>
+    <section className='w-full  bg-sky-600 flex lg:flex-row flex-col items-center justify-around z-10 absolute' >
+            <div className='flex flex-col   ' >
+              <div className='flex flex-col md:flex-row p-2 gap-1 m-1'>
                       <div className="text-sm  md:w-auto w-72 m-1 p-2 shadow-slate-400 bg-slate-100 rounded-xl border border-slate-400">
                       <p> <strong className='p-1'>Trasporti:</strong></p>
                       <p className='pl-4'>
@@ -30,7 +30,7 @@ function InterestPlaces() {
                       </p>
                     </div> 
                 </div>
-                <div className='flex flex-col md:flex-row p-2 gap-5'>
+                <div className='flex flex-col md:flex-row p-1 gap-1'>
                         <div className="text-sm  md:w-auto w-72 m-1 shadow-slate-400 bg-slate-100 rounded-xl border border-slate-400 p-2">
                         <p> <strong className='p-1'>Mare:</strong></p>
                         <p className='pl-4'>
@@ -61,7 +61,7 @@ function InterestPlaces() {
               <h3 className='text-2xl font-homeFont font-bold'>OR</h3>  
               <div className=" w-60 h-auto ml-10 mr-10 mt-3 mb-3 border border-gray-300"></div>
               <br /> */}
-             
+             {children}
         </section>
   )
 }
