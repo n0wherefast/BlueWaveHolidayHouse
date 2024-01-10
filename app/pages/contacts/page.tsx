@@ -28,7 +28,7 @@ function Contacts() {
         <div className=' flex justify-center items-center w-full h-[90vh]  '>
             <Image className=' w-[100vw] lg:w-[100vw]' src={size >  700 ? img2: img} alt='wer'/>
         </div>
-       <Button y={-25} color={'text-[darkcyan]'} />
+       <Button y={size < 700 ? -55 : -25} color={'text-[darkcyan]'} />
 
       <Map/> 
       <br />

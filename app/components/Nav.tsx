@@ -53,7 +53,7 @@ function Nav() {
       window.removeEventListener('resize', handleResize);
     };
 
-   });
+   },[]);
 
 
 
