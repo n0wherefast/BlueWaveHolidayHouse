@@ -7,7 +7,7 @@ import InterestPlaces from '@/app/components/InterestPlaces'
 import { FaAirbnb,FaWhatsapp } from 'react-icons/fa'
 import { TbBrandBooking } from "react-icons/tb";
 import Image from 'next/image'
-import img from '../../assets/waveCard.png'
+import img from '../../assets/waveCard2.png'
 import Waves from '@/app/components/Waves'
 import WaveLine from '@/app/components/WaveLine'
 
@@ -25,7 +25,7 @@ function Contacts() {
     <div className=' pt-[5rem] flex flex-col'>
 
         <div className=' flex justify-center items-center w-full  h-[90vh]  bg-zinc-100'>
-            <Image className=' w-[100vw] lg:w-[80vw] border-2  ' src={img} alt='wer'/>
+            <Image className=' w-[100vw] lg:w-[80vw]' src={img} alt='wer'/>
         </div>
       
 
