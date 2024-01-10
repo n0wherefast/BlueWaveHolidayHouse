@@ -22,7 +22,7 @@ import Link from 'next/link'
 function Contacts() {
   
   return (
-    <div className=' pt-[5rem] flex flex-col'>
+    <div className=' pt-[4rem] flex flex-col'>
 
         <div className=' flex justify-center items-center w-full  h-[90vh]  bg-zinc-100'>
             <Image className=' w-[100vw] lg:w-[80vw]' src={img} alt='wer'/>
