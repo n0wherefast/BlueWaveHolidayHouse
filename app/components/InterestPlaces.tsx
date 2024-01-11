@@ -8,10 +8,11 @@ function InterestPlaces({children}:any) {
    const size = useSelector((state:RootState)=>state.size.value)
 
   return (
-    <section className='w-[600vtext-zinc-50 w]  flex lg:flex-row flex-col items-center justify-around' >
+    <section className='w-[600vtext-zinc-50 w]  flex lg:flex-row flex-col items-center justify-around ' >
         {children}
         {/* <br /> */}
-        {size < 700 ? <WaveLine/> : null}
+        {/* {size < 700 ? <WaveLine/> : null} */}
+
       {/* <br /> */}
             <div className='flex lg:flex-row md:flex-wrap flex-col  ' >
               <div className='flex flex-col md:flex-row  gap-2 m-1'>

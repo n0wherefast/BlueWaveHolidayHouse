@@ -18,6 +18,7 @@ import { RootState } from '@/app/redux/store'
 
 
 
+
 function Contacts() {
   const size = useSelector((state:RootState)=>state.size.value)
   // console.log(size)
@@ -32,7 +33,7 @@ function Contacts() {
 
       <Map/> 
       <br />
-      {size < 700 ? <WaveLine/> : null}
+      {/* {size < 700 ? <WaveLine/> : null} */}
       <br />
       <InterestPlaces >
         <motion.div  className=''>
@@ -52,13 +53,13 @@ function Contacts() {
                 </div>
                 <LinkInfo>
                 <Link aria-label='link per airBnB' href={'https://www.airbnb.it/rooms/853661203460112114?adults=2&check_in=2023-10-01&check_out=2023-10-08&source_impression_id=p3_1687258577_%2BvWKPiaOia6dOiMN&previous_page_section_name=1000&federated_search_id=6069cfe0-1fd5-48db-ae88-98878887dda1'}>
-                    <FaAirbnb className='m-2 hover:text-amber-400' size={55}/>
+                    <FaAirbnb className='m-2 hover:text-amber-400 p-1 border-2 rounded-2xl' size={55}/>
                 </Link> 
                 <Link aria-label='link per airBnB' href={'https://www.airbnb.it/rooms/853661203460112114?adults=2&check_in=2023-10-01&check_out=2023-10-08&source_impression_id=p3_1687258577_%2BvWKPiaOia6dOiMN&previous_page_section_name=1000&federated_search_id=6069cfe0-1fd5-48db-ae88-98878887dda1'}>
-                    <TbBrandBooking className='m-2 hover:text-amber-400' size={55}/>
+                    <TbBrandBooking className='m-2 hover:text-amber-400  p-1 border-2 rounded-2xl' size={55}/>
                 </Link> 
                 <Link aria-label='link per airBnB' href={'https://www.airbnb.it/rooms/853661203460112114?adults=2&check_in=2023-10-01&check_out=2023-10-08&source_impression_id=p3_1687258577_%2BvWKPiaOia6dOiMN&previous_page_section_name=1000&federated_search_id=6069cfe0-1fd5-48db-ae88-98878887dda1'}>
-                    <FaWhatsapp className='m-2 hover:text-amber-400' size={55}/>
+                    <FaWhatsapp className='m-2 hover:text-amber-400  p-1 border-2 rounded-2xl' size={55}/>
                 </Link> 
                 </LinkInfo>
             </BoxInfo>

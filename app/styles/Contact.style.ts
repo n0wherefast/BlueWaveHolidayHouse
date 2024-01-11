@@ -13,14 +13,8 @@ export const BoxInfo = styled.div<Props>`
     margin: 0.5rem;
     background-color: rgb(2 132 199);
     color: rgb(250 250 250);
-    /* border: 2px solid #94a3b8; */
-    /* background-color: rgb(3, 139, 166); */
     z-index: 10;
-    /* position: absolute;
-    top: ${props=> (props.top)};
-    left: ${props=> (props.left)}; */
-    /* border-radius: 20px ; */
-
+    
     @media (max-width:1024px){
         width: 38vw;
         height: 18vh;
@@ -29,7 +23,7 @@ export const BoxInfo = styled.div<Props>`
     @media (max-width:700px) {
         width: 100vw;
         height: auto;
-        margin:0px;
+        /* margin:1rem; */
     
     /* left: 1rem;
     top:83rem; */

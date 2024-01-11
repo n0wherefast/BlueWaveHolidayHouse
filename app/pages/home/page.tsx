@@ -23,7 +23,7 @@ export default function HomePage() {
         end:{opacity:1, x:8},
         }
 
-  return (
+        return (
     <HomeContainer className='overflow-hidden'>
       
        <Parallax/>

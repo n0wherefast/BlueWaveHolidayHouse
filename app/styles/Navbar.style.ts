@@ -18,7 +18,7 @@ export const NavbarContainer = styled.nav<Props>`
     /* border-bottom: 1px #0284c7 solid;  */
     width: 100%;
     height:${(props)=>(props.$extendnavbar === 'true'? "100vh " :"70px")};
-    background-color:${(props)=>(props.$extendnavbar === 'true'? "rgb(3 105 161);":"none")};
+    background-color:${(props)=>(props.$extendnavbar === 'true'? "rgb(14 165 253);":"none")};
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease-in-out;

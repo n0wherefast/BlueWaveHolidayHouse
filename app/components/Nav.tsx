@@ -7,7 +7,7 @@ import { IoMdClose } from "react-icons/io";
 import { East_Sea_Dokdo,Open_Sans} from 'next/font/google'
 import { RootState } from '../redux/store'
 import { useSelector,useDispatch } from 'react-redux'
-import { updateValue,setCheckSize } from '../redux/slice/manageResizeSlice'
+import { updateValue,setCheckSize,checkPageHeight } from '../redux/slice/manageResizeSlice'
 import { 
           NavbarContainer,
           NavbarLeft,
@@ -40,7 +40,7 @@ function Nav() {
     if(size<700){
       dispatch(setCheckSize(true))
       setIsClose(false)
-    }else{dispatch(setCheckSize(false))}
+      }else{dispatch(setCheckSize(false))}
 
     dispatch(updateValue(window.innerWidth))
     function handleResize() {

@@ -16,6 +16,7 @@ export const ImgContainer = styled.div`
 
 export const DiscoverContainer = styled.button`
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* margin-top: 8rem; */
@@ -43,9 +44,9 @@ export const DiscoverContainer = styled.button`
         top: -12rem;
         /* border-radius: 10px; */
         margin-top: 45rem;
-        /* margin-bottom: -80vh; */
+        /* margin-bottom:5rem; */
         padding: 10px;
-        height: 6rem;
+        height: 10rem;
         /* backdrop-filter: blur(20px); */
         margin-left:0px;
         font-size:3.5rem;

@@ -6,6 +6,8 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Providers from './redux/Provider'
 import { useEffect } from 'react'
+import Button from './components/Button'
+import ButtonScrollTop from './components/ButtonScrollTop'
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -27,8 +29,10 @@ export default function RootLayout({children,}:{ children: React.ReactNode}) {
         <Providers>
           <Nav/>
            {children}
+           <Footer/>
+           <ButtonScrollTop color={'text-sky-600'}/>
         </Providers>
-        <Footer/>
+       
       </body>
      
     </html>

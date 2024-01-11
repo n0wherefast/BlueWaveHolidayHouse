@@ -1,8 +1,21 @@
-import React from 'react'
+'use client'
+import React,{useEffect} from 'react'
 import {motion} from 'framer-motion'
 import { FaArrowCircleDown } from 'react-icons/fa'
+import { useSelector,useDispatch } from 'react-redux'
+import { RootState } from '../redux/store'
+import { checkPageHeight } from '../redux/slice/manageResizeSlice'
 
 function Button({color,y}:any) {
+  const dispatch = useDispatch()
+  const  checkHeight = useSelector((state:RootState) => state.size.isDownPage)
+  
+  useEffect(() => {
+    window.addEventListener('scroll',()=>{
+     dispatch(checkPageHeight())
+    }) 
+  }, [])
+
   return (
     <motion.button   animate={{ y: y,  scale: [1,1.5,1], borderRadius:[0,2,2,0]} } 
                          transition={{ ease: "easeOut", duration: 1 }}
