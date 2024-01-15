@@ -17,16 +17,14 @@ export const DiscoverContainer = styled.button`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-top: 8rem; */
     margin-bottom: 25rem;
     margin-left: 20rem;
     font-size:10rem;
     font-weight:900;
     font-style: italic;
     text-transform: uppercase;
-    /* backdrop-filter: blur(10px); */
     height:10rem;
-    color:rgb(251 191 36);
+    color: rgb(251 191 36);
     transition: all ease-in 0.5s;
     z-index: 10;
 
@@ -34,18 +32,14 @@ export const DiscoverContainer = styled.button`
       position: absolute;
       top:35rem;
       font-size: 8rem;
-      /* padding-top: 40rem; */
       margin-left: 1rem;
     }
     @media (max-width:700px) {
         position: absolute;
         top: -12rem;
-        /* border-radius: 10px; */
-        margin-top: 45rem;
-        /* margin-bottom:5rem; */
+        margin-top: 47.5rem;
         padding: 10px;
         height: 10rem;
-        /* backdrop-filter: blur(20px); */
         margin-left:0px;
         font-size:3.5rem;
         font-weight:900;

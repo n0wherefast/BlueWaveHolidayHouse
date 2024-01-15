@@ -23,16 +23,13 @@ export default function RootLayout({children,}:{ children: React.ReactNode}) {
 
   return (
     <html lang="en" className=' scroll-smooth'>
-      
-      <body className={inter.className}>
-        
+      <body id='top' className={inter.className}>
         <Providers>
           <Nav/>
            {children}
            <Footer/>
-           <ButtonScrollTop color={'text-amber-400'}/>
+           <ButtonScrollTop to={'top'} color={'text-amber-400'}/>
         </Providers>
-       
       </body>
      
     </html>

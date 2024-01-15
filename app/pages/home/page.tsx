@@ -31,8 +31,8 @@ export default function HomePage() {
         {/* <GalleryContainer className='Gallery'>
           <Gallery /> 
         </GalleryContainer> */}
-        
-       <DescripitonHome  className='' id='home'>
+        <div className='h-10' id='home'/>
+       <DescripitonHome  className=''>
         <h1 className=" m-5 flex items-center justify-center text-5xl text-slate-950 font-black italic">
         BlueWave HolidayHouse
         </h1>

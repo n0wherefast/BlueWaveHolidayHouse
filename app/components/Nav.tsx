@@ -33,12 +33,13 @@ function Nav() {
     if(size<700){
       dispatch(setCheckSize(true))
       setIsClose(false)
-      }else{dispatch(setCheckSize(false))}
-
+      }else if (size>1000){
+        setIsClose(false)
+      }
+      else{dispatch(setCheckSize(false))}
     dispatch(updateValue(window.innerWidth))
     function handleResize() {
-      
-      dispatch(updateValue(window.innerWidth))
+    dispatch(updateValue(window.innerWidth))
     }
      
       window.addEventListener('resize', handleResize);
@@ -63,16 +64,16 @@ function Nav() {
   return (
    <NavbarContainer  $extendnavbar={isClose.toString()} >
     <section  className='   NAVBARINNERCONT w-[100%] h-[70px] flex bg-white'>
-      <section className='navLeft flex flex-[30%] justify-start  items-center font-bold'>
-        <Image className='m-[10px] w-[70px] h-auto' priority alt='blue wave holiday house logo' rel='preload' width={70} height={70} src={LogoImg}/>
-        <section  className={` NAVTITLE italic flex flex-col w-[10rem] text-[1.5rem] leading-6  ${OpenSans.className}` }>
-          <p>BlueWave</p>
-           <p>HolidayHouse</p> 
-        </section>
+        <section className='navLeft flex flex-[30%] justify-start  items-center font-bold'>
+          <Image className='m-[10px] w-[70px] h-auto' priority alt='blue wave holiday house logo' rel='preload' width={70} height={70} src={LogoImg}/>
+          <section  className={` NAVTITLE italic flex flex-col w-[10rem] text-[1.5rem] leading-6  ${OpenSans.className}` }>
+            <p>BlueWave</p>
+            <p>HolidayHouse</p> 
           </section>
+         </section>
          
       <section className=' navRight flex flex-[70%] items-center lg:justify-around lg:pr-[1.5rem] pr-0 justify-end' >
-        <div className='NavbarLinkContainer flex items-center gap-[2rem]'>
+        <div className='NavbarLinkContainer flex items-center gap-[1.8rem]'>
           {links.map((link:LINK)=>{
             return(
               <NavbarLink key={link.id} href={link.url}>
@@ -81,7 +82,7 @@ function Nav() {
             )
           })}
           <LinkButton $isclose={isClose.toString()} onClick={(e)=>( setIsClose(!isClose))}>
-          {isClose ?  <IoMdClose title='close button menù'   size={30} /> : <TiWavesOutline  title='open button menù' size={35} />}
+             {isClose ?  <IoMdClose title='close button menù'   size={30} /> : <TiWavesOutline  title='open button menù' size={35} />}
           </LinkButton> 
         </div> 
       </section>

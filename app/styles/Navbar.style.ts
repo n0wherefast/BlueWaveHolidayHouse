@@ -16,7 +16,7 @@ export interface Props {
 
 export const NavbarContainer = styled.nav<Props>`
     /* border-bottom: 1px #0284c7 solid;  */
-    width: 100%;
+    width: 100vw;
     height:${(props)=>(props.$extendnavbar === 'true'? "100vh " :"70px")};
     background-color:${(props)=>(props.$extendnavbar === 'true'? "rgb(14 165 253);":"none")};
     display: flex;

@@ -20,13 +20,10 @@ export const BoxInfo = styled.div<Props>`
         height: 18vh;
     }
 
-    @media (max-width:700px) {
+    @media (max-width:700px){
         width: 98vw;
         height: auto;
         margin:0px;
-    
-    /* left: 1rem;
-    top:83rem; */
     }
 
 `

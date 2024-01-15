@@ -1,10 +1,12 @@
 'use client'
 import { configureStore } from "@reduxjs/toolkit";
 import manageResizeSlice from "./slice/manageResizeSlice";
+import  manageScroll  from "./slice/scrollTo";
 
 export const store = configureStore({
     reducer:{
-        size:manageResizeSlice
+        size:manageResizeSlice,
+        scroll:manageScroll
     }
 })
 

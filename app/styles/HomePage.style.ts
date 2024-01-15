@@ -5,13 +5,12 @@ import Image from "next/image";
 
 
 export const HomeContainer = styled.div`
-    padding-top: 3.5rem; //last change 4.5 to  act value 
+    padding-top:4rem; 
     display: flex;
     flex-direction: column;
     align-items: center;
-   
     @media (max-width:700px) {
-        padding-top: 4rem;
+        padding-top: 4.8rem;
     }
 `   
 

@@ -101,11 +101,11 @@ export const MainTextContainer = styled.div`
   height: 100%;
   width: 100%;
   align-items: start;
-  justify-content: center;
+  justify-content: start;
   font-style: italic;
   font-weight: 900;
-  font-size: 9.5rem;
-  padding: 0.25rem;
+  font-size: 10rem;
+  margin: 1.5rem;
   color: rgb(248 250 252);
 
   @media (max-width:1000px) {
