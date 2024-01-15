@@ -3,16 +3,11 @@ import React from 'react'
 import { HomeContainer,DescripitonHome,ParagraphContainer,
 ImageParagraphContainer,GalleryContainer,} from '@/app/styles/HomePage.style'
 import Gallery from '@/app/components/Gallery'
-import Image from 'next/image'
 import img from '../../assets/29-09-11.webp'
 import {dataHomeDescription,DataHome} from '../../ref/data'
-
-import styled from 'styled-components'
-import {animate, motion,Variants} from 'framer-motion'
-import Slide from '@/app/components/Slide'
+import { motion,Variants} from 'framer-motion'
 import '../../globals.css'
 import WaveLine from '@/app/components/WaveLine'
-import Link from 'next/link'
 import { Parallax } from '@/app/components/Parallax'
 
 
@@ -54,7 +49,6 @@ export default function HomePage() {
               </motion.div>
             );
           })
-          
         }
       </DescripitonHome> 
     </HomeContainer> 

@@ -9,10 +9,6 @@ import { updateValue,setCheckSize } from '@/app/redux/slice/manageResizeSlice'
 
 function Providers({children}:any) {
   
-
-  
-
-
   return (
     <Provider store={store}>
       {children}

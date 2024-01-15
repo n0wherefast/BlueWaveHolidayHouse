@@ -11,7 +11,6 @@ interface Props {
 }
 
 export const MainContainer = styled.div`
-  /* background-color: rgb(3 105 161);  sky-600*/
   background-color: rgb(240, 250, 252); // ice//
   padding-top:5rem;
   width: 100vw;
@@ -27,7 +26,6 @@ export const PlaceContainer = styled.button`
   font-style: italic;
   transition: all ease-in 0.3s;
   color: white;
-  /* background-color: rgb(240, 250, 252); // ice// */
   @media (max-width:1024px) {
     font-size: 3rem;
     }
@@ -56,10 +54,4 @@ export const ImageParagraphContainerPlace = styled(Image)<Props>`
     width: 15rem;
     height: 10rem;
     }
-
-  &:hover{
-    /* width: 35rem;
-    height: 25rem; */
-    /* filter: blur(20px); */
-  }
 `

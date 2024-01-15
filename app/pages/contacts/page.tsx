@@ -9,8 +9,6 @@ import { TbBrandBooking } from "react-icons/tb";
 import Image from 'next/image'
 import img from '../../assets/waveCard3.png'
 import img2 from '../../assets/waveCardOriz.png'
-import Waves from '@/app/components/Waves'
-import WaveLine from '@/app/components/WaveLine'
 import Link from 'next/link'
 import Button from '@/app/components/Button'
 import { useSelector } from 'react-redux'
@@ -21,7 +19,6 @@ import { RootState } from '@/app/redux/store'
 
 function Contacts() {
   const size = useSelector((state:RootState)=>state.size.value)
-  // console.log(size)
  
   return (
     <> 
@@ -34,7 +31,6 @@ function Contacts() {
 
       <Map/> 
       <br />
-      {/* {size < 700 ? <WaveLine/> : null} */}
       <div className='h-14' id='contact' />
       <InterestPlaces >
         <motion.div  className=''>

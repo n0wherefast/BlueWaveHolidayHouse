@@ -3,7 +3,6 @@ import catania from '../assets/pexels-oscar-m-17650773.jpg'
 import etna from '../assets/etna2018-3.jpg'
 import acitrezza from '../assets/acitrezza.jpg'
 import img from '../assets/blue_wave__abstract_picture_walpaper_amazing.jpg'
-import { store } from '../redux/store'
 
 type src = { src:string} 
 

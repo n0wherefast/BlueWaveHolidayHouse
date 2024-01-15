@@ -15,10 +15,9 @@ export interface Props {
 
 
 export const NavbarContainer = styled.nav<Props>`
-    /* border-bottom: 1px #0284c7 solid;  */
     width: 100vw;
     height:${(props)=>(props.$extendnavbar === 'true'? "100vh " :"70px")};
-    background-color:${(props)=>(props.$extendnavbar === 'true'? "rgb(14 165 253);":"none")};
+    background-color:${(props)=>(props.$extendnavbar === 'true'? "rgb(4, 122, 207);":"none")};
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease-in-out;
@@ -40,36 +39,11 @@ export const NavbarLeft = styled.nav`
     font-weight: bold;
 
 `;
-// export const Logo = styled(Image)`
-// margin:10px;
-// max-width: 70px;
-// height: auto;
-// `
-// export const NavTitle = styled.h1`
-//     font-size: 1.5rem;
-//     font-style: italic;
-//     line-height: 1;
-//     display:  flex;
-//     flex-direction: column;
-//     width:10rem;
+
   
-`
 
 
 
-// export const NavbarRight = styled.nav`
-//     flex: 70%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-around;
-    
-
-//     @media (max-width: 700px ){
-//         justify-content: end;
-//         padding-right:1.5rem ;
-//     }
-    
-// `;
 export const NavbarExtend = styled.div`
 display: flex;
 flex-direction: column;
@@ -81,12 +55,7 @@ gap:1.5rem;
   display: none;
 }
 `;
-// export const NavbarLinkContainer = styled.div`
-//     display: flex;
-//     align-items: center;
-//     gap: 2rem;
-//     border-radius:50px; 
-// `;
+
 export const NavbarLink = styled(Link)`
     /* background-color:#0284c7; */
     border-radius: 10px;
@@ -128,18 +97,16 @@ export const LinkButton = styled.button<Props>`
     &:hover{
             color:#0284c7;
          }
-         /* &:focus{
-             transform: rotate(-90deg);
-             color:#0284c7;
-          } */
+        
          @media (min-width: 700px) {
            display:none;
         };
 `
 export const NavbarLinkExtended = styled(Link)`
-  color:#262626;
-  font-size: 4rem;
-  font-weight: 500;
+  color:rgb(255,255,255);
+  font-size: 4.5rem;
+  font-weight: 800;
+  font-style: italic;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   padding: 0.5rem 0.5rem;
@@ -147,7 +114,6 @@ export const NavbarLinkExtended = styled(Link)`
   transition: all 0.3s ease-in;
   width: 100%;
   &:hover{
-    /* background-color: #ffd11a ; */
     color: #ffd11a;
   }
 `;

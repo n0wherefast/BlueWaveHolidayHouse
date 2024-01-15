@@ -33,9 +33,7 @@ function About() {
   return (
     <>
     <AboutContainer >
-   {/* <ContainerImage alt={''} src={bg}></ContainerImage> */}
    <MainContainer 
-  //  className='flex flex-col w-full h-[94vh] lg:h-[93.5vh]  bg-sky-700 items-center'
    >
 
       <MainTextContainer>
@@ -92,7 +90,6 @@ function About() {
       
 
 
-      {/* <div className="w-72  mt-2 border border-gray-300"></div> */}
 
      <section className='p-4 flex flex-col items-center w-full lg:w-[45rem] '>
         <br />
@@ -140,7 +137,6 @@ function About() {
 
           <section className="flex flex-col  md:flex-row gap-2  p-4  w-full justify-between bg-sky-600 "> 
         
-      {/* <motion.div variants={variant}  initial='start' whileInView='end' transition={{delay:0.25}} > */}
           <TextAboutContainer>
              <motion.div variants={variant}  initial='start' whileInView='end' transition={{delay:0.25}} >
 

@@ -15,9 +15,7 @@ import { ImageContainerPlace } from '@/app/styles/PlaceDinam.style'
    const img =  serchParams.get('img')
   
   
-   
-  //  console.log(serchParams)
-  return (
+    return (
     <div className='pt-[1rem] flex  flex-col items-center'>
         <ImageContainerPlace width={1000} height={1000} src={img!} alt={place!} />
         <h1 className=' absolute top-[35rem] left-[4rem] lg:top-[40rem] lg:left-[45rem] text-[3rem] lg:text-[10rem] text-amber-400 font-[900] italic'> {place}</h1>

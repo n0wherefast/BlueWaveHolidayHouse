@@ -10,8 +10,6 @@ function InterestPlaces({children}:any) {
   return (
     <section className='w-[600vtext-zinc-50 w]  flex lg:flex-row flex-col items-center justify-around ' >
         {children}
-        {/* <br /> */}
-        {/* {size < 700 ? <WaveLine/> : null} */}
 
       {/* <br /> */}
             <div className='flex lg:flex-row md:flex-wrap flex-col  ' >

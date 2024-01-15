@@ -23,9 +23,4 @@ export const ImageContainerPlace = styled(Image)<Props>`
     height: 100vh;
     }
 
-  &:hover{
-    /* width: 35rem;
-    height: 25rem; */
-    /* filter: blur(20px); */
-  }
   `

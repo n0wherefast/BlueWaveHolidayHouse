@@ -2,9 +2,9 @@
 import React,{useState , useEffect} from 'react'
 import { links,LINK } from '../ref/links'
 import LogoImg from '../assets/1693610050074.png'
-import { TiThMenu,TiWavesOutline  } from "react-icons/ti";
+import { TiWavesOutline  } from "react-icons/ti";
 import { IoMdClose } from "react-icons/io";
-import { East_Sea_Dokdo,Open_Sans} from 'next/font/google'
+import { Open_Sans} from 'next/font/google'
 import { RootState } from '../redux/store'
 import { useSelector,useDispatch } from 'react-redux'
 import { updateValue,setCheckSize,checkPageHeight } from '../redux/slice/manageResizeSlice'
@@ -14,6 +14,7 @@ import {  NavbarContainer,
           LinkButton,NavLogoExtend
         }from "../styles/Navbar.style"
 import Image from 'next/image';
+import {motion,Variants }from 'framer-motion'
 
 
 const OpenSans = Open_Sans({
@@ -49,18 +50,11 @@ function Nav() {
 
    },[size]);
 
+   const variant:Variants = {
+    start:{opacity:0 ,x:-20},
+    end:{opacity:1, x:8},
+    }
 
-
-
-    // useEffect(()=>{
-    //     function handeSize () {
-    //       if(window.innerWidth > 700){
-    //         setIsClose(false)
-    //       }
-    //     }
-    //     window.addEventListener('resize',()=>handeSize())
-
-    // },[])
   return (
    <NavbarContainer  $extendnavbar={isClose.toString()} >
     <section  className='   NAVBARINNERCONT w-[100%] h-[70px] flex bg-white'>
@@ -92,9 +86,13 @@ function Nav() {
         <NavbarExtend onClick={()=>setIsClose(false)} >
          { links.map((link:LINK)=>{
             return(
-              <NavbarLinkExtended key={link.id} href={link.url}>
-                {link.name}
-              </NavbarLinkExtended>
+              
+                <NavbarLinkExtended key={link.id} href={link.url}>
+                  <motion.div variants={variant} initial='start' whileInView='end'  >
+                  {link.name}
+                  </motion.div>
+                </NavbarLinkExtended>
+              
             )
           })}
           <NavLogoExtend>
