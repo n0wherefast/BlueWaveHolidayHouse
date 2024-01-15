@@ -92,6 +92,7 @@ export const NavbarInnerContainer = styled.div`
 export const LinkButton = styled.button<Props>`
     height:${(props)=>(props.$extendnavbar === 'true'? "100vh " :"70px")};
     transition: all 0.5s ease;
+    margin-right: 1rem;
     transform:${(props)=>(props.$isclose === 'true' ? "rotate(-90deg)": "rotate(0deg)")} ;
     color:${(props)=>(props.$isclose === 'true' ? "#0284c7": "black")} ;
     &:hover{

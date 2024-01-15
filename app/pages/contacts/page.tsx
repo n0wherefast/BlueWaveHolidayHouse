@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { BoxInfo,LinkInfo } from '@/app/styles/Contact.style'
-import  {motion } from 'framer-motion'
+import  {motion ,Variants} from 'framer-motion'
 import Map from '@/app/components/Map'
 import InterestPlaces from '@/app/components/InterestPlaces'
 import { FaAirbnb,FaWhatsapp } from 'react-icons/fa'
@@ -19,6 +19,11 @@ import { RootState } from '@/app/redux/store'
 
 function Contacts() {
   const size = useSelector((state:RootState)=>state.size.value)
+
+  const variant:Variants = {
+    start:{opacity:0 ,x:-20},
+    end:{opacity:1, x:0},
+    }
  
   return (
     <> 
@@ -33,7 +38,7 @@ function Contacts() {
       <br />
       <div className='h-14' id='contact' />
       <InterestPlaces >
-        <motion.div  className=''>
+      <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}  className=''>
             <BoxInfo>
               <div className='h-16'>
                 <h1 className='text-5xl font-black italic  w-full ' >Contatti</h1>

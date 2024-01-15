@@ -39,7 +39,7 @@ const ref = useRef<HTMLDivElement>(null)
                 { size < 700 ? <MdKeyboardDoubleArrowDown size={35} className='animate-pulse' /> : null}
               </motion.div>
           </DiscoverContainer> 
-          <ImageContainer placeholder="blur" priority={false} rel="preload" src={img} width={2000} height={2000} alt="image" className=''/>
+          <ImageContainer blurDataURL="blur" placeholder="blur" priority={false} rel="preload" src={img} width={2000} height={2000} alt="image" className=''/>
       </BgContainer>
   );
 }

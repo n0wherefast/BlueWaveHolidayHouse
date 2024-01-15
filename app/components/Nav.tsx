@@ -7,7 +7,7 @@ import { IoMdClose } from "react-icons/io";
 import { Open_Sans} from 'next/font/google'
 import { RootState } from '../redux/store'
 import { useSelector,useDispatch } from 'react-redux'
-import { updateValue,setCheckSize,checkPageHeight } from '../redux/slice/manageResizeSlice'
+import { updateValue,setCheckSize, } from '../redux/slice/manageResizeSlice'
 import {  NavbarContainer,
           NavbarExtend,
           NavbarLink,NavbarLinkExtended,

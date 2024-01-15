@@ -6,12 +6,34 @@ import { useEffect,useState } from 'react'
 import type { RootState } from '@/app/redux/store'
 import { useSelector,useDispatch } from 'react-redux'
 import { updateValue,setCheckSize } from '@/app/redux/slice/manageResizeSlice'
+import logo from '../assets/1693610050074.png'
+import Image from 'next/image'
 
 function Providers({children}:any) {
+  const [load ,setLoad] = useState<boolean>(false)
+
+   useEffect(()=>{
+     setTimeout(()=>(setLoad(true)),1000)
+   },[])
   
   return (
     <Provider store={store}>
-      {children}
+     { load === true ? children :
+      <div className=' w-full h-screen bg-slate-100 flex flex-col gap-10 justify-center items-center'>
+          <div className=' items-center justify-center flex flex-col'>
+            <div className=' font-black italic text-[2.5rem] text-sky-600 uppercase'> BlueWave</div>
+            <div className=' font-black italic text-[2.6rem] text-sky-600 uppercase'> HolidayHouse</div>
+          </div>
+          <div className=' items-center justify-center flex flex-col absolute top-[11.4rem] left-[1.2rem]'>
+            <div className=' font-black italic text-[2.5rem] text-amber-400 uppercase'> BlueWave</div>
+            <div className=' font-black italic text-[2.6rem] text-amber-400 uppercase'> HolidayHouse</div>
+          </div>
+            
+         <Image className=' animate-bounce' src={logo} width={200} height={200} alt='logo image loading'/>
+      </div>
+     }
+
+      
     </Provider>
   )
 }
