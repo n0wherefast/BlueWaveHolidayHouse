@@ -34,49 +34,42 @@ export const NavbarContainer = styled.nav<Props>`
 `;
 export const NavbarLeft = styled.nav`
     display: flex;
-    display:flex ;
     flex: 30%;
     justify-content: start;
     align-items: center;
     font-weight: bold;
-    /* padding-left:5rem; */
-`;
-export const Logo = styled(Image)`
-margin:10px;
-max-width: 70px;
-height: auto;
-`
-export const NavTitle = styled.h1`
-    font-size: 1.5rem;
-    font-style: italic;
-    line-height: 1;
-    display:  flex;
-    flex-direction: column;
 
-    width:10rem;
-    /* & p:nth-child(odd){
-        color: blue;
-    }
-    & p:nth-child(even){
-        color: red;
-    } */
+`;
+// export const Logo = styled(Image)`
+// margin:10px;
+// max-width: 70px;
+// height: auto;
+// `
+// export const NavTitle = styled.h1`
+//     font-size: 1.5rem;
+//     font-style: italic;
+//     line-height: 1;
+//     display:  flex;
+//     flex-direction: column;
+//     width:10rem;
+  
 `
 
 
 
-export const NavbarRight = styled.nav`
-    flex: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+// export const NavbarRight = styled.nav`
+//     flex: 70%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-around;
     
 
-    @media (max-width: 700px ){
-        justify-content: end;
-        padding-right:1.5rem ;
-    }
+//     @media (max-width: 700px ){
+//         justify-content: end;
+//         padding-right:1.5rem ;
+//     }
     
-`;
+// `;
 export const NavbarExtend = styled.div`
 display: flex;
 flex-direction: column;
@@ -88,12 +81,12 @@ gap:1.5rem;
   display: none;
 }
 `;
-export const NavbarLinkContainer = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    border-radius:50px; 
-`;
+// export const NavbarLinkContainer = styled.div`
+//     display: flex;
+//     align-items: center;
+//     gap: 2rem;
+//     border-radius:50px; 
+// `;
 export const NavbarLink = styled(Link)`
     /* background-color:#0284c7; */
     border-radius: 10px;

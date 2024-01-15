@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "next/image";
 
 export const BgContainer = styled.div`
   display: flex;
@@ -9,10 +10,7 @@ export const BgContainer = styled.div`
   height: 93.5vh;
 `
 
-export const ImgContainer = styled.div`
- width: 100vw;
- height: 90vh;
-`
+
 
 export const DiscoverContainer = styled.button`
     display: flex;
@@ -54,37 +52,27 @@ export const DiscoverContainer = styled.button`
     }
   &:hover{
     color:darkorange;
-    /* margin-left: 5rem; */
   }
 `
 
-export const ImageContainer = styled.div` 
+export const ImageContainer = styled(Image)` 
 position: absolute;
   transition: all ease-in 1s;
   width:100%;
   height: 93vh;
   padding-left: 0rem;
   margin-top:1rem;
-  /* border-radius:  24% 76% 66% 34% / 37% 59% 41% 63%  ; */
+object-fit: cover;
+object-position: 0px -15rem;
 
-    @media (min-width:1000px) {
-                /* &:hover{
-                border-radius: 70% 30% 43% 57% / 69% 16% 84% 31% ;
-                padding-left: 10rem;        
-            } */
-        }
-        
+
     @media (max-width:700px) {
-        /* border: 2px solid rgb(251 191 36); */
         justify-content: center;
         height: 100vh;
         width: 100%;
         margin-bottom: 20vh;
         margin-top: 10vh;
-        /* border-radius:33% 67% 42% 58% / 24% 42% 58% 76%    ; */
-        &:hover{
-        /* border-radius: 41% 59% 80% 25% / 68% 65% 35% 32%  ; */
-        /* padding-bottom: 10rem;     */
-        }
+        object-position: center 3rem;
+        
     } 
 `   

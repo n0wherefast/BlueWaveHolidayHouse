@@ -43,34 +43,33 @@ body {
   flex-wrap: nowrap;
 }
 
-.parallax .scroller {
+/* .parallax .scroller {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 64px;
   display: flex;
   white-space: nowrap;
-  /* display: flex;
-  flex-wrap: nowrap; */
-}
+  
+} */
 
-.parallax span {
+/* .parallax span {
   background-color:green;
   display: flex;
   margin-right: 30px;
-}
-.image {
-  background-image:url('../app/assets/pexels-max-ravier-3331094.jpg');
+} */
+/* .image {
+  background-image:url('../app/assets/pexels-max-ravier-3331094.webp');
   background-size:cover;
   background-position: 0px -15rem;
   background-repeat: no-repeat;
   
   @media (max-width:1000px) {
-    background-image:url('../app/assets/pexels-max-ravier-3331094.jpg');
+    background-image:url('../app/assets/pexels-max-ravier-3331094.webp');
     background-size:cover;
     background-position:0px -5rem;
   };
   @media (max-width:700px) {
-    background-image:url('../app/assets/pexels-max-ravier-3331094.jpg');
+    background-image:url('../app/assets/pexels-max-ravier-3331094.webp');
     background-size: cover ;
     background-position: center 3rem;
     background-repeat: no-repeat
@@ -88,23 +87,23 @@ body {
     top: 8rem;
   }
 
-}
-.imgDesc {
-   background-image:url('../app/assets/pexels-max-ravier-3331094.jpg');
+} */
+/* .imgDesc {
+   background-image:url('../app/assets/pexels-max-ravier-3331094.webp');
   background-size:cover;
   background-position: 0px -65rem;
   background-repeat: no-repeat;
-}
+} */
 .Gallery {
-   background-image:url('../app/assets/pexels-max-ravier-3331094.jpg');
+   background-image:url('../app/assets/pexels-max-ravier-3331094.webp');
   background-size:cover;
   background-position: 0px -70rem;
   background-repeat: no-repeat;
 }
 
-.foam{
+/* .foam{
   background-image:url('../app/assets/waveFoam1.png');
   background-size:cover;
   background-position: 0px -12rem;
   background-repeat: no-repeat;
-}
+} */

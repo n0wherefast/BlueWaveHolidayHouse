@@ -3,15 +3,10 @@ import { useRef } from "react";
 import {
   motion,
   useScroll,
-  useSpring,
   useTransform,
-  useMotionValue,
-  useVelocity,
-  useAnimationFrame} from "framer-motion";
-
-import { DiscoverContainer,ImageContainer,ImgContainer, BgContainer } from "../styles/Parallax.style";
-import { Image } from "next/dist/client/image-component";
-import styled from "styled-components";
+  } from "framer-motion";
+import { DiscoverContainer,ImageContainer, BgContainer } from "../styles/Parallax.style";
+import img from '../assets/pexels-max-ravier-3331094.webp'
 import Link from "next/link";
 import WavyText from "./WavyText";
 import { useSelector } from "react-redux";
@@ -46,11 +41,9 @@ const ref = useRef<HTMLDivElement>(null)
               { size < 700 ? <MdKeyboardDoubleArrowDown size={35} className='animate-pulse' /> : null}
           </DiscoverContainer> 
           
-          <ImageContainer className='image'>
-                {/* <motion.div  className="  foam  h-screen w-s" >   </motion.div>  */}
-                {/* <Image className='svg'  src={wavefoam2} alt='waveBg'/> */}
-                {/* <Image className='svg' src={wavefoam3} alt='waveBg'/> */}
-          </ImageContainer> 
+          <ImageContainer priority={false} rel="preload" src={img} width={2000} height={2000} alt="imge" className=''/>
+               
+          
       </BgContainer>
   );
 }

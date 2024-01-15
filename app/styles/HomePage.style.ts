@@ -23,8 +23,8 @@ export const DescripitonHome = styled.section`
   font-size: x-large;
   width:100vw;
   padding: 5px;
-  z-index: 0;
-  background-color: white;
+  /* z-index: 0;
+  background-color: white; */
 `
 export const GalleryContainer = styled.div`
  height: 93vh;

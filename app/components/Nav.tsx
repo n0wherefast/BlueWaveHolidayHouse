@@ -8,19 +8,12 @@ import { East_Sea_Dokdo,Open_Sans} from 'next/font/google'
 import { RootState } from '../redux/store'
 import { useSelector,useDispatch } from 'react-redux'
 import { updateValue,setCheckSize,checkPageHeight } from '../redux/slice/manageResizeSlice'
-import { 
-          NavbarContainer,
-          NavbarLeft,
-          NavbarRight,
+import {  NavbarContainer,
           NavbarExtend,
-          NavbarInnerContainer,
-          NavbarLinkContainer,
-          NavbarLink, Logo,
-          LinkButton,NavTitle,
-          NavbarLinkExtended,NavLogoExtend
-        } 
-
-        from "../styles/Navbar.style"
+          NavbarLink,NavbarLinkExtended,
+          LinkButton,NavLogoExtend
+        }from "../styles/Navbar.style"
+import Image from 'next/image';
 
 
 const OpenSans = Open_Sans({
@@ -69,16 +62,17 @@ function Nav() {
     // },[])
   return (
    <NavbarContainer  $extendnavbar={isClose.toString()} >
-    <NavbarInnerContainer >
-      <NavbarLeft>
-        <Logo priority alt='blue wave holiday house logo' src={LogoImg}></Logo>
-        <NavTitle className={OpenSans.className}>
-          <strong>BlueWave</strong>
-           <strong>HolidayHouse</strong> 
-        </NavTitle>
-      </NavbarLeft>
-      <NavbarRight >
-        <NavbarLinkContainer>
+    <section  className='   NAVBARINNERCONT w-[100%] h-[70px] flex bg-white'>
+      <section className='navLeft flex flex-[30%] justify-start  items-center font-bold'>
+        <Image className='m-[10px] w-[70px] h-auto' priority alt='blue wave holiday house logo' rel='preload' width={70} height={70} src={LogoImg}/>
+        <section  className={` NAVTITLE italic flex flex-col w-[10rem] text-[1.5rem] leading-6  ${OpenSans.className}` }>
+          <p>BlueWave</p>
+           <p>HolidayHouse</p> 
+        </section>
+          </section>
+         
+      <section className=' navRight flex flex-[70%] items-center lg:justify-around lg:pr-[1.5rem] pr-0 justify-end' >
+        <div className='NavbarLinkContainer flex items-center gap-[2rem]'>
           {links.map((link:LINK)=>{
             return(
               <NavbarLink key={link.id} href={link.url}>
@@ -87,11 +81,11 @@ function Nav() {
             )
           })}
           <LinkButton $isclose={isClose.toString()} onClick={(e)=>( setIsClose(!isClose))}>
-          {isClose ?  <IoMdClose size={30}  /> : <TiWavesOutline size={35} />}
+          {isClose ?  <IoMdClose title='close button menù'   size={30} /> : <TiWavesOutline  title='open button menù' size={35} />}
           </LinkButton> 
-        </NavbarLinkContainer> 
-      </NavbarRight>
-    </NavbarInnerContainer>
+        </div> 
+      </section>
+    </section>
      
       {isClose &&  
         <NavbarExtend onClick={()=>setIsClose(false)} >
@@ -103,12 +97,10 @@ function Nav() {
             )
           })}
           <NavLogoExtend>
-            <Logo alt='blue wave holiday house logo' src={LogoImg}></Logo>
+            <Image alt='blue wave holiday house logo' width={70} height={70} rel='preload' src={LogoImg}></Image>
           </NavLogoExtend>
-          
        </NavbarExtend> 
       }
-      
    </NavbarContainer>
   )
 }
