@@ -46,8 +46,6 @@ function Place() {
       
   return (
   <MainContainer className=''>
-
-   
     {
       places.map((itm:DataPlace)=>{
         const {moveX,moveY,desc,id,place,DelayValue,Bradius,src,moveXsm,moveYsm,moveXmd,moveYmd} = itm 

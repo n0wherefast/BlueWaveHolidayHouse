@@ -17,7 +17,7 @@ export const MainContainer = styled.div`
   width: 100vw;
   height:100vh;
   @media (max-width:700px) {
-    height: 170vh;
+    height: 150vh;
 }
   
 `
