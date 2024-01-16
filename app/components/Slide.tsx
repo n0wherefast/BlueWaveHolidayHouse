@@ -1,6 +1,6 @@
 import React from 'react'
 import {motion, Variant } from 'framer-motion'
-import img from '../assets/blue_wave__abstract_picture_walpaper_amazing.jpg'
+import img from '../assets/mobile.webp'
 import Image from 'next/image'
 
 
