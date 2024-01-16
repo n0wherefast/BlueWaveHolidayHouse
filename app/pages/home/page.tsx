@@ -26,7 +26,7 @@ export default function HomePage() {
         {/* <GalleryContainer className='Gallery'>
           <Gallery /> 
         </GalleryContainer> */}
-        <div className='h-10' id='home'/>
+        <div className=' h-16' id='home'/>
        <DescripitonHome  className=''>
         <div className=" m-5 w-full  lg:text-7xl text-5xl text-slate-950 font-black italic">
          <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.5}} className=' flex items-center justify-center w-full h-5 text-teal-500 '>BlueWave HolidayHouse </motion.h1>

@@ -30,12 +30,12 @@ const ref = useRef<HTMLDivElement>(null)
     target:ref,
     offset:["start start" , "end start"]
   })
-    const yBg = useTransform( scrollYProgress , [0,1] ,["0%" , "100%"]);
+    const yBg = useTransform( scrollYProgress , [0,1] ,["0%" , "50%"]);
       return (
-        <BgContainer ref={ref}>
+        <BgContainer ref={ref} >
           <DiscoverContainer >
-              <motion.div style={{y: yBg}} className="flex flex-col items-center">
-                <Link href={'#home'} className="flex items-center">
+              <motion.div style={{y: yBg}} className="flex flex-col items-center ">
+                <Link href={'#home'} className="flex items-center ">
                   { size > 700 ? <MdKeyboardDoubleArrowDown size={110} className='animate-pulse' /> : null}
                    <WavyText text={"discover! "} />
                    { size > 700 ? <MdKeyboardDoubleArrowDown size={110} className='animate-pulse' /> : null}
