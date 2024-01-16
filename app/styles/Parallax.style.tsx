@@ -36,7 +36,7 @@ export const DiscoverContainer = styled.button`
     }
     @media (max-width:700px) {
         position: absolute;
-        top: -16rem;
+        top: -10rem;
         margin-top: 47.5rem;
         padding: 10px;
         height: 10rem;
