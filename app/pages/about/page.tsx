@@ -7,7 +7,6 @@ import {GiWashingMachine,GiSeaCliff,GiRiceCooker} from 'react-icons/gi'
 import {CgScreen} from 'react-icons/cg'
 import {BsPersonWorkspace} from 'react-icons/bs'
 import { Variants, motion } from 'framer-motion'
-import styled from 'styled-components'
 import Button from '@/app/components/Button'
 import { AboutContainer , CardContainer,
           CardCollapse,CardAbout,
@@ -33,9 +32,7 @@ function About() {
   return (
     <>
     <AboutContainer >
-   <MainContainer 
-   >
-
+   <MainContainer>
       <MainTextContainer>
           <h2 className='text-amber-400'>Catch</h2>
           <h2>Your Dream</h2>

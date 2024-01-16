@@ -27,16 +27,18 @@ function Contacts() {
  
   return (
     <> 
-    <div className='pt-[4.4rem] flex flex-col w-full'>
+    <section className='pt-[4.4rem] flex flex-col w-full'>
 
-        <div className=' flex justify-center items-start  w-full h-[90vh]  '>
-            <Image className=' w-[100vw] lg:w-[100vw]' src={size >  700 ? img2: img} alt='wer'/>
-        </div>
-       <Button y={size < 700 ? -55 : size >1300? -10 :-25} to={'#contact'}  color={'text-[darkcyan]'}/>
-
-      <Map/> 
+    <div className= 'flex flex-col items-center w-full h-screen  '>
+        {/* <div className=' flex justify-center items-start  w-[100wv] h-[90vh]  '> */}
+            <Image className=' w-[100vw] h-[100vh]' width={1000} height={900} src={size >  700 ? img2: img} alt='blue wave background'/>
+        {/* </div> */}
+              <Button y={size < 700 ? -55 : size >1300? -120 :-25} to={'#contact'}  color={'text-[darkcyan]'}/>
+    </div>
       <br />
       <div className='h-14' id='contact' />
+      <Map/> 
+      <div className='h-14' />
       <InterestPlaces >
       <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}  className=''>
             <BoxInfo>
@@ -66,7 +68,7 @@ function Contacts() {
             </BoxInfo>
       </motion.div>
       </InterestPlaces>
-    </div>
+    </section>
     </>
   )
 }

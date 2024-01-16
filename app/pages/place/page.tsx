@@ -3,14 +3,11 @@ import React , {useEffect, useState}from 'react'
 import { dataPlace ,DataPlace} from '@/app/ref/data'
 import { motion } from 'framer-motion'
 import { PlaceContainer,MainContainer,ImageParagraphContainerPlace } from '@/app/styles/Place.style'
-import styled from 'styled-components'
 import Link from 'next/link'
-import PagePlace from './[name]/page'
 import type { RootState } from '@/app/redux/store'
 import { useSelector,useDispatch } from 'react-redux'
 import { updateValue,setCheckSize } from '@/app/redux/slice/manageResizeSlice'
-import { store } from '@/app/redux/store'
-import Waves from '@/app/components/Waves'
+
 
 
 // import '../../../globals.css'

@@ -61,7 +61,7 @@ function Nav() {
    <NavbarContainer  $extendnavbar={isClose.toString()} >
     <section  className='   NAVBARINNERCONT w-[100%] h-[70px] flex bg-white'>
         <section className='navLeft flex flex-[30%] justify-start  items-center font-bold'>
-          <Image className='m-[10px] w-[70px] h-auto' priority alt='blue wave holiday house logo' rel='preload' width={70} height={70} src={LogoImg}/>
+          <Image className='m-[10px] w-[70px] h-auto' placeholder='blur' blurDataURL='../assets/1693610050074.png' alt='blue wave holiday house logo' rel='preload' width={70} height={70} src={LogoImg}/>
           <section  className={` NAVTITLE italic flex flex-col w-[10rem] text-[1.5rem] leading-6  ${OpenSans.className}` }>
             <p>BlueWave</p>
             <p>HolidayHouse</p> 
