@@ -28,16 +28,16 @@ export default function HomePage() {
         </GalleryContainer> */}
         <div className='h-10' id='home'/>
        <DescripitonHome  className=''>
-        <h1 className=" m-5 flex items-center justify-center text-5xl text-slate-950 font-black italic">
-        BlueWave HolidayHouse
-        </h1>
+        <div className=" m-5 flex w-full items-center justify-center lg:text-7xl text-5xl text-slate-950 font-black italic">
+         <h1>BlueWave HolidayHouse </h1>
+        </div>
         <br />
         {
           dataHomeDescription.map((itm:DataHome) => {
             const {id,title,desc} = itm
             return(
               <motion.div key={id} variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}>
-                <strong className="text-black font-bold mb-6 w-full flex justify-center">{title}</strong>
+                <strong className="text-black text-3xl font-black italic mb-6 w-full flex justify-center">{title}</strong>
                 <ParagraphContainer>
                     {id % 2 == 0? null : <ImageParagraphContainer priority rel='preload' src={img} width={500} height={500} alt=''/> }
                     <motion.p className=' w-full lg:w-[40vw]'>

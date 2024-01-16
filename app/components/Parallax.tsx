@@ -35,7 +35,11 @@ const ref = useRef<HTMLDivElement>(null)
         <BgContainer ref={ref}>
           <DiscoverContainer >
               <motion.div style={{y: yBg}} className="flex flex-col items-center">
-                <Link href={'#home'}> <WavyText text={"discover! "} /></Link> 
+                <Link href={'#home'} className="flex items-center">
+                  { size > 700 ? <MdKeyboardDoubleArrowDown size={110} className='animate-pulse' /> : null}
+                   <WavyText text={"discover! "} />
+                   { size > 700 ? <MdKeyboardDoubleArrowDown size={110} className='animate-pulse' /> : null}
+                   </Link> 
                 { size < 700 ? <MdKeyboardDoubleArrowDown size={35} className='animate-pulse' /> : null}
               </motion.div>
           </DiscoverContainer> 

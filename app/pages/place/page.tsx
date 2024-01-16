@@ -58,11 +58,16 @@ function Place() {
               initial={{x:0 ,y:0}}  animate={{x:x,y:y}} 
               whileHover={{scale:1.2}}
               key={id} 
-              className=' absolute top-[35vh] lg:left-[35vw] left-[15vw] z-50 '>
-                <Link href={{ pathname:`/pages/place/${place}`, query:{name:place, desc:desc ,img:src?.src} }}>
+              className='  absolute top-[35vh] lg:left-[35vw] left-[15vw] z-50 '>
+                <Link  href={{ pathname:`/pages/place/${place}`, query:{name:place, desc:desc ,img:src?.src} }}>
                   <PlaceContainer className=''>
-                    <strong className=' absolute top-[30%] left-[15%] '>{place}</strong>
-                    <ImageParagraphContainerPlace width={500} height={500} src={src} alt={place}  $borderRadius={Bradius}/> 
+                    <strong className='   absolute top-[30%] left-[15%] '>
+                    <div className='h-24 text-slate-100 '>
+                      {place}
+                      <p className=' text-amber-400 relative top-[-2.8rem] left-[0.1rem] '>{place}</p>
+                    </div> 
+                      </strong>
+                    <ImageParagraphContainerPlace className='  ' width={500} height={500} src={src} alt={place}  $borderRadius={Bradius}/> 
                   </PlaceContainer>
                </Link>              
           </motion.div>      
