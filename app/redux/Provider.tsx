@@ -13,7 +13,7 @@ function Providers({children}:any) {
   const [load ,setLoad] = useState<boolean>(false)
 
    useEffect(()=>{
-    //  setTimeout(()=>(setLoad(true)),1000)
+     setTimeout(()=>(setLoad(true)),1000)
    },[])
   
   return (
