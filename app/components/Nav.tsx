@@ -34,6 +34,7 @@ function Nav() {
     if(size<700){
       dispatch(setCheckSize(true))
       setIsClose(false)
+  
       }else if (size>1000){
         setIsClose(false)
       }
@@ -42,13 +43,14 @@ function Nav() {
     function handleResize() {
     dispatch(updateValue(window.innerWidth))
     }
-     
+    
       window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
 
    },[size]);
+   
 
    const variant:Variants = {
     start:{opacity:0 ,x:-20},

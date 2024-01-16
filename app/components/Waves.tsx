@@ -5,8 +5,8 @@ function Waves() {
     <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 350" xmlns="http://www.w3.org/2000/svg" className="transition duration-300 ease-in-out delay-150">
     <defs>
       <linearGradient id="gradient" x1="50%" y1="100%" x2="50%" y2="0%">
-            <stop offset="5%" stop-color="#8ed1fc"></stop>
-            <stop offset="95%" stop-color="#0693e3"></stop>
+            <stop offset="5%" stopColor="#8ed1fc"></stop>
+            <stop offset="95%" stopColor="#0693e3"></stop>
         </linearGradient>
     </defs>
     
@@ -15,9 +15,9 @@ function Waves() {
 
     <defs>
         <linearGradient id="gradient" x1="50%" y1="100%" x2="50%" y2="0%">
-            <stop offset="5%" stop-color="#8ed1fc">
+            <stop offset="5%" stopColor="#8ed1fc">
             </stop>
-            <stop offset="95%" stop-color="#0693e3">
+            <stop offset="95%" stopColor="#0693e3">
             </stop>
        </linearGradient>
     </defs>
@@ -27,9 +27,9 @@ function Waves() {
 
     <defs>
         <linearGradient id="gradient" x1="50%" y1="100%" x2="50%" y2="0%">
-            <stop offset="5%" stop-color="#8ed1fc">
+            <stop offset="5%" stopColor="#8ed1fc">
             </stop>
-            <stop offset="95%" stop-color="#0693e3">
+            <stop offset="95%" stopColor="#0693e3">
             </stop>
         </linearGradient>
     </defs>
@@ -39,9 +39,9 @@ function Waves() {
 
         <defs>
             <linearGradient id="gradient" x1="50%" y1="100%" x2="50%" y2="0%">
-                <stop offset="5%" stop-color="#8ed1fc">
+                <stop offset="5%" stopColor="#8ed1fc">
                 </stop>
-                <stop offset="95%" stop-color="#0693e3">
+                <stop offset="95%" stopColor="#0693e3">
                 </stop>
             </linearGradient>
          </defs>
