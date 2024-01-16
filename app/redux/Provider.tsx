@@ -31,7 +31,7 @@ function Providers({children}:any) {
           </div>
         </div>
             
-         <Image className=' animate-bounce' src={logo} width={200} height={200} alt='logo image loading'/>
+         <Image className=' animate-bounce' placeholder='blur' blurDataURL='../assets/1693610050074.png' src={logo} width={200} height={200} alt='logo image loading'/>
       </div>
      }
 
