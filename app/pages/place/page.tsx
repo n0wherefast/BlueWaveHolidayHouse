@@ -63,9 +63,9 @@ function Place() {
                   <PlaceContainer className=''>
                     <strong className='   absolute top-[30%] left-[15%] '>
                     <div className='h-24 text-slate-100 '>
-                      {place}
-                      <p className=' text-amber-400 relative top-[-2.8rem] left-[0.1rem] '>{place}</p>
-                    </div> 
+                       <p className='w-full h-2'>{place}</p>
+                       <p className='w-full h-2 text-amber-400 relative top-[-0.6rem] left-[0.1rem] '>{place}</p>
+                    </div>
                       </strong>
                     <ImageParagraphContainerPlace className='  ' width={500} height={500} src={src} alt={place}  $borderRadius={Bradius}/> 
                   </PlaceContainer>
