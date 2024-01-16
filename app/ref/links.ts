@@ -2,24 +2,29 @@ export interface LINK {
     id:number,
     name:string,
     url:string
+    delay:number,
 }
 
 export const  links = [
     {id:0,
     name:'Home',
-    url:'/'
+    url:'/',
+    delay:0.4
     },
     {id:1,
     name:'About',
-    url:'/pages/about'
+    url:'/pages/about',
+    delay:0.6
     },
     {id:2,
     name:'Place',
-    url:'/pages/place'
+    url:'/pages/place',
+    delay:0.8
     },
     {id:3,
     name:'Contatti',
-    url:'/pages/contacts'
+    url:'/pages/contacts',
+    delay:1
     },
 ]
 

@@ -90,16 +90,19 @@ function Nav() {
             return(
               
                 <NavbarLinkExtended key={link.id} href={link.url}>
-                  <motion.div variants={variant} initial='start' whileInView='end'  >
-                  {link.name}
+                  <motion.div variants={variant} initial='start' whileInView='end' transition={{delay:link.delay}} >
+                    <div className='h-24'>
+                      {link.name}
+                      <p className=' text-amber-400 relative top-[-7rem] '>{link.name}</p>
+                    </div>               
                   </motion.div>
                 </NavbarLinkExtended>
               
             )
           })}
-          <NavLogoExtend>
+          {/* <NavLogoExtend>
             <Image alt='blue wave holiday house logo' width={70} height={70} rel='preload' src={LogoImg}></Image>
-          </NavLogoExtend>
+          </NavLogoExtend> */}
        </NavbarExtend> 
       }
    </NavbarContainer>
