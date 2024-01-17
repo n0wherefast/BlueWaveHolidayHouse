@@ -13,6 +13,7 @@ import Link from 'next/link'
 import Button from '@/app/components/Button'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/app/redux/store'
+import logoP from '../../assets/logo_paytourist_retina_r.webp'
 
 
 
@@ -29,7 +30,7 @@ function Contacts() {
     <> 
   <section className='pt-[3rem] lg:pt-0 flex flex-col w-full'>
     <div className= 'flex flex-col items-center w-full h-screen'>
-            <Image placeholder='blur' blurDataURL='../../assets/waveCardOriz.png' className=' w-[100vw] lg:h-[105vh] h-[98vh] border-2' width={1000} height={900} src={size >  700 ? img2: img} alt='blue wave background'/>
+            <Image placeholder='blur' blurDataURL='../../assets/waveCardOriz.png' className=' w-[100vw] lg:h-[105vh] h-[98vh] ' width={1000} height={900} src={size >  700 ? img2: img} alt='blue wave background'/>
             <Button y={size < 700 ? -75 : size >1300? -100 :-25} to={'#contact'}  color={'text-[darkcyan]'}/>
     </div>
       <br />
@@ -40,27 +41,33 @@ function Contacts() {
       <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}  className=''>
             <BoxInfo>
               <div className='h-16'>
-                <h1 className='text-5xl font-black italic  w-full ' >Contatti</h1>
-                <h1 className='text-amber-400 relative top-[-45px] text-5xl font-black italic  w-full ' >Contatti</h1>
+                <h1 className=' font-black italic h-5  w-full  text-4xl lg:text-5xl' >Prenota adesso</h1>
+                <h1 className='text-amber-400 relative top-[-17px] text-4xl lg:text-5xl font-black italic h-5 w-full ' >Prenota adesso</h1>
                </div>
-                  <div className='flex gap-2 lg:text-xl text-lg font-semibold items-center'>
+               <p> <strong className=' text-3xl font-black italic'> <span className=' text-amber-400' >C</span>ontatti:</strong></p>
+                  <div className='p-1 flex gap-2 lg:text-xl text-lg font-semibold items-center'>
                     <h2 className=' text-amber-400 text-2xl font-black italic' > Email:</h2>
                     <p>bluewavehhouse@gmail.com</p>
                   </div>
                   <div className='flex gap-2 text-xl font-semibold items-center'>
                     <h2 className=' text-amber-400 text-2xl font-black italic' > Tel:</h2>
                     <p>+39 3348951094</p>
-                </div>
-                <LinkInfo>
-                <Link aria-label='link per airBnB' href={'https://www.airbnb.it/rooms/853661203460112114?adults=2&check_in=2023-10-01&check_out=2023-10-08&source_impression_id=p3_1687258577_%2BvWKPiaOia6dOiMN&previous_page_section_name=1000&federated_search_id=6069cfe0-1fd5-48db-ae88-98878887dda1'}>
-                    <FaAirbnb className='m-2 hover:text-amber-400 p-1 border-2 rounded-2xl' size={55}/>
-                </Link> 
-                <Link aria-label='link per airBnB' href={'https://www.airbnb.it/rooms/853661203460112114?adults=2&check_in=2023-10-01&check_out=2023-10-08&source_impression_id=p3_1687258577_%2BvWKPiaOia6dOiMN&previous_page_section_name=1000&federated_search_id=6069cfe0-1fd5-48db-ae88-98878887dda1'}>
-                    <TbBrandBooking className='m-2 hover:text-amber-400  p-1 border-2 rounded-2xl' size={55}/>
-                </Link> 
-                <Link aria-label='link per airBnB' href={'https://www.airbnb.it/rooms/853661203460112114?adults=2&check_in=2023-10-01&check_out=2023-10-08&source_impression_id=p3_1687258577_%2BvWKPiaOia6dOiMN&previous_page_section_name=1000&federated_search_id=6069cfe0-1fd5-48db-ae88-98878887dda1'}>
-                    <FaWhatsapp className='m-2 hover:text-amber-400  p-1 border-2 rounded-2xl' size={55}/>
-                </Link> 
+                </div>  
+                                   
+                 <p> <strong className=' text-3xl font-black italic'> <span className=' text-amber-400' >L</span>ink:</strong></p>
+                <LinkInfo>                
+                      <Link aria-label='link per airBnB' href={'https://www.airbnb.it/rooms/965158960549808793?_set_bev_on_new_domain=1693421299_M2U2NDkyN2NiZTk1&source_impression_id=p3_1705435505_TKYN%2B%2BsmqOiHnMsk'}>
+                          <FaAirbnb className='m-2 text-red-400 hover:text-amber-400  hover:scale-110 p-1 border-2 rounded-2xl' size={55}/>
+                      </Link> 
+                      <Link aria-label='link for bookong.com' href={'https://www.booking.com/hotel/it/blue-wave-holiday-house.it.html?aid=2311236&label=it-it-booking-desktop-VRZD0IC5lt9Ulq%2AajTZ_bgS652829000338%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-65526620%3Alp1008279%3Ali%3Adec%3Adm&sid=0b226f1f88c462cf98a5cc0024d14f88&dest_id=-109863;dest_type=city;dist=0;group_adults=4;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=4;req_children=0;room1=A%2CA%2CA%2CA;sb_price_type=total;sr_order=popularity;srepoch=1705435105;srpvid=ebdb8c6db30a003f;type=total;ucfs=1&#hotelTmpl'}>
+                          <TbBrandBooking className='m-2 text-blue-800 hover:text-amber-400 hover:scale-110  p-1 border-2 rounded-2xl' size={55}/>
+                      </Link> 
+                      <Link aria-label='link whatsApp' href={'https://wa.me/message/RJUSAJYMVHYHF1'}>
+                          <FaWhatsapp className='m-2 text-green-400 hover:text-amber-400 hover:scale-110  p-1 border-2 rounded-2xl' size={55}/>
+                      </Link> 
+                      <Link aria-label='link whatsApp' href={'https://acicastello.paytourist.com/strutture-certificate/case-vacanze/apct000069-0002.html'}>   
+                          <Image className='m-2 hover:text-amber-400 hover:scale-110  p-2 border-2 rounded-2xl'  width={50} height={50}  src={logoP} alt='logo'/>
+                      </Link>
                 </LinkInfo>
             </BoxInfo>
       </motion.div>

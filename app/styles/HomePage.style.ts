@@ -25,7 +25,7 @@ export const DescripitonHome = styled.section`
 
 `
 export const GalleryContainer = styled.div`
- height: 93vh;
+ height: 100vh;
  z-index: 0;
  backdrop-filter: blur(20px);
 `

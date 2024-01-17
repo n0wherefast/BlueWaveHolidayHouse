@@ -18,7 +18,10 @@ function Providers({children}:any) {
   
   return (
     <Provider store={store}>
-     { load === true ? children :
+     { 
+     load === true ? 
+     children 
+     :
       <div className=' w-full h-screen bg-slate-100 flex flex-col gap-10 justify-center items-center'>
          <div className=' mt-52 w-[20rem] h-[30rem]'> 
           <div className=' items-center justify-center flex flex-col'>
