@@ -33,7 +33,7 @@ function ButtonScrollTop({color,y,to}:BUTTONSCROLL) {
     
     { checkHeight === true ? <motion.button   animate={{ y: y,  scale: [1,1.5,1], borderRadius:[0,2,2,0]} } 
                             transition={{ ease: "easeOut", duration: 1 }}
-                            className={` fixed  bottom-10 ${size < 700? 'left-[85vw]':'left-[90vw]' }`}
+                            className={` fixed  bottom-16 ${size < 700? 'left-[85vw]':'left-[90vw]' }`}
                              ref={ref}  onClick={()=>dispatch(scrollToTop(to))}>  
                                 <h2 className= {`transition-all ease-in flex justify-center items-center text-4xl lg:text-5xl rounded-2xl hover:text-slate-100 font-extrabold   ${color}`}>
                                     <p className=''><FaArrowCircleUp/></p>
