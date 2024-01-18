@@ -15,7 +15,7 @@ export const MainContainer = styled.div`
   /* background-color: rgb(240, 250, 252); // ice// */
   /* background-color: blue; // ice// */
   padding-top:5rem;
-  width: 100vw;
+  width: 100%;
   height:100vh;
   @media (max-width:700px) {
     height: 155vh;
