@@ -33,7 +33,7 @@ function Gallery() {
         pagination={false}
         
         modules={[EffectCoverflow,Autoplay, Pagination]}
-        className="mySwiper"
+        className="mySwiper swiper"
       >
         <SwiperSlide>
           <Image className='swiper-slide'  alt='' width={1000} height={1000} src={img} />
