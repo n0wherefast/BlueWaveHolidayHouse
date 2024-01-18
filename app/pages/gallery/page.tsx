@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import '../../globals.css'
-import Image from 'next/image'
+import Image from 'next/image';
 import { EffectCoverflow, Pagination ,Autoplay} from 'swiper/modules';
 import img from '../../assets/29-09-11.webp'
 function Gallery() {
@@ -36,31 +36,31 @@ function Gallery() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Image alt='' width={1000} height={1000} src={img} />
+          <Image className='swiper-slide'  alt='' width={1000} height={1000} src={img} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image alt='' width={1000} height={1000} src={img} />
+          <Image className='swiper-slide' alt='' width={1000} height={1000} src={img} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image alt='' width={1000} height={1000} src={img} />
+          <Image className='swiper-slide' alt='' width={1000} height={1000} src={img} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image alt='' width={1000} height={1000} src={img} />
+          <Image className='swiper-slide' alt='' width={1000} height={1000} src={img} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image alt='' width={1000} height={1000} src={img} />
+          <Image className='swiper-slide' alt='' width={1000} height={1000} src={img} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image alt='' width={1000} height={1000} src={img} />
+          <Image className='swiper-slide' alt='' width={1000} height={1000} src={img} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image alt='' width={1000} height={1000} src={img} />
+          <Image className='swiper-slide' alt='' width={1000} height={1000} src={img} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image alt='' width={1000} height={1000} src={img} />
+          <Image className='swiper-slide' alt='' width={1000} height={1000} src={img} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image alt='' width={1000} height={1000} src={img} />
+          <Image className='swiper-slide' alt='' width={1000} height={1000} src={img} />
         </SwiperSlide>
       </Swiper>
         </div>
