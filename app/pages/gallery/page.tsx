@@ -34,31 +34,31 @@ function Gallery() {
             modules={[EffectCoverflow,Autoplay, Pagination]}
             className="mySwiper swiper "
       >
-            <SwiperSlide className='swiper-slide '>
+            <SwiperSlide className='swiper-slide'>
             <Image className=' swiper-slide-img'  alt='' width={1000} height={1000} src={img} />
             </SwiperSlide>
-            <SwiperSlide className='swiper-slide '>
+            <SwiperSlide className='swiper-slide'>
             <Image className=' swiper-slide-img' alt='' width={1000} height={1000} src={img} />
             </SwiperSlide>
-            <SwiperSlide className='swiper-slide '>
+            <SwiperSlide className='swiper-slide'>
             <Image className=' swiper-slide-img' alt='' width={1000} height={1000} src={img} />
             </SwiperSlide>
-            <SwiperSlide className='swiper-slide '>
+            <SwiperSlide className='swiper-slide'>
             <Image className=' swiper-slide-img' alt='' width={1000} height={1000} src={img} />
             </SwiperSlide>
-            <SwiperSlide className='swiper-slide '>
+            <SwiperSlide className='swiper-slide'>
             <Image className=' swiper-slide-img' alt='' width={1000} height={1000} src={img} />
             </SwiperSlide>
-            <SwiperSlide className='swiper-slide '>
+            <SwiperSlide className='swiper-slide'>
             <Image className=' swiper-slide-img' alt='' width={1000} height={1000} src={img} />
             </SwiperSlide>
-            <SwiperSlide className='swiper-slide '>
+            <SwiperSlide className='swiper-slide'>
             <Image className=' swiper-slide-img' alt='' width={1000} height={1000} src={img} />
             </SwiperSlide>
-            <SwiperSlide className='swiper-slide '>
+            <SwiperSlide className='swiper-slide'>
             <Image className=' swiper-slide-img' alt='' width={1000} height={1000} src={img} />
             </SwiperSlide>
-            <SwiperSlide className='swiper-slide '>
+            <SwiperSlide className='swiper-slide'>
             <Image className=' swiper-slide-img' alt='' width={1000} height={1000} src={img} />
             </SwiperSlide>
       </Swiper>
