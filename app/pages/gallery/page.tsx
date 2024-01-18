@@ -6,17 +6,23 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import '../../globals.css'
 import Image from 'next/image'
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination ,Autoplay} from 'swiper/modules';
 import img from '../../assets/29-09-11.webp'
 function Gallery() {
   return (
     <>
         <div className='h-screen w-full pt-[4.5rem]'>
+        <div>Gallery</div>
         <Swiper
         effect={'coverflow'}
         grabCursor={true}
+        loop={true}
         centeredSlides={true}
         slidesPerView={'auto'}
+        autoplay={{
+            delay:2500,
+            disableOnInteraction:false
+        }}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -24,8 +30,9 @@ function Gallery() {
           modifier: 1,
           slideShadows: true,
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        pagination={false}
+        
+        modules={[EffectCoverflow,Autoplay, Pagination]}
         className="mySwiper"
       >
         <SwiperSlide>
