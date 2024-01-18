@@ -43,11 +43,10 @@ body {
   flex-wrap: nowrap;
 }
 
-.swiper {
+/* .swiper {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color:darkcyan;
 }
 
 .swiper-slide {
@@ -58,11 +57,10 @@ body {
 }
 
 .swiper-slide-img {
-  /* display: block; */
+  display: block;
   width: 100%;
   height:100%;
-  border-radius: 20px;
-}
+} */
 
 /* .image {
   background-image:url('../app/assets/pexels-max-ravier-3331094.webp');
