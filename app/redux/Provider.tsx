@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React,{Suspense} from 'react'
 import { Provider } from 'react-redux'
 import {store} from './/store'
 import { useEffect,useState } from 'react'
@@ -17,12 +17,25 @@ function Providers({children}:any) {
    },[])
   
   return (
-    <Provider store={store}>
-     { 
-     load === true ? 
-     children 
-     :
-      <div className=' w-full h-screen bg-slate-100 flex flex-col gap-10 justify-center items-center'>
+    <>
+   
+        <Provider store={store}>
+         <Suspense fallback={<Loading/>}>
+           { children }
+         </Suspense>    
+      </Provider>
+   
+    
+    </>
+    
+  )
+}
+
+export default Providers
+
+function Loading() {
+  return(
+    <div className=' w-full h-screen bg-slate-100 flex flex-col gap-10 justify-center items-center'>
          <div className=' mt-52 w-[20rem] h-[30rem]'> 
           <div className=' items-center justify-center flex flex-col'>
             <div className=' font-black italic lg:text-8xl text-[2.5rem] text-sky-600 uppercase'> BlueWave</div>
@@ -36,11 +49,5 @@ function Providers({children}:any) {
             
          <Image className=' animate-bounce' placeholder='blur' blurDataURL='../assets/1693610050074.png' src={logo} width={200} height={200} alt='logo image loading'/>
       </div>
-     }
-
-      
-    </Provider>
   )
 }
-
-export default Providers

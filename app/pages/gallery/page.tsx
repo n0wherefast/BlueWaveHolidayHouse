@@ -50,7 +50,7 @@ function Gallery() {
             }}
             pagination={false}
             modules={[EffectCoverflow,Autoplay, Pagination]}
-            className="w-[100%] pt-[50%] pb-[50%]"
+            className="w-[100%] pt-[5rem] pb-[5rem]"
       >
             <SwiperSlide  style={style}>
             <Image className=' w-full h-full  rounded-2xl block'  alt='' width={500} height={500} src={img} />

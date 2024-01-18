@@ -48,7 +48,7 @@ function Place() {
 
       
   return (
-  <MainContainer className='flex flex-col'>
+  <MainContainer className='flex flex-col bg-sky-700'>
     <div className=" w-full  lg:text-8xl text-7xl text-slate-950 font-black italic ">
             <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.7}} className=' lg:absolute lg:top-[25rem] flex items-center justify-center w-full text-amber-400 '>Places</motion.h1>
     </div>
