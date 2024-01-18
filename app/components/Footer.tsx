@@ -6,11 +6,23 @@ import Link from 'next/link'
 
 function Footer() {
   const [isOpen,setIsOpen] = useState(false)
+
+  const date = new Date()
+  const year = date.getFullYear()
   return (
-    <div className=' h-[4rem] w-full bg-slate-100 flex items-center justify-between pl-2'>
-      <button onClick={()=>setIsOpen(!isOpen)} className=' text-xl font-bold hover:text-amber-400'>Credits</button>
-      {isOpen && <Credits/>}
-      <div className=' flex gap-2 pr-3'>
+    <div className=' min-h-[4rem] w-full bg-slate-100 flex items-center justify-between pl-2'>
+      <section className='flex flex-col'>
+          <button onClick={()=>setIsOpen(!isOpen)} className='flex flex-col'>
+            <p className=' text-md font-bold text-sky-900 hover:text-amber-400'> Credits</p>
+            {isOpen && <Credits/>}
+          </button>
+           <p className=' font-medium italic'>BlueWave HolidayHouse &copy;{year}</p>  
+            
+      </section>
+         
+
+      
+      <div className=' flex gap-2 pr-2'>
         {socialLinks.map((link)=>(
           <div key={link.id}>
             <Link href={link.url}>

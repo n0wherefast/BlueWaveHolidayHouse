@@ -104,13 +104,13 @@ export const LinkButton = styled.button<Props>`
         };
 `
 export const NavbarLinkExtended = styled(Link)`
-  color:rgb(255,255,255);
-  font-size: 4.5rem;
+  color: rgb(255,255,255);
+  font-size: 4.3rem;
   font-weight: 800;
   font-style: italic;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
-  padding: 0.5rem 0.5rem;
+  padding: 0rem 0.4rem;
   padding-left: 1.5rem;
   transition: all 0.3s ease-in;
   width: 100%;
