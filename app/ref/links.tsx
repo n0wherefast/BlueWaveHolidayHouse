@@ -24,12 +24,12 @@ export const  links = [
     delay:0.6
     },
     {id:3,
-    name:'Place',
+    name:'Places',
     url:'/pages/place',
     delay:0.8
     },
     {id:4,
-    name:'Contatti',
+    name:'Contacts',
     url:'/pages/contacts',
     delay:1
     },

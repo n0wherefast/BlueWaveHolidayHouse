@@ -1,7 +1,7 @@
 'use client'
 import React , {useEffect, useState}from 'react'
 import { dataPlace ,DataPlace} from '@/app/ref/data'
-import { motion } from 'framer-motion'
+import { motion,Variants } from 'framer-motion'
 import { PlaceContainer,MainContainer,ImageParagraphContainerPlace } from '@/app/styles/Place.style'
 import Link from 'next/link'
 import type { RootState } from '@/app/redux/store'
@@ -38,21 +38,29 @@ function Place() {
     };
 
    });
-
+   const variant:Variants = {
+    start:{opacity:0 ,x:-20},
+    end:{opacity:1, x:0},
+    }
    
     
     
 
       
   return (
-  <MainContainer className=''>
-    {
+  <MainContainer className='flex flex-col'>
+    <div className=" w-full  lg:text-7xl text-7xl text-slate-950 font-black italic">
+            <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.7}} className=' flex items-center justify-center w-full text-amber-400 '>Places</motion.h1>
+    </div>
+    <div className=' w-full h-screen'>
+      {
       places.map((itm:DataPlace)=>{
         const {moveX,moveY,desc,id,place,DelayValue,Bradius,src,moveXsm,moveYsm,moveXmd,moveYmd} = itm 
         let x =  checkSize === true ? moveXsm  : size === 1024 ? moveXmd : moveX
         let y =  checkSize === true ? moveYsm : size === 1024 ? moveYmd : moveY 
         
         return(
+          
           <motion.div
               transition={{delay:DelayValue}} 
               initial={{x:0 ,y:0}}  animate={{x:x,y:y}} 
@@ -74,6 +82,8 @@ function Place() {
         )
       })
     }
+    </div>
+    
     {/* {size<1400? null:<Waves/>} */}
   </MainContainer>
   )

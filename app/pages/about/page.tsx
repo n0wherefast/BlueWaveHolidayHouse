@@ -27,6 +27,10 @@ function About() {
   const variant:Variants = {
     start:{opacity:0 ,y:-20},
     end:{opacity:1, y:8},
+    startTit:{opacity:0 ,x:-20},
+    endTit:{opacity:1, x:2},
+    startRev:{opacity:0 ,x:20},
+    endRev:{opacity:1, x:2},
     }
   
   return (
@@ -34,9 +38,9 @@ function About() {
     <AboutContainer >
    <MainContainer>
       <MainTextContainer>
-          <h2 className='text-amber-400'>Catch</h2>
-          <h2>Your Dream</h2>
-          <h2 className=' text-amber-400'>Holiday.</h2> 
+          <motion.h2 variants={variant} initial='startTit' whileInView='endTit' className='text-amber-400'>Catch</motion.h2>
+          <motion.h2 variants={variant} initial='startRev' whileInView='endRev'>Your Dream</motion.h2>
+          <motion.h2 variants={variant} initial='startTit' whileInView='endTit' className=' text-amber-400'>Holiday.</motion.h2> 
       </MainTextContainer>
       <Button to={'#sec'}  y={-65} color={'text-[coral]'}/>
     </MainContainer>

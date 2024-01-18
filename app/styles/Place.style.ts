@@ -33,14 +33,14 @@ export const PlaceContainer = styled.button`
     }
 
 @media (max-width:700px) {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
   &:hover{
     color: sandybrown;
   }
 `
 export const ImageParagraphContainerPlace = styled(Image)<Props>`
-  border: 2px  solid sandybrown;
+  /* border: 2px  solid sandybrown; */
   display:flex;
   width: 20vw;
   height: 25vh;
@@ -53,8 +53,8 @@ export const ImageParagraphContainerPlace = styled(Image)<Props>`
     height: 25vh;
     }
   @media (max-width:700px) {
-    width: 15rem;
-    height: 10rem;
+    width: 13rem;
+    height: 8rem;
     }
 
 

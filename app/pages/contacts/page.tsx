@@ -34,7 +34,11 @@ function Contacts() {
             <Button y={size < 700 ? -75 : size >1300? -100 :-25} to={'#contact'}  color={'text-[darkcyan]'}/>
     </div>
       <br />
-      <div className='h-14' id='contact' />
+      <div className='h-16' id='contact' />
+      <div className=" w-full  lg:text-7xl text-7xl text-slate-950 font-black italic">
+            <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.7}} className=' flex items-center justify-center w-full text-amber-400 '>Contacts</motion.h1>
+    </div>
+    <br />
       <Map/> 
       <div className='h-14' />
       <InterestPlaces >
