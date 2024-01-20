@@ -8,7 +8,7 @@ import type { RootState } from '@/app/redux/store'
 import { useSelector,useDispatch } from 'react-redux'
 import { updateValue,setCheckSize } from '@/app/redux/slice/manageResizeSlice'
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 // Import Swiper styles
 import "swiper/css";
@@ -75,13 +75,14 @@ function Place() {
       places.map((itm:DataPlace)=>{
         const {place,id,desc,src} = itm
 
+
         return(
           <SwiperSlide style={{padding:'1rem',backgroundColor:'transparent'}} key={id}>
-            <Image className='w-full h-[88vh]' src={src} height={1000} width={1000}  alt='ok'/>
+            <Image className='w-full h-[88vh]' src={src!} height={1000} width={1000}  alt='ok'/>
             <motion.div transition={{delay:0.5}} initial={{opacity:0 ,x:22}} whileInView={{opacity:1 ,x:0}}
-             className='p-2 w-[30rem] min-h-[30rem] absolute left-[10rem] top-[10rem] border-2  backdrop-blur-xl'>
+             className='p-2 w-[18rem] lg:w-[30rem] min-h-[30rem] absolute left-[3rem] lg:left-[10rem] top-[3rem] lg:top-[10rem] border-2  backdrop-blur-xl'>
              <p className='p-2 text-5xl font-bold italic'>{place}</p>
-            <p className='p-2 font-medium  text-xl'>{desc}</p>
+            <p className='p-2 font-medium text-sm lg:text-xl'>{desc}</p>
             </motion.div>           
           </SwiperSlide>
         )

@@ -8,7 +8,7 @@ type src = { src:string}
 
 export interface DataHome {
     id:number,
-    img?:string | StaticImageData,
+    img?: StaticImageData,
     desc:string,
     title:string,
 }
@@ -16,7 +16,7 @@ export interface DataPlace {
     id:number,
     moveX:number,
     moveY:number,
-    src?:  StaticImageData | src,
+    src?:  StaticImageData ,
     place:string,
     desc?:string,
     DelayValue:number,

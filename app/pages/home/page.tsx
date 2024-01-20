@@ -30,16 +30,16 @@ export default function HomePage() {
         <br />
         {
           dataHomeDescription.map((itm:DataHome) => {
-            const {id,title,desc} = itm
+            const {id,title,desc,img} = itm
             return(
               <motion.div key={id} variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}>
                 <strong className="text-black text-3xl font-black italic mb-6 w-full flex justify-center">{title}</strong>
                 <ParagraphContainer>
-                    {id % 2 == 0? null : <ImageParagraphContainer priority rel='preload' src={img} width={500} height={500} alt=''/> }
+                    {id % 2 == 0? null : <ImageParagraphContainer priority rel='preload' src={img!} width={500} height={500} alt=''/> }
                     <motion.p className=' w-full lg:w-[40vw]'>
                      {desc}
                     </motion.p> 
-                    {id % 2 == 0? <ImageParagraphContainer priority rel='preload' src={img} width={500} height={500} alt=''/> : null}
+                    {id % 2 == 0? <ImageParagraphContainer priority rel='preload' src={img!} width={500} height={500} alt=''/> : null}
                 </ParagraphContainer>
                 <div className='w-full flex justify-center'><WaveLine/></div>
               </motion.div>
