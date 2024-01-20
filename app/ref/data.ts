@@ -93,6 +93,11 @@ export const dataPlace = [
          asperiores sint porro nesciunt ipsam minus at? Dignissimos,
           atque perspiciatis dolor ab sint, necessitatibus velit quaerat obcaecati
            unde tenetur debitis quisquam rerum quia praesentium? Quod, eos itaque eum impedit
+            quaerat laudantium molestias ad odit nam praesentium vero!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,
+         asperiores sint porro nesciunt ipsam minus at? Dignissimos,
+          atque perspiciatis dolor ab sint, necessitatibus velit quaerat obcaecati
+           unde tenetur debitis quisquam rerum quia praesentium? Quod, eos itaque eum impedit
             quaerat laudantium molestias ad odit nam praesentium vero!`
     },
     {
@@ -111,7 +116,11 @@ export const dataPlace = [
          asperiores sint porro nesciunt ipsam minus at? Dignissimos,
           atque perspiciatis dolor ab sint, necessitatibus velit quaerat obcaecati
            unde tenetur debitis quisquam rerum quia praesentium? Quod, eos itaque eum impedit
-            quaerat laudantium molestias ad odit nam praesentium vero!`
+            quaerat laudantium molestias ad odit nam praesentium vero!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,
+            asperiores sint porro nesciunt ipsam minus at? Dignissimos,
+             atque perspiciatis dolor ab sint, necessitatibus velit quaerat obcaecati
+              unde tenetur debitis quisquam rerum quia praesentium? Quod, eos itaque eum impedit
+               quaerat laudantium molestias ad odit nam praesentium vero!`
     },
     {
         id:1,
@@ -126,6 +135,11 @@ export const dataPlace = [
         src:catania,
         place:'Catania',
         desc:`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,
+         asperiores sint porro nesciunt ipsam minus at? Dignissimos,
+          atque perspiciatis dolor ab sint, necessitatibus velit quaerat obcaecati
+           unde tenetur debitis quisquam rerum quia praesentium? Quod, eos itaque eum impedit
+            quaerat laudantium molestias ad odit nam praesentium vero!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,
          asperiores sint porro nesciunt ipsam minus at? Dignissimos,
           atque perspiciatis dolor ab sint, necessitatibus velit quaerat obcaecati
            unde tenetur debitis quisquam rerum quia praesentium? Quod, eos itaque eum impedit
@@ -147,6 +161,11 @@ export const dataPlace = [
          asperiores sint porro nesciunt ipsam minus at? Dignissimos,
           atque perspiciatis dolor ab sint, necessitatibus velit quaerat obcaecati
            unde tenetur debitis quisquam rerum quia praesentium? Quod, eos itaque eum impedit
+            quaerat laudantium molestias ad odit nam praesentium vero!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,
+         asperiores sint porro nesciunt ipsam minus at? Dignissimos,
+          atque perspiciatis dolor ab sint, necessitatibus velit quaerat obcaecati
+           unde tenetur debitis quisquam rerum quia praesentium? Quod, eos itaque eum impedit
             quaerat laudantium molestias ad odit nam praesentium vero!`
     },
     {
@@ -162,6 +181,11 @@ export const dataPlace = [
         src:img,
         place:'Acireale',
         desc:`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,
+         asperiores sint porro nesciunt ipsam minus at? Dignissimos,
+          atque perspiciatis dolor ab sint, necessitatibus velit quaerat obcaecati
+           unde tenetur debitis quisquam rerum quia praesentium? Quod, eos itaque eum impedit
+            quaerat laudantium molestias ad odit nam praesentium vero!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,
          asperiores sint porro nesciunt ipsam minus at? Dignissimos,
           atque perspiciatis dolor ab sint, necessitatibus velit quaerat obcaecati
            unde tenetur debitis quisquam rerum quia praesentium? Quod, eos itaque eum impedit
