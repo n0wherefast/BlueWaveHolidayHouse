@@ -16,11 +16,11 @@ export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height:100vh;
   background-color: rgb(3 105 161);
   @media (min-width: 700px) {
-    height: 100vh;
+    height: 94vh;
   }
 `
 export const CardContainer = styled.div`
@@ -45,6 +45,7 @@ export const CardCollapse =styled.button<Props>`
     border-bottom:${(props)=>(props.$extend === 'true'? '': '2px solid black' )} ;
     &:hover{
         border-bottom:${(props)=>(props.$extend === 'true'? '': ' 2px #0284c7 solid' )} ;
+        /* border-bottom: 2px #0284c7 solid; */
     }
 
 `
@@ -64,9 +65,13 @@ export const CardAbout = styled.div<Props>`
     overflow: hidden;
     flex-direction: row;
     padding:${(props)=>(props.$extend === 'true' ? '1rem': '')};
+    /* margin: 1rem; */
     width:20rem;
     height:${(props)=>(props.$extend ==='true'? '28rem': '0px')};
     background-color:white;
+    /* background-color:#0284c7; */
+    /* border-radius: 10px; */
+    /* border: 1px solid darkgray; */
     border-bottom:${(props)=>(props.$extend === 'true'? '2px solid black' :'')} ;
     color:black;
     font-size: larger;
@@ -79,9 +84,11 @@ export const ContainerImage = styled(Image)`
 `
 
 export const TextAboutContainer = styled.div`
+    /* background-color: lightgrey; */
     padding: 1rem;
     border-radius:1.5rem;
     width:30vw;
+    /* font-weight: 700; */
     border: 2px solid black;
     background-color: white;
     @media (max-width:700px) {
@@ -97,8 +104,8 @@ export const MainTextContainer = styled.div`
   justify-content: start;
   font-style: italic;
   font-weight: 900;
-  font-size: 10rem;
-  margin: 1.5rem;
+  font-size: 9.5rem;
+  padding: 0.25rem;
   color: rgb(248 250 252);
 
   @media (max-width:1000px) {
@@ -110,3 +117,7 @@ export const MainTextContainer = styled.div`
   }
 
 `
+
+
+// flex justify-center items-center p-4 m-3 w-2/2 h-auto shadow-xl
+//  shadow-slate-400 bg-slate-100 rounded-xl border border-slate-400
