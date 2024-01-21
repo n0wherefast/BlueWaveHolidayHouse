@@ -39,7 +39,7 @@ export const  dataHomeDescription = [
         img:img,
         title:" La Posizione strategica",
         desc:` dell'appartamento permette di raggiungere facilmente tutti i principali luoghi d'interesse della zona, tra cui:
-        Catania, la città barocca più importante della Sicilia, con il suo centro storico patrimonio dell'UNESCO, l'Etna, il vulcano attivo più alto d'Europa, le spiagge di Acitrezza, le Faraglioni, le città barocche di Siracusa e Taormina, e molto altro ancora.
+        Catania, la città barocca più importante della Sicilia, con il suo centro storico patrimonio dell'UNESCO, l'Etna, il vulcano attivo più alto d'Europa, le spiagge di Acitrezza, i Faraglioni, le città barocche di Siracusa e Taormina, e molto altro ancora.
        `
     },
     {
@@ -72,9 +72,9 @@ export const  dataHomeDescription = [
 
         Aci Trezza è un piccolo borgo marinaro situato sulla costa ionica siciliana.
         
-        Il borgo è famoso per le sue Faraglioni, tre faraglioni di roccia lavica che si stagliano nel mare cristallino.
+        Il borgo è famoso per i Faraglioni, tre faraglioni di roccia lavica che si stagliano nel mare cristallino.
         
-        Aci Trezza è anche una meta ideale per gli amanti del mare, con le sue spiagge sabbiose e le sue acque limpide.
+        Aci Trezza è anche una meta ideale per gli amanti del mare, con le sue spiagge rocciose e le sue acque limpide.
         
         Prenota subito la tua vacanza alla Blue Wave Holiday House e scopri la bellezza della Sicilia orientale!`
     },
