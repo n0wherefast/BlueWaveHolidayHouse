@@ -39,7 +39,7 @@ function About() {
    <MainContainer>
       <MainTextContainer>
           <motion.h2 variants={variant} initial='startTit' whileInView='endTit' className='text-amber-400'>Catch</motion.h2>
-          <motion.h2 variants={variant} initial='startRev' whileInView='endRev'>Your Dream</motion.h2>
+          <motion.h2 variants={variant} initial='startRev' whileInView='endRev' className='text-[6rem] w-[90vw]'>Your Dream</motion.h2>
           <motion.h2 variants={variant} initial='startTit' whileInView='endTit' className=' text-amber-400'>Holiday.</motion.h2> 
       </MainTextContainer>
       <Button to={'#sec'}  y={-65} color={'text-[coral]'}/>

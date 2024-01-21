@@ -16,11 +16,11 @@ export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height:100vh;
   background-color: rgb(3 105 161);
   @media (min-width: 700px) {
-    height: 94vh;
+    height: 100vh;
   }
 `
 export const CardContainer = styled.div`
