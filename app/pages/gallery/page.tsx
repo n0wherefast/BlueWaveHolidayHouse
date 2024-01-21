@@ -27,7 +27,7 @@ function Gallery() {
      }
   return (
     <>
-        <div className=' flex flex-col justify-start gap-20 items-center min-h-screen w-full p-4 pt-[4.5rem] bg-sky-700 ' >
+        <div className=' flex flex-col justify-start gap-10 items-center min-h-screen w-full p-4 pt-[4.5rem] bg-sky-700 ' >
         <div className=" m-4 mt-12 w-full  lg:text-7xl text-7xl text-slate-950 font-black italic">
             <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.7}} className=' flex items-center justify-center w-full  h-5 text-amber-400 '>Gallery </motion.h1>
         </div>
