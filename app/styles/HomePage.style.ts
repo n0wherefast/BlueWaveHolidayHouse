@@ -10,7 +10,7 @@ export const HomeContainer = styled.div`
     flex-direction: column;
     align-items: center;
     @media (max-width:700px) {
-        padding-top: 4.8rem;
+        padding-top: 2rem;
     }
 `   
 

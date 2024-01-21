@@ -7,7 +7,13 @@ export const BgContainer = styled.div`
   justify-content: center;
   /* background-color:#f7eda7; */
   width: 100vw;
-  height: 93.5vh;
+  min-height: 100vh;
+  @media(max-width:700px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+  }
 `
 
 
@@ -29,17 +35,14 @@ export const DiscoverContainer = styled.button`
     z-index: 10;
 
     @media (max-width:1000px) {
-      position: absolute;
-      top:35rem;
+      /* position: absolute;
+      top:35rem; */
       font-size: 8rem;
       margin-left: 1rem;
     }
     @media (max-width:700px) {
-        position: absolute;
-        top: -10rem;
-        margin-top: 47.5rem;
-        padding: 10px;
-        height: 10rem;
+        margin-bottom: 1rem;
+        min-height: 8rem;
         margin-left:0px;
         font-size:3.5rem;
         font-weight:900;
