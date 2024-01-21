@@ -8,7 +8,7 @@ import type { RootState } from '@/app/redux/store'
 import { useSelector,useDispatch } from 'react-redux'
 import { updateValue,setCheckSize } from '@/app/redux/slice/manageResizeSlice'
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 
 // Import Swiper styles
 import "swiper/css";
@@ -16,8 +16,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
-import '../../globals.css'
+import { Pagination, Navigation,Autoplay } from "swiper/modules";
+// import '../../globals.css'
 
 
 function Place() {
@@ -65,11 +65,16 @@ function Place() {
         pagination={{
           type: "progressbar",
         }}
-        navigation={true}
+        navigation={false}
+        autoplay={{
+          delay:3000,
+          disableOnInteraction:false
+        }}
         loop={true}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation,Autoplay]}
         className=""
-        style={{margin:'0px' ,padding:'0px'}}
+        style={{color:'red'}}
+
       >
     {
       places.map((itm:DataPlace)=>{
@@ -77,7 +82,7 @@ function Place() {
 
 
         return(
-          <SwiperSlide style={{padding:'1rem',backgroundColor:'transparent'}} key={id}>
+          <SwiperSlide className='text-slate-50 p-[1rem]' key={id}>
             <Image className='w-full h-[88vh]' src={src!} height={1000} width={1000}  alt='ok'/>
             <motion.div transition={{delay:0.5}} initial={{opacity:0 ,x:22}} whileInView={{opacity:1 ,x:0}}
              className='p-2 w-[18rem] lg:w-[30rem] min-h-[30rem] absolute left-[3rem] lg:left-[10rem] top-[3rem] lg:top-[10rem] border-2  backdrop-blur-xl'>
@@ -90,38 +95,7 @@ function Place() {
     }
     </Swiper>
 </div>
-    {/* <div className=' w-full h-screen'>
-      {
-      places.map((itm:DataPlace)=>{
-        const {moveX,moveY,desc,id,place,DelayValue,Bradius,src,moveXsm,moveYsm,moveXmd,moveYmd} = itm 
-        let x =  checkSize === true ? moveXsm  : size === 1024 ? moveXmd : moveX
-        let y =  checkSize === true ? moveYsm : size === 1024 ? moveYmd : moveY 
-        
-        return(
-          
-          <motion.div
-              transition={{delay:DelayValue}} 
-              initial={{x:0 ,y:0}}  animate={{x:x,y:y}} 
-              whileHover={{scale:1.2}}
-              key={id} 
-              className='  absolute top-[35vh] lg:left-[35vw] left-[15vw] z-50 '>
-                <Link  href={{ pathname:`/pages/place/${place}`, query:{name:place, desc:desc ,img:src?.src} }}>
-                  <PlaceContainer className=''>
-                    <strong className='   absolute top-[30%] left-[15%] '>
-                    <div className='h-24 text-slate-100 '>
-                       <p className='w-full h-2'>{place}</p>
-                       <p className='w-full h-2 text-amber-400 relative top-[-0.6rem] left-[0.1rem] '>{place}</p>
-                    </div>
-                      </strong>
-                    <ImageParagraphContainerPlace className='  ' width={500} height={500} src={src} alt={place}  $borderRadius={Bradius}/> 
-                  </PlaceContainer>
-               </Link>              
-          </motion.div>      
-        )
-      })
-    }
-    </div> */}
-    
+   
   </MainContainer>
   )
 }
