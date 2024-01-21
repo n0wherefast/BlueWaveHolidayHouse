@@ -31,46 +31,60 @@ export const  dataHomeDescription = [
     {
         id:0,
         img:img,
-        title:"La tua casa vacanza ideale nel cuore di Catania!",
-        desc:"Scegliere di soggiornare da noi significa avere tutto a portata di         mano per una visita indimenticabile alla città. Situata a soli 15 minuti in        auto dall'aeroporto di Catania Fontana Rossa, la nostra casa vacanza è la         base perfetta per un weekend nella meravigliosa Catania."
+        title:"La tua base perfetta per esplorare la Sicilia orientale!",
+        desc:"Situata ad Aci Trezza, in Sicilia orientale, la Blue Wave Holiday House è la soluzione ideale per chi desidera trascorrere una vacanza all'insegna del relax e della scoperta.L'appartamento, di circa 50 mq, è composto da una camera da letto, un soggiorno con divano letto, una cucina, un bagno e un terrazzino vista mare."
     },
     {
         id:1,
         img:img,
-        title:"La tua casa vacanza",
-        desc:`Tutto ciò sarà ancora più piacevole grazie alla comodità offerta dalla nostra posizione privilegiata: Cortese Home si trov
-        a a soli 10 minuti a piedi dalle principali attrazioni turistiche della città.`
+        title:" La Posizione strategica",
+        desc:` dell'appartamento permette di raggiungere facilmente tutti i principali luoghi d'interesse della zona, tra cui:
+        Catania, la città barocca più importante della Sicilia, con il suo centro storico patrimonio dell'UNESCO, l'Etna, il vulcano attivo più alto d'Europa, le spiagge di Acitrezza, le Faraglioni, le città barocche di Siracusa e Taormina, e molto altro ancora.
+       `
     },
     {
         id:2,
         img:img,
-        title:"La tua casa vacanza",
-        desc:`Con la sua posizione strategica, potrai visitare facilmente il centro storico e immergerti nella ricca storia e cultura
-        della città. Passeggiando lungo
-        <strong className="text-sky-700 font-bold">Via Etna</strong>, la via più importante di Catania,
-        potrai ammirare le affascinanti architetture e goderti lo spirito vivace della`
+        title:"L'appartameto",
+        desc:` è dotato di tutti i comfort necessari per un soggiorno confortevole, tra cui:
+        Aria condizionata, riscaldamento, TV, Wi-Fi gratuito, parcheggio privato, lavatrice, asciugatrice, e molto altro ancora.
+        inoltre L'appartamento è anche situato vicino a un centro commerciale e a fermate del bus, che permettono di raggiungere facilmente tutte le destinazioni desiderate.`
     },
     {
         id:3,
         img:img,
-        title:"La tua casa vacanza",
-        desc:`Confortevole, accogliente e dotata di tutti i comfort di cui hai bisogno, Cortese Home ti offre un rifugio
-        tranquillo e rilassante dopo una giornata intensa di visite turistiche. La nostra casa vacanza è arredata con 
-        gusto e dispone di spazi luminosi e accoglienti per garantirti un soggiorno piacevole e rigenerante.`
+        title:"Catania",
+        desc:`
+
+        Catania, la città dei vulcani
+        
+        Catania è una città ricca di storia e cultura, situata ai piedi dell'Etna, il vulcano attivo più alto d'Europa.
+        
+        Il centro storico di Catania, dichiarato Patrimonio dell'Umanità dall'UNESCO, è caratterizzato da un'architettura barocca unica al mondo.
+        
+        Tra i monumenti più importanti della città si possono ammirare la Cattedrale di Sant'Agata, il Teatro Massimo Bellini, la Fontana dell'Elefante, e la Villa Bellini.`
     },
     {
         id:4,
         img:img,
-        title:"La tua casa vacanza",
-        desc:`Potrai goderti il tuo weekend a Catania sapendo di avere un comodo ritiro a pochi passi dalle principali attrazioni.`
+        title:"Aci Trezza",
+        desc:`Aci Trezza, la perla del mare
+
+        Aci Trezza è un piccolo borgo marinaro situato sulla costa ionica siciliana.
+        
+        Il borgo è famoso per le sue Faraglioni, tre faraglioni di roccia lavica che si stagliano nel mare cristallino.
+        
+        Aci Trezza è anche una meta ideale per gli amanti del mare, con le sue spiagge sabbiose e le sue acque limpide.
+        
+        Prenota subito la tua vacanza alla Blue Wave Holiday House e scopri la bellezza della Sicilia orientale!`
     },
-    {
-        id:5,
-        img:img,
-        title:"La tua casa vacanza",
-        desc:` Non perdere l&apos;opportunità di visitare Catania e scegliere Cortese Home come la tua casa vacanza ideale nel centro della città.
-        Prenota ora e scopri tutto ciò che questa affascinante destinazione ha da offrire.`
-    },
+    // {
+    //     id:5,
+    //     img:img,
+    //     title:"La tua casa vacanza",
+    //     desc:` Non perdere l'opportunità di visitare Catania e scegliere Cortese Home come la tua casa vacanza ideale nel centro della città.
+    //     Prenota ora e scopri tutto ciò che questa affascinante destinazione ha da offrire.`
+    // },
     
 ]
 
