@@ -32,11 +32,11 @@ export default function HomePage() {
           dataHomeDescription.map((itm:DataHome) => {
             const {id,title,desc,img} = itm
             return(
-              <motion.div key={id} variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}>
-                <strong className="text-black text-3xl font-black italic mb-6 w-full flex justify-center">{title}</strong>
+              <motion.div className='flex flex-col items-center justify-center' key={id} variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}>
+                <strong className="text-black text-3xl font-black italic mb-6 w-full flex justify-center text-center ">{title}</strong>
                 <ParagraphContainer>
                     {id % 2 == 0? null : <ImageParagraphContainer priority rel='preload' src={img!} width={500} height={500} alt=''/> }
-                    <motion.p className=' w-full lg:w-[40vw]'>
+                    <motion.p className=' w-full lg:w-[40vw] text-lg font-semibold'>
                      {desc}
                     </motion.p> 
                     {id % 2 == 0? <ImageParagraphContainer priority rel='preload' src={img!} width={500} height={500} alt=''/> : null}

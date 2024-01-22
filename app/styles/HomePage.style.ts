@@ -21,7 +21,7 @@ export const DescripitonHome = styled.section`
   align-items: center;
   font-size: x-large;
   width:100vw;
-  padding: 5px;
+  /* padding: 5px; */
 
 `
 export const GalleryContainer = styled.div`

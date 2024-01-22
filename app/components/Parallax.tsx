@@ -5,7 +5,7 @@ import {
   useScroll,
   useTransform,
   } from "framer-motion";
-import { DiscoverContainer,ImageContainer, BgContainer } from "../styles/Parallax.style";
+import { DiscoverContainer, BgContainer } from "../styles/Parallax.style";
 import img from '../assets/pexels-max-ravier-3331094.webp'
 import Link from "next/link";
 import WavyText from "./WavyText";
@@ -33,14 +33,14 @@ const ref = useRef<HTMLDivElement>(null)
     const yBg = useTransform( scrollYProgress , [0,1] ,["0%" , "50%"]);
       return (
         <BgContainer ref={ref} className="image">
-          <DiscoverContainer >
-              <motion.div style={{y: yBg}} className="flex flex-col items-center ">
+          <DiscoverContainer className=" lg:border-2 border-amber-400" >
+              <motion.div style={{y: yBg}} className="flex flex-col items-center  ">
                 <Link href={'#home'} className="flex items-center ">
-                   { size > 700 ? <MdKeyboardDoubleArrowDown size={110} className='animate-pulse' /> : null}
+                   {/* { size > 700 ? <MdKeyboardDoubleArrowDown size={110} className='animate-pulse' /> : null} */}
                    <WavyText text={"discover! "} />
-                   { size > 700 ? <MdKeyboardDoubleArrowDown size={110} className='animate-pulse' /> : null}
+                   { size > 700 && <MdKeyboardDoubleArrowDown size={110} className='animate-pulse' /> }
                    </Link> 
-                   { size < 700 ? <MdKeyboardDoubleArrowDown size={35} className='animate-pulse' /> : null}
+                   { size < 700 && <MdKeyboardDoubleArrowDown size={35} className='animate-pulse' /> }
               </motion.div>
           </DiscoverContainer> 
           {/* <ImageContainer blurDataURL="blur" placeholder="blur"  rel="preload" src={img} width={2000} height={2000} alt="image" /> */}

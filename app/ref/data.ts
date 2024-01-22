@@ -53,10 +53,10 @@ export const  dataHomeDescription = [
     {
         id:3,
         img:img,
-        title:"Catania",
+        title:"A due passi da Catania",
         desc:`
 
-        Catania, la città dei vulcani
+        La città dei vulcani
         
         Catania è una città ricca di storia e cultura, situata ai piedi dell'Etna, il vulcano attivo più alto d'Europa.
         
@@ -68,7 +68,7 @@ export const  dataHomeDescription = [
         id:4,
         img:img,
         title:"Aci Trezza",
-        desc:`Aci Trezza, la perla del mare
+        desc:`La perla del mare
 
         Aci Trezza è un piccolo borgo marinaro situato sulla costa ionica siciliana.
         

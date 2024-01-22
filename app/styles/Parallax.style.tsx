@@ -21,7 +21,7 @@ export const BgContainer = styled.div`
 export const DiscoverContainer = styled.button`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     margin-bottom: 25rem;
     margin-left: 20rem;
@@ -44,7 +44,7 @@ export const DiscoverContainer = styled.button`
         margin-bottom: 1rem;
         min-height: 8rem;
         margin-left:0px;
-        font-size:3.5rem;
+        font-size:4rem;
         font-weight:900;
     }
   &:hover{
@@ -52,24 +52,24 @@ export const DiscoverContainer = styled.button`
   }
 `
 
-export const ImageContainer = styled(Image)` 
-position: absolute;
-  transition: all ease-in 1s;
-  width:100%;
-  height: 93vh;
-  padding-left: 0rem;
-  margin-top:1rem;
-object-fit: cover;
-object-position: 0px -15rem;
+// export const ImageContainer = styled(Image)` 
+// position: absolute;
+//   transition: all ease-in 1s;
+//   width:100%;
+//   height: 93vh;
+//   padding-left: 0rem;
+//   margin-top:1rem;
+// object-fit: cover;
+// object-position: 0px -15rem;
 
 
-    @media (max-width:700px) {
-        justify-content: center;
-        height: 100vh;
-        width: 100%;
-        margin-bottom: 20vh;
-        margin-top: 10vh;
-        object-position: center 3rem;
+//     @media (max-width:700px) {
+//         justify-content: center;
+//         height: 100vh;
+//         width: 100%;
+//         margin-bottom: 20vh;
+//         margin-top: 10vh;
+//         object-position: center 3rem;
         
-    } 
-`   
+//     } 
+// `   
