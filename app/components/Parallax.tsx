@@ -33,14 +33,14 @@ const ref = useRef<HTMLDivElement>(null)
     const yBg = useTransform( scrollYProgress , [0,1] ,["0%" , "50%"]);
       return (
         <BgContainer ref={ref} className="image">
-          <DiscoverContainer className=" lg:border-2 border-amber-400" >
-              <motion.div style={{y: yBg}} className="flex flex-col items-center  ">
+          <DiscoverContainer >
+              <motion.div style={{y: yBg}} className="flex flex-col items-center ">
                 <Link href={'#home'} className="flex items-center ">
-                   {/* { size > 700 ? <MdKeyboardDoubleArrowDown size={110} className='animate-pulse' /> : null} */}
+                  { size > 700 ? <MdKeyboardDoubleArrowDown size={110} className='animate-pulse' /> : null}
                    <WavyText text={"discover! "} />
-                   { size > 700 && <MdKeyboardDoubleArrowDown size={110} className='animate-pulse' /> }
+                   { size > 700 ? <MdKeyboardDoubleArrowDown size={110} className='animate-pulse' /> : null}
                    </Link> 
-                   { size < 700 && <MdKeyboardDoubleArrowDown size={35} className='animate-pulse' /> }
+                { size < 700 ? <MdKeyboardDoubleArrowDown size={35} className='animate-pulse' /> : null}
               </motion.div>
           </DiscoverContainer> 
           {/* <ImageContainer blurDataURL="blur" placeholder="blur"  rel="preload" src={img} width={2000} height={2000} alt="image" /> */}

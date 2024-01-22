@@ -44,7 +44,7 @@ export const DiscoverContainer = styled.button`
         margin-bottom: 1rem;
         min-height: 8rem;
         margin-left:0px;
-        font-size:4rem;
+        font-size:3.5rem;
         font-weight:900;
     }
   &:hover{

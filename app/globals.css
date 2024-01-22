@@ -80,24 +80,7 @@ body {
     background-repeat: no-repeat
   }
 }
- .imageCont {
-  background-image:url('../app/assets/waveCardOriz.png');
-  background-size:cover;
-  background-position: 0px -15rem;
-  background-repeat: no-repeat;
-  
-  /* @media (max-width:1000px) {
-    background-image:url('../app/assets/pexels-max-ravier-3331094.webp');
-    background-size:cover;
-    background-position:0px -5rem;
-  }; */
-  @media (max-width:700px) {
-    background-image:url('../app/assets/waveCard3.png');
-    background-size: cover ;
-    background-position: center -1.5rem;
-    background-repeat: no-repeat
-  }
-}
+ 
 
 /* .imgDesc {
    background-image:url('../app/assets/pexels-max-ravier-3331094.webp');
