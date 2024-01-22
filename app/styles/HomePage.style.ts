@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Link from "next/link";
 import Image from "next/image";
 
 
@@ -24,11 +23,11 @@ export const DescripitonHome = styled.section`
   /* padding: 5px; */
 
 `
-export const GalleryContainer = styled.div`
- height: 100vh;
- z-index: 0;
- backdrop-filter: blur(20px);
-`
+// export const GalleryContainer = styled.div`
+//  height: 100vh;
+//  z-index: 0;
+//  backdrop-filter: blur(20px);
+// `
 
 export const ParagraphContainer = styled.div`
   display:flex;
