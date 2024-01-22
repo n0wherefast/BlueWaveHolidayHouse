@@ -31,6 +31,7 @@ export const BoxInfo = styled.div<Props>`
 `
 export const LinkInfo = styled.div`
 display: flex;
+flex-wrap: wrap;
 flex-direction: row;
 justify-content: space-around;
 

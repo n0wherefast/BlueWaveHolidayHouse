@@ -4,7 +4,7 @@ import { BoxInfo,LinkInfo } from '@/app/styles/Contact.style'
 import  {motion ,Variants} from 'framer-motion'
 import Map from '@/app/components/Map'
 import InterestPlaces from '@/app/components/InterestPlaces'
-import { FaAirbnb,FaWhatsapp } from 'react-icons/fa'
+import { FaAirbnb,FaTripadvisor,FaWhatsapp } from 'react-icons/fa'
 import { TbBrandBooking } from "react-icons/tb";
 import Image from 'next/image'
 import img from '../../assets/waveCard3.png'
@@ -35,9 +35,13 @@ function Contacts() {
     </div>
       <br />
       <div className='h-16' id='contact' />
-      <motion.div variants={variant} initial='start' whileInView='end' transition={{delay:0.8}} className=" w-full  lg:text-7xl text-6xl  font-black italic m-1  border-b-[5rem] border-b-sky-600  border-r-[6rem] border-r-white  h-[5.2rem]">
+      <div>       
+        <motion.div variants={variant} initial='start' whileInView='end' transition={{delay:0.8}} className=" w-[94vw]   lg:text-7xl text-6xl  font-black italic m-1  border-b-[5rem] border-b-sky-600  border-r-[6rem] border-r-transparent  h-[5.2rem]">
             <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.5}} className=' flex items-center justify-center w-full text-amber-400 p-3 '><p>Contacts</p></motion.h1>
-      </motion.div>
+       </motion.div>        
+
+      </div>
+      
     <br />
       <Map/> 
       <div className='h-14' />
@@ -46,9 +50,9 @@ function Contacts() {
           
       <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}  className=''>
             <BoxInfo>
-            <div  className='p-1'>
+          <div  className='p-1'>
             <h1 className=' font-black italic  h-5  w-full  text-4xl lg:text-5xl ' >Prenota adesso</h1>
-            <h1 className='text-amber-400 relative top-[-17px] text-4xl lg:text-5xl font-black italic h-5 w-full ' >Prenota adesso</h1>
+            <h1 className='text-amber-400 relative top-[-16px] text-4xl lg:text-5xl font-black italic h-5 w-full ' >Prenota adesso</h1>
           </div>
                <p> <strong className=' text-3xl font-black italic'> <span className=' text-amber-400' >C</span>ontatti:</strong></p>
                   <div className='p-1 flex gap-2 lg:text-xl text-lg font-semibold items-center'>
@@ -61,19 +65,24 @@ function Contacts() {
                 </div>  
                                    
                  <p> <strong className=' text-3xl font-black italic'> <span className=' text-amber-400' >L</span>ink:</strong></p>
-                <LinkInfo>                
-                      <Link aria-label='link per airBnB' href={'https://www.airbnb.it/rooms/965158960549808793?_set_bev_on_new_domain=1693421299_M2U2NDkyN2NiZTk1&source_impression_id=p3_1705435505_TKYN%2B%2BsmqOiHnMsk'}>
-                          <FaAirbnb className='m-2 text-red-400 hover:text-amber-400  hover:scale-110 p-1 border-2 rounded-2xl' size={55}/>
-                      </Link> 
+                <LinkInfo>
+                      <Link aria-label='link whatsApp' href={'https://acicastello.paytourist.com/strutture-certificate/case-vacanze/apct000069-0002.html'}>   
+                          <Image className='m-2 hover:text-amber-400 hover:scale-110  p-2 border-2 rounded-2xl'  width={48} height={48}  src={logoP} alt='logo'/>
+                      </Link>                
+                      <Link aria-label='link per airBnB' href={'https://www.airbnb.it/rooms/965158960549808793?_set_bev_on_new_domain=1693421299_M2U2NDkyN2NiZTk1&source_impression_id=p3_1705435005_TKYN%2B%2BsmqOiHnMsk'}>
+                          <FaAirbnb className='m-2 text-red-400 hover:text-amber-400  hover:scale-110 p-1 border-2 rounded-2xl' size={50}/>
+                      </Link>
+                       <Link aria-label='link whatsApp' href={'https://www.tripadvisor.it/VacationRentalReview-g1007324-d26672499-Blue_Wave_Holiday_House-Acitrezza_Aci_Castello_Province_of_Catania_Sicily.html'}>
+                          <FaTripadvisor className='m-2 text-amber-300 hover:text-amber-400 hover:scale-110  p-1 border-2 rounded-2xl' size={50}/>
+                      </Link>  
                       <Link aria-label='link for bookong.com' href={'https://www.booking.com/Share-WE3Iho'}>
-                          <TbBrandBooking className='m-2 text-blue-800 hover:text-amber-400 hover:scale-110  p-1 border-2 rounded-2xl' size={55}/>
+                          <TbBrandBooking className='m-2 text-blue-800 hover:text-amber-400 hover:scale-110  p-1 border-2 rounded-2xl' size={50}/>
                       </Link> 
                       <Link aria-label='link whatsApp' href={'https://wa.me/message/RJUSAJYMVHYHF1'}>
-                          <FaWhatsapp className='m-2 text-green-400 hover:text-amber-400 hover:scale-110  p-1 border-2 rounded-2xl' size={55}/>
+                          <FaWhatsapp className='m-2 text-green-400 hover:text-amber-400 hover:scale-110  p-1 border-2 rounded-2xl' size={50}/>
                       </Link> 
-                      <Link aria-label='link whatsApp' href={'https://acicastello.paytourist.com/strutture-certificate/case-vacanze/apct000069-0002.html'}>   
-                          <Image className='m-2 hover:text-amber-400 hover:scale-110  p-2 border-2 rounded-2xl'  width={50} height={50}  src={logoP} alt='logo'/>
-                      </Link>
+                      
+                     
                 </LinkInfo>
             </BoxInfo>
       </motion.div>
