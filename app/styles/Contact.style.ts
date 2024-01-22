@@ -9,22 +9,22 @@ interface Props{
 export const BoxInfo = styled.div<Props>`
    display: flex;
    flex-direction: column;
-    width: 30vw;
-    height: 30vh;
+    min-width: 30vw;
+    min-height: 30vh;
     padding: 0.5rem;
     margin: 0.5rem;
     background-color: rgb(2 132 199);
     color: rgb(250 250 250);
-    z-index: 10;
+    /* z-index: 10; */
     
     @media (max-width:1024px){
-        width: 38vw;
-        height: 18vh;
+        min-width: 38vw;
+        min-height: 18vh;
     }
 
     @media (max-width:700px){
         width: 98vw;
-        height: 20rem;
+        min-height: 20rem;
         margin:0px;
     }
 

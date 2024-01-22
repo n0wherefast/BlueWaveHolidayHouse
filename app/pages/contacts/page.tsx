@@ -35,19 +35,21 @@ function Contacts() {
     </div>
       <br />
       <div className='h-16' id='contact' />
-      <div className=" w-full  lg:text-7xl text-7xl text-slate-950 font-black italic">
-            <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.7}} className=' flex items-center justify-center w-full text-amber-400 '>Contacts</motion.h1>
-    </div>
+      <motion.div variants={variant} initial='start' whileInView='end' transition={{delay:0.8}} className=" w-full  lg:text-7xl text-6xl  font-black italic m-1  border-b-[5rem] border-b-sky-600  border-r-[6rem] border-r-white  h-[5.2rem]">
+            <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.5}} className=' flex items-center justify-center w-full text-amber-400 p-3 '><p>Contacts</p></motion.h1>
+      </motion.div>
     <br />
       <Map/> 
       <div className='h-14' />
+         
       <InterestPlaces >
+          
       <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}  className=''>
             <BoxInfo>
-              <div className='h-16'>
-                <h1 className=' font-black italic h-5  w-full  text-4xl lg:text-5xl' >Prenota adesso</h1>
-                <h1 className='text-amber-400 relative top-[-17px] text-4xl lg:text-5xl font-black italic h-5 w-full ' >Prenota adesso</h1>
-               </div>
+            <div  className='p-1'>
+            <h1 className=' font-black italic  h-5  w-full  text-4xl lg:text-5xl ' >Prenota adesso</h1>
+            <h1 className='text-amber-400 relative top-[-17px] text-4xl lg:text-5xl font-black italic h-5 w-full ' >Prenota adesso</h1>
+          </div>
                <p> <strong className=' text-3xl font-black italic'> <span className=' text-amber-400' >C</span>ontatti:</strong></p>
                   <div className='p-1 flex gap-2 lg:text-xl text-lg font-semibold items-center'>
                     <h2 className=' text-amber-400 text-2xl font-black italic' > Email:</h2>

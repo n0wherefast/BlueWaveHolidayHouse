@@ -12,10 +12,11 @@ function InterestPlaces({children}:any) {
     end:{opacity:1, x:0},
     }
   return (
-    <section className='w-[600vtext-zinc-50 w]  flex lg:flex-row flex-col items-center justify-around ' >
-        {children}
+    <section className=' flex lg:flex-row flex-col items-center justify-around ' >
+       
       {/* <br /> */}
             <div className='flex lg:flex-row md:flex-wrap flex-col  ' >
+               {children}
               <div className='flex flex-col md:flex-row  gap-2 m-1'>
                       <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.25}} className="text-md md:w-auto w-full p-2 shadow-sky-400 bg-sky-600 text-zinc-50 border border-sky-400">
                       <p> <strong className='p-1 text-2xl font-black italic'><span className=' text-amber-400' >T</span>rasporti:</strong></p>
