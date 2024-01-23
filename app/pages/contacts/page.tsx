@@ -58,8 +58,8 @@ function Contacts() {
                     <h2 className=' text-amber-400 text-2xl font-black italic' > Email:</h2>
                     <p>bluewavehhouse@gmail.com</p>
                   </div>
-                  <Link href={'https://docs.google.com/forms/d/e/1FAIpQLSehPiw-3-oY5HxXjo8p8iU3wribmrsvvZHGMK6-1rzEhQ4yJg/viewform?usp=sf_link'}>
-                     Info
+                  <Link className=' text-lg  fonnt-medium border-2 rounded-xl m-2 p-2 w-36  ' href={'https://docs.google.com/forms/d/e/1FAIpQLSehPiw-3-oY5HxXjo8p8iU3wribmrsvvZHGMK6-1rzEhQ4yJg/viewform?usp=sf_link'}>
+                    Richiesta Info
                   </Link>
                   <div className='flex gap-2 text-xl font-semibold items-center'>
                     <h2 className=' text-amber-400 text-2xl font-black italic' > Tel:</h2>

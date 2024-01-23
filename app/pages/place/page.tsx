@@ -23,9 +23,7 @@ import { Pagination, Navigation,Autoplay } from "swiper/modules";
 function Place() {
    const [places,setPlaces] = useState(dataPlace)
    const size = useSelector((state:RootState) => state.size.value)
-   const checkSize = useSelector((state:RootState) => state.size.checkSize)
    const dispatch = useDispatch()
-   const [isClick,setIsClick] = useState(true)
 
 
   useEffect(() => {
@@ -55,7 +53,7 @@ function Place() {
 
       
   return (
-  <MainContainer className='flex flex-col bg-sky-700'>
+  <MainContainer className='flex flex-col bg-sky-900'>
     {/* <div className=" w-full  lg:text-8xl text-7xl text-slate-950 font-black italic ">
             <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.7}} className=' ] flex items-center justify-center w-full text-amber-400 '>Places</motion.h1>
     </div>     */}
@@ -67,7 +65,7 @@ function Place() {
         }}
         navigation={false}
         autoplay={{
-          delay:3000,
+          delay:10000,
           disableOnInteraction:false
         }}
         loop={true}
@@ -83,11 +81,11 @@ function Place() {
 
         return(
           <SwiperSlide className='text-slate-50 p-[1rem]' key={id}>
-            <Image className='w-full h-[88vh]' src={src!} height={1000} width={1000}  alt='ok'/>
+            <Image className='w-full h-[88vh] object-cover' src={src!} height={1000} width={1000}  alt={desc!}/>
             <motion.div transition={{delay:0.5}} initial={{opacity:0 ,x:22}} whileInView={{opacity:1 ,x:0}}
-             className='p-2 w-[18rem] lg:w-[30rem] min-h-[30rem] absolute left-[3rem] lg:left-[10rem] top-[3rem] lg:top-[10rem] border-2  backdrop-blur-xl'>
+             className=' p-2 w-[18rem] lg:w-[30rem] min-h-[30rem] absolute left-[3rem] lg:left-[10rem] top-[3rem] lg:top-[10rem] border-2  backdrop-blur-xl'>
              <p className='p-2 text-5xl font-bold italic'>{place}</p>
-            <p className='p-2 font-medium text-sm lg:text-xl'>{desc}</p>
+            <p className='p-2 font-medium text-sm lg:text-xl '>{desc}</p>
             </motion.div>           
           </SwiperSlide>
         )
