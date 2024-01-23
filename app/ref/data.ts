@@ -31,7 +31,7 @@ export const  dataHomeDescription = [
     {
         id:0,
         img:img,
-        title:"La tua base perfetta per esplorare la Sicilia orientale!",
+        title:"La tua base perfetta per esplorare la Sicilia!",
         desc:"Situata ad Aci Trezza, in Sicilia orientale, la Blue Wave Holiday House è la soluzione ideale per chi desidera trascorrere una vacanza all'insegna del relax e della scoperta.L'appartamento, di circa 50 mq, è composto da una camera da letto, un soggiorno con divano letto, una cucina, un bagno e un terrazzino vista mare."
     },
     {

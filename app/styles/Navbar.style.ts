@@ -122,5 +122,8 @@ export const NavbarLinkExtended = styled(Link)`
 export const NavLogoExtend = styled.div`
     width: 100%;
     display: flex;
+    gap:2rem;
+    color: white;
     justify-content: center;
+    padding: 1rem;
 `;

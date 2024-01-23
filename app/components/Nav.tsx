@@ -15,6 +15,8 @@ import {  NavbarContainer,
         }from "../styles/Navbar.style"
 import Image from 'next/image';
 import {motion,Variants }from 'framer-motion'
+import Link from 'next/link';
+import { socialLinks } from '../ref/links';
 
 
 const OpenSans = Open_Sans({
@@ -100,9 +102,17 @@ function Nav() {
               
             )
           })}
-          {/* <NavLogoExtend>
-            <Image alt='blue wave holiday house logo' width={70} height={70} rel='preload' src={LogoImg}></Image>
-          </NavLogoExtend> */}
+          <NavLogoExtend >
+          {socialLinks.map((link)=>(
+          <motion.div key={link.id}
+           variants={variant} initial='start' whileInView='end' transition={{delay:1.2}}>
+            <Link href={link.url}>
+              <div >{link.icon}</div>
+            </Link>
+          </motion.div>
+      ) )}
+            {/* <Image alt='blue wave holiday house logo' width={70} height={70} rel='preload' src={LogoImg}></Image> */}
+          </NavLogoExtend>
        </NavbarExtend> 
       }
    </NavbarContainer>

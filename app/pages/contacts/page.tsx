@@ -35,17 +35,16 @@ function Contacts() {
     </div>
       <br />
       <div className='h-16' id='contact' />
-      <div>       
-        <motion.div variants={variant} initial='start' whileInView='end' transition={{delay:0.8}} className=" w-[94vw]   lg:text-7xl text-6xl  font-black italic m-1  border-b-[5rem] border-b-sky-600  border-r-[6rem] border-r-transparent  h-[5.2rem]">
+      <div className=' h-32' >       
+        <motion.div variants={variant} initial='start' whileInView='end' transition={{delay:0.8}} className="  w-[95vw]   lg:text-7xl text-6xl  font-black italic border-b-[5rem] border-b-amber-400  border-r-[6rem] border-r-transparent "/>
+        <motion.div variants={variant} initial='start' whileInView='end' transition={{delay:0.8}} className=" relative top-[-4rem] w-[94vw]   lg:text-7xl text-6xl  font-black italic border-b-[5rem] border-b-sky-600  border-r-[6rem] border-r-transparent  h-[1rem]">
             <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.5}} className=' flex items-center justify-center w-full text-amber-400 p-3 '><p>Contacts</p></motion.h1>
-       </motion.div>        
-
+        </motion.div>        
       </div>
       
-    <br />
       <Map/> 
       <div className='h-14' />
-         
+               
       <InterestPlaces >
           
       <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}  className=''>
@@ -59,6 +58,9 @@ function Contacts() {
                     <h2 className=' text-amber-400 text-2xl font-black italic' > Email:</h2>
                     <p>bluewavehhouse@gmail.com</p>
                   </div>
+                  <Link href={'https://docs.google.com/forms/d/e/1FAIpQLSehPiw-3-oY5HxXjo8p8iU3wribmrsvvZHGMK6-1rzEhQ4yJg/viewform?usp=sf_link'}>
+                     Info
+                  </Link>
                   <div className='flex gap-2 text-xl font-semibold items-center'>
                     <h2 className=' text-amber-400 text-2xl font-black italic' > Tel:</h2>
                     <p>+39 3348951094</p>

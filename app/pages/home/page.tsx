@@ -14,7 +14,7 @@ export default function HomePage() {
 
       const variant:Variants = {
         start:{opacity:0 ,x:-20},
-        end:{opacity:1, x:8},
+        end:{opacity:1, x:1},
         }
 
         return (
@@ -23,9 +23,9 @@ export default function HomePage() {
         <div className=' h-[6rem]' id='home'/>
        <DescripitonHome>
         <div className=" m-5 mt-10 w-full  lg:text-7xl text-5xl text-slate-950 font-black italic">
-         <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.5}} className=' flex items-center justify-center w-full h-5 text-teal-500 '>BlueWave HolidayHouse </motion.h1>
-         <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.6}} className=' flex items-center justify-center w-full  h-5 text-sky-400  relative left-[.4rem] top-[-1rem]'>BlueWave HolidayHouse </motion.h1>
-         <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.7}} className=' flex items-center justify-center w-full  h-5 text-amber-400  relative left-[.8rem] top-[-2rem]'>BlueWave HolidayHouse </motion.h1>
+         <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.5}} className=' flex items-center justify-center w-full h-5 text-teal-500 ml-3'>BlueWave HolidayHouse </motion.h1>
+         <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.6}} className=' flex items-center justify-center w-full  h-5 text-sky-400 ml-3 relative left-[.4rem] top-[-1rem]'>BlueWave HolidayHouse </motion.h1>
+         <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.7}} className=' flex items-center justify-center w-full  h-5 text-amber-400 ml-3 relative left-[.8rem] top-[-2rem]'>BlueWave HolidayHouse </motion.h1>
         </div>
         <br />
         {
