@@ -24,7 +24,7 @@ function ButtonScrollTop({color,y,to}:BUTTONSCROLL) {
     window.addEventListener('scroll',()=>{
      dispatch(checkPageHeight())
     }) 
-  })
+  }, [])
  
   
  
