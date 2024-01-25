@@ -1,4 +1,4 @@
-// 'use client'
+'use client'
 import React from 'react'
 import {dataHomeDescription,DataHome} from '../../ref/data'
 import { motion,Variants} from 'framer-motion'

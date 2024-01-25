@@ -15,7 +15,7 @@ function Button({color,y,to }:any) {
     window.addEventListener('scroll',()=>{
      dispatch(checkPageHeight())
     }) 
-  }, [])
+  })
 
   return (
     <motion.button   animate={{ y: y,  scale: [1,1.5,1], borderRadius:[0,2,2,0]} } 
