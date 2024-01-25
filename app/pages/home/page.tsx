@@ -1,13 +1,11 @@
-'use client'
+// 'use client'
 import React from 'react'
-import { HomeContainer,DescripitonHome,ParagraphContainer,
-ImageParagraphContainer} from '@/app/styles/HomePage.style'
-import img from '../../assets/29-09-11.webp'
 import {dataHomeDescription,DataHome} from '../../ref/data'
 import { motion,Variants} from 'framer-motion'
 import '../../globals.css'
 import WaveLine from '@/app/components/WaveLine'
 import { Parallax } from '@/app/components/Parallax'
+import Image from 'next/image'
 
 
 export default function HomePage() {
@@ -18,10 +16,10 @@ export default function HomePage() {
         }
 
         return (
-    <HomeContainer className='overflow-hidden'>
+    <section className='overflow-hidden pt-[2rem] md:pt-[4rem] flex flex-col items-center'>
        <Parallax/>
         <div className=' h-[6rem]' id='home'/>
-       <DescripitonHome>
+       <section className='flex flex-col items-center text-2xl w-[100vw] '>
         <div className=" m-5 mt-10 w-full  lg:text-7xl text-5xl text-slate-950 font-black italic">
          <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.5}} className=' flex items-center justify-center w-full h-5 text-teal-500 ml-3'>BlueWave HolidayHouse </motion.h1>
          <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.6}} className=' flex items-center justify-center w-full  h-5 text-sky-400 ml-3 relative left-[.4rem] top-[-1rem]'>BlueWave HolidayHouse </motion.h1>
@@ -34,19 +32,19 @@ export default function HomePage() {
             return(
               <motion.div className='flex flex-col items-center justify-center' key={id} variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}>
                 <strong className="text-black text-3xl font-black italic mb-6 w-full flex justify-center text-center ">{title}</strong>
-                <ParagraphContainer>
-                    {id % 2 == 0? null : <ImageParagraphContainer priority rel='preload' src={img!} width={500} height={500} alt=''/> }
+                <div className='flex md:flex-row flex-col text-xl items-center justify-around w-[100vw] p-[1rem]'>
+                    {id % 2 == 0? null : <Image  className='flex w-[30rem] h-[20rem] justify-around m-1 rou roundedCustom ' placeholder='blur' blurDataURL='/app/assets/pexels-max-ravier-3331094.webp' src={img!} width={500} height={500} alt=''/> }
                     <motion.p className=' w-full lg:w-[40vw] text-lg font-semibold'>
                      {desc}
                     </motion.p> 
-                    {id % 2 == 0? <ImageParagraphContainer priority rel='preload' src={img!} width={500} height={500} alt=''/> : null}
-                </ParagraphContainer>
+                    {id % 2 == 0? <Image  className='flex w-[30rem] h-[20rem] justify-around m-1 rou roundedCustom' placeholder='blur' blurDataURL='/app/assets/pexels-max-ravier-3331094.webp' src={img!} width={500} height={500} alt=''/> : null}
+                </div>
                 <div className='w-full flex justify-center'><WaveLine/></div>
               </motion.div>
             );
           })
         }
-      </DescripitonHome> 
-    </HomeContainer> 
+      </section> 
+    </section> 
   )
 }

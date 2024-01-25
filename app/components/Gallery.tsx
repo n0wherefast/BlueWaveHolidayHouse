@@ -1,6 +1,5 @@
 import React from 'react'
 import Slide from '@/app/components/Slide'
-import styled from 'styled-components'
 
 
 function Gallery() {

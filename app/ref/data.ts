@@ -11,6 +11,7 @@ export interface DataHome {
     img?: StaticImageData,
     desc:string,
     title:string,
+    blurDataURL?:string,
 }
 export interface DataPlace {
     id:number,
@@ -25,6 +26,7 @@ export interface DataPlace {
     moveXsm:number,
     moveYmd?:number,
     moveXmd?:number,
+
 }
 
 export const  dataHomeDescription = [

@@ -11,7 +11,7 @@ import Button from '@/app/components/Button'
 import { AboutContainer , CardContainer,
           CardCollapse,CardAbout,
           ButtonCollapse,CollapseContainer,
-          ContainerImage,TextAboutContainer,MainContainer,MainTextContainer} from '@/app/styles/About.style'
+          TextAboutContainer,MainContainer,MainTextContainer} from '@/app/styles/About.style'
 // import { useDispatch } from 'react-redux'
 // import { scrollTo } from '@/app/redux/slices/scroll/scrollSlice'
 import bg from "../../assets/blue_wave__abstract_picture_walpaper_amazing.jpg"
@@ -121,12 +121,7 @@ function About() {
             <br />
         </div>        
         <br />
-        
-        
-      </section>
-      
-    
-
+              </section>
       <div className=' flex-col  w-full items-center justify-center'>
 
         <h2 className=' w-full  flex  justify-between text-6xl font-bold italic p-2'>
@@ -134,13 +129,9 @@ function About() {
             <span className=' text-sky-600 text-7xl'>S</span>ervizi
           </div>
         </h2>
-
-
           <section className="flex flex-col  md:flex-row gap-2  p-4  w-full justify-between bg-sky-600 "> 
-        
           <TextAboutContainer>
              <motion.div variants={variant}  initial='start' whileInView='end' transition={{delay:0.25}} >
-
                 <div> <strong className='p-1 text-2xl'>- Politiche:</strong></div>
                 <p className='pl-4 prose-lg'>
                     -L&apos;host ti accoglie di persona <br />
@@ -151,9 +142,7 @@ function About() {
                     <br />
                 </p>
               </motion.div>
-          </TextAboutContainer> 
-      {/* </motion.div> */}
-            
+          </TextAboutContainer>             
           <TextAboutContainer>
           <motion.div variants={variant}  initial='start' whileInView='end' transition={{delay:0.30}} >
               <div> <strong className='p-1'>- Posizione:</strong></div>

@@ -83,33 +83,16 @@ body {
 .trapeze {
 	border-bottom: 60px solid rgb(2 132 199) ;
 	border-right: 115px solid white ;
-
+}
+.roundedCustom {
+  border-radius:70% 30% 43% 57% / 69% 16% 84% 31%;
 }
 
-/* .imgDesc {
-   background-image:url('../app/assets/pexels-max-ravier-3331094.webp');
-  background-size:cover;
-  background-position: 0px -65rem;
-  background-repeat: no-repeat;
-} */
-/* .Gallery {
-   background-image:url('../app/assets/pexels-max-ravier-3331094.webp');
-  background-size:cover;
-  background-position: 0px -70rem;
-  background-repeat: no-repeat;
-} */
 .swiper {
   width: 100%;
   height: 100%;
   /* background: #000; */
 }
 
-/* .swiper-slide {
-  font-size: 18px;
-  color: #fff;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 40px 60px;
-} */
 
 

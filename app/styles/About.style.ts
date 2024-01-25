@@ -45,7 +45,6 @@ export const CardCollapse =styled.button<Props>`
     border-bottom:${(props)=>(props.$extend === 'true'? '': '2px solid black' )} ;
     &:hover{
         border-bottom:${(props)=>(props.$extend === 'true'? '': ' 2px #0284c7 solid' )} ;
-        /* border-bottom: 2px #0284c7 solid; */
     }
 
 `
@@ -65,30 +64,21 @@ export const CardAbout = styled.div<Props>`
     overflow: hidden;
     flex-direction: row;
     padding:${(props)=>(props.$extend === 'true' ? '1rem': '')};
-    /* margin: 1rem; */
     width:20rem;
     height:${(props)=>(props.$extend ==='true'? '28rem': '0px')};
     background-color:white;
-    /* background-color:#0284c7; */
-    /* border-radius: 10px; */
-    /* border: 1px solid darkgray; */
     border-bottom:${(props)=>(props.$extend === 'true'? '2px solid black' :'')} ;
     color:black;
     font-size: larger;
     font-weight: 700;
     font-family: sans-serif;
 `
-export const ContainerImage = styled(Image)`
- width: 50vw;
- height:auto;
-`
+
 
 export const TextAboutContainer = styled.div`
-    /* background-color: lightgrey; */
     padding: 1rem;
     border-radius:1.5rem;
     width:30vw;
-    /* font-weight: 700; */
     border: 2px solid black;
     background-color: white;
     @media (max-width:700px) {

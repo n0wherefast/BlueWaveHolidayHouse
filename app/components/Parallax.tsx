@@ -5,8 +5,6 @@ import {
   useScroll,
   useTransform,
   } from "framer-motion";
-import { DiscoverContainer, BgContainer } from "../styles/Parallax.style";
-import img from '../assets/pexels-max-ravier-3331094.webp'
 import Link from "next/link";
 import WavyText from "./WavyText";
 import { useSelector } from "react-redux";
@@ -32,8 +30,8 @@ const ref = useRef<HTMLDivElement>(null)
   })
     const yBg = useTransform( scrollYProgress , [0,1] ,["0%" , "50%"]);
       return (
-        <BgContainer ref={ref} className="image">
-          <DiscoverContainer >
+        <section ref={ref} className="flex flex-col md:flex-row items-center justify-end lg:justify-center w-[100vw] min-h-[100vh] image">
+          <div className=" flex flex-col justify-start items-center md:mb-[25rem] lg:ml-[20rem] md:ml-[1rem] mb-[1rem] ml-0 min-h-[8rem] font-black text-[3.5rem] md:text-[8rem] lg:text-[10rem] italic md:h-[10rem] text-amber-400 hover:text-amber-600 uppercase transition-all ease-in duration-[0.5] " >
               <motion.div style={{y: yBg}} className="flex flex-col items-center ">
                 <Link href={'#home'} className="flex items-center ">
                   { size > 700 ? <MdKeyboardDoubleArrowDown size={110} className='animate-pulse' /> : null}
@@ -42,8 +40,8 @@ const ref = useRef<HTMLDivElement>(null)
                    </Link> 
                    { size < 700 ? <MdKeyboardDoubleArrowDown size={35} className='animate-pulse' /> : null}
               </motion.div>
-          </DiscoverContainer> 
+          </div> 
           {/* <ImageContainer blurDataURL="blur" placeholder="blur"  rel="preload" src={img} width={2000} height={2000} alt="image" /> */}
-      </BgContainer>
+      </section>
   );
 }
