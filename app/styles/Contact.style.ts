@@ -9,8 +9,10 @@ interface Props{
 export const BoxInfo = styled.div<Props>`
    display: flex;
    flex-direction: column;
-    min-width: 30vw;
-    min-height: 30vh;
+   align-items: center;
+   justify-content: space-between;
+    min-width: 50vw;
+    min-height: 50vh;
     padding: 0.5rem;
     margin: 0.5rem;
     background-color: rgb(2 132 199);
@@ -33,7 +35,7 @@ export const LinkInfo = styled.div`
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
-justify-content: space-around;
+justify-content: start;
 
 @media (max-width:700px){
         padding: 1rem;

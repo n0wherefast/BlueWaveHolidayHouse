@@ -10,7 +10,7 @@ function Footer() {
   const date = new Date()
   const year = date.getFullYear()
   return (
-    <div className=' min-h-[4rem] w-full bg-slate-100 flex items-center justify-between pl-2'>
+    <div className=' min-h-[6rem] w-full  flex items-center justify-between pl-2'>
       <section className='flex flex-col'>
           <button onClick={()=>setIsOpen(!isOpen)} className='flex flex-col'>
             <p className=' text-md font-bold text-sky-900 hover:text-amber-400'> Credits</p>
