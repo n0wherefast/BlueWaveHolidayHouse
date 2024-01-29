@@ -100,7 +100,7 @@ function About() {
         </div>
         <p className='text-xl '>  
              <br />
-             Situata a pochi passi dal mare e dalla spiaggia rocciosa di Acitrezza, famosa per i suoi faraglioni e l'area marina protetta, Blue Wave Holiday House è la soluzione perfetta per le tue vacanze in Sicilia.
+             Situata a pochi passi dal mare e dalla spiaggia rocciosa di Acitrezza, famosa per i suoi faraglioni e l&apos;area marina protetta, Blue Wave Holiday House è la soluzione perfetta per le tue vacanze in Sicilia.
              Questa accogliente casa vacanze di 60 mq offre tutto il necessario per un soggiorno confortevole e rilassante:
             </p>
           <br />
@@ -110,13 +110,13 @@ function About() {
             <li>- Un bagno completo con doccia;</li>
             <li>- Una cucina completamente attrezzata con piano colazione;</li>
             <li>- Un terrazzino vista mare</li>
-            <li>- Un posto auto privato all'interno del complesso residenziale.</li>
+            <li>- Un posto auto privato all&apos;interno del complesso residenziale.</li>
           </ul>
             <br />
             <div className='text-xl'> 
             La casa è arredata con gusto e modernità, e offre tutti i comfort necessari per rendere la tua vacanza indimenticabile!
             La posizione strategica di Blue Wave Holiday House ti permette di raggiungere facilmente tutte le principali attrazioni
-            del bacino orientale della Sicilia: a soli 25 minuti dall'Aeroporto di Catania, 15 min dal centro di Catania, 40 minuti
+            del bacino orientale della Sicilia: a soli 25 minuti dall&apos;Aeroporto di Catania, 15 min dal centro di Catania, 40 minuti
             da Taormina, 60 minuti da Siracusa.
             </div> 
             <br />
