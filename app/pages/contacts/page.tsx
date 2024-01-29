@@ -37,11 +37,10 @@ function Contacts() {
       <div className='h-16' id='contact' />
       <div className=' h-32' >       
         <motion.div variants={variant} initial='start' whileInView='end' transition={{delay:0.8}} className="  w-[95vw]   lg:text-7xl text-6xl  font-black italic border-b-[5rem] border-b-amber-400  border-r-[6rem] border-r-transparent "/>
-        <motion.div variants={variant} initial='start' whileInView='end' transition={{delay:0.8}} className=" relative top-[-4rem] w-[94vw]   lg:text-7xl text-6xl  font-black italic border-b-[5rem] border-b-sky-600  border-r-[6rem] border-r-transparent  h-[1rem]">
-            <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.5}} className=' flex items-center justify-center w-full text-amber-400 p-3 '><p>Contacts</p></motion.h1>
+        <motion.div variants={variant} initial='start' whileInView='end' transition={{delay:0.8}} className=" relative top-[-4rem] w-[94vw]   lg:text-7xl text-6xl  font-black italic border-b-[5rem] border-b-sky-700  border-r-[6rem] border-r-transparent  h-[1rem]">
+        <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.5}} className=' flex items-center justify-center w-full text-amber-400 p-3 '><p>Contacts</p></motion.h1>
         </motion.div>        
       </div>
-      
       <Map/> 
       <div className='h-14' />
                

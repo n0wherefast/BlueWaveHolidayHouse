@@ -4,7 +4,7 @@ import {IoPeopleCircleOutline,IoBedOutline,IoClose,IoAdd} from 'react-icons/io5'
 import {FaShower,FaCar,FaWifi,FaDog,FaRegSnowflake, FaArrowCircleDown} from 'react-icons/fa'
 import {MdMeetingRoom} from 'react-icons/md'
 import {GiWashingMachine,GiSeaCliff,GiRiceCooker} from 'react-icons/gi'
-import {CgScreen} from 'react-icons/cg'
+import {CgScreen, CgUsb} from 'react-icons/cg'
 import {BsPersonWorkspace} from 'react-icons/bs'
 import { Variants, motion } from 'framer-motion'
 import Button from '@/app/components/Button'
@@ -81,6 +81,7 @@ function About() {
                   <div className='flex  items-center '><FaCar size={iconSize}/> <p className='p-1'>Parcheggio Privato</p></div>
                   <div className='flex  items-center '><FaWifi size={iconSize}/><p className='p-1'>Wi-Fi Internet</p> </div>
                   <div className='flex  items-center '><CgScreen size={iconSize}/><p className='p-1'>HDTV</p></div>
+                  <div className='flex  items-center '><CgUsb size={iconSize}/><p className='p-1'>Prese USB</p></div>
                   <div className='flex  items-center '><GiWashingMachine size={iconSize}/><p className='p-1'>Lavatrice</p></div>
                   <div className='flex  items-center '><FaDog size={iconSize}/><p className='p-1'>Animali domestici ammessi</p></div>
               </div>
@@ -148,16 +149,16 @@ function About() {
           <motion.div variants={variant}  initial='start' whileInView='end' transition={{delay:0.30}} >
               <div> <strong className='p-1'>- Posizione:</strong></div>
               <p className='pl-4'>
+                  - Posto auto privato in condominio <br />
                   - Parcheggio in strada. <br />
-                  - A pochi passi c&apos;è un parcheggio privato a pagamento.<br />
-                  - A piedi:
-                  - 3min fermata metropolitana Piazza Borgo<br />
-                  - 3min fermata autobus piazza Borgo<br />
-                  - 1 Min orto botanico<br />
-                  - 5min villa Bellini<br />
+                  A piedi:
+                  - bar sotto casa<br />
+                  - fermata autobus sotto casa<br />
+                  - 5 Min discesa a mare<br />
+                  -  in auto<br />
                   - 15 minuti teatro Massimo<br />
-                  - 20 Min Duomo<br />
-                  - 5min supermercato molto fornito decò piazza borgo<br />
+                  - 2min supermercato molto fornito decò<br />
+                  - 5min centro commerciale
                   - 2min panifici, bar e ristorante<br />
                   <br />
               </p>
@@ -170,14 +171,14 @@ function About() {
               <p className='pl-4'>
                     - Cucina : uno spazio in cui gli ospiti possono cucinare <br />
                     - Frigorifero <br />
-                    - Forno a microonde <br />
+                    {/* - Forno a microonde <br /> */}
                     - Servizi di base per cucinare
                       Pentole, padelle, olio, sale e pepe <br />
                     - Piatti e posate
-                      Scodelle, bacchette, piatti, tazze, ecc. <br />
+                      Scodelle, piatti, tazze, ecc. <br />
                     - Freezer <br />
-                    - Lavastoviglie <br />
-                    - Piano cottura a induzione <br />
+                    {/* - Lavastoviglie <br /> */}
+                    - Piano cottura  <br />
                     - Forno Normale<br />
                     - Bollitore <br />
                     - Macchina del caffè: macchina per caffè espresso<br />

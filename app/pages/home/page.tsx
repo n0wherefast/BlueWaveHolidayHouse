@@ -17,7 +17,7 @@ export default function HomePage() {
         }
 
         return (
-    <section className='overflow-hidden pt-[2rem] md:pt-[4rem] flex flex-col items-center'>
+    <section className='overflow-hidden pt-[2rem] flex flex-col items-center'>
        <Parallax/>
         <div className=' h-[6rem]' id='home'/>
        <section className='flex flex-col items-center text-2xl w-[100vw] '>
