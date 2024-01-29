@@ -151,7 +151,7 @@ function About() {
               <p className='pl-4'>
                   - Posto auto privato in condominio <br />
                   - Parcheggio in strada. <br />
-                  A piedi:
+                  A piedi:<br/>
                   - bar sotto casa<br />
                   - fermata autobus sotto casa<br />
                   - 5 Min discesa a mare<br />
