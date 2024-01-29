@@ -19,7 +19,7 @@ function Gallery() {
         end:{opacity:1, x:8},
         startG:{opacity:0 ,x:-10},
         endG:{opacity:1, x:1},
-        startE:{opacity:-1 ,x:10},
+        startE:{opacity:-10 ,x:10},
         }
 
     const style ={
@@ -92,7 +92,7 @@ function Gallery() {
             </SwiperSlide>
       </Swiper>
 
-       <div className='w-full flex flex-row-reverse items-end mr-1 lg:mb-5'>   
+       <div className='w-[100%] flex flex-row-reverse items-end mr-1 lg:mb-5'>   
             <motion.div variants={variant} initial='startE' whileInView='endG' transition={{delay:0.6}}className=" absolute  w-[93vw]  text-6xl  font-black italic  border-b-[5rem] border-b-amber-400  border-l-[9rem] border-l-transparent  h-[5.2rem]"/>
             <motion.div variants={variant} initial='startE' whileInView='endG' transition={{delay:0.8}}className=" w-[90vw]  text-6xl  font-black italic  border-b-[5rem] border-b-white  border-l-[9rem] border-l-transparent  h-[5.2rem]">
             </motion.div>

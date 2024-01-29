@@ -94,7 +94,6 @@ export const MainTextContainer = styled.div`
   justify-content: start;
   font-style: italic;
   font-weight: 900;
-  font-size: 9.5rem;
   padding: 0.25rem;
   color: rgb(248 250 252);
 

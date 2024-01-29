@@ -6,6 +6,7 @@ import '../../globals.css'
 import WaveLine from '@/app/components/WaveLine'
 import { Parallax } from '@/app/components/Parallax'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 export default function HomePage() {
@@ -28,19 +29,23 @@ export default function HomePage() {
         <br />
         {
           dataHomeDescription.map((itm:DataHome) => {
-            const {id,title,desc,img} = itm
+            const {id,title,desc,img,url} = itm
             return(
-              <motion.div className='flex flex-col items-center justify-center' key={id} variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}>
-                <strong className="text-black text-3xl font-black italic mb-6 w-full flex justify-center text-center ">{title}</strong>
-                <div className='flex md:flex-row flex-col text-xl items-center justify-around w-[100vw] p-[1rem]'>
-                    {id % 2 == 0? null : <Image  className='flex w-[30rem] h-[20rem] justify-around m-1 rou roundedCustom ' placeholder='blur' blurDataURL='../../assets/mobile.webp' src={img!} width={500} height={500} alt=''/> }
-                    <motion.p className=' w-full lg:w-[40vw] text-lg font-semibold'>
-                     {desc}
-                    </motion.p> 
-                    {id % 2 == 0? <Image  className='flex w-[30rem] h-[20rem] justify-around m-1 rou roundedCustom' placeholder='blur' blurDataURL='../../assets/mobile.webp' src={img!} width={500} height={500} alt=''/> : null}
-                </div>
-                <div className='w-full flex justify-center'><WaveLine/></div>
-              </motion.div>
+            <>
+              <Link key={id} href={url!} className=' hover:bg-sky-100 transition-all ease-in duration-300 p-5' >
+                 <motion.div className='flex flex-col items-center justify-center'  variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}>
+                  <strong className="text-black text-4xl md:text-5xl font-black italic mb-6 w-full flex justify-center text-center  ">{title}</strong>
+                  <div className='flex md:flex-row flex-col text-xl items-center justify-around w-[100vw] p-[1rem]'>
+                      {id % 2 == 0? null : <Image  className='flex w-[30rem] h-[20rem] justify-around m-1 rou roundedCustom ' placeholder='blur' blurDataURL='../../assets/mobile.webp' src={img!} width={500} height={500} alt=''/> }
+                      <motion.p className=' w-full lg:w-[50rem] text-justify text-lg font-semibold'>
+                      {desc}
+                      </motion.p> 
+                      {id % 2 == 0? <Image  className='flex w-[30rem] h-[20rem] justify-around m-1 rou roundedCustom' placeholder='blur' blurDataURL='../../assets/mobile.webp' src={img!} width={500} height={500} alt=''/> : null}
+                  </div>
+                  <div className='w-full flex justify-center'><WaveLine/></div>
+                </motion.div>
+              </Link>
+            </>
             );
           })
         }

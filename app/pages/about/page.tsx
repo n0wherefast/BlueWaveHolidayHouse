@@ -38,9 +38,9 @@ function About() {
     <AboutContainer >
    <MainContainer>
       <MainTextContainer>
-          <motion.h2 variants={variant} initial='startTit' whileInView='endTit' className='text-amber-400'>Catch</motion.h2>
-          <motion.h2 variants={variant} initial='startRev' whileInView='endRev' className='text-[6rem] w-[90vw]'>Your Dream</motion.h2>
-          <motion.h2 variants={variant} initial='startTit' whileInView='endTit' className=' text-amber-400'>Holiday.</motion.h2> 
+          <motion.p variants={variant} initial='startTit' whileInView='endTit' className='flex text-[4.5rem] flex-col lg:flex-row lg:text-[10rem] lg:gap-5'>La soluzione<p className='text-amber-400'>ideale</p></motion.p>
+          <motion.p variants={variant} initial='startRev' whileInView='endRev' className=' text-[4.5rem] lg:text-[7rem] flex-col lg:flex-row w-[90vw] flex lg:gap-5'>Per la tua <p className='text-amber-400'>vacanza</p></motion.p>
+          <motion.p variants={variant} initial='startTit' whileInView='endTit' className=' text-[4.5rem] lg:text-[10rem]  flex gap-2 lg:gap-5'>In <p className='text-amber-400'>Sicilia</p> .</motion.p> 
       </MainTextContainer>
       <Button to={'#sec'}  y={-65} color={'text-[coral]'}/>
     </MainContainer>
@@ -94,41 +94,42 @@ function About() {
 
      <section className='p-4 flex flex-col items-center w-full lg:w-[45rem] '>
         <br />
-        <div className=" p-1 md:w-auto w-72 font-bold">
-
+        <div className=" p-1 md:w-auto w-72 font-medium">
         <div className=' text-4xl font-black '>
           <span className='text-sky-600 text-5xl'>A</span>ppartamento
         </div>
-
         <p className='text-xl '>  
-    
              <br />
-                ,vacanze nel cuore della città di Catania, a pochi passi dal centro storico vicino ai 
-              principali mezzi di trasporto.
-              Dotato di ogni comfort per un soggiorno in pieno relax.
+             Situata a pochi passi dal mare e dalla spiaggia rocciosa di Acitrezza, famosa per i suoi faraglioni e l'area marina protetta, Blue Wave Holiday House è la soluzione perfetta per le tue vacanze in Sicilia.
+             Questa accogliente casa vacanze di 60 mq offre tutto il necessario per un soggiorno confortevole e rilassante:
             </p>
           <br />
-          <div className='text-xl'> 
-            <strong>Lo spazio</strong> L&apos;appartamento dispone di un open space con divano letto e tavolo,
-             seguito da un angolo cottura dedicato ed un piccolo balconcino. Inoltre dispone di un&apos;ampia camera da letto e doppi servizi: bagno con doccia e di una lavanderia con servizi dedicati.
-             L&apos;appartamento è dotato di ogni comfort: Tv satellitari, condizionatori, frigo, cucina e forno.
-            </div>
+          <ul className='text-xl'> 
+            <li>- Un soggiorno con divano letto e TV;</li>
+            <li>- Una camera da letto matrimoniale con armadio, culla per neonati e TV;</li>
+            <li>- Un bagno completo con doccia;</li>
+            <li>- Una cucina completamente attrezzata con piano colazione;</li>
+            <li>- Un terrazzino vista mare</li>
+            <li>- Un posto auto privato all'interno del complesso residenziale.</li>
+          </ul>
             <br />
             <div className='text-xl'> 
-              <strong>Da tenere a mente</strong> Vicino a bar, supermercati, metro, farmacie.
-               Consente di spostarsi anche a piedi e visitare la via più importante della città: Via Etnea.
+            La casa è arredata con gusto e modernità, e offre tutti i comfort necessari per rendere la tua vacanza indimenticabile!
+            La posizione strategica di Blue Wave Holiday House ti permette di raggiungere facilmente tutte le principali attrazioni
+            del bacino orientale della Sicilia: a soli 25 minuti dall'Aeroporto di Catania, 15 min dal centro di Catania, 40 minuti
+            da Taormina, 60 minuti da Siracusa.
             </div> 
             <br />
         </div>        
         <br />
-              </section>
+    </section>
       <div className=' flex-col  w-full items-center justify-center'>
 
-        <h2 className=' w-full  flex  justify-between text-6xl font-bold italic p-2'>
+        <p className=' w-full  flex  justify-between text-6xl font-bold italic p-2'>
           <div  className=' -[25%] flex  items-center justify-center ml-16'>
             <span className=' text-sky-600 text-7xl'>S</span>ervizi
           </div>
-        </h2>
+        </p>
           <section className="flex flex-col  md:flex-row gap-2  p-4  w-full justify-between bg-sky-600 "> 
           <TextAboutContainer>
              <motion.div variants={variant}  initial='start' whileInView='end' transition={{delay:0.25}} >
@@ -203,11 +204,11 @@ function About() {
          </TextAboutContainer>
          </section>
       
-      <h2 className=' w-full  flex  justify-between text-6xl font-bold italic p-2'>
+      <p className=' w-full  flex  justify-between text-6xl font-bold italic p-2'>
           <div  className=' -[25%] flex  items-center justify-center ml-16'>
             <span className=' text-sky-600 text-7xl'>R</span>egole
           </div>
-      </h2>
+      </p>
 
          <section className="flex flex-col  md:flex-row gap-2  p-4  w-full justify-around bg-sky-600 "> 
 

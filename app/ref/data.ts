@@ -12,6 +12,7 @@ export interface DataHome {
     desc:string,
     title:string,
     blurDataURL?:string,
+    url?:string
 }
 export interface DataPlace {
     id:number,
@@ -33,53 +34,56 @@ export const  dataHomeDescription = [
     {
         id:0,
         img:img,
-        title:"La tua base perfetta per esplorare la Sicilia!",
-        desc:"Situata ad Aci Trezza, in Sicilia orientale, la Blue Wave Holiday House è la soluzione ideale per chi desidera trascorrere una vacanza all'insegna del relax e della scoperta.L'appartamento, di circa 50 mq, è composto da una camera da letto, un soggiorno con divano letto, una cucina, un bagno e un terrazzino vista mare."
+        url:'/pages/contacts',
+        title:"La base perfetta per esplorare la Sicilia!",
+        desc:"Situata ad Aci Trezza, in Sicilia orientale, la Blue Wave Holiday House è la soluzione ideale per chi desidera trascorrere una vacanza all'insegna del relax e della scoperta. L'appartamento, di circa 50 mq, è composto da una camera da letto, un soggiorno con divano letto, una cucina, un bagno e un terrazzino vista mare."
     },
     {
         id:1,
         img:img,
-        title:" La Posizione strategica",
-        desc:` dell'appartamento permette di raggiungere facilmente tutti i principali luoghi d'interesse della zona, tra cui:
+        url:'/pages/place',
+        title:"Posizione strategica",
+        desc:` Dall'appartamento è possibile raggiungere facilmente tutti i principali luoghi d'interesse della zona, tra cui:
         Catania, la città barocca più importante della Sicilia, con il suo centro storico patrimonio dell'UNESCO, l'Etna, il vulcano attivo più alto d'Europa, le spiagge di Acitrezza, i Faraglioni, le città barocche di Siracusa e Taormina, e molto altro ancora.
        `
     },
     {
         id:2,
         img:img,
-        title:"L'appartameto",
-        desc:` è dotato di tutti i comfort necessari per un soggiorno confortevole, tra cui:
-        Aria condizionata, riscaldamento, TV, Wi-Fi gratuito, parcheggio privato, lavatrice, asciugatrice, e molto altro ancora.
-        inoltre L'appartamento è anche situato vicino a un centro commerciale e a fermate del bus, che permettono di raggiungere facilmente tutte le destinazioni desiderate.`
+        url:'/pages/about',
+        title:"L'appartamento",
+        desc:`Dotato di tutti i comfort necessari per un soggiorno confortevole, tra cui:
+        Aria condizionata, riscaldamento, TV, Wi-Fi gratuito, parcheggio privato, lavatrice.
+        Inoltre l'appartamento è situato vicino a un centro commerciale e a diverse fermate del bus che permettono di raggiungere facilmente tutte le destinazioni desiderate.`
     },
-    {
-        id:3,
-        img:img,
-        title:"A due passi da Catania",
-        desc:`
+    // {
+    //     id:3,
+    //     img:img,
+    //     title:"A due passi da Catania",
+    //     desc:`
 
-        La città dei vulcani
+    //     La città dei vulcani
         
-        Catania è una città ricca di storia e cultura, situata ai piedi dell'Etna, il vulcano attivo più alto d'Europa.
+    //     Catania è una città ricca di storia e cultura, situata ai piedi dell'Etna, il vulcano attivo più alto d'Europa.
         
-        Il centro storico di Catania, dichiarato Patrimonio dell'Umanità dall'UNESCO, è caratterizzato da un'architettura barocca unica al mondo.
+    //     Il centro storico di Catania, dichiarato Patrimonio dell'Umanità dall'UNESCO, è caratterizzato da un'architettura barocca unica al mondo.
         
-        Tra i monumenti più importanti della città si possono ammirare la Cattedrale di Sant'Agata, il Teatro Massimo Bellini, la Fontana dell'Elefante, e la Villa Bellini.`
-    },
-    {
-        id:4,
-        img:img,
-        title:"Aci Trezza",
-        desc:`La perla del mare
+    //     Tra i monumenti più importanti della città si possono ammirare la Cattedrale di Sant'Agata, il Teatro Massimo Bellini, la Fontana dell'Elefante, e la Villa Bellini.`
+    // },
+    // {
+    //     id:4,
+    //     img:img,
+    //     title:"Aci Trezza",
+    //     desc:`La perla del mare
 
-        Aci Trezza è un piccolo borgo marinaro situato sulla costa ionica siciliana.
+    //     Aci Trezza è un piccolo borgo marinaro situato sulla costa ionica siciliana.
         
-        Il borgo è famoso per i Faraglioni, tre faraglioni di roccia lavica che si stagliano nel mare cristallino.
+    //     Il borgo è famoso per i Faraglioni, tre faraglioni di roccia lavica che si stagliano nel mare cristallino.
         
-        Aci Trezza è anche una meta ideale per gli amanti del mare, con le sue spiagge rocciose e le sue acque limpide.
+    //     Aci Trezza è anche una meta ideale per gli amanti del mare, con le sue spiagge rocciose e le sue acque limpide.
         
-        Prenota subito la tua vacanza alla Blue Wave Holiday House e scopri la bellezza della Sicilia orientale!`
-    },
+    //     Prenota subito la tua vacanza alla Blue Wave Holiday House e scopri la bellezza della Sicilia orientale!`
+    // },
     // {
     //     id:5,
     //     img:img,
