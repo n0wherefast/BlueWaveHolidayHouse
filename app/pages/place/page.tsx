@@ -51,13 +51,12 @@ function Place() {
     start:{opacity:0 ,x:-20},
     end:{opacity:1, x:0},
     }
-   
+ 
  const HandleCard = (itm:DataPlace) =>{
   setSelected(true) 
   setPlace({...itm})
   dispatch(scrollToTop('top'))
  }
-
       
   return (
   <MainContainer className='flex flex-col items-center gap-5 bg-sky-900'>
@@ -101,23 +100,27 @@ function Place() {
     </Swiper>
 </div> */}
 
- {selected&&<section className='w-full min-h-screen bg-white' >
+ {selected&&<section className='' >
    <SinglePlace  place={place!.place} desc={place!.desc} smalldesc={place!.smalldesc} src={place!.src}  />
  </section>}
 
-
-{
+<div className='flex flex-wrap-reverse md:w-full md:min-h-[60vh] gap-5 items-center justify-center'>
+  {
   places.map((itm:DataPlace)=>{
     const {place,id,desc,src,smalldesc} = itm
+     useEffect(()=>{
+       HandleCard({...itm})
+     },[])
     return(
-      
-        <button key={id} onClick={()=>(HandleCard({...itm})) }>
+        <button  key={id} onClick={()=>(HandleCard({...itm})) }>
           <Card  place={place} desc={desc} smalldesc={smalldesc} src={src}/>
         </button>
         
     )
   })
 }
+</div>
+
    
   </MainContainer>
   )

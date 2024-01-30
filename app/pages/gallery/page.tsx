@@ -30,7 +30,7 @@ function Gallery() {
      }
   return (
     <>
-        <div className=' flex flex-col justify-start gap-10 items-center min-h-screen w-full pt-[4.5rem] bg-sky-700 ' >
+        <div className=' flex flex-col justify-start gap-10 lg:gap-5 items-center min-h-screen w-full pt-[4.5rem] bg-sky-700 ' >
                 <div className='w-full'>   
                     <motion.div variants={variant} initial='startG' whileInView='endG' transition={{delay:0.6}} className=" absolute   w-[93vw]  text-6xl  font-black italic  border-b-[5rem] border-b-amber-400  border-r-[9rem] border-r-transparent  h-[5.2rem]"/>
                     <motion.div variants={variant} initial='startG' whileInView='endG' transition={{delay:0.8}} className="  w-[90vw]  text-6xl  font-black italic  border-b-[5rem] border-b-white  border-r-[9rem] border-r-transparent  h-[5.2rem]">
