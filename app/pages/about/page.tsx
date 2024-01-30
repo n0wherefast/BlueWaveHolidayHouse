@@ -38,9 +38,9 @@ function About() {
     <AboutContainer >
    <MainContainer>
       <MainTextContainer>
-          <motion.p variants={variant} initial='startTit' whileInView='endTit' className='flex text-[4.5rem] flex-col lg:flex-row lg:text-[10rem] lg:gap-5'>La soluzione<p className='text-amber-400'>ideale</p></motion.p>
-          <motion.p variants={variant} initial='startRev' whileInView='endRev' className=' text-[4.5rem] lg:text-[7rem] flex-col lg:flex-row w-[90vw] flex lg:gap-5'>Per la tua <p className='text-amber-400'>vacanza</p></motion.p>
-          <motion.p variants={variant} initial='startTit' whileInView='endTit' className=' text-[4.5rem] lg:text-[10rem]  flex gap-2 lg:gap-5'>In <p className='text-amber-400'>Sicilia</p> .</motion.p> 
+          <motion.p variants={variant} initial='startTit' whileInView='endTit' className='flex text-[3.7rem] md:text-[6.7rem] flex-col lg:flex-row lg:text-[10rem] lg:gap-5'>La soluzione<p className='text-amber-400 uppercase '>ideale</p></motion.p>
+          <motion.p variants={variant} initial='startRev' whileInView='endRev' className=' text-[4.5rem] md:text-[6.7rem] lg:text-[7rem] flex-col lg:flex-row w-[90vw] flex lg:gap-5'>Per la tua <p className='text-amber-400 uppercase'>vacanza</p></motion.p>
+          <motion.p variants={variant} initial='startTit' whileInView='endTit' className=' text-[4.5rem] md:text-[6.7rem] lg:text-[10rem]  flex gap-2 lg:gap-5'>In <p className='text-amber-400 uppercase'>Sicilia</p> .</motion.p> 
       </MainTextContainer>
       <Button to={'#sec'}  y={-65} color={'text-[coral]'}/>
     </MainContainer>
@@ -59,7 +59,7 @@ function About() {
             <div className='flex flex-col gap-4'>
                 <div className=" flex items-center"><GiRiceCooker size={iconSize}/><p className='p-1'>Cucina Completa</p></div>
                 <div className=" flex items-center"> <BsPersonWorkspace size={iconSize}/><p className='p-2'>Spazio di lavoro dedicato</p></div>
-                <div className=" flex items-center  "><IoPeopleCircleOutline size={iconSize}/><p className='p-1'>4 Ospiti</p></div>
+                <div className=" flex items-center"><IoPeopleCircleOutline size={iconSize}/><p className='p-1'>4 Ospiti</p></div>
                 <div className=" flex items-center"><MdMeetingRoom size={iconSize}/><p className='p-1'>1 Camere da letto</p></div>
                 <div className=" flex items-center"><IoBedOutline size={iconSize}/><p className='p-1'>3 Letti</p></div>
                 <div className=" flex items-center"><FaShower size={iconSize}/><p className='p-1'>Bagno</p></div>

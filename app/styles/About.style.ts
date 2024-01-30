@@ -97,12 +97,9 @@ export const MainTextContainer = styled.div`
   padding: 0.25rem;
   color: rgb(248 250 252);
 
-  @media (max-width:1000px) {
-        padding: 0;
-        font-size: 8rem;
-  }
   @media (max-width:700px) {
         font-size: 12vh;
+        margin-top: rem;
   }
 
 `
