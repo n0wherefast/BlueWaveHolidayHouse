@@ -88,8 +88,8 @@ function InterestPlaces({children}:any) {
 
                     
 
-                  <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.25}} className="text-sm   w-[22rem]   bg-sky-700 text-zinc-50 border border-sky-400 p-2">
-                     <p> <strong className='p-1 text-3xl font-black italic'><span className=' text-amber-400' >C</span>ontatti:</strong></p>
+                  <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.25}} className=" w-[22rem]   bg-sky-700 text-zinc-50 border border-sky-400 p-2">
+                     <p> <strong className='p-1 text-4xl font-black italic'><span className=' text-amber-400' >C</span>ontatti</strong></p>
                     <div className='flex flex-col'>
                         <div className='p-1 flex flex-col gap-2 lg:text-xl text-lg font-semibold items-center'>
                         <p> <strong className='p-1 text-3xl font-black italic'><span className=' text-amber-400' >E</span>mail:</strong></p>

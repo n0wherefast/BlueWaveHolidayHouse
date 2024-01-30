@@ -15,16 +15,17 @@ export interface DataHome {
     url?:string
 }
 export interface DataPlace {
-    id:number,
-    moveX:number,
-    moveY:number,
+    id?:number,
+    moveX?:number,
+    moveY?:number,
     src?:  StaticImageData ,
-    place:string,
+    place?:string,
     desc?:string,
-    DelayValue:number,
-    Bradius:string
-    moveYsm:number,
-    moveXsm:number,
+    smalldesc?:string,
+    DelayValue?:number,
+    Bradius?:string
+    moveYsm?:number,
+    moveXsm?:number,
     moveYmd?:number,
     moveXmd?:number,
 
@@ -109,6 +110,7 @@ export const dataPlace = [
         Bradius:'68% 32% 67% 33% / 34% 25% 75% 66%',
         src:acitrezza,
         place:'Aci Castello',
+        smalldesc:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,',
         desc:`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,
          asperiores sint porro nesciunt ipsam minus at? Dignissimos,
           atque perspiciatis dolor ab sint, necessitatibus velit quaerat obcaecati
@@ -132,6 +134,7 @@ export const dataPlace = [
         Bradius:'68% 32% 67% 33% / 34% 25% 75% 66%',
         src:acitrezza,
         place:'Aci Trezza',
+        smalldesc:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,',
         desc:`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,
          asperiores sint porro nesciunt ipsam minus at? Dignissimos,
           atque perspiciatis dolor ab sint, necessitatibus velit quaerat obcaecati
@@ -154,6 +157,7 @@ export const dataPlace = [
         Bradius:'40% 60% 89% 11% / 87% 37% 63% 13% ',
         src:catania,
         place:'Catania',
+        smalldesc:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,',
         desc:`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,
          asperiores sint porro nesciunt ipsam minus at? Dignissimos,
           atque perspiciatis dolor ab sint, necessitatibus velit quaerat obcaecati
@@ -177,6 +181,7 @@ export const dataPlace = [
         Bradius:'27% 93% 28% 92% / 33% 48% 72% 87% ',
         src:etna,
         place:'Etna',
+        smalldesc:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,',
         desc:`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,
          asperiores sint porro nesciunt ipsam minus at? Dignissimos,
           atque perspiciatis dolor ab sint, necessitatibus velit quaerat obcaecati
@@ -200,6 +205,7 @@ export const dataPlace = [
         Bradius:'68% 32% 27% 73% / 38% 80% 20% 62% ',
         src:img,
         place:'Acireale',
+        smalldesc:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,',
         desc:`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt temporibus beatae ratione,
          asperiores sint porro nesciunt ipsam minus at? Dignissimos,
           atque perspiciatis dolor ab sint, necessitatibus velit quaerat obcaecati

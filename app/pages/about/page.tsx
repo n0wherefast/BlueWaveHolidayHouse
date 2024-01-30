@@ -106,12 +106,12 @@ function About() {
             </p>
           <br />
           <ul className='text-xl'> 
-            <li>- Un soggiorno con divano letto e TV;</li>
-            <li>- Una camera da letto matrimoniale con armadio, culla per neonati e TV;</li>
-            <li>- Un bagno completo con doccia;</li>
-            <li>- Una cucina completamente attrezzata con piano colazione;</li>
-            <li>- Un terrazzino vista mare</li>
-            <li>- Un posto auto privato all&apos;interno del complesso residenziale.</li>
+            <li>- Un soggiorno con divano letto e TV;</li><br />
+            <li>- Una camera da letto matrimoniale con armadio, culla per neonati e TV;</li><br />
+            <li>- Un bagno completo con doccia;</li><br />
+            <li>- Una cucina completamente attrezzata con piano colazione;</li><br />
+            <li>- Un terrazzino vista mare</li><br />
+            <li>- Un posto auto privato all&apos;interno del complesso residenziale.</li><br />
           </ul>
             <br />
             <div className='text-xl'> 
@@ -155,11 +155,11 @@ function About() {
                   - bar sotto casa<br />
                   - fermata autobus sotto casa<br />
                   - 5 Min discesa a mare<br />
-                  -  in auto<br />
-                  - 15 minuti teatro Massimo<br />
-                  - 2min supermercato molto fornito decò<br />
-                  - 5min centro commerciale
-                  - 2min panifici, bar e ristorante<br />
+                  In auto<br />
+                  - 15 min Catania centro<br />
+                  - 2 min supermercato molto fornito decò<br />
+                  - 5 min centro commerciale<br/>
+                  - 2 min panifici, bar e ristorante<br />
                   <br />
               </p>
               </motion.div>
@@ -240,6 +240,9 @@ function About() {
          
             <div className='p-2'> 
               <p className='p-1'>- Spegnere tutto</p>
+            </div>
+            <div className='p-2'> 
+              <p className='p-1'>- Rispettare gli orari di silenzio per non disturbare i condomini.</p>
             </div>
             </motion.div>
          </TextAboutContainer>

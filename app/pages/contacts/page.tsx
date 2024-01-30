@@ -14,6 +14,7 @@ import Button from '@/app/components/Button'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/app/redux/store'
 import logoP from '../../assets/logo_paytourist_retina_r.webp'
+import Footer from '@/app/components/Footer'
 
 
 
@@ -47,10 +48,10 @@ function Contacts() {
       <InterestPlaces >
           
       <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}  className=''>
-            
       </motion.div>
       </InterestPlaces>
     </section>
+    <Footer/>
     </>
   )
 }

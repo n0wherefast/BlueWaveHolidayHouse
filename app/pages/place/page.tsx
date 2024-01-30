@@ -9,7 +9,7 @@ import { useSelector,useDispatch } from 'react-redux'
 import { updateValue,setCheckSize } from '@/app/redux/slice/manageResizeSlice'
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from 'next/image'
-
+import { scrollToTop } from '@/app/redux/slice/scrollTo'
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -17,13 +17,17 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Pagination, Navigation,Autoplay } from "swiper/modules";
+import Card from '@/app/components/Card'
+import SinglePlace from '@/app/components/SinglePlace'
 // import '../../globals.css'
 
 
 function Place() {
    const [places,setPlaces] = useState(dataPlace)
+   const [place,setPlace] = useState<DataPlace | null> ({})
    const size = useSelector((state:RootState) => state.size.value)
    const dispatch = useDispatch()
+   const [selected ,setSelected] = useState(false)
 
 
   useEffect(() => {
@@ -48,16 +52,19 @@ function Place() {
     end:{opacity:1, x:0},
     }
    
-    
-    
+ const HandleCard = (itm:DataPlace) =>{
+  setSelected(true) 
+  setPlace({...itm})
+  dispatch(scrollToTop('top'))
+ }
 
       
   return (
-  <MainContainer className='flex flex-col bg-sky-900'>
+  <MainContainer className='flex flex-col items-center gap-5 bg-sky-900'>
     {/* <div className=" w-full  lg:text-8xl text-7xl text-slate-950 font-black italic ">
             <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.7}} className=' ] flex items-center justify-center w-full text-amber-400 '>Places</motion.h1>
     </div>     */}
-<div className=' w-full h-[100vh]'>
+{/* <div className=' w-full h-[100vh]'>
 
 <Swiper
         pagination={{
@@ -92,7 +99,25 @@ function Place() {
       })
     }
     </Swiper>
-</div>
+</div> */}
+
+ {selected&&<section className='w-full min-h-screen bg-white' >
+   <SinglePlace  place={place!.place} desc={place!.desc} smalldesc={place!.smalldesc} src={place!.src}  />
+ </section>}
+
+
+{
+  places.map((itm:DataPlace)=>{
+    const {place,id,desc,src,smalldesc} = itm
+    return(
+      
+        <button key={id} onClick={()=>(HandleCard({...itm})) }>
+          <Card  place={place} desc={desc} smalldesc={smalldesc} src={src}/>
+        </button>
+        
+    )
+  })
+}
    
   </MainContainer>
   )

@@ -7,6 +7,7 @@ import WaveLine from '@/app/components/WaveLine'
 import { Parallax } from '@/app/components/Parallax'
 import Image from 'next/image'
 import Link from 'next/link'
+import Footer from '@/app/components/Footer'
 
 
 export default function HomePage() {
@@ -17,6 +18,8 @@ export default function HomePage() {
         }
 
         return (
+          <>
+          
     <section className='overflow-hidden pt-[2rem] flex flex-col items-center'>
        <Parallax/>
         <div className=' h-[6rem]' id='home'/>
@@ -51,5 +54,7 @@ export default function HomePage() {
         }
       </section> 
     </section> 
+    <Footer/>
+  </>
   )
 }
