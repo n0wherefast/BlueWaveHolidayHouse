@@ -1,5 +1,5 @@
 'use client'
-import React , {useEffect, useState}from 'react'
+import React , {useEffect, useState, useRef}from 'react'
 import { dataPlace ,DataPlace} from '@/app/ref/data'
 import { motion,Variants } from 'framer-motion'
 import { PlaceContainer,MainContainer,ImageParagraphContainerPlace } from '@/app/styles/Place.style'
@@ -19,7 +19,6 @@ import "swiper/css/navigation";
 import { Pagination, Navigation,Autoplay } from "swiper/modules";
 import Card from '@/app/components/Card'
 import SinglePlace from '@/app/components/SinglePlace'
-// import '../../globals.css'
 
 
 function Place() {
@@ -28,25 +27,28 @@ function Place() {
    const size = useSelector((state:RootState) => state.size.value)
    const dispatch = useDispatch()
    const [selected ,setSelected] = useState(false)
+   const ref:any = useRef()
 
 
   useEffect(() => {
-    if(size<1000){
-      dispatch(setCheckSize(true))
-    }else{dispatch(setCheckSize(false))}
+      if(size<1000){
+        dispatch(setCheckSize(true))
+      }else{dispatch(setCheckSize(false))}
 
-    dispatch(updateValue(window.innerWidth))
-    function handleResize() {
-      
       dispatch(updateValue(window.innerWidth))
-    }
-     
-      window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-
+      function handleResize() {
+        dispatch(updateValue(window.innerWidth))
+      }
+      
+        window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
    });
+  useEffect(()=>{
+    HandleCard(ref.current)
+  },[])
+
    const variant:Variants = {
     start:{opacity:0 ,x:-20},
     end:{opacity:1, x:0},
@@ -108,9 +110,7 @@ function Place() {
   {
   places.map((itm:DataPlace)=>{
     const {place,id,desc,src,smalldesc} = itm
-     useEffect(()=>{
-       HandleCard({...itm})
-     },[])
+     ref.current = itm
     return(
         <button  key={id} onClick={()=>(HandleCard({...itm})) }>
           <Card  place={place} desc={desc} smalldesc={smalldesc} src={src}/>

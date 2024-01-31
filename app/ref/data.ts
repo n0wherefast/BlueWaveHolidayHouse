@@ -98,7 +98,6 @@ export const  dataHomeDescription = [
 
 export const dataPlace = [
     {   
-        // store:store.getState().size.value,
         id:0,
         moveY:-250,
         moveX:0, 
