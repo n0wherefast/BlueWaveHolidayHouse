@@ -42,6 +42,7 @@ export default function RootLayout({children,}:{ children: React.ReactNode}) {
           <Nav/>
            {children}
            <ButtonScrollTop  to={'top'} color={'text-amber-400 '}/>
+           {/* <Footer/> */}
         </Providers>
       </body>
      

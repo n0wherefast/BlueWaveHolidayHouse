@@ -1,68 +1,59 @@
-'use client'
 import React , {useEffect, useState, useRef}from 'react'
-import { dataPlace ,DataPlace} from '@/app/ref/data'
-import { motion,Variants } from 'framer-motion'
-import { PlaceContainer,MainContainer,ImageParagraphContainerPlace } from '@/app/styles/Place.style'
-import Link from 'next/link'
-import type { RootState } from '@/app/redux/store'
-import { useSelector,useDispatch } from 'react-redux'
-import { updateValue,setCheckSize } from '@/app/redux/slice/manageResizeSlice'
-import { Swiper, SwiperSlide } from "swiper/react";
-import Image from 'next/image'
-import { scrollToTop } from '@/app/redux/slice/scrollTo'
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+// import { dataPlace ,DataPlace} from '@/app/ref/data'
+// import { motion,Variants } from 'framer-motion'
+// import { MainContainer } from '@/app/styles/Place.style'
+// import type { RootState } from '@/app/redux/store'
+// import { useSelector,useDispatch } from 'react-redux'
+// import { updateValue,setCheckSize } from '@/app/redux/slice/manageResizeSlice'
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { scrollToTop } from '@/app/redux/slice/scrollTo'
+// import "swiper/css";
+// import "swiper/css/pagination";
+// import "swiper/css/navigation";
+// import { Pagination, Navigation,Autoplay } from "swiper/modules";
 
-// import required modules
-import { Pagination, Navigation,Autoplay } from "swiper/modules";
+// import SinglePlace from '@/app/components/SinglePlace'
+
+
+import PlaceWrapper from '@/app/components/PlaceWrapper'
+import {client} from '../../ref/sanity'
 import Card from '@/app/components/Card'
-import SinglePlace from '@/app/components/SinglePlace'
+import {PLACE} from '../../ref/types'
+async function getData() {
+  const query = `
+  *[_type=='place'] | order(_createdAT desc) {
+    title,smalldesc,description,image,id
+  } 
+  `
+  const data = await client.fetch(query)
+  return data
+} 
 
-
-function Place() {
-   const [places,setPlaces] = useState(dataPlace)
-   const [place,setPlace] = useState<DataPlace | null> ({})
-   const size = useSelector((state:RootState) => state.size.value)
-   const dispatch = useDispatch()
-   const [selected ,setSelected] = useState(false)
-   const ref:any = useRef()
-
-
-  useEffect(() => {
-      if(size<1000){
-        dispatch(setCheckSize(true))
-      }else{dispatch(setCheckSize(false))}
-
-      dispatch(updateValue(window.innerWidth))
-      function handleResize() {
-        dispatch(updateValue(window.innerWidth))
-      }
-      
-        window.addEventListener('resize', handleResize);
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-   });
-  useEffect(()=>{
-    HandleCard(ref.current)
-  },[])
-
-   const variant:Variants = {
-    start:{opacity:0 ,x:-20},
-    end:{opacity:1, x:0},
-    }
- 
- const HandleCard = (itm:DataPlace) =>{
-  setSelected(true) 
-  setPlace({...itm})
-  dispatch(scrollToTop('top'))
- }
+async function Place() {
+  const data = await getData()
       
   return (
-  <MainContainer className='flex flex-col items-center gap-5 bg-sky-900'>
-    {/* <div className=" w-full  lg:text-8xl text-7xl text-slate-950 font-black italic ">
+ <PlaceWrapper>
+ {data.map((place:PLACE) => {
+  // const {title,id,image,desc,smalldesc} = place
+  return(
+    <div key={place.id}>
+       <Card {...place} />
+    </div>
+    
+  )
+ })}
+ </PlaceWrapper>
+  )
+}
+
+export default Place
+
+
+
+
+
+  {/* <div className=" w-full  lg:text-8xl text-7xl text-slate-950 font-black italic ">
             <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.7}} className=' ] flex items-center justify-center w-full text-amber-400 '>Places</motion.h1>
     </div>     */}
 {/* <div className=' w-full h-[100vh]'>
@@ -101,30 +92,3 @@ function Place() {
     }
     </Swiper>
 </div> */}
-
- {selected&&<section className='' >
-   <SinglePlace  place={place!.place} desc={place!.desc} smalldesc={place!.smalldesc} src={place!.src}  />
- </section>}
-
-<div className='flex flex-wrap-reverse md:w-full md:min-h-[60vh] gap-5 items-center justify-center'>
-  {
-  places.map((itm:DataPlace)=>{
-    const {place,id,desc,src,smalldesc} = itm
-     ref.current = itm
-    return(
-        <button  key={id} onClick={()=>(HandleCard({...itm})) }>
-          <Card  place={place} desc={desc} smalldesc={smalldesc} src={src}/>
-        </button>
-        
-    )
-  })
-}
-</div>
-
-   
-  </MainContainer>
-  )
-}
-
-export default Place
-

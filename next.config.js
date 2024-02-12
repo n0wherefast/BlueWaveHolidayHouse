@@ -1,14 +1,21 @@
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {}
-
-module.exports = nextConfig
-
-module.exports = {
-    compiler: {
+const nextConfig = {
+  images:{
+    remotePatterns:[
+      {
+        protocol:'https',
+        hostname:"cdn.sanity.io",
+        port:"",
+      },
+    ],
+  },
+   compiler: {
       // Enables the styled-components SWC transform
       styledComponents: true,
       // experimental: { optimizeCss: true }
 
-    }
-  }
+    },
+}
+
+module.exports = nextConfig

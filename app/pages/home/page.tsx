@@ -34,7 +34,6 @@ export default function HomePage() {
           dataHomeDescription.map((itm:DataHome) => {
             const {id,title,desc,img,url} = itm
             return(
-            <>
               <Link key={id} href={url!} className=' hover:bg-sky-100 transition-all ease-in duration-300 p-5' >
                  <motion.div className='flex flex-col items-center justify-center'  variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}>
                   <strong className="text-black text-4xl md:text-5xl font-black italic mb-6 w-full flex justify-center text-center  ">{title}</strong>
@@ -48,7 +47,6 @@ export default function HomePage() {
                   <div className='w-full flex justify-center'><WaveLine/></div>
                 </motion.div>
               </Link>
-            </>
             );
           })
         }
