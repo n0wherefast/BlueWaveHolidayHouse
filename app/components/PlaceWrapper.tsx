@@ -58,8 +58,8 @@ function PlaceWrapper({children}:any) {
  }
       
   return (
-  <MainContainer className='flex flex-col items-center gap-5 bg-sky-900 '>
-    <div className='grid grid-cols-1 md:grid-cols-2 md:w-full md:min-h-[60vh] gap-5 items-center justify-center p-10'>
+  <MainContainer className='flex flex-col items-center gap-5 bg-sky-900'>
+    <div className='flex flex-wrap md:w-full md:min-h-[60vh] gap-5 items-center justify-center p-10'>
         {children}
     </div>
   </MainContainer>

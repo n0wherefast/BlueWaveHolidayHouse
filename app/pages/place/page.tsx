@@ -18,11 +18,14 @@ import React , {useEffect, useState, useRef}from 'react'
 import PlaceWrapper from '@/app/components/PlaceWrapper'
 import {client} from '../../ref/sanity'
 import Card from '@/app/components/Card'
-import {PLACE} from '../../ref/types'
+import {PLACES} from '../../ref/types'
+
 async function getData() {
   const query = `
   *[_type=='place'] | order(_createdAT desc) {
-    title,smalldesc,description,image,id
+    title,smalldesc,description,image,id,
+    "slug": slug.current
+    ,content
   } 
   `
   const data = await client.fetch(query)
@@ -34,13 +37,12 @@ async function Place() {
       
   return (
  <PlaceWrapper>
- {data.map((place:PLACE) => {
+ {data.map((place:PLACES) => {
   // const {title,id,image,desc,smalldesc} = place
   return(
     <div key={place.id}>
        <Card {...place} />
     </div>
-    
   )
  })}
  </PlaceWrapper>
