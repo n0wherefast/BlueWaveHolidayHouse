@@ -99,7 +99,7 @@ export const MainTextContainer = styled.div`
 
   @media (max-width:700px) {
         font-size: 12vh;
-        margin-top: rem;
+        margin-top: 4rem;
   }
 
 `
