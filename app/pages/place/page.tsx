@@ -32,6 +32,7 @@ async function getData() {
   return data
 } 
 
+export const revalidate = 30 // revalidate at most every hour
 async function Place() {
   const data = await getData()
       

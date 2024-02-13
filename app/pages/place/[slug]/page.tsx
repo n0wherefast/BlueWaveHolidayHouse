@@ -16,6 +16,8 @@ async function getData(place:string) {
     return data
 }
 
+export const revalidate = 30 // revalidate at most every hour
+
 async function Article({params}:{params:{slug:string}}) {
   const data:singlePlace = await  getData(params.slug)
    const { title,image,content,currentSlug } = data!
