@@ -62,7 +62,7 @@ function Nav() {
     }
 
   return (
-   <NavbarContainer className={ale.className} $extendnavbar={isClose.toString()} >
+   <NavbarContainer  $extendnavbar={isClose.toString()} >
     <section  className='   NAVBARINNERCONT w-[100%] h-[70px] flex backdrop-blur-2xl'>
         <section className='navLeft flex flex-[30%] justify-start  items-center font-bold'>
           <Image className='m-[10px] w-[70px] h-auto' placeholder='blur' blurDataURL='../assets/1693610050074.png' alt='blue wave holiday house logo' rel='preload' width={70} height={70} src={LogoImg}/>
