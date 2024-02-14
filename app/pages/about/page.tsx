@@ -42,7 +42,7 @@ function About() {
           <motion.p variants={variant} initial='startRev' whileInView='endRev' className=' text-[4.5rem] md:text-[6.7rem] lg:text-[7rem] flex-col lg:flex-row w-[90vw] flex lg:gap-5'>Per la tua <p className='text-amber-400 uppercase'>vacanza</p></motion.p>
           <motion.p variants={variant} initial='startTit' whileInView='endTit' className=' text-[4.5rem] md:text-[6.7rem] lg:text-[10rem]  flex gap-2 lg:gap-5'>In <p className='text-amber-400 uppercase'>Sicilia</p> .</motion.p> 
       </MainTextContainer>
-      <Button to={'#sec'}  y={-65} color={'text-[coral]'}/>
+      <Button to={'#sec'}  y={-65} color={'text-amber-400'}/>
     </MainContainer>
    
       <div className=' h-10' id='sec' />
