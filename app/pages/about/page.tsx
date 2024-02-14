@@ -93,7 +93,7 @@ function About() {
 
 
 
-     <section className='p-4 flex flex-col items-center w-full lg:w-[45rem] '>
+     <section className=' prose  p-4 flex flex-col items-center w-full lg:w-[45rem] '>
         <br />
         <div className=" p-1 md:w-auto w-72 font-medium">
         <div className=' text-4xl font-black '>
@@ -106,12 +106,12 @@ function About() {
             </p>
           <br />
           <ul className='text-xl'> 
-            <li>- Un soggiorno con divano letto e TV;</li><br />
-            <li>- Una camera da letto matrimoniale con armadio, culla per neonati e TV;</li><br />
-            <li>- Un bagno completo con doccia;</li><br />
-            <li>- Una cucina completamente attrezzata con piano colazione;</li><br />
-            <li>- Un terrazzino vista mare</li><br />
-            <li>- Un posto auto privato all&apos;interno del complesso residenziale.</li><br />
+            <li> Un soggiorno con divano letto e TV;</li><br />
+            <li> Una camera da letto matrimoniale con armadio, culla per neonati e TV;</li><br />
+            <li> Un bagno completo con doccia;</li><br />
+            <li> Una cucina completamente attrezzata con piano colazione;</li><br />
+            <li> Un terrazzino vista mare</li><br />
+            <li> Un posto auto privato all&apos;interno del complesso residenziale.</li><br />
           </ul>
             <br />
             <div className='text-xl'> 

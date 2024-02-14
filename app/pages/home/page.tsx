@@ -38,8 +38,8 @@ export default function HomePage() {
                  <motion.div className='flex flex-col items-center justify-center'  variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}>
                   <strong className="text-black text-4xl md:text-5xl font-black italic mb-6 w-full flex justify-center text-center  ">{title}</strong>
                   <div className='flex md:flex-row flex-col text-xl items-center justify-around w-[100vw] p-[1rem]'>
-                      {id % 2 == 0? null : <Image  className='flex w-[30rem] h-[20rem] justify-around m-1 rou roundedCustom ' placeholder='blur' blurDataURL='../../assets/mobile.webp' src={img!} width={500} height={500} alt=''/> }
-                      <motion.p className=' w-full lg:w-[50rem] text-justify text-lg font-semibold'>
+                      {id % 2 == 0? null : <Image priority  className='flex w-[30rem] h-[20rem] justify-around m-1 rou roundedCustom ' placeholder='blur' blurDataURL='../../assets/mobile.webp' src={img!} width={500} height={500} alt=''/> }
+                      <motion.p className=' prose w-full lg:w-[50rem] text-justify text-lg font-semibold'>
                       {desc}
                       </motion.p> 
                       {id % 2 == 0? <Image  className='flex w-[30rem] h-[20rem] justify-around m-1 rou roundedCustom' placeholder='blur' blurDataURL='../../assets/mobile.webp' src={img!} width={500} height={500} alt=''/> : null}

@@ -8,6 +8,7 @@ import { FaAirbnb,FaTripadvisor,FaWhatsapp } from 'react-icons/fa'
 import { TbBrandBooking } from "react-icons/tb";
 import Image from 'next/image'
 import img from '../../assets/waveCard3.png'
+import imgY from '../../assets/waveCardYe.png'
 import img2 from '../../assets/waveCardOriz.png'
 import Link from 'next/link'
 import Button from '@/app/components/Button'
@@ -31,7 +32,7 @@ function Contacts() {
     <> 
   <section className='pt-[3rem] lg:pt-0 flex flex-col w-full'>
     <div className= 'flex flex-col items-center justify-end w-full min-h-screen'>
-          <Image placeholder='blur' blurDataURL='../../assets/waveCardOriz.png' className=' w-[100vw] lg:h-[105vh] h-[98vh] md:object-cover lg:object-fill ' width={1000} height={900} src={size >  1024 ? img2: img} alt='blue wave background'/>
+          <Image placeholder='blur' blurDataURL='../../assets/waveCardOriz.png' className=' w-[100vw] lg:h-[105vh] h-[98vh] md:object-cover lg:object-fill ' width={1000} height={900} src={size >  1024 ? img2: imgY} alt='blue wave background'/>
           <Button y={size < 700 ? -75 : size >1300? -100 :-25} to={'#contact'}  color={'text-[darkcyan]'}/>
     </div>
       <br />

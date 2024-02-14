@@ -22,23 +22,19 @@ function InterestPlaces({children}:any) {
                        className="text-md  w-[22rem] p-2 bg-sky-700 text-zinc-50 border border-sky-400">
                       <p> <strong className='p-1 text-3xl font-black italic'><span className=' text-amber-400' >T</span>rasporti:</strong></p>
                       <p className='pl-4'>
-                          - 300 m fermata metropolitana Piazza Borgo<br />
-                          - 300 m fermata autobus piazza Borgo<br />
-                          - 7.1 Km Aereoporto Fontanarossa<br />
+                          - fermata Ast ,Interbus sotto casa<br />
+                          - 1,6 km fermata AMT<br />
+                          - 17 Km Aereoporto Fontanarossa<br />
                           <br />
                       </p>
                     </motion.div> 
                     <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.25}} className="text-sm w-[22rem]   p-2 bg-sky-700 text-zinc-50  border border-sky-400">
                       <p> <strong className='p-1 text-3xl font-black italic'> <span className=' text-amber-400' >A</span>ttrazioni:</strong></p>
                       <p className='pl-4'>
-                          - 250 m Orto Botanico<br />
-                          - 850 m villa Bellini<br />
-                          - 1,8 Km Teatro Massimo<br />
-                          - 1,7 Km Piazza Duomo<br />
-                          - 1,4 km Terme Romane<br />
-                          - 1,6 Km Monastero Dei Benedettini<br />
-                          - 2,6 Km Castello Ursino<br />
-                          - 1,7 Km Parco Gioeni<br />
+                          - 14 km Catania centro<br />
+                          - 4 km  Acireale<br />
+                          - 2 km  Aci Castello<br />
+                          - 1 km lungo mare Acitrezza<br />
                           <br />
                       </p>
                     </motion.div> 
@@ -47,19 +43,20 @@ function InterestPlaces({children}:any) {
                 <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.25}} className="text-sm   w-[22rem]  bg-sky-700 text-zinc-50  border border-sky-400 p-2">
                         <p> <strong className='p-1 text-3xl font-black italic'><span className=' text-amber-400' >M</span>are:</strong></p>
                         <p className='pl-4'>
-                            - 4,1 Km Playa di Catania <br />
-                            - 3,5 Km San Giovanni Li Cuti <br />
-                            - 10 Km Aci Trezza <br />
+                            - 15 Km Playa di Catania <br />
+                            - 9 Km San Giovanni Li Cuti <br />
+                            - 1 Km Aci Trezza <br />
+                            - 500 m Aci Trezza <br />
                             <br />
                         </p>
                       </motion.div>
                       <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.25}} className="text-sm   w-[22rem]   bg-sky-700 text-zinc-50 border border-sky-400 p-2">
                         <p> <strong className='p-1 text-3xl font-black italic'><span className=' text-amber-400' >S</span>hopping:</strong></p>
                         <p className='pl-4'>
-                            - 5min supermercato molto fornito decò piazza borgo<br />
+                            - 2min /1.3 km supermercato decò<br />
                             - 2min panifici, bar e ristorante<br />
-                            - 6,9 Km Centro Commerciale Porte di Catania. <br />
-                            - 12 km Km Centro Commerciale Centro Sicilia. <br />
+                            - 3 Km Centro Commerciale Porte di Catania. <br />
+                            - 30 km Km Centro Commerciale Centro Sicilia. <br />
                             <br />
                         </p>
                       </motion.div>
