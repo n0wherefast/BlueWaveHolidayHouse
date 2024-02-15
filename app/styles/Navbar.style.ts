@@ -18,11 +18,13 @@ export const NavbarContainer = styled.nav<Props>`
     width: 100vw;
     height:${(props)=>(props.$extendnavbar === 'true'? "100vh " :"70px")};
     background-color:${(props)=>(props.$extendnavbar === 'true'? "rgb(3 105 161);":"none")};
+    mix-blend-mode:${(props)=>(props.$extendnavbar === 'true'? "none":"difference")};
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease-in-out;
     position: fixed;
     z-index: 100;
+   
 
     @media (max-width: 700px) {
       /* position: absolute; */
@@ -94,7 +96,7 @@ export const LinkButton = styled.button<Props>`
     transition: all 0.5s ease;
     margin-right: 1rem;
     transform:${(props)=>(props.$isclose === 'true' ? "rotate(-90deg)": "rotate(0deg)")} ;
-    color:${(props)=>(props.$isclose === 'true' ? "#0284c7": "black")} ;
+    color:${(props)=>(props.$isclose === 'true' ? "#0284c7": "rgb(2 132 199)")} ;
     &:hover{
             color:#0284c7;
          }

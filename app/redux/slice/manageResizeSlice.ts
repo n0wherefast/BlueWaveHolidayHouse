@@ -23,7 +23,7 @@ export const manageResize = createSlice({
            if( document.body.scrollTop > 300 ||
             document.documentElement.scrollTop > 1000){
               state.isDownPage=true
-           }else {state.isDownPage=false}
+            }else {state.isDownPage=false}
         }     
     }
 })

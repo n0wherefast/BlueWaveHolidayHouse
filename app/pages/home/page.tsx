@@ -8,6 +8,9 @@ import { Parallax } from '@/app/components/Parallax'
 import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '@/app/components/Footer'
+import { Monoton} from 'next/font/google'
+
+const mono = Monoton({ subsets: ['latin'] , weight: '400' })
 
 
 export default function HomePage() {
@@ -20,11 +23,11 @@ export default function HomePage() {
         return (
           <>
           
-    <section className='overflow-hidden pt-[2rem] flex flex-col items-center'>
+    <section className='overflow-hidden pt-[0rem] flex flex-col items-center'>
        <Parallax/>
         <div className=' h-[6rem]' id='home'/>
        <section className='flex flex-col items-center text-2xl w-[100vw] '>
-        <div className=" m-5 mt-10 w-full  lg:text-7xl text-5xl text-slate-950 font-black italic">
+        <div className={` m-5 mt-10 w-full  lg:text-7xl text-5xl text-slate-950 font-black italic`}>
          <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.5}} className=' flex items-center justify-center w-full h-5 text-teal-500 ml-3'>BlueWave HolidayHouse </motion.h1>
          <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.6}} className=' flex items-center justify-center w-full  h-5 text-sky-400 ml-3 relative left-[.4rem] top-[-1rem]'>BlueWave HolidayHouse </motion.h1>
          <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.7}} className=' flex items-center justify-center w-full  h-5 text-amber-400 ml-3 relative left-[.8rem] top-[-2rem]'>BlueWave HolidayHouse </motion.h1>

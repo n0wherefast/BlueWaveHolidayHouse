@@ -30,7 +30,7 @@ function Contacts() {
  
   return (
     <> 
-  <section className='pt-[3rem] lg:pt-0 flex flex-col w-full'>
+  <section className=' lg:pt-0 flex flex-col w-full'>
     <div className= 'flex flex-col items-center justify-end w-full min-h-screen'>
           <Image placeholder='blur' blurDataURL='../../assets/waveCardOriz.png' className=' w-[100vw] lg:h-[105vh] h-[98vh] md:object-cover lg:object-fill ' width={1000} height={900} src={size >  1024 ? img2: imgY} alt='blue wave background'/>
           <Button y={size < 700 ? -75 : size >1300? -100 :-25} to={'#contact'}  color={'text-[darkcyan]'}/>

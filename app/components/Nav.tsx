@@ -30,6 +30,8 @@ function Nav() {
    const [isClose ,setIsClose] = useState(false)
    const size = useSelector((state:RootState) => state.size.value)
    const checkSize = useSelector((state:RootState) => state.size.checkSize)
+   const  checkHeight = useSelector((state:RootState) => state.size.isDownPage)
+
    const dispatch = useDispatch()
   
 
@@ -55,7 +57,6 @@ function Nav() {
 
    },[size]);
    
-
    const variant:Variants = {
     start:{opacity:0 ,x:-20},
     end:{opacity:1, x:8},
@@ -63,10 +64,10 @@ function Nav() {
 
   return (
    <NavbarContainer  $extendnavbar={isClose.toString()} >
-    <section  className='   NAVBARINNERCONT w-[100%] h-[70px] flex backdrop-blur-2xl'>
+    <section  className={`${ checkHeight == false? 'flex':'hidden' }    w-[100%] h-[70px]`}>
         <section className='navLeft flex flex-[30%] justify-start  items-center font-bold'>
-          <Image className='m-[10px] w-[70px] h-auto' placeholder='blur' blurDataURL='../assets/1693610050074.png' alt='blue wave holiday house logo' rel='preload' width={70} height={70} src={LogoImg}/>
-          <section  className={` NAVTITLE italic flex flex-col w-[10rem] text-[1.5rem] leading-6  ${OpenSans.className}` }>
+          {/* <Image className='m-[10px] w-[70px] h-auto' placeholder='blur' blurDataURL='../assets/1693610050074.png' alt='blue wave holiday house logo' rel='preload' width={70} height={70} src={LogoImg}/> */}
+          <section  className={` text-sky-600 ${ checkHeight == true? 'invert':'invert-0' }    italic flex flex-col w-[10rem] text-[1.5rem] leading-6  ${OpenSans.className}` }>
             <p>BlueWave</p>
             <p>HolidayHouse</p> 
           </section>
@@ -82,7 +83,7 @@ function Nav() {
             )
           })}
           <LinkButton $isclose={isClose.toString()} onClick={(e)=>( setIsClose(!isClose))}>
-             {isClose ?  <IoMdClose title='close button menù' color={'white'}  size={30} /> : <TiWavesOutline  title='open button menù' size={35} />}
+             {isClose ?  <IoMdClose  title='close button menù' color={'white'}  size={30} /> : <TiWavesOutline   title='open button menù' size={40} />}
           </LinkButton> 
         </div> 
       </section>
