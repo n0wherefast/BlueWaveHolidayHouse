@@ -23,7 +23,7 @@ export const NavbarContainer = styled.nav<Props>`
     transition: all 0.3s ease-in-out;
     position: fixed;
     z-index: 100;
-    color: rgb(3 105 161);
+    color: black;
    
 
     @media (max-width: 700px) {
@@ -31,7 +31,7 @@ export const NavbarContainer = styled.nav<Props>`
       position: fixed;
        z-index:100;   
         mix-blend-mode:${(props)=>(props.$extendnavbar === 'true'? "none":"difference")};
-        color:${(props)=>(props.$extendnavbar === 'true'? "white":"none")};
+        color:${(props)=>(props.$extendnavbar === 'true'? "white":"rgb(3 105 161)")};
 
     }
     
