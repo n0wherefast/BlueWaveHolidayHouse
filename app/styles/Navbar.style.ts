@@ -18,18 +18,21 @@ export const NavbarContainer = styled.nav<Props>`
     width: 100vw;
     height:${(props)=>(props.$extendnavbar === 'true'? "100vh " :"70px")};
     background-color:${(props)=>(props.$extendnavbar === 'true'? "rgb(3 105 161);":"none")};
-    mix-blend-mode:${(props)=>(props.$extendnavbar === 'true'? "none":"difference")};
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease-in-out;
     position: fixed;
     z-index: 100;
+    color: rgb(3 105 161);
    
 
     @media (max-width: 700px) {
       /* position: absolute; */
       position: fixed;
-       z-index:100;  
+       z-index:100;   
+        mix-blend-mode:${(props)=>(props.$extendnavbar === 'true'? "none":"difference")};
+        color:${(props)=>(props.$extendnavbar === 'true'? "white":"none")};
+
     }
     
 `;
@@ -61,7 +64,7 @@ gap:1.5rem;
 export const NavbarLink = styled(Link)`
     /* background-color:#0284c7; */
     border-radius: 10px;
-    font-size: larger;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     margin:0.1rem;

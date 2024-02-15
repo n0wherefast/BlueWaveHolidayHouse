@@ -17,9 +17,9 @@ import Image from 'next/image';
 import {motion,Variants }from 'framer-motion'
 import Link from 'next/link';
 import { socialLinks } from '../ref/links';
-import { Russo_One} from 'next/font/google'
+import { Mitr} from 'next/font/google'
 
-const ale = Russo_One({ subsets: ['latin'] , weight: '400' })
+const mitr = Mitr({ subsets: ['latin'] , weight: '700' })
 
 const OpenSans = Open_Sans({
   subsets:['latin'],
@@ -67,10 +67,12 @@ function Nav() {
     <section  className={`${ checkHeight == false? 'flex':'hidden' }    w-[100%] h-[70px]`}>
         <section className='navLeft flex flex-[30%] justify-start  items-center font-bold'>
           {/* <Image className='m-[10px] w-[70px] h-auto' placeholder='blur' blurDataURL='../assets/1693610050074.png' alt='blue wave holiday house logo' rel='preload' width={70} height={70} src={LogoImg}/> */}
-          <section  className={` text-sky-600 ${ checkHeight == true? 'invert':'invert-0' }    italic flex flex-col w-[10rem] text-[1.5rem] leading-6  ${OpenSans.className}` }>
+          <Link href={'/'}>
+          <section  className={` md:text-black  ${ checkHeight == true? 'invert':'invert-0' } ${mitr.className}  ml-2 italic flex flex-col w-[10rem] text-[2rem] leading-7  ${OpenSans.className}` }>
             <p>BlueWave</p>
-            <p>HolidayHouse</p> 
+            <p>HolidayHouse</p>
           </section>
+          </Link>
          </section>
          
       <section className=' navRight flex flex-[70%] items-center lg:justify-around lg:pr-[1.5rem] pr-0 justify-end' >
