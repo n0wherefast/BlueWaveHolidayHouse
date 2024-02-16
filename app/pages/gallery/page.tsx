@@ -95,13 +95,12 @@ function Gallery() {
             </SwiperSlide>
       </Swiper>
 
-       <div className='w-[100%] flex flex-row-reverse items-end mr-1 lg:mb-5'>   
+       <div className='w-[100%] flex flex-row-reverse items-end mr-1  lg:mb-5'>   
             <motion.div variants={variant} initial='startE' whileInView='endG' transition={{delay:0.6}}className=" absolute  w-[93vw]  text-6xl  font-black italic  border-b-[5rem] border-b-amber-400  border-l-[9rem] border-l-transparent  h-[5rem]"/>
             <motion.div variants={variant} initial='startE' whileInView='endG' transition={{delay:0.8}} className=" w-[90vw]  flex items-start justify-end   font-black italic  border-b-[5rem] border-b-white  border-l-[9rem] border-l-transparent  h-[5rem]">
-                <p className={` ${mono.className} text-[2.5rem] text-sky-700  mr-1 mt-3`}> BlueWave </p>
-            </motion.div>
-                
-        </div>
+                <p className={` ${mono.className} text-[2.3rem] text-sky-700  mr-2 mt-4`}> BlueWave </p>
+            </motion.div>     
+       </div>
       {/* <p className='p-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum velit dolores id consequuntur et, eligendi nulla ducimus facilis dicta aliquid.</p> */}
         </div>
     </>
