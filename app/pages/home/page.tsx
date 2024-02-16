@@ -8,9 +8,11 @@ import { Parallax } from '@/app/components/Parallax'
 import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '@/app/components/Footer'
-import { Monoton} from 'next/font/google'
+import { Monoton,Martel_Sans,Contrail_One} from 'next/font/google'
 
 const mono = Monoton({ subsets: ['latin'] , weight: '400' })
+const eli = Martel_Sans({ subsets: ['latin'] , weight: '700' })
+const one = Contrail_One({ subsets: ['latin'] , weight: '400' })
 
 
 export default function HomePage() {
@@ -37,18 +39,18 @@ export default function HomePage() {
           dataHomeDescription.map((itm:DataHome) => {
             const {id,title,desc,img,url} = itm
             return(
-              <Link key={id} href={url!} className=' hover:bg-sky-100 transition-all ease-in duration-300 p-5' >
-                 <motion.div className='flex flex-col items-center justify-center'  variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}>
-                  <strong className="text-black text-4xl md:text-5xl font-black italic mb-6 w-full flex justify-center text-center  ">{title}</strong>
-                  <div className='flex md:flex-row flex-col text-xl items-center justify-around w-[100vw] p-[1rem]'>
-                      {id % 2 == 0? null : <Image priority  className='flex w-[30rem] h-[20rem] justify-around m-1 rou roundedCustom ' placeholder='blur' blurDataURL='../../assets/mobile.webp' src={img!} width={500} height={500} alt=''/> }
-                      <motion.p className=' prose w-full lg:w-[50rem] text-justify text-lg font-semibold'>
+              <Link key={id} href={url!} className='   hover:bg-sky-200 transition-all ease-in duration-300 p-2' >
+                 <motion.div className='  bg-sky-50 m-2 p-3 rounded-xl border-2 flex flex-col items-center justify-center'  variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}>
+                  <strong className={`text-zinc-700 text-4xl md:text-5xl font-black italic mb-6 w-full flex justify-center text-center ${one.className}`} >{title}</strong>
+                  <div className='text-zinc-800 flex md:flex-row flex-col text-xl items-center justify-around  p-[1rem]'>
+                      {id % 2 == 0? null : <Image priority  className='flex w-[30rem] h-[15rem] md:h-[20rem] justify-around m-1 rou roundedCustom ' placeholder='blur' blurDataURL='../../assets/mobile.webp' src={img!} width={500} height={500} alt=''/> }
+                      <p className={`w-full lg:w-[25rem] text-justify text-lg font-semibold ${eli.className}`}>
                       {desc}
-                      </motion.p> 
-                      {id % 2 == 0? <Image  className='flex w-[30rem] h-[20rem] justify-around m-1 rou roundedCustom' placeholder='blur' blurDataURL='../../assets/mobile.webp' src={img!} width={500} height={500} alt=''/> : null}
+                      </p> 
+                      {id % 2 == 0? <Image  className='flex w-[30rem] h-[15rem] md:h-[20rem] justify-around m-1 rou roundedCustom' placeholder='blur' blurDataURL='../../assets/mobile.webp' src={img!} width={500} height={500} alt=''/> : null}
                   </div>
-                  <div className='w-full flex justify-center'><WaveLine/></div>
                 </motion.div>
+                 <div className='w-full flex justify-center'><WaveLine/></div>
               </Link>
             );
           })

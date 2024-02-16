@@ -16,11 +16,12 @@ export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   height:100vh;
   background-color: rgb(3 105 161);
   @media (min-width: 700px) {
-    height: 94vh;
+    /* height: 94vh; */
   }
 `
 export const CardContainer = styled.div`
@@ -99,7 +100,7 @@ export const MainTextContainer = styled.div`
 
   @media (max-width:700px) {
         font-size: 12vh;
-        margin-top: 4rem;
+        margin-top: 6rem;
   }
 
 `

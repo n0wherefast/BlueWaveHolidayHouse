@@ -23,15 +23,15 @@ export const NavbarContainer = styled.nav<Props>`
     transition: all 0.3s ease-in-out;
     position: fixed;
     z-index: 100;
-    color: black;
+    color: rgb(186 230 253 );
    
 
     @media (max-width: 700px) {
       /* position: absolute; */
       position: fixed;
        z-index:100;   
-        mix-blend-mode:${(props)=>(props.$extendnavbar === 'true'? "none":"difference")};
-        color:${(props)=>(props.$extendnavbar === 'true'? "white":"rgb(3 105 161)")};
+        /* mix-blend-mode:${(props)=>(props.$extendnavbar === 'true'? "none":"difference")}; */
+        /* color:${(props)=>(props.$extendnavbar === 'true'? "white":"rgb(3 105 161)")}; */
 
     }
     
@@ -99,7 +99,7 @@ export const LinkButton = styled.button<Props>`
     transition: all 0.5s ease;
     margin-right: 1rem;
     transform:${(props)=>(props.$isclose === 'true' ? "rotate(-90deg)": "rotate(0deg)")} ;
-    color:${(props)=>(props.$isclose === 'true' ? "#0284c7": "rgb(2 132 199)")} ;
+    /* color:${(props)=>(props.$isclose === 'true' ? "#0284c7": "rgb(2 132 199)")} ; */
     &:hover{
             color:#0284c7;
          }
