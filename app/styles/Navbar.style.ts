@@ -23,7 +23,7 @@ export const NavbarContainer = styled.nav<Props>`
     transition: all 0.3s ease-in-out;
     position: fixed;
     z-index: 100;
-    color: rgb(186 230 253 );
+    color: rgb(240 249 255 );
    
 
     @media (max-width: 700px) {
@@ -95,13 +95,19 @@ export const NavbarInnerContainer = styled.div`
 `;
 
 export const LinkButton = styled.button<Props>`
-    height:${(props)=>(props.$extendnavbar === 'true'? "100vh " :"70px")};
+    height:${(props)=>(props.$extendnavbar === 'true'? "100vh " :"45px")};
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: all 0.5s ease;
     margin-right: 1rem;
     transform:${(props)=>(props.$isclose === 'true' ? "rotate(-90deg)": "rotate(0deg)")} ;
     /* color:${(props)=>(props.$isclose === 'true' ? "#0284c7": "rgb(2 132 199)")} ; */
+    background-color: rgb(12 74 110);
+    border-radius: 100%;
     &:hover{
-            color:#0284c7;
+            color:(251 191 36);
          }
         
          @media (min-width: 700px) {
