@@ -4,7 +4,7 @@ import { client } from "@/app/ref/sanity"
 async function getData() {
   const query = `
   *[_type == 'homeContent']{
-    title,id,image
+    title,id,image,url,content,
 }
   `
   const data = await client.fetch(query)

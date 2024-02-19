@@ -21,3 +21,11 @@ export interface GalleryTypes {
     id:number,
     image:StaticImageData
 }
+export interface homeContents {
+    id:number,
+    image?: StaticImageData,
+    title:string,
+    blurDataURL?:string,
+    url?:string,
+    content:any
+}

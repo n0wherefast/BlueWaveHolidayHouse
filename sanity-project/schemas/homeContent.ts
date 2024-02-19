@@ -14,6 +14,21 @@ export default {
             type:'string',
             title:'title'
         },
+        {
+            name:'url',
+            type:'string',
+            title:'url'
+        },
+        {
+            name:'content',
+            type:'array',
+            title:'Content',
+            of:[
+                {
+                    type:'block',
+                }
+            ]
+        },
        
         {
             name:'image',
