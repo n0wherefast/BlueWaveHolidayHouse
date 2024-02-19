@@ -1,19 +1,3 @@
-import React , {useEffect, useState, useRef}from 'react'
-// import { dataPlace ,DataPlace} from '@/app/ref/data'
-// import { motion,Variants } from 'framer-motion'
-// import { MainContainer } from '@/app/styles/Place.style'
-// import type { RootState } from '@/app/redux/store'
-// import { useSelector,useDispatch } from 'react-redux'
-// import { updateValue,setCheckSize } from '@/app/redux/slice/manageResizeSlice'
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { scrollToTop } from '@/app/redux/slice/scrollTo'
-// import "swiper/css";
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
-// import { Pagination, Navigation,Autoplay } from "swiper/modules";
-
-// import SinglePlace from '@/app/components/SinglePlace'
-
 
 import PlaceWrapper from '@/app/components/PlaceWrapper'
 import {client} from '../../ref/sanity'
@@ -31,6 +15,10 @@ async function getData() {
   const data = await client.fetch(query)
   return data
 } 
+
+export const metadata = {
+  title: 'Place'
+}
 
 export const revalidate = 30 // revalidate at most every hour
 async function Place() {

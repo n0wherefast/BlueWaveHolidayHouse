@@ -23,7 +23,8 @@ export const NavbarContainer = styled.nav<Props>`
     transition: all 0.3s ease-in-out;
     position: fixed;
     z-index: 100;
-    color: rgb(240 249 255 );
+    color: rgb(7 89 133 );
+    /* color: rgb(240 249 255 ); */
    
 
     @media (max-width: 700px) {

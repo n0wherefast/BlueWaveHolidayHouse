@@ -17,7 +17,10 @@ const inter = Inter({ subsets: ['latin'] })
 <link rel="manifest" href="/site.webmanifest"></link> */}
 
 export const metadata: Metadata = {
-  title: 'BlueWave HolidayHouse',
+  title: {
+    default:'BlueWave HolidayHouse',
+    template : '%s | BlueWave HolidayHouse'
+  },
   description: 'BlueWave HolidayHouse',
   icons:{
     icon:"/favicon-32x32.png",

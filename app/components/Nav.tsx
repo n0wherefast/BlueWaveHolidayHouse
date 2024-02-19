@@ -77,12 +77,15 @@ function Nav() {
           </Link>
          </section>
          
-      <section className=' navRight flex flex-[70%] items-center lg:justify-around lg:pr-[1.5rem] pr-0 justify-end' >
-        <div className='NavbarLinkContainer flex items-center gap-[1.8rem]'>
+      <section className='  flex flex-[70%] items-center lg:justify-around lg:pr-[1.5rem] pr-0 justify-end' >
+        <div className=' flex items-center gap-[1.8rem]'>
           {links.map((link:LINK)=>{
             return(
               <NavbarLink key={link.id} href={link.url}>
-                {link.name}
+                <div className='h-[2rem]'>
+                      {link.name}
+                      <p className=' text-amber-400 relative top-[-2.2rem] left-[0.1rem] '>{link.name}</p>
+                    </div> 
               </NavbarLink>
             )
           })}
