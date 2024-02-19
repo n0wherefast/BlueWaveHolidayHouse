@@ -19,7 +19,7 @@ async function getData(place:string) {
     title:  `Place`
   }
   
-
+  console.log(getData('catania'))
 export const revalidate = 30 // revalidate at most every hour
 
 async function Article({params}:{params:{slug:string}}) {

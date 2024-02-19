@@ -16,3 +16,8 @@ export interface singlePlace {
     content:any,
     image:StaticImageData
 }
+export interface GalleryTypes {
+    title:string,
+    id:number,
+    image:StaticImageData
+}

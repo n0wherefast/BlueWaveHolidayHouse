@@ -61,7 +61,6 @@ function Nav() {
     start:{opacity:0 ,x:-20},
     end:{opacity:1, x:8},
     }
-  console.log(isClose)
   return (
    <NavbarContainer  $extendnavbar={isClose.toString()} >
     <section  className={`${ checkHeight == false? 'flex':'hidden' } backdrop-blur-[1px] w-[100%] h-[70px]`}>

@@ -15,7 +15,7 @@ const eli = Martel_Sans({ subsets: ['latin'] , weight: '700' })
 const one = Contrail_One({ subsets: ['latin'] , weight: '400' })
 
 
-function HomeContent() {
+function HomeContent(data:any) {
     const variant:Variants = {
         start:{opacity:0 ,x:-20},
         end:{opacity:1, x:1},

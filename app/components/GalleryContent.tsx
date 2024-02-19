@@ -7,16 +7,17 @@ import 'swiper/css/pagination';
 // import '../../globals.css'
 import Image from 'next/image';
 import { EffectCoverflow, Pagination ,Autoplay} from 'swiper/modules';
-import img from '../../assets/29-09-11.webp'
+import { GalleryTypes } from '@/app/ref/types';
 import { motion,Variants } from 'framer-motion';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/app/redux/store';
 import { Monoton} from 'next/font/google'
+import { urlFor } from '@/app/ref/sanity';
 const mono = Monoton({ subsets: ['latin'] , weight: '400' })
 
-function GalleryContent() {
+function GalleryContent(data:any) {
     const size = useSelector((state:RootState)=>state.size.value)
-
+    const images = data.data
     const variant:Variants = {
         start:{opacity:0 ,x:-10},
         end:{opacity:1, x:8},
@@ -66,33 +67,16 @@ function GalleryContent() {
             modules={[EffectCoverflow,Autoplay, Pagination]}
             className=""
       >
-            <SwiperSlide  style={style}>
-            <Image className=' w-full h-full  rounded-lg block'  alt='' width={500} height={500} src={img} />
+
+        {images.map((img:GalleryTypes)=>{
+                const {image,id,title} = img
+            return(
+            <SwiperSlide key={id}  style={style}>
+              <Image priority className=' w-full h-full  rounded-lg block object-cover' src={urlFor(image).url()} height={500} width={500}  alt={title}/>
+              {/* <Image className=' w-full h-full  rounded-lg block'  alt='' width={500} height={500} src={img} /> */}
             </SwiperSlide>
-            <SwiperSlide  style={style} >
-            <Image className=' w-full h-full  rounded-lg block' alt='' width={500} height={500} src={img} />
-            </SwiperSlide>
-            <SwiperSlide  style={style} >
-            <Image className=' w-full h-full  rounded-lg block' alt='' width={500} height={500} src={img} />
-            </SwiperSlide>
-            <SwiperSlide  style={style} >
-            <Image className=' w-full h-full  rounded-lg block' alt='' width={500} height={500} src={img} />
-            </SwiperSlide>
-            <SwiperSlide  style={style} >
-            <Image className=' w-full h-full  rounded-lg block' alt='' width={500} height={500} src={img} />
-            </SwiperSlide>
-            <SwiperSlide  style={style} >
-            <Image className=' w-full h-full  rounded-lg block' alt='' width={500} height={500} src={img} />
-            </SwiperSlide>
-            <SwiperSlide  style={style} >
-            <Image className=' w-full h-full  rounded-lg block' alt='' width={500} height={500} src={img} />
-            </SwiperSlide>
-            <SwiperSlide  style={style} >
-            <Image className=' w-full h-full  rounded-lg block' alt='' width={500} height={500} src={img} />
-            </SwiperSlide>
-            <SwiperSlide  style={style} >
-            <Image className=' w-full h-full  rounded-lg block' alt='' width={500} height={500} src={img} />
-            </SwiperSlide>
+            )
+        })}
       </Swiper>
 
        <div className='w-[100%] flex flex-row-reverse items-end mr-1  lg:mb-5'>   
