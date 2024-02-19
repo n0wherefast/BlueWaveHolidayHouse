@@ -39,10 +39,10 @@ function Nav() {
   useEffect(() => {
     if(size<700){
       dispatch(setCheckSize(true))
-      setIsClose(false)
+      // setIsClose(false)
   
       }else if (size>1000){
-        setIsClose(false)
+        // setIsClose(false)
       }
       else{dispatch(setCheckSize(false))}
     dispatch(updateValue(window.innerWidth))
@@ -61,7 +61,7 @@ function Nav() {
     start:{opacity:0 ,x:-20},
     end:{opacity:1, x:8},
     }
-
+  console.log(isClose)
   return (
    <NavbarContainer  $extendnavbar={isClose.toString()} >
     <section  className={`${ checkHeight == false? 'flex':'hidden' } backdrop-blur-[1px] w-[100%] h-[70px]`}>
