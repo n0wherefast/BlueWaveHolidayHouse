@@ -11,6 +11,10 @@ import {CgScreen, CgUsb} from 'react-icons/cg'
 import {BsPersonWorkspace} from 'react-icons/bs'
 import { Variants, motion } from 'framer-motion'
 import Button from '@/app/components/Button'
+import { Timmana} from 'next/font/google'
+
+const one = Timmana({ subsets: ['latin'] , weight: '400' })
+
 function AbountContent() {
     const iconSize = 35
     const [show ,setShow] = useState(false)
@@ -28,10 +32,10 @@ function AbountContent() {
     <>
     <AboutContainer>
         <MainContainer>
-        <MainTextContainer>
-            <motion.div variants={variant} initial='startTit' whileInView='endTit' className='flex text-[4.3rem] md:text-[6.7rem] flex-col lg:flex-row lg:text-[7rem] xl:text-[10rem] lg:gap-5'>La soluzione<p className='text-amber-400 uppercase '>ideale</p></motion.div>
-            <motion.div variants={variant} initial='startRev' whileInView='endRev' className=' text-[4.5rem] md:text-[6.7rem] lg:text-[7rem] xl:text-[8rem] flex-col lg:flex-row w-[90vw] flex lg:gap-5'>Per la tua <p className='text-amber-400 uppercase'>vacanza</p></motion.div>
-            <motion.div variants={variant} initial='startTit' whileInView='endTit' className=' text-[4.5rem] md:text-[6.7rem] lg:text-[7.5rem] xl:text-[10rem]  flex gap-2 lg:gap-5'>In <p className='text-amber-400 uppercase'>Sicilia</p> .</motion.div> 
+        <MainTextContainer className={one.className}>
+            <motion.div variants={variant} initial='startTit' whileInView='endTit' className='flex text-[5rem] md:text-[6.7rem] flex-col lg:flex-row lg:text-[7rem] xl:text-[10rem] lg:gap-5'>La soluzione<p className='text-amber-400 uppercase '>ideale</p></motion.div>
+            <motion.div variants={variant} initial='startRev' whileInView='endRev' className=' text-[5.3rem] md:text-[6.7rem] lg:text-[7rem] xl:text-[8rem] flex-col lg:flex-row w-[90vw] flex lg:gap-5'>Per la tua <p className='text-amber-400 uppercase'>vacanza</p></motion.div>
+            <motion.div variants={variant} initial='startTit' whileInView='endTit' className=' text-[5.3rem] md:text-[6.7rem] lg:text-[7.5rem] xl:text-[10rem]  flex gap-2 lg:gap-5'>In <p className='text-amber-400 uppercase'>Sicilia</p> .</motion.div> 
         </MainTextContainer>
         <Button to={'#sec'}  y={-15} color={'text-amber-400'}/>
         </MainContainer>

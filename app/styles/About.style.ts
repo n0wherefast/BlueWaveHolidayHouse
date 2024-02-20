@@ -97,7 +97,9 @@ export const MainTextContainer = styled.div`
   font-weight: 900;
   padding: 0.25rem;
   color: rgb(248 250 252);
-  margin-top: 6rem;
+  margin-top: 4rem;
+  letter-spacing: 2px;
+  line-height: 6.5rem;
 
 
   @media (max-width:700px) {
