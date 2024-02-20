@@ -72,7 +72,7 @@ function GalleryContent(data:any) {
                 const {image,id,title} = img
             return(
             <SwiperSlide key={id}  style={style}>
-              <Image priority className=' w-full h-full  rounded-lg block object-cover' src={urlFor(image).url()} height={500} width={500}  alt={title}/>
+              <Image priority placeholder='blur' blurDataURL={urlFor(image!).url()} className=' w-full h-full  rounded-lg block object-cover' src={urlFor(image).url()} height={500} width={500}  alt={title}/>
               {/* <Image className=' w-full h-full  rounded-lg block'  alt='' width={500} height={500} src={img} /> */}
             </SwiperSlide>
             )

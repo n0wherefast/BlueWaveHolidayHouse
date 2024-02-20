@@ -29,9 +29,9 @@ function AbountContent() {
     <AboutContainer>
         <MainContainer>
         <MainTextContainer>
-            <motion.p variants={variant} initial='startTit' whileInView='endTit' className='flex text-[3.7rem] md:text-[6.7rem] flex-col lg:flex-row lg:text-[10rem] lg:gap-5'>La soluzione<p className='text-amber-400 uppercase '>ideale</p></motion.p>
-            <motion.p variants={variant} initial='startRev' whileInView='endRev' className=' text-[4.5rem] md:text-[6.7rem] lg:text-[7rem] flex-col lg:flex-row w-[90vw] flex lg:gap-5'>Per la tua <p className='text-amber-400 uppercase'>vacanza</p></motion.p>
-            <motion.p variants={variant} initial='startTit' whileInView='endTit' className=' text-[4.5rem] md:text-[6.7rem] lg:text-[10rem]  flex gap-2 lg:gap-5'>In <p className='text-amber-400 uppercase'>Sicilia</p> .</motion.p> 
+            <motion.div variants={variant} initial='startTit' whileInView='endTit' className='flex text-[4.3rem] md:text-[6.7rem] flex-col lg:flex-row lg:text-[7rem] xl:text-[10rem] lg:gap-5'>La soluzione<p className='text-amber-400 uppercase '>ideale</p></motion.div>
+            <motion.div variants={variant} initial='startRev' whileInView='endRev' className=' text-[4.5rem] md:text-[6.7rem] lg:text-[7rem] xl:text-[8rem] flex-col lg:flex-row w-[90vw] flex lg:gap-5'>Per la tua <p className='text-amber-400 uppercase'>vacanza</p></motion.div>
+            <motion.div variants={variant} initial='startTit' whileInView='endTit' className=' text-[4.5rem] md:text-[6.7rem] lg:text-[7.5rem] xl:text-[10rem]  flex gap-2 lg:gap-5'>In <p className='text-amber-400 uppercase'>Sicilia</p> .</motion.div> 
         </MainTextContainer>
         <Button to={'#sec'}  y={-15} color={'text-amber-400'}/>
         </MainContainer>
@@ -117,11 +117,11 @@ function AbountContent() {
         </section>
         <div className=' flex-col  w-full items-center justify-center'>
 
-            <p className=' w-full  flex  justify-between text-6xl font-bold italic p-2'>
+            <div className=' w-full  flex  justify-between text-6xl font-bold italic p-2'>
             <div  className=' -[25%] flex  items-center justify-center ml-16'>
-                <span className=' text-sky-600 text-7xl'>S</span>ervizi
+                <p className=' text-sky-600 text-7xl'>S</p>ervizi
             </div>
-            </p>
+            </div>
             <section className="flex flex-col  md:flex-row gap-2  p-4  w-full justify-between bg-sky-600 "> 
             <TextAboutContainer>
                 <motion.div variants={variant}  initial='start' whileInView='end' transition={{delay:0.25}} >
@@ -196,11 +196,11 @@ function AbountContent() {
             </TextAboutContainer>
             </section>
         
-        <p className=' w-full  flex  justify-between text-6xl font-bold italic p-2'>
+        <div className=' w-full  flex  justify-between text-6xl font-bold italic p-2'>
             <div  className=' -[25%] flex  items-center justify-center ml-16'>
-                <span className=' text-sky-600 text-7xl'>R</span>egole
+                <p className=' text-sky-600 text-7xl'>R</p>egole
             </div>
-        </p>
+        </div>
 
             <section className="flex flex-col  md:flex-row gap-2  p-4  w-full justify-around bg-sky-600 "> 
 
