@@ -2,7 +2,7 @@
 import React from 'react'
 import { socialLinks } from '../ref/links'
 import Link from 'next/link'
-import FooterWrapper from './FooterWrapper'
+import FooterWrapper from './wrapper/FooterWrapper'
 
 
 

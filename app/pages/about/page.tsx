@@ -1,4 +1,4 @@
-import AbountContent from '@/app/components/AbountContent'
+import AboutWrapper from '@/app/components/wrapper/AboutWrapper'
 import { AboutContainer } from '@/app/styles/About.style'
 // import { useDispatch } from 'react-redux'
 // import { scrollTo } from '@/app/redux/slices/scroll/scrollSlice'
@@ -13,7 +13,7 @@ function About() {
  
   return (
     <>
-      <AbountContent/>
+      <AboutWrapper/>
     </>
   )
 }

@@ -1,4 +1,4 @@
-import HomeContent from "@/app/components/HomeContent"
+import HomeWrapper from "@/app/components/wrapper/HomeWrapper"
 import { client } from "@/app/ref/sanity"
 
 async function getData() {
@@ -16,7 +16,7 @@ export default async function HomePage() {
   
 return (
   <>
-    <HomeContent data={data} />
+    <HomeWrapper data={data} />
   </>
 )
 }

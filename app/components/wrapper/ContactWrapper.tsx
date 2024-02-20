@@ -5,16 +5,16 @@ import {motion,Variants} from 'framer-motion'
 import Map from '@/app/components/Map'
 import Image from 'next/image'
 import img from '../assets/waveCard3.png'
-import imgY from '../assets/waveCardYe.png'
-import img2 from '../assets/waveCardOriz.png'
+import imgY from '../../assets/waveCardYe.png'
+import img2 from '../../assets/waveCardOriz.png'
 import Button from '@/app/components/Button'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/app/redux/store'
 import logoP from '../../assets/logo_paytourist_retina_r.webp'
 import Footer from '@/app/components/Footer'
-import InterestPlaces from './InterestPlaces'
+import InterestPlaces from '../InterestPlaces'
 
-function ContactContent() {
+function ContactWrapper() {
     const size = useSelector((state:RootState)=>state.size.value)
 
     const variant:Variants = {
@@ -52,4 +52,4 @@ function ContactContent() {
       
 }
 
-export default ContactContent
+export default ContactWrapper

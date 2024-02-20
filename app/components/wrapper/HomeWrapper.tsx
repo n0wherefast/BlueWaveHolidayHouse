@@ -2,15 +2,15 @@
 import React from 'react'
 // import {dataHomeDescription,DataHome} from '../ref/data'
 import { motion,Variants} from 'framer-motion'
-import '../globals.css'
+import '../../globals.css'
 import WaveLine from '@/app/components/WaveLine'
 import { Parallax } from '@/app/components/Parallax'
 import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '@/app/components/Footer'
 import { Monoton,Martel_Sans,Contrail_One} from 'next/font/google'
-import { homeContents } from '../ref/types'
-import { urlFor } from '../ref/sanity'
+import { homeContents } from '../../ref/types'
+import { urlFor } from '../../ref/sanity'
 import { PortableText } from '@portabletext/react'
 
 const mono = Monoton({ subsets: ['latin'] , weight: '400' })
@@ -18,7 +18,7 @@ const eli = Martel_Sans({ subsets: ['latin'] , weight: '700' })
 const one = Contrail_One({ subsets: ['latin'] , weight: '400' })
 
 
-function HomeContent(data:any) {
+function HomeWrapper(data:any) {
   const content = data.data
     const variant:Variants = {
         start:{opacity:0 ,x:-20},
@@ -65,4 +65,4 @@ function HomeContent(data:any) {
   )
 }
 
-export default HomeContent
+export default HomeWrapper

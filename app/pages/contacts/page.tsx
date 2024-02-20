@@ -1,4 +1,4 @@
-import ContactContent from '@/app/components/ContactContent'
+import ContactWrapper from '@/app/components/wrapper/ContactWrapper'
 
 export const metadata ={
   title: 'Contacts'
@@ -9,7 +9,7 @@ function Contacts() {
   
   return (
     <> 
-      <ContactContent/>
+      <ContactWrapper/>
     </>
   )
 }

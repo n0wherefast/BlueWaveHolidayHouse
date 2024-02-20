@@ -1,5 +1,5 @@
 import { client } from "@/app/ref/sanity"
-import GalleryContent from "../../components/GalleryContent"
+import GalleryWrapper from "../../components/wrapper/GalleryWrapper"
 
  async function getData() {
     const query = `
@@ -23,7 +23,7 @@ async function Gallery() {
     
   return (
     <>
-        <GalleryContent data = {data}/>
+        <GalleryWrapper data = {data}/>
     </>
   )
 }

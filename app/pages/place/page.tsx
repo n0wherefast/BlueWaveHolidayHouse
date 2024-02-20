@@ -1,8 +1,7 @@
-
-import PlaceWrapper from '@/app/components/PlaceWrapper'
 import {client} from '../../ref/sanity'
 import Card from '@/app/components/Card'
 import {PLACES} from '../../ref/types'
+import PlaceWrapper from '@/app/components/wrapper/PlaceWrapper'
 
 async function getData() {
   const query = `

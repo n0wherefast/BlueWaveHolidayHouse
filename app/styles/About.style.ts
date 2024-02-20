@@ -98,13 +98,14 @@ export const MainTextContainer = styled.div`
   padding: 0.25rem;
   color: rgb(248 250 252);
   margin-top: 4rem;
-  letter-spacing: 2px;
-  line-height: 6.5rem;
+  
 
 
   @media (max-width:700px) {
         font-size: 12vh;
         /* margin-top: 6rem; */
+        letter-spacing: 2px;
+         line-height: 6.5rem;
   }
 
 `

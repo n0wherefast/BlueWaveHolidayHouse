@@ -15,7 +15,7 @@ import { Monoton} from 'next/font/google'
 import { urlFor } from '@/app/ref/sanity';
 const mono = Monoton({ subsets: ['latin'] , weight: '400' })
 
-function GalleryContent(data:any) {
+function GalleryWrapper(data:any) {
     const size = useSelector((state:RootState)=>state.size.value)
     const images = data.data
     const variant:Variants = {
@@ -91,4 +91,4 @@ function GalleryContent(data:any) {
   )
 }
 
-export default GalleryContent
+export default GalleryWrapper
