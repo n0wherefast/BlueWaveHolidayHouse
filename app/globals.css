@@ -97,5 +97,66 @@ body {
   /* background: #000; */
 }
 
+.shad {
+  text-shadow: 
+  0px 2px 1px rgb(251 191 36) , 
+  1px 3px 1px #fcba03, 
+  2px 5px 1px #fcba03, 
+  3px 7px 1px #fcba03,
+  4px 9px 1px #fcba03,
+  5px 11px 1px #fcba03,
+  6px 13px 1px #fcba03,
+  7px 15px 1px #fcba03, 
+  8px 17px 1px #fcba03,
+  9px 19px 1px #fcba03,
+  10px 21px 1px #fcba03,
+  11px 23px 1px #fcba03,
+  12px 25px 1px #fcba03, 
+  13px 27px 1px #fcba03,
+  14px 29px 1px #fcba03,
+  15px 31px 1px #fcba03,
+  16px 33px 1px #fcba03,
+  17px 35px 1px #fcba03, 
+  18px 37px 1px #fcba03,
+  19px 39px 1px #fcba03,
+  20px 41px 1px #fcba03,
+  21px 43px 1px #fcba03,
+  22px 45px 1px #fcba03, 
+  23px 47px 1px #fcba03,
+  24px 49px 1px #fcba03,
+  25px 51px 1px #fcba03,
+  26px 53px 1px #fcba03;
+}
+.shadW {
+  text-shadow: 
+  0px 2px 1px #ffffff , 
+  1px 3px 1px #ffffff, 
+  2px 5px 1px #ffffff, 
+  3px 7px 1px #ffffff,
+  4px 9px 1px #ffffff,
+  5px 11px 1px #ffffff,
+  6px 13px 1px #ffffff,
+  7px 15px 1px #ffffff, 
+  8px 17px 1px #ffffff,
+  9px 19px 1px #ffffff,
+  10px 21px 1px #ffffff,
+  11px 23px 1px #ffffff,
+  12px 25px 1px #ffffff, 
+  13px 27px 1px #ffffff,
+  14px 29px 1px #ffffff,
+  15px 31px 1px #ffffff,
+  16px 33px 1px #ffffff,
+  17px 35px 1px #ffffff, 
+  18px 37px 1px #ffffff,
+  19px 39px 1px #ffffff,
+  20px 41px 1px #ffffff,
+  21px 43px 1px #ffffff,
+  22px 45px 1px #ffffff, 
+  23px 47px 1px #ffffff,
+  24px 49px 1px #ffffff,
+  25px 51px 1px #ffffff,
+  26px 53px 1px #ffffff;
+}
+
 
 
