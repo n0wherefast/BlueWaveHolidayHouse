@@ -29,3 +29,10 @@ export interface homeContents {
     url?:string,
     content:any
 }
+export interface aboutContents {
+    id:number,
+    image?: StaticImageData,
+    title:string,
+    blurDataURL?:string,
+    content:any
+}

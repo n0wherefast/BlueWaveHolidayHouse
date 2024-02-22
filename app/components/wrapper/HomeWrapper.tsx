@@ -12,6 +12,7 @@ import { Monoton,Martel_Sans,Contrail_One} from 'next/font/google'
 import { homeContents } from '../../ref/types'
 import { urlFor } from '../../ref/sanity'
 import { PortableText } from '@portabletext/react'
+import CardInfo from '../CardInfo'
 
 const mono = Monoton({ subsets: ['latin'] , weight: '400' })
 const eli = Martel_Sans({ subsets: ['latin'] , weight: '700' })
@@ -20,6 +21,7 @@ const one = Contrail_One({ subsets: ['latin'] , weight: '400' })
 
 function HomeWrapper(data:any) {
   const content = data.data
+  
     const variant:Variants = {
         start:{opacity:0 ,x:-20},
         end:{opacity:1, x:1},
@@ -40,21 +42,12 @@ function HomeWrapper(data:any) {
         <br />
         {
           content.map((itm:homeContents) => {
-            const {id,title,image,url,content} = itm
+            const {id} = itm
             return(
-              <Link key={id} href={url!} className='   hover:bg-sky-200 transition-all ease-in duration-300 p-2' >
-                 <motion.div className='  bg-sky-50 m-2 p-3 rounded-xl border-2 flex flex-col items-center justify-center'  variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}>
-                  <strong className={`text-zinc-700 text-4xl md:text-5xl font-black italic mb-6 w-full flex justify-center text-center ${one.className}`} >{title}</strong>
-                  <div className='text-zinc-800 flex md:flex-row flex-col text-xl items-center justify-around  p-[1rem]'>
-                      {id % 2 == 0? null : <Image priority  className='flex w-[30rem] h-[15rem] md:h-[20rem] justify-around m-1 rou roundedCustom ' placeholder='blur' blurDataURL='../../assets/mobile.webp' src={urlFor(image).url()}  width={500} height={500} alt=''/> }
-                      <div className={`w-full lg:w-[25rem] prose  text-justify text-lg font-semibold ${eli.className}`}>
-                        <PortableText value={content} />
-                      </div> 
-                      {id % 2 == 0? <Image  className='flex w-[30rem] h-[15rem] md:h-[20rem] justify-around m-1 rou roundedCustom' placeholder='blur' blurDataURL='../../assets/mobile.webp' src={urlFor(image).url()} width={500} height={500} alt=''/> : null}
-                  </div>
-                </motion.div>
-                 <div className='w-full flex justify-center'><WaveLine/></div>
-              </Link>
+              <div key={id}>
+                  <CardInfo {...itm}/>
+                  <div className='w-full flex justify-center'><WaveLine/></div>
+              </div>
             );
           })
         }

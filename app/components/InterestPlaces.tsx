@@ -34,7 +34,7 @@ function InterestPlaces({children}:any) {
                           - 14 km Catania centro<br />
                           - 4 km  Acireale<br />
                           - 2 km  Aci Castello<br />
-                          - 1 km lungo mare Acitrezza<br />
+                          - 1 km lungomare Acitrezza<br />
                           <br />
                       </p>
                     </motion.div> 
@@ -45,8 +45,8 @@ function InterestPlaces({children}:any) {
                         <p className='pl-4'>
                             - 15 Km Playa di Catania <br />
                             - 9 Km San Giovanni Li Cuti <br />
-                            - 1 Km Aci Trezza <br />
-                            - 500 m Aci Trezza <br />
+                            - 1 Km lungomare Aci Trezza <br />
+                            - 500 m discesa a mare <br />
                             <br />
                         </p>
                       </motion.div>

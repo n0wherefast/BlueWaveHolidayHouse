@@ -1,19 +1,31 @@
 import AboutWrapper from '@/app/components/wrapper/AboutWrapper'
 import { AboutContainer } from '@/app/styles/About.style'
-// import { useDispatch } from 'react-redux'
-// import { scrollTo } from '@/app/redux/slices/scroll/scrollSlice'
 import bg from "../../assets/blue_wave__abstract_picture_walpaper_amazing.jpg"
+import { client } from '@/app/ref/sanity'
+
+async function getData() {
+  const query = `
+  *[_type == 'aboutContent']{
+    title,id,
+    image,
+    content
+}
+  `
+  const data = await client.fetch(query)
+  return data
+}
 
 export const metadata ={
   title: 'About'
 }
+export const revalidate = 30 
 
-
-function About() {
- 
+async function About() {
+  const data = await getData()
+  console.log(data)
   return (
     <>
-      <AboutWrapper/>
+      <AboutWrapper data={data}/>
     </>
   )
 }

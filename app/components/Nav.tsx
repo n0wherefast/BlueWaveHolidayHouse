@@ -104,7 +104,7 @@ function Nav() {
                   <motion.div variants={variant} initial='start' whileInView='end' transition={{delay:link.delay}} >
                     <div className='h-[5.4rem]'>
                       {link.name}
-                      <p className=' text-amber-400 relative top-[-6.2rem] left-[0.1rem] '>{link.name}</p>
+                      <p className=' text-amber-400 relative top-[-5.2rem] left-[0.1rem] '>{link.name}</p>
                     </div>               
                   </motion.div>
                 </NavbarLinkExtended>

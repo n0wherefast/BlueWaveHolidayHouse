@@ -10,7 +10,7 @@ async function getData() {
   const data = await client.fetch(query)
   return data
 }
-
+export const revalidate = 30 
 export default async function HomePage() {
  const data = await getData()
   

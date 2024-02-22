@@ -1,5 +1,5 @@
 import {client} from '../../ref/sanity'
-import Card from '@/app/components/Card'
+import Card from '@/app/components/CardPlace'
 import {PLACES} from '../../ref/types'
 import PlaceWrapper from '@/app/components/wrapper/PlaceWrapper'
 

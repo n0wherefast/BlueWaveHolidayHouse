@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { Pagination, Navigation,Autoplay } from "swiper/modules";
-import Card from '@/app/components/Card'
+import Card from '@/app/components/CardPlace'
 import SinglePlace from '@/app/components/SinglePlace'
 
 

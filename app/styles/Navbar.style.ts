@@ -50,10 +50,10 @@ export const NavbarLeft = styled.nav`
 
 
 export const NavbarExtend = styled.div`
-display: flex;
-flex-direction: column;
-align-items: start;
-gap:1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:.9rem;
 
 
 @media (min-width: 700px) {
@@ -116,7 +116,7 @@ export const LinkButton = styled.button<Props>`
 `
 export const NavbarLinkExtended = styled(Link)`
   color: rgb(255,255,255);
-  font-size: 4.3rem;
+  font-size: 3.3rem;
   font-weight: 800;
   font-style: italic;
   font-family: Arial, Helvetica, sans-serif;
