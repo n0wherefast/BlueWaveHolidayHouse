@@ -11,10 +11,10 @@ import {CgScreen, CgUsb} from 'react-icons/cg'
 import {BsPersonWorkspace} from 'react-icons/bs'
 import { Variants, motion } from 'framer-motion'
 import Button from '@/app/components/Button'
-import { Timmana} from 'next/font/google'
+import { Timmana ,Exo_2} from 'next/font/google'
 import CardInfo from '../CardInfo'
 import { aboutContents } from '@/app/ref/types'
-const one = Timmana({ subsets: ['latin'] , weight: '400' })
+const exo = Exo_2({ subsets: ['latin'] , weight: '900' })
 
 function AboutWrapper(data:any) {
     const iconSize = 35
@@ -34,12 +34,12 @@ function AboutWrapper(data:any) {
     <>
     <AboutContainer>
         <MainContainer>
-            <MainTextContainer className={one.className}>
-                <motion.div variants={variant} initial='startTit' whileInView='endTit' className=' shad flex text-[5rem] md:text-[6.7rem] flex-col lg:flex-row lg:text-[7rem] xl:text-[12rem] lg:gap-5'>La soluzione<p className='text-amber-400 uppercase shadW '>ideale</p></motion.div>
-                <motion.div variants={variant} initial='startRev' whileInView='endRev' className='  shad text-[5.3rem] md:text-[6.7rem] lg:text-[7rem] xl:text-[10rem] flex-col lg:flex-row w-[90vw] flex lg:gap-5'>Per la tua <p className='text-amber-400 shadW uppercase'>vacanza</p></motion.div>
-                <motion.div variants={variant} initial='startTit' whileInView='endTit' className=' shad text-[5.3rem] md:text-[6.7rem] lg:text-[7.5rem] xl:text-[12rem]  flex gap-2 lg:gap-5'>In <p className='text-amber-400 uppercase shadW '>Sicilia</p> .</motion.div> 
+            <MainTextContainer >
+                <motion.div variants={variant} initial='startTit' whileInView='endTit' className=' shadW text-amber-200 flex text-[4rem] md:text-[6.7rem] flex-col lg:flex-row lg:text-[7rem] xl:text-[10rem] lg:gap-5'>La soluzione<p className='text-amber-100 shad uppercase '>ideale</p></motion.div>
+                <motion.div variants={variant} initial='startRev' whileInView='endRev' className=' shadW text-amber-200 text-[4rem] md:text-[6.7rem] lg:text-[7rem] xl:text-[10rem] flex-col lg:flex-row w-[90vw] flex lg:gap-5'>Per la tua <p className='text-amber-100 shad  uppercase'>vacanza</p></motion.div>
+                <motion.div variants={variant} initial='startTit' whileInView='endTit' className=' shadW text-amber-200  text-[4rem] md:text-[6.7rem] lg:text-[7.5rem] xl:text-[12rem]  flex gap-2 lg:gap-5'>In <p className='text-amber-100 uppercase shad  '>Sicilia</p> .</motion.div> 
             </MainTextContainer>
-            <Button to={'#sec'}  y={0} color={'text-amber-400'}/>
+            <Button to={'#sec'}  y={0} color={'text-amber-100'}/>
         </MainContainer>
     
         <div className=' h-10' id='sec' />
