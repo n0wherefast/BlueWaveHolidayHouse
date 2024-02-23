@@ -92,7 +92,7 @@ export const MainTextContainer = styled.div`
   height: 100%;
   width: 100%;
   align-items: start;
-  justify-content: space-around;
+  justify-content: center;
   font-style: italic;
   font-weight: 900;
   /* padding: 0.25rem; */
