@@ -76,23 +76,23 @@ export const CardAbout = styled.div<Props>`
 `
 
 
-export const TextAboutContainer = styled.div`
-    padding: 1rem;
-    border-radius:1.5rem;
-    width:30vw;
-    border: 2px solid black;
-    background-color: white;
-    @media (max-width:700px) {
-        width:90vw;
-    }
-`
+// export const TextAboutContainer = styled.div`
+//     padding: 1rem;
+//     border-radius:1.5rem;
+//     width:30vw;
+//     border: 2px solid black;
+//     background-color: white;
+//     @media (max-width:700px) {
+//         width:90vw;
+//     }
+// `
 export const MainTextContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
   align-items: start;
-  justify-content: center;
+  justify-content: start;
   font-style: italic;
   font-weight: 900;
   padding: 0.25rem;
@@ -104,8 +104,8 @@ export const MainTextContainer = styled.div`
   @media (max-width:700px) {
         font-size: 12vh;
         /* margin-top: 6rem; */
-        letter-spacing: 2px;
-         line-height: 6.5rem;
+        /* letter-spacing: 0px; */
+         line-height: 6rem;
   }
 
 `

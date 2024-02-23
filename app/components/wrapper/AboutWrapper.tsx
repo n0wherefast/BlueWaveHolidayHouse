@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import {AboutContainer, CardContainer, CardCollapse,CardAbout,
     ButtonCollapse,CollapseContainer,
-    TextAboutContainer,MainContainer,MainTextContainer} from '@/app/styles/About.style'
+    MainContainer,MainTextContainer} from '@/app/styles/About.style'
 import {IoPeopleCircleOutline,IoBedOutline,IoClose,IoAdd} from 'react-icons/io5'
 import {FaShower,FaCar,FaWifi,FaDog,FaRegSnowflake} from 'react-icons/fa'
 import {MdMeetingRoom} from 'react-icons/md'
@@ -34,12 +34,12 @@ function AboutWrapper(data:any) {
     <>
     <AboutContainer>
         <MainContainer>
-        <MainTextContainer className={one.className}>
-            <motion.div variants={variant} initial='startTit' whileInView='endTit' className=' shad flex text-[5rem] md:text-[6.7rem] flex-col lg:flex-row lg:text-[7rem] xl:text-[12rem] lg:gap-5'>La soluzione<p className='text-amber-400 uppercase shadW '>ideale</p></motion.div>
-            <motion.div variants={variant} initial='startRev' whileInView='endRev' className=' shad text-[5.3rem] md:text-[6.7rem] lg:text-[7rem] xl:text-[10rem] flex-col lg:flex-row w-[90vw] flex lg:gap-5'>Per la tua <p className='text-amber-400 shadW uppercase'>vacanza</p></motion.div>
-            <motion.div variants={variant} initial='startTit' whileInView='endTit' className=' shad text-[5.3rem] md:text-[6.7rem] lg:text-[7.5rem] xl:text-[12rem]  flex gap-2 lg:gap-5'>In <p className='text-amber-400 uppercase shadW '>Sicilia</p> .</motion.div> 
-        </MainTextContainer>
-        <Button to={'#sec'}  y={-15} color={'text-amber-400'}/>
+            <MainTextContainer className={one.className}>
+                <motion.div variants={variant} initial='startTit' whileInView='endTit' className=' shad flex text-[5rem] md:text-[6.7rem] flex-col lg:flex-row lg:text-[7rem] xl:text-[12rem] lg:gap-5'>La soluzione<p className='text-amber-400 uppercase shadW '>ideale</p></motion.div>
+                <motion.div variants={variant} initial='startRev' whileInView='endRev' className='  shad text-[5.3rem] md:text-[6.7rem] lg:text-[7rem] xl:text-[10rem] flex-col lg:flex-row w-[90vw] flex lg:gap-5'>Per la tua <p className='text-amber-400 shadW uppercase'>vacanza</p></motion.div>
+                <motion.div variants={variant} initial='startTit' whileInView='endTit' className=' shad text-[5.3rem] md:text-[6.7rem] lg:text-[7.5rem] xl:text-[12rem]  flex gap-2 lg:gap-5'>In <p className='text-amber-400 uppercase shadW '>Sicilia</p> .</motion.div> 
+            </MainTextContainer>
+            <Button to={'#sec'}  y={0} color={'text-amber-400'}/>
         </MainContainer>
     
         <div className=' h-10' id='sec' />
