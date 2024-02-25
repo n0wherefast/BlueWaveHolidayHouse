@@ -88,27 +88,24 @@ export const CardAbout = styled.div<Props>`
 // `
 export const MainTextContainer = styled.div`
   display: flex;
-  font-family: "Exo", sans-serif;
+  /* font-family: "Exo", sans-serif; */
   flex-direction: column;
   height: 100%;
   width: 100%;
   align-items: start;
   justify-content: center;
   font-style: italic;
-  font-weight: 900;
+  /* font-weight: 900; */
   /* padding: 0.25rem; */
   color: rgb(248 250 252);
   margin-top: 4rem;
   
-
-
   @media (max-width:700px) {
         font-size: 12vh;
         /* margin-top: 6rem; */
         /* letter-spacing: 0px; */
          line-height: 6rem;
   }
-
 `
 
 
