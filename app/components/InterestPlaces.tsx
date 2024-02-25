@@ -100,7 +100,7 @@ function InterestPlaces({children}:any) {
                </motion.div>
                
                <Link className=" flex min-h-[10rem] w-[22rem]  bg-sky-700 text-zinc-50 border border-sky-400 p-2" 
-                          href={''}>
+                          href={'https://wa.me/message/RJUSAJYMVHYHF1'}>
                         <motion.div className='border-4 border-amber-400' variants={variant} initial="start" whileInView="end" transition={{delay:0.25}} >
                             <div  className='p-1 mb-3'>
                               <h1 className=' font-black italic h-5 w-full text-6xl '>Prenota adesso</h1>

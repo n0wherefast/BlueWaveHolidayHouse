@@ -35,11 +35,11 @@ function AboutWrapper(data:any) {
     <AboutContainer>
         <MainContainer>
             <MainTextContainer >
-                <motion.div variants={variant} initial='startTit' whileInView='endTit' className=' shadW text-amber-200 flex text-[4rem] md:text-[6.7rem] flex-col lg:flex-row lg:text-[7rem] xl:text-[10rem] lg:gap-5'>La soluzione<p className='text-amber-100 shad uppercase '>ideale</p></motion.div>
-                <motion.div variants={variant} initial='startRev' whileInView='endRev' className=' shadW text-amber-200 text-[4rem] md:text-[6.7rem] lg:text-[7rem] xl:text-[10rem] flex-col lg:flex-row w-[90vw] flex lg:gap-5'>Per la tua <p className='text-amber-100 shad  uppercase'>vacanza</p></motion.div>
-                <motion.div variants={variant} initial='startTit' whileInView='endTit' className=' shadW text-amber-200  text-[4rem] md:text-[6.7rem] lg:text-[7.5rem] xl:text-[12rem]  flex gap-2 lg:gap-5'>In <p className='text-amber-100 uppercase shad  '>Sicilia</p> .</motion.div> 
+                <motion.div variants={variant} initial='startTit' whileInView='endTit' className=' lg:shadW text-amber-50 flex text-[4rem] md:text-[6.7rem] flex-col lg:flex-row lg:text-[7rem] xl:text-[10rem] lg:gap-5'>La soluzione<p className='text-amber-400 lg:shad uppercase '>ideale</p></motion.div>
+                <motion.div variants={variant} initial='startRev' whileInView='endRev' className=' lg:shadW text-amber-50 text-[4rem] md:text-[6.7rem] lg:text-[7rem] xl:text-[10rem] flex-col lg:flex-row w-[90vw] flex lg:gap-5'>Per la tua <p className='text-amber-400 lg:shad  uppercase'>vacanza</p></motion.div>
+                <motion.div variants={variant} initial='startTit' whileInView='endTit' className=' lg:shadW text-amber-50  text-[4rem] md:text-[6.7rem] lg:text-[7.5rem] xl:text-[12rem]  flex gap-2 lg:gap-5'>In <p className='text-amber-400 uppercase lg:shad  '>Sicilia</p> .</motion.div> 
             </MainTextContainer>
-            <Button to={'#sec'}  y={0} color={'text-amber-100'}/>
+            <Button to={'#sec'}  y={0} color={'text-amber-400'}/>
         </MainContainer>
     
         <div className=' h-10' id='sec' />
@@ -171,7 +171,7 @@ function AboutWrapper(data:any) {
 
 <p className='flex flex-col justify-center items-center'> <strong className='p-1 text-3xl font-black italic'><span className=' text-amber-400' >C</span>ucina e zona pranzo:</strong></p>
                    <p className='pl-4'>
-                            - Cucina : uno spazio in cui gli ospiti possono cucinare <br />
+                            - Cucina  <br />
                             - Frigorifero <br />
                             {/* - Forno a microonde <br /> */}
                             - Servizi di base per cucinare
