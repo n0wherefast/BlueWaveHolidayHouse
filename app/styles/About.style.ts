@@ -98,7 +98,7 @@ export const MainTextContainer = styled.div`
   font-weight: 900;
   /* padding: 0.25rem; */
   color: rgb(248 250 252);
-  margin-top: 3rem;
+  margin-top: 4rem;
   
 
 

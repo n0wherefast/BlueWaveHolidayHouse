@@ -14,7 +14,7 @@ import Button from '@/app/components/Button'
 import { Timmana ,Exo_2} from 'next/font/google'
 import CardInfo from '../CardInfo'
 import { aboutContents } from '@/app/ref/types'
-const exo = Exo_2({ subsets: ['latin'] , weight: '900' })
+// const exo = Exo_2({ subsets: ['latin'] , weight: '900' })
 
 function AboutWrapper(data:any) {
     const iconSize = 35
