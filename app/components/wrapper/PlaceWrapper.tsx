@@ -37,21 +37,7 @@ function PlaceWrapper({children}:any) {
         window.removeEventListener('resize', handleResize);
       };
    });
-  useEffect(()=>{
-    HandleCard(ref.current)
-  },[])
 
-  //  const variant:Variants = {
-  //   start:{opacity:0 ,x:-20},
-  //   end:{opacity:1, x:0},
-  //   }
- 
- const HandleCard = (itm:DataPlace) =>{
-  setSelected(true) 
-  setPlace({...itm})
-  dispatch(scrollToTop('top'))
-  setPlaces(places.filter((el)=>el.id))
- }
       
   return (
   <MainContainer className='flex flex-col items-center gap-5 bg-sky-900'>

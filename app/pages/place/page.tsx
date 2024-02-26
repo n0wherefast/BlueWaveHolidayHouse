@@ -25,14 +25,14 @@ async function Place() {
       
   return (
  <PlaceWrapper>
- {data.map((place:PLACES) => {
-  // const {title,id,image,desc,smalldesc} = place
-  return(
-    <div key={place.id}>
-       <Card {...place} />
-    </div>
-  )
- })}
+    {data.map((place:PLACES) => {
+      // const {title,id,image,desc,smalldesc} = place
+      return(
+        <div key={place.id}>
+          <Card {...place} />
+        </div>
+      )
+    })}
  </PlaceWrapper>
   )
 }
