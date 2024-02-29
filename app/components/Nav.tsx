@@ -39,10 +39,10 @@ function Nav() {
   useEffect(() => {
     if(size<700){
       dispatch(setCheckSize(true))
-      // setIsClose(false)
+      setIsClose(false)
   
       }else if (size>1000){
-        // setIsClose(false)
+        setIsClose(false)
       }
       else{dispatch(setCheckSize(false))}
     dispatch(updateValue(window.innerWidth))

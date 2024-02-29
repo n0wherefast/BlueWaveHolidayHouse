@@ -32,7 +32,7 @@ function HomeWrapper(data:any) {
           
     <section className='overflow-hidden pt-[0rem] flex flex-col items-center bg-sky-950'>
        <Parallax/>
-        <div className=' h-[6rem]' id='home'/>
+        <div className='mt-[5rem] h-[6rem]' id='home'/>
        <section className='flex flex-col items-center text-2xl w-[100vw] '>
         <div className={` m-5 mt-10 w-full  lg:text-8xl text-5xl text-slate-950 font-black italic`}>
          <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.5}} className=' flex items-center justify-center w-full h-5 text-teal-500 ml-3'>BlueWave HolidayHouse </motion.h1>

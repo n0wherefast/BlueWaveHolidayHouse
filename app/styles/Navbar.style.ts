@@ -27,12 +27,9 @@ export const NavbarContainer = styled.nav<Props>`
    
 
     @media (max-width: 700px) {
-      /* position: absolute; */
       position: fixed;
        z-index:100;   
-        /* mix-blend-mode:${(props)=>(props.$extendnavbar === 'true'? "none":"difference")}; */
-        /* color:${(props)=>(props.$extendnavbar === 'true'? "white":"rgb(3 105 161)")}; */
-
+      
     }
     
 `;
@@ -56,7 +53,7 @@ export const NavbarExtend = styled.div`
     gap:.9rem;
 
 
-@media (min-width: 700px) {
+@media (min-width: 825px) {
   display: none;
 }
 `;
@@ -69,6 +66,7 @@ export const NavbarLink = styled(Link)`
     text-decoration: none;
     margin:0.1rem;
     padding: 0.3rem;
+    color: rgb(7 89 133);
     &:hover {
         background-color:#0284c7;
          transition: all 0.7s ease;
@@ -82,7 +80,7 @@ export const NavbarLink = styled(Link)`
          }
          
     }
-    @media (max-width: 700px ){
+    @media (max-width: 825px ){
         display: none;
     }
     
@@ -110,7 +108,7 @@ export const LinkButton = styled.button<Props>`
             color:(251 191 36);
          }
         
-         @media (min-width: 700px) {
+         @media (min-width: 825px) {
            display:none;
         };
 `

@@ -33,8 +33,8 @@ const ref = useRef<HTMLDivElement>(null)
   })
     const yBg = useTransform( scrollYProgress , [0,1] ,["0%" , "50%"]);
       return (
-        <section ref={ref} className="flex flex-col md:flex-row items-center justify-end lg:justify-center w-[100vw] min-h-[100vh]  image">
-          <div className=" flex flex-col justify-start items-center md:mb-[-30rem] lg:ml-[30rem] md:ml-[1rem] ml-0 min-h-[8rem] font-black text-[3.5rem] md:text-[8rem] lg:text-[10rem] italic md:h-[10rem] text-amber-400 hover:text-amber-600 uppercase transition-all ease-in duration-[0.5] " >
+        <section ref={ref} className="flex flex-col md:flex-row items-center justify-end md:items-end w-[100vw] min-h-[100vh]  image">
+          <div className=" flex flex-col justify-start items-center md:mb-[7rem] min-h-[8rem] font-black text-[3rem] md:text-[6rem] lg:text-[8rem] xl:text-[10rem] italic md:h-[10rem] text-amber-400 hover:text-amber-600 uppercase transition-all ease-in duration-[0.5] " >
               <motion.div style={{y: yBg}} className="flex flex-col items-center ">
                 <Link href={'#home'} className={`flex items-center ${mono.className} `}>
                   {/* { size > 700 ? <MdKeyboardDoubleArrowDown size={110} className='animate-pulse' /> : null} */}
