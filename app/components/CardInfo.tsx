@@ -37,15 +37,15 @@ function CardInfo({url,id,content,title,image}:homeContents) {
     </div>
     :
     <>
-       <Link key={id} href={url!} className=' prose   transition-all ease-in duration-300 p-2' >
+       <Link key={id} href={url!} className=' prose   transition-all ease-in duration-300 p-2 ' >
                  <motion.div className=' hover:bg-sky-200 transition-all ease-in duration-200  bg-sky-50 m-6 p-3 rounded-xl border-2 flex flex-col items-center justify-center'  variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}>
                   <strong className={`text-zinc-700 text-4xl md:text-5xl font-black italic my-3 w-full flex justify-center text-center ${one.className}`} >{title}</strong>
-                  <div className='text-zinc-800 gap-3 flex md:flex-row flex-col text-xl items-center justify-around  px-[1rem]'>
+                  <div className='text-zinc-800 gap-3 flex lg:flex-row flex-col text-xl items-center justify-around  px-[1rem]'>
                       {id % 2 == 0? null : <Image priority  className='flex w-[30rem] h-[15rem] md:h-[20rem] justify-around m-1 roundedCustomR ' placeholder='blur' blurDataURL='../../assets/mobile.webp' src={urlFor(image).url()}  width={500} height={500} alt=''/> }
                       <div className={`w-full lg:w-[25rem]  text-lg font-semibold ${eli.className}`}>
                         <PortableText value={content} />
                       </div> 
-                      {id % 2 == 0? <Image  className='flex w-[30rem] h-[15rem] md:h-[20rem] justify-around m-1  roundedCustomL' placeholder='blur' blurDataURL='../../assets/mobile.webp' src={urlFor(image).url()} width={500} height={500} alt=''/> : null}
+                      {id % 2 == 0? <Image priority  className='flex w-[30rem] h-[15rem] md:h-[20rem] justify-around m-1   roundedCustomL' placeholder='blur' blurDataURL='../../assets/mobile.webp' src={urlFor(image).url()} width={500} height={500} alt=''/> : null}
                   </div>
                 </motion.div>
     </Link>

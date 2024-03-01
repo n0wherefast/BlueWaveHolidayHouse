@@ -88,24 +88,22 @@ export const CardAbout = styled.div<Props>`
 // `
 export const MainTextContainer = styled.div`
   display: flex;
-  /* font-family: "Exo", sans-serif; */
   flex-direction: column;
   height: 100%;
   width: 100%;
   align-items: start;
   justify-content: center;
   font-style: italic;
-  /* font-weight: 900; */
-  /* padding: 0.25rem; */
   color: rgb(248 250 252);
   margin-top: 4rem;
+  /* line-height: 8rem; */
   
+  @media (max-width:1024px) {
+               line-height: 8rem;
+        padding: 1rem;
+  }
   @media (max-width:700px) {
-        /* font-size: 15vh; */
-        /* margin-top: 6rem; */
-        /* letter-spacing: 0px; */
-         line-height: 5%.5rem;
-        /* background-color: red; */
+               line-height: 5.5rem;
         padding: 1rem;
   }
 `

@@ -67,7 +67,7 @@ function Nav() {
         <section className='navLeft flex flex-[30%] justify-start  items-center font-bold'>
           {/* <Image className='m-[10px] w-[70px] h-auto' placeholder='blur' blurDataURL='../assets/1693610050074.png' alt='blue wave holiday house logo' rel='preload' width={70} height={70} src={LogoImg}/> */}
           <Link href={'/'}>
-          <section  className={`  ${ checkHeight == true? 'invert':'invert-0' } ${mitr.className}  ml-2 italic flex flex-col w-[10rem] text-[2rem] leading-7  ${OpenSans.className}` }>
+          <section  className={`  ${ checkHeight == true? 'invert':'invert-0' } ${mitr.className}  ml-2 italic flex flex-col w-[10rem] text-[2rem] leading-7 mt-3 ${OpenSans.className}` }>
           <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.6}} className='  flex items-center justify-center w-full  h-6 text-sky-800 ml-3 relative left-[.6rem] top-[0.7rem]'>BlueWave HolidayHouse </motion.h1>
          <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.7}} className=' flex items-center justify-center w-full  h-6 text-amber-400 ml-3 relative left-[.8rem] top-[-1rem]'>BlueWave HolidayHouse </motion.h1>
             {/* <p>BlueWave</p>

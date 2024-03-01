@@ -32,6 +32,15 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
+/* html {
+  overflow:   scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+} */
+
 .parallax {
   background-color:red;
   overflow: hidden;

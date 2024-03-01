@@ -22,7 +22,6 @@ export const revalidate = 30
 
 async function About() {
   const data = await getData()
-  console.log(data)
   return (
     <>
       <AboutWrapper data={data}/>

@@ -42,7 +42,7 @@ function AboutWrapper(data:any) {
             <Button to={'#sec'}  y={0} color={'text-amber-400'}/>
         </MainContainer>
     
-        <div className=' h-10' id='sec' />
+        <div className=' h-14' id='sec' />
         <br />           
     <CardContainer> 
         <CollapseContainer>

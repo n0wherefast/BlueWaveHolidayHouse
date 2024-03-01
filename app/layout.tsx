@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     default:'BlueWave HolidayHouse',
     template : '%s | BlueWave HolidayHouse'
   },
-  description: 'BlueWave HolidayHouse',
+  description: 'BlueWave HolidayHouse la tua casa vacanze ad Aci Trezza',
   icons:{
     icon:"/favicon-32x32.png",
     apple:"/apple-touch-icon.png",

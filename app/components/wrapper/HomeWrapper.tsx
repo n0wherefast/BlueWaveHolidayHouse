@@ -1,17 +1,12 @@
 'use client'
 import React from 'react'
-// import {dataHomeDescription,DataHome} from '../ref/data'
 import { motion,Variants} from 'framer-motion'
 import '../../globals.css'
 import WaveLine from '@/app/components/WaveLine'
 import { Parallax } from '@/app/components/Parallax'
-import Image from 'next/image'
-import Link from 'next/link'
 import Footer from '@/app/components/Footer'
 import { Monoton,Martel_Sans,Contrail_One} from 'next/font/google'
 import { homeContents } from '../../ref/types'
-import { urlFor } from '../../ref/sanity'
-import { PortableText } from '@portabletext/react'
 import CardInfo from '../CardInfo'
 
 const mono = Monoton({ subsets: ['latin'] , weight: '400' })
