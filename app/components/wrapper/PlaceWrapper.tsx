@@ -1,25 +1,23 @@
 'use client'
 import React , {useEffect, useState, useRef}from 'react'
 import { dataPlace ,DataPlace} from '@/app/ref/data'
-// import { motion,Variants } from 'framer-motion'
 import { MainContainer } from '@/app/styles/Place.style'
 import type { RootState } from '@/app/redux/store'
 import { useSelector,useDispatch } from 'react-redux'
 import { updateValue,setCheckSize } from '@/app/redux/slice/manageResizeSlice'
-import { Swiper, SwiperSlide } from "swiper/react";
-import { scrollToTop } from '@/app/redux/slice/scrollTo'
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 
 function PlaceWrapper({children}:any) {
-   const [places,setPlaces] = useState(dataPlace)
-   const [place,setPlace] = useState<DataPlace | null> ({})
+  //  const [places,setPlaces] = useState(dataPlace)
+  //  const [place,setPlace] = useState<DataPlace | null> ({})
    const size = useSelector((state:RootState) => state.size.value)
    const dispatch = useDispatch()
-   const [selected ,setSelected] = useState(false)
-   const ref:any = useRef()
+  //  const [selected ,setSelected] = useState(false)
+  //  const ref:any = useRef()
 
 
   useEffect(() => {

@@ -1,7 +1,6 @@
 'use client'
 import React,{useState , useEffect} from 'react'
 import { links,LINK } from '../ref/links'
-import LogoImg from '../assets/1693610050074.png'
 import { TiWavesOutline  } from "react-icons/ti";
 import { IoMdClose } from "react-icons/io";
 import { Open_Sans} from 'next/font/google'
@@ -13,7 +12,6 @@ import {  NavbarContainer,
           NavbarLink,NavbarLinkExtended,
           LinkButton,NavLogoExtend
         }from "../styles/Navbar.style"
-import Image from 'next/image';
 import {motion,Variants }from 'framer-motion'
 import Link from 'next/link';
 import { socialLinks } from '../ref/links';
@@ -29,7 +27,7 @@ const OpenSans = Open_Sans({
 function Nav() {
    const [isClose ,setIsClose] = useState(false)
    const size = useSelector((state:RootState) => state.size.value)
-   const checkSize = useSelector((state:RootState) => state.size.checkSize)
+  //  const checkSize = useSelector((state:RootState) => state.size.checkSize)
    const  checkHeight = useSelector((state:RootState) => state.size.isDownPage)
 
    const dispatch = useDispatch()
@@ -70,8 +68,7 @@ function Nav() {
           <section  className={`  ${ checkHeight == true? 'invert':'invert-0' } ${mitr.className}  ml-2 italic flex flex-col w-[10rem] text-[2rem] leading-7 mt-3 ${OpenSans.className}` }>
           <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.6}} className='  flex items-center justify-center w-full  h-6 text-sky-800 ml-3 relative left-[.6rem] top-[0.7rem]'>BlueWave HolidayHouse </motion.h1>
          <motion.h1 variants={variant} initial='start' whileInView='end' transition={{delay:0.7}} className=' flex items-center justify-center w-full  h-6 text-amber-400 ml-3 relative left-[.8rem] top-[-1rem]'>BlueWave HolidayHouse </motion.h1>
-            {/* <p>BlueWave</p>
-            <p>HolidayHouse</p> */}
+          
           </section>
           </Link>
          </section>

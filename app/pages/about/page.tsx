@@ -1,6 +1,4 @@
 import AboutWrapper from '@/app/components/wrapper/AboutWrapper'
-import { AboutContainer } from '@/app/styles/About.style'
-import bg from "../../assets/blue_wave__abstract_picture_walpaper_amazing.jpg"
 import { client } from '@/app/ref/sanity'
 
 async function getData() {

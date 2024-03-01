@@ -1,8 +1,6 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
-import img from '../assets/etna2018-3.webp'
-import { DataPlace } from '../ref/data'
 import { PLACES } from '../ref/types'
 import { urlFor } from '../ref/sanity'
 import Link from 'next/link'

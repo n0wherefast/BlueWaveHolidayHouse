@@ -1,8 +1,6 @@
 'use client'
 import React ,{useState}from 'react'
 import Credits from '../Credits'
-import { socialLinks } from '../../ref/links'
-import Link from 'next/link'
 
 function FooterWrapper({children}:{children:React.ReactNode}) {
     const [isOpen,setIsOpen] = useState(false)

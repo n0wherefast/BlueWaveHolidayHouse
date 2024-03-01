@@ -21,7 +21,6 @@ function AboutWrapper(data:any) {
     const [show ,setShow] = useState(false)
     const [disShow ,setDisShow] = useState(false)
     const dataRules = data.data
-  console.log(dataRules)
     const variant:Variants = {
       start:{opacity:0 ,y:-20},
       end:{opacity:1, y:8},
