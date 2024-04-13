@@ -19,7 +19,7 @@ export const metadata = {
   title: 'Place'
 }
 
-export const revalidate = 30 
+export const revalidate = 30 //revalidate at 30 seconds
 async function Place() {
   const data = await getData()
       

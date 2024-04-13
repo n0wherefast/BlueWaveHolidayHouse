@@ -48,7 +48,6 @@ export default function RootLayout({children,}:{ children: React.ReactNode}) {
            {/* <Footer/> */}
         </Providers>
       </body>
-     
     </html>
   )
 }

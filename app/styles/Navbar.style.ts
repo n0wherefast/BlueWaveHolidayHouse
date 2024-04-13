@@ -50,7 +50,8 @@ export const NavbarExtend = styled.div`
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap:.9rem;
+    margin-top: 2rem;
+    gap:1rem;
 
 
 @media (min-width: 825px) {

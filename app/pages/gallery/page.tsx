@@ -16,6 +16,8 @@ import GalleryWrapper from "../../components/wrapper/GalleryWrapper"
 export const metadata ={
         title: 'Gallery'
       }
+      export const revalidate = 30 //revalidate at 30 seconds
+
 
 async function Gallery() {
  const data = await getData()

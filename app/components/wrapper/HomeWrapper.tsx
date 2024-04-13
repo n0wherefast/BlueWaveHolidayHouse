@@ -25,7 +25,7 @@ function HomeWrapper(data:any) {
         return (
           <>
           
-    <section className='overflow-hidden pt-[0rem] flex flex-col items-center bg-sky-950'>
+    <section className='overflow-hidden pt-[0rem] flex flex-col items-center bg-sky-50'>
        <Parallax/>
         <div className='mt-[5rem] h-[6rem]' id='home'/>
        <section className='flex flex-col items-center text-2xl w-[100vw] '>

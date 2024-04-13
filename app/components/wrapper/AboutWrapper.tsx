@@ -132,18 +132,18 @@ function AboutWrapper(data:any) {
             
             <section className='flex  flex-wrap w-[100%] min-h-[10rem] p-3 gap-5'>            
                
-                                 <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}
-                             className="text-md  w-[22rem] p-2 bg-sky-700 text-zinc-50 border border-sky-400">
+                <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}
+                        className="text-md  w-[22rem] p-2 bg-sky-700 text-zinc-50 border border-sky-400">
 
-<p className='flex flex-col justify-center items-center'> <strong className='p-1 text-3xl font-black italic'><span className=' text-amber-400' >P</span>olitiche:</strong></p>
-                     <p className='pl-4 prose-lg'>
+                        <p className='flex flex-col justify-center items-center'> <strong className='p-1 text-3xl font-black italic'><span className=' text-amber-400' >P</span>olitiche:</strong></p>
+                        <p className='pl-4 prose-lg'>
                             -L&apos;host ti accoglie di persona <br />
-                        -Sono permessi soggiorni a lungo termine
-                        Consente i soggiorni oltre i 28 giorni <br />
-                        -Animali domestici ammessi
-                        Gli animali di servizio sono sempre ammessi
-                            <br />
-                    </p>
+                            -Sono permessi soggiorni a lungo termine
+                            Consente i soggiorni oltre i 28 giorni <br />
+                            -Animali domestici ammessi
+                            Gli animali di servizio sono sempre ammessi
+                                <br />
+                        </p>
                </motion.div> 
                 <motion.div variants={variant} initial="start" whileInView="end" transition={{delay:0.25}}
                              className="text-md  w-[22rem] p-2 bg-sky-700 text-zinc-50 border border-sky-400">
