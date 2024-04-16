@@ -55,8 +55,8 @@ function InterestPlaces({children}:any) {
                         <p className='pl-4'>
                             - 2min /1.3 km supermercato decò<br />
                             - 2min panifici, bar e ristorante<br />
-                            - 3 Km Centro Commerciale Porte di Catania. <br />
-                            - 30 km Km Centro Commerciale Centro Sicilia. <br />
+                            - 3 Km Centro Commerciale I Ciclopi. <br />
+                            - 30 km Centro Commerciale Centro Sicilia. <br />
                             <br />
                         </p>
                       </motion.div>
@@ -68,12 +68,12 @@ function InterestPlaces({children}:any) {
                           <Link aria-label='link whatsApp' href={'https://acicastello.paytourist.com/strutture-certificate/case-vacanze/apct000069-0002.html'}>   
                                   <Image className='m-1 hover:text-amber-400 hover:scale-110  p-2 border-2 rounded'  width={76} height={68}  src={logoP} alt='logo'/>
                               </Link>                
-                              <Link aria-label='link per airBnB' href={'https://www.airbnb.it/rooms/965158970549808793?_set_bev_on_new_domain=1693421299_M2U2NDkyN2NiZTk1&source_impression_id=p3_1705437005_TKYN%2B%2BsmqOiHnMsk'}>
+                              <Link aria-label='link per airBnB' href={'https://www.airbnb.it/rooms/965158960549808793?source_impression_id=p3_1713271343_aS3wrlLjMY9M3vUl'}>
                                   <FaAirbnb className='m-1 text-red-400 hover:text-amber-400  hover:scale-110 p-1 border-2 rounded' size={80}/>
                               </Link>
-                              <Link aria-label='link whatsApp' href={'https://www.tripadvisor.it/VacationRentalReview-g1007324-d26672499-Blue_Wave_Holiday_House-Acitrezza_Aci_Castello_Province_of_Catania_Sicily.html'}>
+                              {/* <Link aria-label='link whatsApp' href={'https://www.tripadvisor.it/VacationRentalReview-g1007324-d26672499-Blue_Wave_Holiday_House-Acitrezza_Aci_Castello_Province_of_Catania_Sicily.html'}>
                                   <FaTripadvisor className='m-1 text-amber-300 hover:text-amber-400 hover:scale-110  p-1 border-2 rounded' size={80}/>
-                              </Link>  
+                              </Link>   */}
                               <Link aria-label='link for bookong.com' href={'https://www.booking.com/Share-WE3Iho'}>
                                   <TbBrandBooking className='m-1 text-blue-800 hover:text-amber-400 hover:scale-110  p-1 border-2 rounded' size={80}/>
                               </Link> 
