@@ -24,7 +24,6 @@ function GalleryWrapper(data:any) {
         endG:{opacity:1, x:1},
         startE:{opacity:-10 },
         }
-
     const style ={
         backgroundSize:'cover',
          backgroundPosition:'center',
