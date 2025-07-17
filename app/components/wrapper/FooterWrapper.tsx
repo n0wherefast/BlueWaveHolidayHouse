@@ -16,9 +16,13 @@ function FooterWrapper({children}:{children:React.ReactNode}) {
             {isOpen && <Credits/>}
           </button>
            <p className=' font-medium italic'>BlueWave HolidayHouse &copy;{year}</p>  
+           
             
       </section>
-         
+         <div className='flex p-2 gap-4'>
+            <p className='flex gap-2'> <h2> CIN:</h2>IT087002C2ZR2P9OW9</p>
+            <p className='flex gap-2'> <h2> CIR:</h2>19087002C230378</p>
+           </div>
       {children}
     </div>
       
