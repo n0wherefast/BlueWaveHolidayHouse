@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./ThemeProvider/ThemeProvider";
 export const dynamic = 'force-dynamic'
+import JsonLD from ".././scripts/JsonLD";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -77,7 +78,7 @@ export default function RootLayout({
           #home { min-height: 60vh; }
           .hero-bg-fallback { background-image: url('/sea.webp'); background-size: cover; background-position: center; }
         `}</style>
-        <script
+        {/* <script
           type="application/ld+json"
           // Structured data for better SERP results
           dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -101,7 +102,8 @@ export default function RootLayout({
               reviewCount: "124",
             },
           }) }}
-        />
+        /> */}
+        <JsonLD />
       </head>
       <body className={inter.className}>
         {/* <ThemeProvider> */}

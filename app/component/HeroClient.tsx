@@ -30,8 +30,8 @@ export default function HeroClient() {
         </h1>
 
         <p className="mt-6 text-base sm:text-xl sm:text-white/85 max-w-3xl mx-auto leading-relaxed">
-          La base perfetta per esplorare la Sicilia. Situata ad Aci Trezza, nella Sicilia orientale, BlueWave
-          Holiday House è ideale per chi desidera una vacanza all’insegna del relax e della scoperta.
+          Se stai cercando la base perfetta per esplorare la meravigliosa Sicilia, non cercare oltre! BlueWave Holiday House,
+           situata nella pittoresca Aci Trezza, nella splendida Sicilia orientale, è la scelta ideale per chi desidera una vacanza all’insegna del relax, della cultura e della scoperta.
         </p>
 
         <motion.div

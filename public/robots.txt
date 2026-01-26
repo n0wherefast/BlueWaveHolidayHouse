@@ -1,0 +1,16 @@
+# robots.txt for Blue Wave Holiday House
+# Allow all crawlers access to the public site, but disallow admin and sensitive paths.
+
+User-agent: *
+Allow: /
+
+# Disallow admin/dashboard and other non-public areas
+Disallow: /dashboard/
+Disallow: /api/dashboard/
+Disallow: /admin/
+
+# Sitemap (replace with full URL if your sitemap is served from a different host)
+Sitemap: https://www.bluewaveholidayhouse.com/sitemap.xml
+
+# Helpful but non-standard: specify host
+Host: https://www.bluewaveholidayhouse.com
