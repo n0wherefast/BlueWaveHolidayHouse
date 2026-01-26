@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./ThemeProvider/ThemeProvider";
 export const dynamic = 'force-dynamic'
-import JsonLD from ".././scripts/JsonLD";
+import JsonLD from "../scripts/jsonLD";
 
 const inter = Inter({ subsets: ["latin"] });
 
