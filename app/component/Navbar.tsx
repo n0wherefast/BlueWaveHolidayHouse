@@ -117,7 +117,7 @@ const handleNavClick = (path: string) => {
                 </div> */}
                   <motion.a
                     onClick={()=>setIsOpen(false)}
-                    href="#contact"
+                    href="#contacts"
                     whileHover={{ y: -1 }}
                     whileTap={{ scale: 0.98 }}
                     className= {isOpen? `md:inline-flex items-center rounded-full bg-gradient-to-r from-sky-500 to-teal-400 px-4 py-2 text-sm font-semibold text-white shadow hover:shadow-md mt-4 md:mt-0 ` 
