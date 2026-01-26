@@ -1,0 +1,8 @@
+[
+   { "label": "Soggiorno", "tone": "from-sky-500/10 to-indigo-500/10", "alt": "Soggiorno", "path": "/Soggiorno.webp" },
+   { "label": "Camera da letto", "tone": "from-emerald-500/10 to-teal-500/10", "alt": "Camera da letto", "path": "/letto (3).webp" },
+   { "label": "Cucina", "tone": "from-indigo-500/10 to-sky-500/10", "alt": "Cucina", "path": "/cucina.webp" },
+   { "label": "Bagno", "tone": "from-teal-500/10 to-cyan-500/10", "alt": "Bagno", "path": "/bagno.webp" },
+   { "label": "Balcone", "tone": "from-cyan-500/10 to-sky-500/10", "alt": "Balcone", "path": "/terrazza.webp" },
+   { "label": "Vista mare", "tone": "from-sky-500/10 to-emerald-500/10", "alt": "Vista mare", "path": "/vistamare.webp" }
+]

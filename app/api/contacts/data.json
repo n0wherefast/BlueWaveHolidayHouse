@@ -1,0 +1,52 @@
+{
+  "email": "bluewavehhouse@gmail.com",
+  "phone": "+393348951094",
+  "address": {
+    "it": "Aci Castello / Aci Trezza (CT) · Sicilia",
+    "en": "Aci Castello / Aci Trezza (CT) · Sicily"
+  }
+  ,
+  "info": {
+    "title": { "it": "Info utili (indicative)", "en": "Useful info (indicative)" },
+    "items": [
+      {
+        "key": "transport",
+        "it": "Trasporti: fermata AST/Interbus sotto casa; 1,6 km fermata AMT; 17 km Aeroporto Fontanarossa",
+        "en": "Transport: AST/Interbus stop nearby; 1.6 km AMT stop; 17 km Fontanarossa Airport",
+        "link": "https://www.google.com/maps/search/?api=1&query=Aci+Castello+bus+stop"
+      },
+      {
+        "key": "shopping",
+        "it": "Shopping: 1,3 km supermercato; panifici/bar/ristoranti nelle vicinanze; 3 km CC I Ciclopi",
+        "en": "Shopping: 1.3 km supermarket; bakeries/cafes/restaurants nearby; 3 km I Ciclopi mall",
+        "link": "https://www.google.com/search?q=supermercato+Aci+Castello"
+      }
+    ]
+  }
+  ,
+  "links": {
+    "airbnb": {
+      "ariaLabel": "link per airBnB",
+      "href": "https://www.airbnb.it/rooms/965158960549808793?source_impression_id=p3_1713271343_aS3wrlLjMY9M3vUl"
+    }
+    ,
+    "paytourist": {
+      "ariaLabel": "link paytourist",
+      "href": "https://acicastello.paytourist.com/strutture-certificate/case-vacanze/apct000069-0002.html"
+    }
+    ,
+    "booking": {
+      "ariaLabel": "link for bookong.com",
+      "href": "https://www.booking.com/Share-WE3Iho"
+    },
+    "whatsapp": {
+      "ariaLabel": "link whatsApp",
+      "href": "https://wa.me/message/RJUSAJYMVHYHF1"
+    }
+    ,
+    "instagram": {
+      "ariaLabel": "link Instagram",
+      "href": "https://www.instagram.com/bwholidayhouse?igsh=MW93bzN4ZWd4NHFtbA=="
+    }
+  }
+}

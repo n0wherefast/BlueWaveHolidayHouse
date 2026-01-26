@@ -1,0 +1,122 @@
+[
+  [
+    {
+      "sectionTitle": "Regole della casa",
+      "items": [
+        "Check-in: dalle 15:00-20:00",
+        "Check-out: entro le 10:30",
+        "Orari di silenzio: 23:00 - 07:00",
+        "Vietato organizzare feste/eventi",
+        "Fotografia pubblicitaria consentita",
+        "Non è consentito fumare",
+        "Spegnere tutto",
+        "Rispettare gli orari di silenzio per non disturbare i condomini."
+      ]
+    },
+    {
+      "sectionTitle": "additionalNotes",
+      "items": [
+        "Ogni viaggio lascia un ricordo, noi cerchiamo di fare il nostro meglio, per tanto ti chiediamo di rispettare piccole semplici regole.",
+        "Non lasciare porte, infissi e finestre aperte quando non c'è nessuno in casa.",
+        "Rispettare le regole della raccolta differenziata.",
+        "Spegnere i condizionatori se non utilizzati."
+      ]
+    }
+  ],
+  [
+    {
+      "sectionTitle": "Comfort",
+      "items": [
+        "Cucina Completa",
+        "Spazio di lavoro dedicato",
+        "4 Ospiti",
+        "1 Camera da letto",
+        "3 Letti",
+        "Bagno",
+        "Ambiente Climatizzato"
+      ]
+    },
+    {
+      "sectionTitle": "Servizi",
+      "items": [
+        "Vista Mare",
+        "Parcheggio Privato",
+        "Wi-Fi Internet",
+        "HDTV",
+        "Prese USB",
+        "Lavatrice",
+        "Animali domestici ammessi"
+      ]
+    }
+  ],
+  [
+    {
+      "sectionTitle": "Bathroom",
+      "items": [
+        "Asciugamani",
+        "Asciugacapelli",
+        "Prodotti per la pulizia",
+        "Shampoo",
+        "Sapone per il corpo",
+        "Bidet",
+        "Acqua calda",
+        "Gel doccia"
+      ]
+    },
+    {
+      "sectionTitle": "Cucina e zona pranzo",
+      "items": [
+        "Cucina",
+        "Frigorifero",
+        "Servizi di base per cucinare (pentole, padelle, olio, sale e pepe)",
+        "Piatti e posate (scodelle, piatti, tazze, ecc.)",
+        "Freezer",
+        "Piano cottura",
+        "Forno normale",
+        "Bollitore",
+        "Macchina del caffè: macchina per caffè espresso",
+        "Tavolo da pranzo"
+      ]
+    },
+    {
+      "sectionTitle": "Posizione",
+      "items": [
+        "Posto auto privato in condominio",
+        "Parcheggio in strada",
+        "A piedi: bar sotto casa, fermata autobus sotto casa, 5 Min discesa a mare",
+        "In auto: 15 min Catania centro, 2 min supermercato molto fornito decò, 5 min centro commerciale, 2 min panifici, bar e ristorante"
+      ]
+    }
+  ],
+  [
+    {
+      "sectionTitle": "Politiche",
+      "items": [
+        "L'host ti accoglie di persona",
+        "Sono permessi soggiorni a lungo termine (oltre i 28 giorni)",
+        "Animali domestici ammessi (gli animali di servizio sono sempre ammessi)"
+      ]
+    }
+  ],
+  [
+    {
+      "sectionTitle": "L'Appartamento",
+      "description": "Situata a pochi passi dal mare e dalla spiaggia rocciosa di Acitrezza, famosa per i suoi faraglioni e l'area marina protetta, Blue Wave Holiday House è la soluzione perfetta per le tue vacanze in Sicilia. Questa accogliente casa vacanze di 60 mq offre tutto il necessario per un soggiorno confortevole e rilassante:",
+      "house": "La casa è arredata con gusto e modernità, e offre tutti i comfort necessari per rendere la tua vacanza indimenticabile! La posizione strategica di Blue Wave Holiday House ti permette di raggiungere facilmente tutte le principali attrazioni del bacino orientale della Sicilia: a soli 25 minuti dall'Aeroporto di Catania, 15 min dal centro di Catania, 40 minuti da Taormina, 60 minuti da Siracusa."
+    },
+    {
+      "sectionTitle": "mainComforts",
+      "items": [
+        "Aria condizionata",
+        "TV",
+        "Wi-Fi",
+        "Parcheggio privato",
+        "Vista mare",
+        "Camere moderne",
+        "Cucina attrezzata",
+        "Wi-Fi gratuito",
+        "Posizione centrale ad Aci Trezza"
+      ]
+    }
+  ]
+]
