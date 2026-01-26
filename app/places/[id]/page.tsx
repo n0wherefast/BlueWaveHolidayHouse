@@ -65,59 +65,20 @@ export default async function Page({ params }: Props) {
   };
 
   return (
-   <div className="relative backdrop-blur min-h-screen">
-     <Image src="/sea.webp" alt="sea background" fill className="absolute inset-0 -z-30 object-cover" loading="lazy" />
-    <article className=" relative max-w-5xl mx-auto px-8 sm:px-10 py-16 sm:py-24">
-      {/* Background layers to reduce white space and match Hero tones */}
-        {/* Side SVG backgrounds that only occupy lateral gutters (leave center clear) */}
-        {/* <div className="hidden lg:block absolute inset-y-0 left-0 -z-30 w-1/3 pointer-events-none">
-          <svg className="w-full h-full opacity-10" viewBox="0 0 600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <defs>
-              <linearGradient id="lg-left" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0%" stopColor="#7dd3fc" stopOpacity="0.06" />
-                <stop offset="100%" stopColor="#60a5fa" stopOpacity="0.04" />
-              </linearGradient>
-              <filter id="blurL" x="-40%" y="-40%" width="180%" height="180%">
-                <feGaussianBlur stdDeviation="90" />
-              </filter>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#lg-left)" />
-            <g filter="url(#blurL)" opacity="0.16">
-              <circle cx="80" cy="140" r="220" fill="#7dd3fc" />
-              <circle cx="280" cy="500" r="300" fill="#60a5fa" />
-            </g>
-          </svg>
-        </div> */}
-
-        {/* <div className="hidden lg:block absolute inset-y-0 right-0 -z-30 w-1/3 pointer-events-none">
-          <svg className="w-full h-full opacity-18" viewBox="0 0 600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <defs>
-              <linearGradient id="lg-right" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0%" stopColor="#c7a7ff" stopOpacity="0.05" />
-                <stop offset="100%" stopColor="#34d399" stopOpacity="0.04" />
-              </linearGradient>
-              <filter id="blurR" x="-40%" y="-40%" width="180%" height="180%">
-                <feGaussianBlur stdDeviation="90" />
-              </filter>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#lg-right)" />
-            <g filter="url(#blurR)" opacity="0.14">
-              <circle cx="520" cy="120" r="200" fill="#a78bfa" />
-              <circle cx="320" cy="560" r="280" fill="#34d399" />
-            </g>
-          </svg>
-        </div> */}
+   <div className="relative backdrop-blur min-h-screen bg-gradient-to-r from-sky-100/55  to-emerald-50">
+    <article className=" relative max-w-7xl mx-auto px-8 sm:px-10 py-6 sm:py-10 ">
+           <Image src="/sea.webp" alt="sea background" fill className="absolute inset-0 -z-30 object-cover " loading="lazy" />
 
         {/* Decorative gradient overlays (kept subtle) */}
         <div className="absolute inset-0 -z-20 bg-gradient-to-r from-sky-100 via-slate-200 to-indigo-100/50" />
         <div className="absolute inset-0 -z-10 opacity-30 bg-[radial-gradient(circle_at_10%_20%,rgba(56,189,248,0.06),transparent_15%),radial-gradient(circle_at_80%_30%,rgba(16,185,129,0.04),transparent_20%)]" />
 
-      <div className="relative z-10">
+      <div className="relative z-10   max-w-4xl ">
         <Link href="/places" className="text-sm text-slate-500 hover:underline">← Torna ai luoghi</Link>
 
         <header className="mt-4">
           <h1 className="text-6xl sm:text-7xl font-extrabold leading-tight text-slate-800/90 bg-clip-text ">{place.name}</h1>
-          <div className="mt-4 flex items-center gap-4 text-md sm:text-lg text-slate-600">
+          <div className="mt-4 flex items-center gap-4 text-sm sm:text-lg text-slate-600">
             <span className="text-slate-600">{authorName}</span>
             <span className="text-slate-400">•</span>
             {publishedDate && <span>{publishedDate}</span>}
@@ -133,7 +94,7 @@ export default async function Page({ params }: Props) {
               alt={place.name}
               width={2000}
               height={1000}
-              className="w-full h-[28rem] object-cover"
+              className="w-full md:h-[36rem] object-cover object-top"
               priority
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 1200px"
               placeholder={place.blurDataURL ? 'blur' : 'empty'}

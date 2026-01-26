@@ -31,7 +31,7 @@ export default async function Page() {
     <div className="relative w-full mx-auto px-0 sm:px-0 py-0">
       <Image src="/sea.webp" alt="sea background" fill className="absolute inset-0 -z-10 object-cover" loading="lazy" />
       <Navbar linksProp={navLinks} />
-      <div className="  bg-gradient-to-r from-sky-400/55 via-emerald-300/35 to-indigo-400max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
+      <div className="  bg-gradient-to-r from-sky-100/55  to-emerald-100/35 max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
       <header className="mb-8 font-sans font-extrabold p-6 rounded-2xl text-center">
         <h1 className="text-4xl text-slate-800/90 sm:text-5xl font-extrabold">Luoghi e attrazioni</h1>
         <p className="mt-2 sm:text-slate-600 text-slate-800/90">Scopri i luoghi più belli: storia, natura, cibo e attività.</p>
