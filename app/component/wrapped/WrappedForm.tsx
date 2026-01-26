@@ -42,7 +42,7 @@ export default function WrappedFrom() {
   }, [])
 
   return (
-    <section id="contact" className="scroll-mt-24">
+    <section id="contact">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <motion.h2
           className="text-2xl sm:text-3xl font-bold"
