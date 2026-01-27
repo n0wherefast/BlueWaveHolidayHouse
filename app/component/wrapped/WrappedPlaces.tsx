@@ -21,17 +21,17 @@ function WrappedPlaces({ data }: any) {
      <section id="places" className="border-b border-slate-200/70">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
             <motion.h2
-              className="text-2xl sm:text-3xl font-bold"
+              className="text-2xl sm:text-3xl text-slate-700 font-bold"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5 }}
             >
-              Places
+              Scopri le Meraviglie della Sicilia, Luoghi Iconici e Attrazioni da Non Perdere
             </motion.h2>
             <p className="mt-2 text-slate-600 max-w-3xl leading-relaxed">
-              Posizione strategica per raggiungere: Catania (centro storico UNESCO), Etna, le spiagge rocciose di
-              Aci Trezza, i Faraglioni, Siracusa, Taormina e molto altro.
+              Durante il tuo soggiorno, avrai l&apos;opportunità di visitare luoghi iconici come il centro storico di Catania, dichiarato Patrimonio dell&apos;Umanità dall&apos;UNESCO,
+               il maestoso Etna, le incantevoli spiagge rocciose di Aci Trezza e i famosi Faraglioni. Non dimenticare di esplorare le storiche città di Siracusa e Taormina, ricche di cultura e bellezze naturali.
             </p>
 
             <div className="mt-8 grid md:grid-cols-2 gap-6">

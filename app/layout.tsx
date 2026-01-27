@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     nocache: false,
   },
   openGraph: {
-    title: "Blue Wave — Cozy Coastal Stays",
+    title: "Blue Wave — Aci Trezza · Sicilia orientale",
     description:
       "Stylish coastal apartments with curated comforts, clear policies and local recommendations.",
     url: SITE_URL,
@@ -73,6 +73,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preload" href={`${SITE_URL}/sea.webp`} as="image" fetchPriority="high" />
         <style>{`/* Critical Hero CSS: inline to reduce render-blocking */
           #home { min-height: 60vh; }

@@ -54,6 +54,7 @@ export default function WrappedFrom() {
           Contacts
         </motion.h2>
 
+        <p className="mt-2 text-slate-600">Non perdere l&apos;occasione di scoprire la bellezza della Sicilia soggiornando in una delle migliori case vacanze di Aci Trezza. BlueWave Holiday House ti aspetta per offrirti un&apos;esperienza indimenticabile, ricca di relax, cultura e avventura. Prenota ora e inizia a sognare la tua vacanza in Sicilia!</p>
         <p className="mt-2 text-slate-600">Per informazioni e prenotazioni dirette.</p>
 
         <div className="mt-8 grid md:grid-cols-2 gap-6">
@@ -70,7 +71,7 @@ export default function WrappedFrom() {
                 <h3 className="text-xl font-bold">{lang === 'it' ? 'Contatti' : 'Contacts'}</h3>
                 <div className="flex items-center gap-2">
                   <label className="text-xs text-slate-500">Lingua</label>
-                  <select value={lang} onChange={(e) => setLang(e.target.value as 'it' | 'en')} className="rounded-md border px-2 py-1 text-xs bg-white">
+                  <select aria-label='Select language' value={lang} onChange={(e) => setLang(e.target.value as 'it' | 'en')} className="rounded-md border px-2 py-1 text-xs bg-white">
                     <option value="it">IT</option>
                     <option value="en">EN</option>
                   </select>

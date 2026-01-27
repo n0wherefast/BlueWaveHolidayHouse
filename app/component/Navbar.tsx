@@ -76,7 +76,7 @@ const handleNavClick = (path: string) => {
             <div className="text-2xl font-extrabold tracking-tight text-sky-700 drop-shadow-sm font-sans">
               <span className="bg-gradient-to-r from-sky-500 to-teal-400 bg-clip-text text-transparent">BlueWave</span> <span className="text-slate-700">HolidayHouse</span>
             </div>
-            <div className="text-xs text-slate-500 font-medium tracking-wide">Aci Trezza · Sicilia orientale</div>
+            <div className="text-xs text-slate-600 font-medium tracking-wide">Aci Trezza · Sicilia orientale</div>
           </div>
           <button
             id="button menu"
