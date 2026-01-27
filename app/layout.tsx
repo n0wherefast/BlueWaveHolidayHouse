@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "./ThemeProvider/ThemeProvider";
 export const dynamic = 'force-dynamic'
 import JsonLD from "../scripts/jsonLD";
 
@@ -46,7 +45,7 @@ export const metadata: Metadata = {
         alt: "Blue Wave apartment interior",
       },
     ],
-    locale: "en_US",
+    locale: "it_IT",
     type: "website",
   },
   twitter: {
@@ -71,7 +70,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="it">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preload" href={`${SITE_URL}/sea.webp`} as="image" fetchPriority="high" />
@@ -107,9 +106,9 @@ export default function RootLayout({
         <JsonLD />
       </head>
       <body className={inter.className}>
-        {/* <ThemeProvider> */}
+      
           {children}
-        {/* </ThemeProvider> */}
+      
       </body>
     </html> 
   );

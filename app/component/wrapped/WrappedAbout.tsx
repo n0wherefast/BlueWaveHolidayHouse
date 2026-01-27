@@ -44,18 +44,27 @@ function WrappedAbout({ data }: any) {
     <>
       {/* Sezione About - Appartamento */}
       <section
-  id="about"
+  
   className="  relative border-b border-slate-200/70 bg-gradient-to-b from-white/30 via-white/10 to-transparent"
 >
   <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 relative">
     <motion.h2
-      className="font-sans text-2xl sm:text-3xl font-extrabold leading-tight tracking-tight bg-gradient-to-r from-slate-900 via-sky-900 to-slate-900 bg-clip-text text-transparent"
+      className=" text-2xl sm:text-3xl font-extrabold leading-tight tracking-tight bg-gradient-to-r from-slate-900 via-sky-900 to-slate-900 bg-clip-text text-transparent"
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.5 }}
     >
-      About
+      Comfort e Relax
+    </motion.h2>
+    <motion.h2
+      className=" text-xl sm:text-xl  leading-tight tracking-tight bg-gradient-to-r from-slate-900 via-sky-900 to-slate-900 bg-clip-text text-transparent"
+      initial={{ opacity: 0, y: 10 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.5 }}
+    >
+      La casa è dotata di un soggiorno luminoso, una camera da letto confortevole, una cucina attrezzata, un bagno moderno e un balcone con vista mare, dove potrai goderti il panorama mozzafiato. Ogni dettaglio è pensato per garantire un&apos;esperienza di relax totale, permettendoti di ricaricare le energie dopo una giornata di esplorazione.
     </motion.h2>
 
     <div className="mt-6 grid md:grid-cols-2 gap-8">
@@ -130,7 +139,7 @@ function WrappedAbout({ data }: any) {
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.5 }}
     >
-      Comfort e Servizi
+      Servizi
     </motion.h2>
 
     <div className="mt-6 grid md:grid-cols-2 gap-8">

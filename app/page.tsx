@@ -28,9 +28,13 @@ export default async function Home() {
     <main className="min-h-screen bg-blue-100">
       <Navbar linksProp={navLinks} />
       <Hero />
+      <div className="p-3" id="about"/>
       <About />
+      <div className="p-3" id="gallery"/>
       <Gallery />
+      <div className="p-3" id="places"/>
       <Places />
+      <div className="p-4" id="contacts"/>
       <Contact />
     </main>
   );
