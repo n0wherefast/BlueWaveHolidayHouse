@@ -137,7 +137,7 @@ function WrappedAbout({ data }: any) {
           ))}
         </ul>
         <Image
-          src="/soggiorno.webp"
+          src="/Soggiorno.webp"
           alt={"Soggiorno"}
           width={600}
           height={400}
