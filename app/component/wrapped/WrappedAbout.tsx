@@ -86,7 +86,7 @@ function WrappedAbout({ data }: any) {
           alt={"Terrazza con vista mare"}
           width={600}
           height={400}
-          className="mt-4 rounded-lg shadow-md aspect-[4/3]"
+          className="mt-4 rounded-lg shadow-md aspect-[4/4]"
         />
       </motion.div>
 
@@ -141,7 +141,7 @@ function WrappedAbout({ data }: any) {
           alt={"Soggiorno"}
           width={600}
           height={400}
-          className="mt-4 rounded-lg shadow-md aspect-[4/3]"
+          className="mt-4 rounded-lg shadow-md aspect-[4/4]"
         />
       </motion.div>
 <Image
