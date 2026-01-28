@@ -198,7 +198,7 @@ export default function WrappedFrom() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-slate-200 pt-8 text-sm text-slate-600 flex flex-col gap-2">
+        <div className="mt-12 border-t border-slate-200 pt-8 text-sm text-slate-700 flex flex-col gap-2">
           <div className="flex flex-wrap gap-x-8 gap-y-2">
             <span>
               <span className="font-semibold">CIN:</span> IT087002C2ZR2P9OW9
@@ -207,7 +207,7 @@ export default function WrappedFrom() {
               <span className="font-semibold">CIR:</span> 19087002C230378
             </span>
           </div>
-          <div className="text-slate-500">BlueWave HolidayHouse ©2026</div>
+          <div className="text-slate-700">BlueWave HolidayHouse ©2026</div>
         </div>
       </div>
     </section>
