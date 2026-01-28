@@ -82,10 +82,12 @@ function WrappedAbout({ data }: any) {
           {apartmentDesc.description}
         </p>
         <Image
-          src="/terrazza.webp"
+          src="/terrazza.opt.webp"
           alt={"Terrazza con vista mare"}
           width={600}
           height={400}
+          sizes="(max-width: 640px) 100vw, 330px"
+          quality={75}
           className="mt-4 rounded-lg shadow-md aspect-[4/4]"
         />
       </motion.div>
@@ -106,10 +108,12 @@ function WrappedAbout({ data }: any) {
           {apartmentDesc.house}
         </p>
         <Image
-          src="/letto (2).webp"
+          src="/letto (2).opt.webp"
           alt={"Camera da letto"}
           width={600}
           height={400}
+          sizes="(max-width: 640px) 100vw, 330px"
+          quality={75}
           className="mt-4 rounded-lg shadow-md aspect-[4/4]"
         />
       </motion.div>
@@ -137,18 +141,22 @@ function WrappedAbout({ data }: any) {
           ))}
         </ul>
         <Image
-          src="/Soggiorno.webp"
+          src="/Soggiorno.opt.webp"
           alt={"Soggiorno"}
           width={600}
           height={400}
+          sizes="(max-width: 640px) 100vw, 330px"
+          quality={75}
           className="mt-4 rounded-lg shadow-md aspect-[4/4]"
         />
       </motion.div>
 <Image
-          src="/mobile.webp"
+          src="/mobile.opt.webp"
           alt={"sea wave image"}
           width={600}
           height={400}
+          sizes="(max-width: 640px) 100vw, 380px"
+          quality={75}
           className="mt-4 rounded-lg shadow-md aspect-[4/3]"
         />
 

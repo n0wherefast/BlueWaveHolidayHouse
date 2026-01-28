@@ -15,7 +15,7 @@ export default function HeroClient() {
         variants={fadeUp}
         initial="hidden"
         animate="show"
-        className="text-center text-slate-900 sm:text-white sm:bg-transparent sm:p-0 bg-white/45 rounded-3xl py-7 px-6"
+        className="text-center relative -z-100 text-slate-900 sm:text-white sm:bg-transparent sm:p-0 bg-white/45 rounded-3xl py-7 px-6"
       >
         <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-gradient-to-r from-sky-500 to-emerald-500/85 sm:bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.35em] text-white/80">
           <Sparkles className="h-5 w-5" />
