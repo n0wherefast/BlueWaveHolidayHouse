@@ -1,3 +1,17 @@
+/*
+ * Genera miniature WebP e placeholder blur per le immagini elencate
+ * in app/api/places/data.json.
+ *
+ * - Legge `app/api/places/data.json` e per ogni voce con proprietà `image`:
+ *   - crea una miniatura WebP (larghezza 320px, qualità 70) in `public/_thumbs`
+ *     e aggiunge la proprietà `thumbnail` (es. `/ _thumbs/<name>-thumb.webp`).
+ *   - crea un'immagine molto piccola (20px) sfocata, la converte in base64
+ *     e la salva nella proprietà `blurDataURL` (usata come placeholder blur).
+ * - Se l'immagine non esiste la voce viene saltata (warning). In caso di
+ *   errori di elaborazione viene loggato l'errore.
+ * - Dipendenze: `sharp`, Node.js. Esecuzione: `node scripts/generate-thumbs.js`.
+ */
+
 const fs = require('fs')
 const path = require('path')
 const sharp = require('sharp')

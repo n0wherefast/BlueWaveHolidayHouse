@@ -43,11 +43,9 @@ function WrappedAbout({ data }: any) {
   return (
     <>
       {/* Sezione About - Appartamento */}
-      <section
-  
-  className="  relative border-b border-slate-200/70 bg-gradient-to-b from-white/30 via-white/10 to-transparent"
+      <section  className="  relative border-b border-slate-200/70 bg-gradient-to-b from-white/30 via-white/10 to-transparent"
 >
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 relative">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 relative ">
     <motion.h2
       className=" text-2xl sm:text-3xl font-extrabold leading-tight tracking-tight bg-gradient-to-r from-slate-900 via-sky-900 to-slate-900 bg-clip-text text-transparent"
       initial={{ opacity: 0, y: 10 }}
@@ -83,6 +81,13 @@ function WrappedAbout({ data }: any) {
         <p className="mt-3 text-base sm:text-lg leading-relaxed text-slate-700">
           {apartmentDesc.description}
         </p>
+        <Image
+          src="/terrazza.webp"
+          alt={"Terrazza con vista mare"}
+          width={600}
+          height={400}
+          className="mt-4 rounded-lg shadow-md aspect-[4/3]"
+        />
       </motion.div>
 
       {/* Card La Casa */}
@@ -94,17 +99,24 @@ function WrappedAbout({ data }: any) {
         transition={{ duration: 0.55, delay: 0.05 }}
         whileHover={{ y: -4, boxShadow: "0 20px 40px rgba(2, 132, 199, 0.10)" }}
       >
-        <h3 className="text-lg sm:text-2xl font-semibold text-slate-900 leading-tight">
+        {/* <h3 className="text-lg sm:text-2xl font-semibold text-slate-900 leading-tight">
           La casa
-        </h3>
+        </h3> */}
         <p className="mt-3 text-base sm:text-lg leading-relaxed text-slate-700">
           {apartmentDesc.house}
         </p>
+        <Image
+          src="/letto (2).webp"
+          alt={"Camera da letto"}
+          width={600}
+          height={400}
+          className="mt-4 rounded-lg shadow-md aspect-[4/4]"
+        />
       </motion.div>
 
       {/* Card Comfort Principali */}
       <motion.div
-         className={` text-md ${clasname0}`}
+         className={` ${clasname0}  bg-red-500  text-md`}
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.25 }}
@@ -116,7 +128,7 @@ function WrappedAbout({ data }: any) {
         </h3>
         <ul className="mt-4 text-base leading-relaxed text-slate-700 pl-0 grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-2">
           {mainComforts.items.map((item: string, index: number) => (
-            <li key={index} className="flex items-start gap-3">
+            <li key={index} className="flex items-start">
               <span className="mt-1 text-sky-500 flex-shrink-0">
                 <IconDot className="w-4 h-4" />
               </span>
@@ -124,8 +136,24 @@ function WrappedAbout({ data }: any) {
             </li>
           ))}
         </ul>
+        <Image
+          src="/soggiorno.webp"
+          alt={"Soggiorno"}
+          width={600}
+          height={400}
+          className="mt-4 rounded-lg shadow-md aspect-[4/4]"
+        />
       </motion.div>
+<Image
+          src="/mobile.webp"
+          alt={"sea wave image"}
+          width={600}
+          height={400}
+          className="mt-4 rounded-lg shadow-md aspect-[4/3]"
+        />
+
     </div>
+    
   </div>
 </section>
 
